@@ -167,10 +167,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const txtElement = document.querySelector('#typewriter');
   if (txtElement) {
     const words = [
-      'Cloud Technology & Information Security',
-      'DevOps & Infrastructure Engineer',
-      'Quantum Computing Researcher',
-      'Cybersecurity Specialist'
+      'Cloud Technology',
+      'Information Security',
+      'DevOps & Infrastructure',
+      'Full Stack Web Development'
+      
     ];
     new TypeWriter(txtElement, words, 2000);
   }
