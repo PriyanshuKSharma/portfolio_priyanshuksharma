@@ -81,7 +81,7 @@ const html = `<!DOCTYPE html>
       .replace(/<% projects\.forEach\([^%]*%>[\s\S]*?<% \}\) %>/g, (match) => {
         return projects.map(project => `
           <div class="project-card">
-            <img src="${project.image}" alt="${project.title}">
+            <img src="${project.image.replace('/images/', './images/')}" alt="${project.title}">
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             <div class="project-tags">
