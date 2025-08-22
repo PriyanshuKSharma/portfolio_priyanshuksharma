@@ -78,7 +78,7 @@ const html = `<!DOCTYPE html>
         }
         return '';
       })
-      .replace(/<% projects\.forEach\([^%]*%>[\s\S]*?<% \}\) %>/g, (match) => {
+      .replace(/<% projects\.forEach\([^%]*%>[\s\S]*?<% \}\) %>/g, () => {
         return projects.map(project => `
           <div class="project-card">
             <img src="${project.image.replace('/images/', './images/')}" alt="${project.title}">
@@ -89,15 +89,14 @@ const html = `<!DOCTYPE html>
             </div>
             <div class="project-links">
               <a href="${project.github}" target="_blank">GitHub</a>
-              <a href="${project.demo}" target="_blank">Demo</a>
+              ${project.demo ? `<a href="${project.demo}" target="_blank">Demo</a>` : ''}
             </div>
           </div>
         `).join('');
       })
-      .replace(/<%[\s\S]*?%>/g, (match) => {
-
-        return '';
-      })}
+      .replace(/<%[\s\S]*?%>/g, '')
+      .replace(/<div class="project-links">\s*<a href="" target="_blank">GitHub<\/a>\s*<a href="" target="_blank">Demo<\/a>\s*<\/div>/g, '')
+      .replace(/<div class="project-card">\s*<img src="" alt="">\s*<h3><\/h3>\s*<p><\/p>\s*<div class="project-tags">\s*<\/div>\s*<\/div>/g, '')}
   </main>
   
   ${fs.readFileSync('./views/partials/footer.ejs', 'utf8')}
