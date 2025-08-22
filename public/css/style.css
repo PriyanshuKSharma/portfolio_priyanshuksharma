@@ -1608,6 +1608,35 @@ body.loaded .loading-overlay {
   color: var(--text-muted);
 }
 
+.github-achievements {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.github-achievements h5 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.achievement-images {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.achievement-images img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.achievement-images img:hover {
+  transform: scale(1.1);
+}
+
 .contribution-legend {
   display: flex;
   align-items: center;

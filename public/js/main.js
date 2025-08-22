@@ -237,12 +237,42 @@ async function fetchGitHubActivity() {
     document.getElementById('github-following').textContent = `${userData.following} following`;
     document.getElementById('github-repos').textContent = `${userData.public_repos} repositories`;
     
-    // Display GitHub stats only
+    // Get current IST time
+    const now = new Date();
+    const istTime = now.toLocaleString('en-IN', {
+      timeZone: 'Asia/Kolkata',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true
+    });
+    
+    // GitHub achievements (common ones)
+    const achievements = [
+      '🌟 Quickdraw',
+      '⭐ Starstruck', 
+      '🎯 Pull Shark',
+      '🔥 YOLO',
+      '💎 Galaxy Brain'
+    ];
+    
+    // Display GitHub stats with achievements
     document.getElementById('contribution-calendar').innerHTML = `
       <div class="contribution-stats">
         <p>📊 ${userData.public_repos} repositories</p>
         <p>🔥 ${userData.followers} followers</p>
         <p>✨ Since ${new Date(userData.created_at).getFullYear()}</p>
+        <p>📍 Pune, India</p>
+        <p>🕰️ ${istTime} IST</p>
+        <p>🏫 Ajeenkya D Y Patil University</p>
+        <div class="github-achievements">
+          <h5>🏅 Achievements</h5>
+          <div class="achievement-images">
+            <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" alt="Pair Extraordinaire" title="Pair Extraordinaire - Coauthored commits">
+            <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" alt="Pull Shark x2" title="Pull Shark x2 - Merged pull requests">
+            <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" alt="Quickdraw" title="Quickdraw - Closed within 5 minutes">
+            <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" alt="YOLO" title="YOLO - Merged without review">
+          </div>
+        </div>
       </div>
     `;
     
