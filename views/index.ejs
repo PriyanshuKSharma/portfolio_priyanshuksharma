@@ -20,6 +20,44 @@
   <div class="about-text">
     <h2>About Me</h2>
     <p>B.Tech candidate in Information Technology specializing in Cloud Technology and Information Security. With expertise in cloud computing, cybersecurity, DevOps, and quantum computing, I have hands-on experience with AWS, Azure, Docker, Terraform, and security frameworks.</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <a href="mailto:priyanshuksharma2004@gmail.com">priyanshuksharma2004@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📱</span>
+        <a href="tel:+919876543210">+91 98765 43210</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="timeline-section">
+  <h2>Education</h2>
+  <div class="timeline">
+    <% timeline.filter(item => item.type === 'education').forEach(item => { %>
+      <div class="timeline-item <%= item.type %>">
+        <h3><%= item.title %></h3>
+        <span class="timeline-org"><%= item.organization %></span>
+        <span class="timeline-period"><%= item.period %></span>
+        <p><%= item.description %></p>
+      </div>
+    <% }) %>
+  </div>
+</section>
+
+<section id="experience" class="timeline-section">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <% timeline.filter(item => item.type === 'work').forEach(item => { %>
+      <div class="timeline-item <%= item.type %>">
+        <h3><%= item.title %></h3>
+        <span class="timeline-org"><%= item.organization %></span>
+        <span class="timeline-period"><%= item.period %></span>
+        <p><%= item.description %></p>
+      </div>
+    <% }) %>
   </div>
 </section>
 
@@ -41,10 +79,6 @@
           <span>Python</span>
           <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
         </div>
-        <!-- <div class="skill-item">
-          <span>Dart</span>
-          <div class="progress"><div class="progress-inner" style="width: 75%;"></div></div>
-        </div> -->
         <div class="skill-item">
           <span>SQL</span>
           <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
@@ -55,7 +89,6 @@
         </div>
       </div>
     </div>
-    
     
     <div class="skill-dropdown">
       <div class="skill-header" onclick="toggleSkill(this)">
@@ -111,7 +144,6 @@
       </div>
     </div>
     
-    
     <div class="skill-dropdown">
       <div class="skill-header" onclick="toggleSkill(this)">
         <span>CS Fundamentals</span>
@@ -153,7 +185,6 @@
         </div>
       </div>
     </div>
-    
 
   </div>
 </section>
@@ -225,53 +256,37 @@
   <h2>Projects</h2>
   <div class="projects-grid">
     <% projects.forEach(project => { %>
-      <div class="project-card">
-        <img src="<%= project.image %>" alt="<%= project.title %>">
-        <h3><%= project.title %></h3>
-        <p><%= project.description %></p>
-        <div class="project-tags">
-          <% project.tags.forEach(tag => { %>
-            <span class="tag"><%= tag %></span>
-          <% }) %>
+      <div class="project-card terminal">
+        <div class="terminal-header">
+          <div class="terminal-buttons">
+            <span class="btn-close"></span>
+            <span class="btn-minimize"></span>
+            <span class="btn-maximize"></span>
+          </div>
+          <div class="terminal-title">~/projects/<%= project.title.toLowerCase().replace(/\s+/g, '-') %></div>
         </div>
-        <div class="project-links">
-          <a href="<%= project.github %>" target="_blank">GitHub</a>
-          <a href="<%= project.demo %>" target="_blank">Demo</a>
+        <div class="terminal-body">
+          <div class="terminal-line"><span class="prompt">$</span> cat README.md</div>
+          <h3><%= project.title %></h3>
+          <p><%= project.description %></p>
+          <div class="terminal-line"><span class="prompt">$</span> ls technologies/</div>
+          <div class="project-tags">
+            <% project.tags.forEach(tag => { %>
+              <span class="tag"><%= tag %></span>
+            <% }) %>
+          </div>
+          <div class="terminal-line"><span class="prompt">$</span> open links</div>
+          <div class="project-links">
+            <a href="<%= project.github %>" target="_blank">GitHub</a>
+            <% if (project.demo) { %>
+              <a href="<%= project.demo %>" target="_blank">Demo</a>
+            <% } %>
+          </div>
         </div>
       </div>
     <% }) %>
   </div>
 </section>
-
-<section id="experience" class="timeline-section">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <% timeline.filter(item => item.type === 'work').forEach(item => { %>
-      <div class="timeline-item <%= item.type %>">
-        <h3><%= item.title %></h3>
-        <span class="timeline-org"><%= item.organization %></span>
-        <span class="timeline-period"><%= item.period %></span>
-        <p><%= item.description %></p>
-      </div>
-    <% }) %>
-  </div>
-</section>
-
-<section id="education" class="timeline-section">
-  <h2>Education</h2>
-  <div class="timeline">
-    <% timeline.filter(item => item.type === 'education').forEach(item => { %>
-      <div class="timeline-item <%= item.type %>">
-        <h3><%= item.title %></h3>
-        <span class="timeline-org"><%= item.organization %></span>
-        <span class="timeline-period"><%= item.period %></span>
-        <p><%= item.description %></p>
-      </div>
-    <% }) %>
-  </div>
-</section>
-
-
 
 <section id="contact" class="contact-section">
   <div class="contact-container">

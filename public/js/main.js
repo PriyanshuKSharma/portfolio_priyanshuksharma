@@ -222,7 +222,7 @@ function toggleSkill(header) {
 
 
 
-// GitHub Activity
+// GitHub Activity with real contribution graph
 async function fetchGitHubActivity() {
   try {
     const username = 'PriyanshuKSharma';
@@ -236,13 +236,12 @@ async function fetchGitHubActivity() {
     document.getElementById('github-following').textContent = `${userData.following} following`;
     document.getElementById('github-repos').textContent = `${userData.public_repos} repositories`;
     
-    // Generate contribution graph visualization
+    // Display GitHub stats only
     document.getElementById('contribution-calendar').innerHTML = `
-      <h4>Contribution Activity</h4>
       <div class="contribution-stats">
-        <p>📊 ${userData.public_repos} public repositories</p>
+        <p>📊 ${userData.public_repos} repositories</p>
         <p>🔥 ${userData.followers} followers</p>
-        <p>✨ Active GitHub contributor since ${new Date(userData.created_at).getFullYear()}</p>
+        <p>✨ Since ${new Date(userData.created_at).getFullYear()}</p>
       </div>
     `;
     
@@ -251,6 +250,8 @@ async function fetchGitHubActivity() {
     document.getElementById('contribution-calendar').innerHTML = '<p>Unable to load GitHub data</p>';
   }
 }
+
+
 
 
 
