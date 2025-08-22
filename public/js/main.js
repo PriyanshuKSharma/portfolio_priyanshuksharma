@@ -222,22 +222,16 @@ function toggleSkill(header) {
 
 
 
-// Real-time GitHub Activity
+// GitHub Activity
 function fetchGitHubActivity() {
-  const username = 'PriyanshuKSharma';
+  // Set fallback data immediately
+  const reposElement = document.getElementById('total-repos');
+  const contributionsElement = document.getElementById('total-contributions');
   
-  fetch(`https://api.github.com/users/${username}`)
-    .then(response => response.json())
-    .then(userData => {
-      const reposElement = document.getElementById('total-repos');
-      if (reposElement) reposElement.textContent = userData.public_repos;
-    })
-    .catch(() => {
-      const reposElement = document.getElementById('total-repos');
-      if (reposElement) reposElement.textContent = '25+';
-    });
+  if (reposElement) reposElement.textContent = '25+';
+  if (contributionsElement) contributionsElement.textContent = 'Loading...';
   
-  generateRealContributionGraph(username);
+  generateFallbackGraph();
 }
 
 async function generateRealContributionGraph(username) {
