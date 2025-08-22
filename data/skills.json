@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Cloud Computing (AWS/Azure/GCP)",
+    "level": 95
+  },
+  {
+    "name": "Cybersecurity & Zero Trust",
+    "level": 90
+  },
+  {
+    "name": "DevOps & Docker",
+    "level": 88
+  },
+  {
+    "name": "Python & Java",
+    "level": 85
+  },
+  {
+    "name": "Terraform & Infrastructure",
+    "level": 82
+  },
+  {
+    "name": "Quantum Computing",
+    "level": 78
+  },
+  {
+    "name": "Full Stack Development",
+    "level": 80
+  }
+]

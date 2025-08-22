@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Web Dev Intern",
+    "organization": "Marquardt India Pvt. Ltd., Pune",
+    "period": "June 2025 - Present",
+    "description": "Contributing to frontend development, UI/UX enhancements, and full-stack feature implementation using HTML5, CSS3, JavaScript, EJS templates, MySQL, and Express.js.",
+    "type": "work"
+  },
+  {
+    "title": "IT Intern - Placement Coordinator",
+    "organization": "Seamless Education and Services (Seamedu) Pvt. Ltd., Pune",
+    "period": "March 2025 - June 2025",
+    "description": "Coordinated end-to-end placement activities, managed candidate databases, and supported IT solutions integration into placement processes.",
+    "type": "work"
+  },
+  {
+    "title": "Cloud Research Intern",
+    "organization": "Indian Institute of Technology Ropar, Punjab",
+    "period": "May 2024 - July 2024",
+    "description": "Engaged in advanced research on distributed computing and serverless architectures. Implemented XFBench and XFaaS frameworks for Function-as-a-Service environments.",
+    "type": "work"
+  },
+  {
+    "title": "Bachelor of Technology in Information Technology",
+    "organization": "Ajeenkya D Y Patil University, Pune",
+    "period": "August 2022 - Present",
+    "description": "Specializing in Cloud Technology and Information Security. Current CGPA: 9.9. Active in hackathons and cybersecurity clubs.",
+    "type": "education"
+  },
+  {
+    "title": "Intermediate Education",
+    "organization": "Sri Chaitanya Jr. Kalasala, Hyderabad",
+    "period": "April 2020 - May 2022",
+    "description": "Completed intermediate education with 93.9% grade, focusing on science and mathematics.",
+    "type": "education"
+  },
+  {
+    "title": "Higher Secondary Education",
+    "organization": "Sri Chaitanya High School, Hyderabad",
+    "period": "April 2019 - May 2020",
+    "description": "Completed higher secondary education with 87.6% grade.",
+    "type": "education"
+  }
+]

@@ -1,134 +1,265 @@
-# 👨‍💻 Priyanshu Kumar Sharma | B.Tech IT Student | Cloud Technology & Information Security
+# 🚀 Modern Cyberpunk Portfolio | Priyanshu Kumar Sharma
 
-Hello! I’m **Priyanshu Kumar Sharma**, a third-year **B.Tech** student specializing in **Information Technology** with a deep passion for **Cloud Computing**, **Cybersecurity**, **Machine Learning** and **Quantum Computing**. I enjoy exploring new frameworks, expanding my expertise in serverless and cloud infrastructures, and advancing in areas like **Identity and Access Management (IAM)**, **Hybrid Quantum-Cloud Systems**, and **Zero Trust Security**.
+<div align="center">
 
-I embrace a project-based learning approach and have accumulated hands-on experience in research, open-source projects, and security solutions. This README summarizes my experiences, certifications, and projects, highlighting my journey and ambitions in technology.
+![Portfolio Banner](https://img.shields.io/badge/Portfolio-Live-00ffff?style=for-the-badge&logo=vercel&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
----
+**🌟 A stunning cyberpunk-themed portfolio showcasing cloud technology and cybersecurity expertise 🌟**
 
-## 🚀 Summary
+[🔗 Live Demo](#) | [📖 Documentation](#features) | [🚀 Quick Start](#installation)
 
-- **🎓 B.Tech IT (4th Year)** student focused on Cybersecurity and Cloud Computing.
-- **🔐 InfoSec Enthusiast**: Hands-on experience in Zero Trust, IAM, and network security.
-- **☁️ Cloud and Quantum Computing**: Actively researching Hybrid Quantum-Cloud Systems and practical applications of quantum computing.
-- **💼 Ex- Research Intern at IIT Ropar**: Working on XFBench and XFaaS development in a cutting-edge research setting.
-- **📈 Open-Source Contributor**: Contributing tools, scripts, and resources for the tech community.
-
----
-
-## 🔬 Research Projects & Internships
-
-### 1. **XFBench and XFaaS Development - Research Intern at IIT Ropar**
-   - **Position**: Research Intern | **Program**: Summer Research Fellowship Program, Indian Academy of Sciences (2024)
-   - **Description**: As a research intern at **IIT Ropar**, I am contributing to XFBench and XFaaS—tools that enhance benchmarking and flexibility in serverless architectures. My work involves analyzing and optimizing cloud-based workflows and infrastructures.
-   - **Responsibilities**:
-     - Implementing **XFBench** and **XFaaS** for serverless workload testing.
-     - Conducting performance assessments and data-driven optimizations.
-     - Documenting deployment and performance insights for XFBench.
-   - **Repositories**:
-     - [Serverless Workbench - XFBench](https://github.com/PriyanshuKSharma/serverless-faas-workbench_IIT_Rpr.git)
-     - [XFaaS Framework](https://github.com/PriyanshuKSharma/XFaaS-IIT_Rpr.git)
-     - [AWS Lambda Addition Module](https://github.com/PriyanshuKSharma/aws-lambda-addition.git)
-
-### 2. **Quantum Computing and Cloud Storage: Hybrid Cloud-Quantum Systems**
-   - **Project**: Research on integrating **Quantum Computing** within cloud storage to enhance data security and operational efficiency.
-   - **Objective**: To explore the **impact of quantum computing** on data storage and develop hybrid systems on **AWS**, **GitHub**, and **IBM Quantum**.
-   - **Implementation Details**:
-     - Establishing **hybrid cloud systems** with quantum applications using **Docker**, **AWS Lambda**, and **IBM Quantum Experience**.
-     - Documenting and presenting findings in a research paper titled **“Potential Impact of Quantum Computing on Cloud Storage: Hybrid Cloud-Quantum Systems”**.
-   - **GitHub Repository**: [Quantum Cloud Integration](https://github.com/PriyanshuKSharma/quantum-cloud-integration)
-
-### 3. **Identity and Access Management (IAM) - Security Research**
-   - **Focus**: Understanding and implementing IAM for organizational security.
-   - **Topics Covered**:
-     - Authentication protocols: **EAP, PAP, RADIUS, TACACS+, Kerberos, OAuth, OpenID**.
-     - Access control models: **DAC, MAC, RBAC, ABAC**.
-     - Implementing the **AAA framework** for improved security in distributed networks.
-   - **Outcome**: Practical understanding of IAM policies and their implementation in secure networks.
+</div>
 
 ---
 
-## 📜 Certifications & Virtual Internships
+## ✨ Features
 
-### 1. **Zscaler Zero Trust Cloud Security Internship**  
-   - **Organized by**: EduSkills Foundation (April 2024 - June 2024)  
-   - **Skills Gained**:
-     - **Zero Trust** architecture design and device access management.
-     - Labs and simulations covering identity and security in cloud infrastructures.
-   
-### 2. **Fortinet Network Security Associate - AICTE Eduskills**
-   - **Certification**: **Introduction to the Threat Landscape 2.0**  
-   - **Focus**: Cyber threat analysis, network vulnerability detection, and security protocols.
+### 🎨 **Modern Design**
+- **Cyberpunk Neon Theme** with cyan, magenta, and green accents
+- **Glassmorphism Effects** with backdrop blur and transparency
+- **Animated Gradient Backgrounds** and particle effects
+- **Custom Scrollbar** with gradient styling
 
----
+### 🎭 **Interactive Animations**
+- **Typewriter Effect** for dynamic taglines
+- **Scroll-triggered Animations** for all sections
+- **3D Hover Effects** on cards and buttons
+- **Animated Progress Bars** for skills
+- **Smooth Transitions** throughout the site
 
-## 💻 Open-Source Projects & Repositories
+### 📱 **Fully Responsive**
+- **Mobile-first Design** with breakpoints
+- **Hamburger Navigation** for mobile devices
+- **Touch-friendly Interactions**
+- **Optimized for all screen sizes**
 
-### 1. **Linux Practicals**
-   - **Repository**: [Linux Practicals Repository](https://github.com/PriyanshuKSharma/Linux-Practicals)
-   - **Description**: Hands-on exercises on Linux covering scripting, file management, and system administration basics, created for students and Linux enthusiasts.
-
-### 2. **Win-KeX for Kali Linux on WSL 2 - Setup Guide**
-   - **Repository (Planned)**: A guide for setting up **Win-KeX** on **Kali Linux for Windows Subsystem for Linux (WSL 2)**.
-   - **Goal**: Steps and configurations for a graphical interface on Kali Linux, easing setup for security testing and labs.
-
-### 3. **Java Swing Online Test Application**
-   - **Repository (Planned)**: Java Swing-based application for an online test environment.
-   - **Features**:
-     - User-friendly GUI for administering tests.
-     - Integrated timer and score calculation.
+### 🛠️ **Technical Features**
+- **Express.js Backend** with EJS templating
+- **Modular Architecture** with partials and data files
+- **Contact Form** with email integration ready
+- **SEO Optimized** with proper meta tags
+- **Performance Optimized** CSS and JavaScript
 
 ---
 
-## 📘 Lab Manuals & Educational Guides
+## 🏗️ Project Structure
 
-1. **Ubuntu Linux Installation Manual**  
-   - A comprehensive guide on installing and configuring **Ubuntu Linux on VirtualBox**. Covers setup, installation, and optimization tips for performance.
-
-2. **Shell Scripting for Beginners**  
-   - Guide on **shell scripting basics** with examples of **file permissions**, **system service management**, and scripting tasks.
-   - Example scripts for **text manipulation** in files, displaying **days of the week** in reverse, and setting permissions.
-
-3. **Fit Raho Gym Website**  
-   - Developed an interactive website for **Fit Raho Gym** using **HTML, CSS, and JavaScript** with sections like **About Us**, background images, and buttons for user engagement.
-
----
-
-## 🛠️ Technical Skills
-
-- **Programming Languages**: Java, Python, Dart, Shell Scripting, Bash
-- **Web/App Development**: HTML, CSS, JavaScript, Django, Flutter
-- **Serverless & Cloud Computing**: AWS, Azure, OpenFaaS, Hybrid Cloud Systems
-- **Cybersecurity**: IAM, Threat Landscape Analysis, Zero Trust, Network Security Models, Metasploit, Nmap
-- **Virtualization & Docker**: Docker, Kubernetes, WSL, VirtualBox, VMware ESXi
-- **Quantum Computing**: IBM Quantum Experience, Quantum-Cloud integration
-- **DevOps**: Redis, GitHub Actions, GitLab
-- **Infrastructure as Code**: Terraform, Pulumi
-
----
-
-## 🎯 Future Goals
-
-- **SkyVault - A Personal Cloud Solution**  
-   - Designing an interactive, Docker-based cloud storage solution with functionalities like **file upload/download**, **storage organization**, and **global file accessibility**.
-
-- **Publish Research Papers**  
-   - Publishing findings on **Hybrid Cloud-Quantum Systems** and **Identity and Access Management**.
-
-- **Contribute to InfoSec Community**  
-   - Building open-source security tools, scripts, and resources for secure architecture learning and implementation.
+```
+portfolio/
+├── 📁 data/
+│   ├── projects.json      # Project information
+│   ├── skills.json        # Skills data
+│   └── timeline.json      # Experience & education
+├── 📁 public/
+│   ├── 📁 css/
+│   │   ├── style.css      # Main styles
+│   │   └── theme.css      # Additional effects
+│   ├── 📁 js/
+│   │   └── main.js        # Interactive features
+│   ├── 📁 images/         # Project images
+│   └── 📁 resume/         # Resume downloads
+├── 📁 routes/
+│   └── main.js            # Express routes
+├── 📁 views/
+│   ├── 📁 partials/
+│   │   ├── navbar.ejs     # Navigation component
+│   │   └── footer.ejs     # Footer component
+│   ├── index.ejs          # Main page
+│   ├── layout.ejs         # Base template
+│   └── 404.ejs            # Error page
+├── app.js                 # Express server
+└── package.json           # Dependencies
+```
 
 ---
 
-## 📫 Connect with Me
+## 🚀 Installation
 
-I’m open to discussions on technology, collaboration, and innovative ideas. Let’s connect and explore our shared interests!
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-- **Primary GitHub**: [@PriyanshuKSharma](https://github.com/PriyanshuKSharma)
-- **Email**: priyanshu17ks@gmail.com (placeholder)
-- **LinkedIn**: [LinkedIn Profile](www.linkedin.com/in/priyanshu-kumar-sharma-333800251) (placeholder)
-- **DockerHub**: [Docker Repos](https://hub.docker.com/u/priyanshuksharma) (placeholder)
-- **Secondary GitHub**: [@itspriyanshuks17](https://github.com/itspriyanshuks17)
+### Quick Start
 
-Thank you for visiting my profile! 😊 Let’s continue to push boundaries in technology and innovation.
+```bash
+# Clone the repository
+git clone https://github.com/PriyanshuKSharma/portfolio.git
 
+# Navigate to project directory
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
+# Open your browser and visit
+http://localhost:3000
+```
+
+---
+
+## 🎯 Sections Overview
+
+### 🏠 **Hero Section**
+- **Animated name display** with gradient text
+- **Welcome message** and role description
+- **Typewriter animation** with rotating taglines
+- **Call-to-action buttons** with hover effects
+
+### 👨‍💻 **About Me**
+- **Professional summary** with expertise highlights
+- **Profile image** with hover animations
+- **Cloud & Security focus** description
+
+### 🛠️ **Technical Skills**
+- **Interactive dropdown sections** for skill categories
+- **Animated progress bars** showing proficiency levels
+- **Categories**: Programming, Development, DevOps, CS Fundamentals
+
+### 🏆 **Achievements**
+- **Awards** with organization details
+- **Hackathons** participation showcase
+- **Certifications** from industry leaders
+
+### 💼 **Projects**
+- **Interactive project cards** with 3D hover effects
+- **Technology tags** and live demo links
+- **GitHub integration** for source code access
+
+### 📚 **Experience & Education**
+- **Separate timeline sections** for work and education
+- **Animated timeline** with glowing indicators
+- **Detailed descriptions** of roles and achievements
+
+### 📞 **Contact**
+- **Functional contact form** with validation
+- **Social media links** with hover effects
+- **Resume download** functionality
+
+---
+
+## 🎨 Customization
+
+### 🎭 **Themes**
+The portfolio uses CSS custom properties for easy theming:
+
+```css
+:root {
+  --primary: #00ffff;      /* Cyan */
+  --secondary: #ff00ff;    /* Magenta */
+  --accent: #00ff88;       /* Green */
+  --bg-dark: #0a0a0a;      /* Dark background */
+  --text-light: #ffffff;   /* Light text */
+}
+```
+
+### 📝 **Content Updates**
+- **Personal Info**: Update `views/index.ejs`
+- **Projects**: Modify `data/projects.json`
+- **Skills**: Edit `data/skills.json`
+- **Experience**: Update `data/timeline.json`
+
+### 🖼️ **Images**
+- Place project images in `public/images/`
+- Add resume PDF to `public/resume/`
+- Update image paths in JSON files
+
+---
+
+## 🚀 Deployment
+
+### **Vercel** (Recommended)
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+### **Heroku**
+```bash
+# Login to Heroku
+heroku login
+
+# Create app
+heroku create your-portfolio-name
+
+# Deploy
+git push heroku main
+```
+
+### **Netlify**
+1. Connect your GitHub repository
+2. Set build command: `npm run build`
+3. Set publish directory: `public`
+
+---
+
+## 🛠️ Technologies Used
+
+<div align="center">
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
+![EJS](https://img.shields.io/badge/EJS-B4CA65?style=flat-square&logo=ejs&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+
+</div>
+
+---
+
+## 📈 Performance Features
+
+- ⚡ **Optimized CSS** with minimal render-blocking
+- 🚀 **Lazy loading** for images and animations
+- 📱 **Mobile-first** responsive design
+- 🎯 **SEO optimized** with proper meta tags
+- 🔄 **Smooth scrolling** and transitions
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👨‍💻 About the Developer
+
+**Priyanshu Kumar Sharma** - B.Tech IT Student specializing in Cloud Technology & Information Security
+
+- 🌐 **Portfolio**: [Live Demo](#)
+- 💼 **LinkedIn**: [Priyanshu Kumar Sharma](https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/)
+- 🐙 **GitHub**: [@PriyanshuKSharma](https://github.com/PriyanshuKSharma)
+- 🐳 **DockerHub**: [@priyanshuksharma](https://hub.docker.com/u/priyanshuksharma)
+
+---
+
+<div align="center">
+
+**⭐ Star this repository if you found it helpful! ⭐**
+
+Made with ❤️ and lots of ☕ by [Priyanshu Kumar Sharma](https://github.com/PriyanshuKSharma)
+
+</div>
