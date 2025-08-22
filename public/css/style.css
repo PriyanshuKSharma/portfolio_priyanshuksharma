@@ -1120,18 +1120,26 @@ section {
   }
   
   .months {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     gap: 1px;
+    overflow-x: auto;
   }
   
   .graph {
     gap: 1px;
-    height: 100px;
+    height: 80px;
+    overflow-x: auto;
+    min-width: 300px;
   }
   
   .day {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+  }
+  
+  .contribution-graph {
+    overflow-x: auto;
   }
   
   #contact-form {
@@ -1192,16 +1200,24 @@ section {
   }
   
   .months {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+    white-space: nowrap;
   }
   
   .graph {
-    height: 80px;
+    height: 60px;
+    min-width: 250px;
   }
   
   .day {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
+    min-width: 6px;
+  }
+  
+  .graph-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
   
   .contribution-graph {

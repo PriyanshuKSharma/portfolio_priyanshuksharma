@@ -223,29 +223,21 @@ function toggleSkill(header) {
 
 
 // Real-time GitHub Activity
-async function fetchGitHubActivity() {
+function fetchGitHubActivity() {
   const username = 'PriyanshuKSharma';
   
-  try {
-    const [userResponse, reposResponse] = await Promise.all([
-      fetch(`https://api.github.com/users/${username}`),
-      fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`)
-    ]);
-    
-    if (userResponse.ok && reposResponse.ok) {
-      const userData = await userResponse.json();
-      const reposData = await reposResponse.json();
-      
-      document.getElementById('total-repos').textContent = userData.public_repos;
-      // Removed commit fetching
-    }
-    
-    await generateRealContributionGraph(username);
-    
-  } catch (error) {
-    console.log('GitHub API rate limit or network error, using fallback data');
-    displayFallbackData();
-  }
+  fetch(`https://api.github.com/users/${username}`)
+    .then(response => response.json())
+    .then(userData => {
+      const reposElement = document.getElementById('total-repos');
+      if (reposElement) reposElement.textContent = userData.public_repos;
+    })
+    .catch(() => {
+      const reposElement = document.getElementById('total-repos');
+      if (reposElement) reposElement.textContent = '25+';
+    });
+  
+  generateRealContributionGraph(username);
 }
 
 async function generateRealContributionGraph(username) {
