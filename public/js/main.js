@@ -184,6 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
   parallaxEffect();
   handleContactForm();
   addGlowEffect();
+  fetchGitHubActivity();
   
 
 
@@ -221,7 +222,35 @@ function toggleSkill(header) {
 
 
 
-// Real-time GitHub Activity
+// GitHub Activity
+async function fetchGitHubActivity() {
+  try {
+    const username = 'PriyanshuKSharma';
+    const userResponse = await fetch(`https://api.github.com/users/${username}`);
+    const userData = await userResponse.json();
+    
+    // Update profile info
+    document.getElementById('github-avatar').src = userData.avatar_url;
+    document.getElementById('github-name').textContent = userData.name || userData.login;
+    document.getElementById('github-followers').textContent = `${userData.followers} followers`;
+    document.getElementById('github-following').textContent = `${userData.following} following`;
+    document.getElementById('github-repos').textContent = `${userData.public_repos} repositories`;
+    
+    // Generate contribution graph visualization
+    document.getElementById('contribution-calendar').innerHTML = `
+      <h4>Contribution Activity</h4>
+      <div class="contribution-stats">
+        <p>📊 ${userData.public_repos} public repositories</p>
+        <p>🔥 ${userData.followers} followers</p>
+        <p>✨ Active GitHub contributor since ${new Date(userData.created_at).getFullYear()}</p>
+      </div>
+    `;
+    
+  } catch (error) {
+    console.error('Error fetching GitHub data:', error);
+    document.getElementById('contribution-calendar').innerHTML = '<p>Unable to load GitHub data</p>';
+  }
+}
 
 
 

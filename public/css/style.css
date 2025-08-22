@@ -900,6 +900,61 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.github-activity {
+  text-align: left;
+}
+
+.github-activity h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.github-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.github-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+}
+
+.profile-details h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.contribution-graph {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.contact-form-section {
+  text-align: center;
 }
 
 .contact-form-section h2,
