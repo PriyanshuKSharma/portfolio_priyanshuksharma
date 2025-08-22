@@ -1,18 +1,12 @@
 const fs = require('fs');
 const path = require('path');
-const ejs = require('ejs');
-
-// Load data
-const skills = JSON.parse(fs.readFileSync('./data/skills.json'));
-const projects = JSON.parse(fs.readFileSync('./data/projects.json'));
-const timeline = JSON.parse(fs.readFileSync('./data/timeline.json'));
 
 // Create dist directory
 if (!fs.existsSync('./dist')) {
   fs.mkdirSync('./dist');
 }
 
-// Copy public assets first
+// Copy public assets
 const copyDir = (src, dest) => {
   if (!fs.existsSync(dest)) {
     fs.mkdirSync(dest, { recursive: true });
@@ -31,23 +25,79 @@ const copyDir = (src, dest) => {
 
 copyDir('./public', './dist');
 
-// Read layout template
-const layoutTemplate = fs.readFileSync('./views/layout.ejs', 'utf8');
-const indexTemplate = fs.readFileSync('./views/index.ejs', 'utf8');
-const navbarTemplate = fs.readFileSync('./views/partials/navbar.ejs', 'utf8');
-const footerTemplate = fs.readFileSync('./views/partials/footer.ejs', 'utf8');
+// Load data
+const skills = JSON.parse(fs.readFileSync('./data/skills.json'));
+const projects = JSON.parse(fs.readFileSync('./data/projects.json'));
+const timeline = JSON.parse(fs.readFileSync('./data/timeline.json'));
 
-// Render partials
-const navbar = ejs.render(navbarTemplate);
-const footer = ejs.render(footerTemplate);
-const body = ejs.render(indexTemplate, { skills, projects, timeline });
+// Create static HTML
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern portfolio showcasing full-stack development skills">
+  <title>Home | Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+  <div class="scroll-indicator"></div>
+  
+  ${fs.readFileSync('./views/partials/navbar.ejs', 'utf8')}
+  
+  <main>
+    ${fs.readFileSync('./views/index.ejs', 'utf8')
+      .replace(/<%.*?%>/g, (match) => {
+        if (match.includes('skills.forEach')) {
+          return skills.map(skill => `
+            <div class="skill-item">
+              <span>${skill.name}</span>
+              <div class="progress"><div class="progress-inner" style="width: ${skill.level}%;"></div></div>
+            </div>
+          `).join('');
+        }
+        if (match.includes('projects.forEach')) {
+          return projects.map(project => `
+            <div class="project-card">
+              <img src="${project.image}" alt="${project.title}">
+              <h3>${project.title}</h3>
+              <p>${project.description}</p>
+              <div class="project-tags">
+                ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+              </div>
+              <div class="project-links">
+                <a href="${project.github}" target="_blank">GitHub</a>
+                <a href="${project.demo}" target="_blank">Demo</a>
+              </div>
+            </div>
+          `).join('');
+        }
+        if (match.includes('timeline.filter')) {
+          const type = match.includes("'work'") ? 'work' : 'education';
+          return timeline.filter(item => item.type === type).map(item => `
+            <div class="timeline-item ${item.type}">
+              <h3>${item.title}</h3>
+              <span class="timeline-org">${item.organization}</span>
+              <span class="timeline-period">${item.period}</span>
+              <p>${item.description}</p>
+            </div>
+          `).join('');
+        }
+        return '';
+      })}
+  </main>
+  
+  ${fs.readFileSync('./views/partials/footer.ejs', 'utf8')}
+  
+  <script src="/js/main.js"></script>
+</body>
+</html>`;
 
-// Render final HTML with layout
-const html = ejs.render(layoutTemplate, {
-  title: 'Home',
-  body: navbar + body + footer
-});
-
-// Write HTML file
 fs.writeFileSync('./dist/index.html', html);
 console.log('Build completed successfully!');
