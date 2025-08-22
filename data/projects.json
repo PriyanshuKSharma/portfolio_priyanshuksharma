@@ -26,7 +26,6 @@
     "description": "Cross-platform mobile application built with Flutter SDK for sustainable products marketplace, running on both iOS and Android devices.",
     "image": "/images/project4.jpg",
     "tags": ["Flutter", "Dart", "Firebase", "Mobile"],
-    "github": "https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024.git",
-    "demo": "https://ecobizz-demo.com"
+    "github": "https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024.git"
   }
 ]
