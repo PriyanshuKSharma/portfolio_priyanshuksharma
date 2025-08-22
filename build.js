@@ -55,24 +55,8 @@ const html = `<!DOCTYPE html>
     ${fs.readFileSync('./views/index.ejs', 'utf8')
       .replace(/\/resume\//g, './resume/')
       .replace(/\/images\//g, './images/')
-      .replace(/<%[\s\S]*?%>/g, (match) => {
-        if (match.includes('projects.forEach')) {
-          return projects.map(project => `
-            <div class="project-card">
-              <img src="${project.image}" alt="${project.title}">
-              <h3>${project.title}</h3>
-              <p>${project.description}</p>
-              <div class="project-tags">
-                ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-              </div>
-              <div class="project-links">
-                <a href="${project.github}" target="_blank">GitHub</a>
-                <a href="${project.demo}" target="_blank">Demo</a>
-              </div>
-            </div>
-          `).join('');
-        }
-        if (match.includes('timeline.filter') && match.includes("'work'")) {
+      .replace(/<% timeline\.filter\([^%]*%>[\s\S]*?<% \}\) %>/g, (match) => {
+        if (match.includes("'work'")) {
           return timeline.filter(item => item.type === 'work').map(item => `
             <div class="timeline-item ${item.type}">
               <h3>${item.title}</h3>
@@ -82,7 +66,7 @@ const html = `<!DOCTYPE html>
             </div>
           `).join('');
         }
-        if (match.includes('timeline.filter') && match.includes("'education'")) {
+        if (match.includes("'education'")) {
           return timeline.filter(item => item.type === 'education').map(item => `
             <div class="timeline-item ${item.type}">
               <h3>${item.title}</h3>
@@ -92,6 +76,26 @@ const html = `<!DOCTYPE html>
             </div>
           `).join('');
         }
+        return '';
+      })
+      .replace(/<% projects\.forEach\([^%]*%>[\s\S]*?<% \}\) %>/g, (match) => {
+        return projects.map(project => `
+          <div class="project-card">
+            <img src="${project.image}" alt="${project.title}">
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+            <div class="project-tags">
+              ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+            </div>
+            <div class="project-links">
+              <a href="${project.github}" target="_blank">GitHub</a>
+              <a href="${project.demo}" target="_blank">Demo</a>
+            </div>
+          </div>
+        `).join('');
+      })
+      .replace(/<%[\s\S]*?%>/g, (match) => {
+
         return '';
       })}
   </main>
