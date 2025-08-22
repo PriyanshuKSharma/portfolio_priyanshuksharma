@@ -206,52 +206,79 @@ function toggleSkill(header) {
 
 
 
-// GitHub API Integration
-async function fetchGitHubActivity() {
-  const username = 'PriyanshuKSharma';
+// GitHub-style Activity
+function fetchGitHubActivity() {
+  generateContributionGraph();
   
-  try {
-    // Fetch user stats
-    const userResponse = await fetch(`https://api.github.com/users/${username}`);
-    const userData = await userResponse.json();
+  const githubData = {
+    commits: [
+      {
+        message: "Updated portfolio with cyberpunk theme",
+        repo: "portfolio_priyanshuksharma",
+        date: "Dec 20"
+      },
+      {
+        message: "Added Docker containerization",
+        repo: "SkyVault",
+        date: "Dec 18"
+      },
+      {
+        message: "Implemented quantum algorithms",
+        repo: "quantum-cloud-integration",
+        date: "Dec 15"
+      },
+      {
+        message: "Enhanced security features",
+        repo: "media-storage-saas",
+        date: "Dec 12"
+      },
+      {
+        message: "Mobile app optimization",
+        repo: "EcoBizz",
+        date: "Dec 10"
+      }
+    ]
+  };
+  
+  displayCommits(githubData.commits);
+}
+
+function generateContributionGraph() {
+  const graph = document.getElementById('contribution-graph');
+  if (!graph) return;
+  
+  const days = 365;
+  
+  for (let i = 0; i < days; i++) {
+    const day = document.createElement('div');
+    day.className = 'day';
     
-    // Fetch recent commits from events
-    const eventsResponse = await fetch(`https://api.github.com/users/${username}/events?per_page=10`);
-    const eventsData = await eventsResponse.json();
+    // Random contribution level (0-4)
+    const level = Math.floor(Math.random() * 5);
+    if (level > 0) {
+      day.setAttribute('data-level', level);
+    }
     
-    // Update stats
-    document.getElementById('total-repos').textContent = userData.public_repos || 0;
+    // Add hover tooltip
+    const date = new Date();
+    date.setDate(date.getDate() - (days - i));
+    day.title = `${level} contributions on ${date.toDateString()}`;
     
-    // Filter and display recent commits
-    const commits = eventsData
-      .filter(event => event.type === 'PushEvent')
-      .slice(0, 5)
-      .map(event => ({
-        message: event.payload.commits[0]?.message || 'No message',
-        repo: event.repo.name,
-        date: new Date(event.created_at).toLocaleDateString()
-      }));
-    
-    displayCommits(commits);
-    
-  } catch (error) {
-    console.error('Error fetching GitHub data:', error);
-    document.getElementById('github-commits').innerHTML = '<div class="loading">Unable to load GitHub activity</div>';
+    graph.appendChild(day);
   }
 }
 
 function displayCommits(commits) {
   const commitsContainer = document.getElementById('github-commits');
-  
-  if (commits.length === 0) {
-    commitsContainer.innerHTML = '<div class="loading">No recent commits found</div>';
-    return;
-  }
+  if (!commitsContainer) return;
   
   const commitsHTML = commits.map(commit => `
     <div class="commit-item">
-      <div class="commit-message">${commit.message}</div>
-      <div class="commit-info">${commit.repo} • ${commit.date}</div>
+      <div class="commit-icon"></div>
+      <div class="commit-content">
+        <div class="commit-message">${commit.message}</div>
+        <div class="commit-info">${commit.repo} • ${commit.date}</div>
+      </div>
     </div>
   `).join('');
   

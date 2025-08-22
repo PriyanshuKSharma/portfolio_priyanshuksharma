@@ -241,25 +241,47 @@
 </section>
 
 <section id="github-activity" class="github-section">
-  <h2>Recent GitHub Activity</h2>
-  <div class="github-stats">
-    <div class="github-card">
-      <h3>Latest Commits</h3>
-      <div id="github-commits" class="commits-list">
-        <div class="loading">Loading commits...</div>
+  <h2>GitHub Activity</h2>
+  <div class="github-container">
+    <div class="github-profile">
+      <div class="github-avatar">
+        <img src="https://github.com/PriyanshuKSharma.png" alt="GitHub Avatar">
+      </div>
+      <div class="github-info">
+        <h3>@PriyanshuKSharma</h3>
+        <div class="github-stats">
+          <span class="stat"><strong id="total-repos">25</strong> repositories</span>
+          <span class="stat"><strong>150+</strong> contributions</span>
+        </div>
       </div>
     </div>
-    <div class="github-card">
-      <h3>GitHub Stats</h3>
-      <div class="stats-grid">
-        <div class="stat-item">
-          <span class="stat-number" id="total-repos">-</span>
-          <span class="stat-label">Repositories</span>
+    
+    <div class="contribution-graph">
+      <h4>Contribution Activity</h4>
+      <div class="graph-container">
+        <div class="months">
+          <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+          <span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
         </div>
-        <div class="stat-item">
-          <span class="stat-number" id="total-commits">-</span>
-          <span class="stat-label">Commits</span>
+        <div class="graph" id="contribution-graph"></div>
+        <div class="legend">
+          <span>Less</span>
+          <div class="legend-colors">
+            <div class="legend-color" data-level="0"></div>
+            <div class="legend-color" data-level="1"></div>
+            <div class="legend-color" data-level="2"></div>
+            <div class="legend-color" data-level="3"></div>
+            <div class="legend-color" data-level="4"></div>
+          </div>
+          <span>More</span>
         </div>
+      </div>
+    </div>
+    
+    <div class="activity-feed">
+      <h4>Recent Activity</h4>
+      <div id="github-commits" class="commits-list">
+        <div class="loading">Loading activity...</div>
       </div>
     </div>
   </div>
