@@ -35,16 +35,16 @@
       <div class="skill-content">
         <div class="skill-item">
           <span>Java</span>
-          <div class="progress"><div class="progress-inner" style="width: 85%;"></div></div>
+          <div class="progress"><div class="progress-inner" style="width: 75%;"></div></div>
         </div>
         <div class="skill-item">
           <span>Python</span>
-          <div class="progress"><div class="progress-inner" style="width: 90%;"></div></div>
+          <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
         </div>
-        <div class="skill-item">
+        <!-- <div class="skill-item">
           <span>Dart</span>
           <div class="progress"><div class="progress-inner" style="width: 75%;"></div></div>
-        </div>
+        </div> -->
         <div class="skill-item">
           <span>SQL</span>
           <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
@@ -64,11 +64,11 @@
       <div class="skill-content">
         <div class="skill-item">
           <span>HTML</span>
-          <div class="progress"><div class="progress-inner" style="width: 95%;"></div></div>
+          <div class="progress"><div class="progress-inner" style="width: 75%;"></div></div>
         </div>
         <div class="skill-item">
           <span>CSS</span>
-          <div class="progress"><div class="progress-inner" style="width: 90%;"></div></div>
+          <div class="progress"><div class="progress-inner" style="width: 70%;"></div></div>
         </div>
         <div class="skill-item">
           <span>JavaScript</span>
@@ -105,7 +105,7 @@
         </div>
         <div class="skill-item">
           <span>GitLab</span>
-          <div class="progress"><div class="progress-inner" style="width: 70%;"></div></div>
+          <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
         </div>
       </div>
     </div>
@@ -119,11 +119,15 @@
       <div class="skill-content">
         <div class="skill-item">
           <span>DSA</span>
-          <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
+          <div class="progress"><div class="progress-inner" style="width: 65%;"></div></div>
         </div>
         <div class="skill-item">
           <span>DBMS</span>
           <div class="progress"><div class="progress-inner" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>OS</span>
+          <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
         </div>
       </div>
     </div>
@@ -233,6 +237,31 @@
         </div>
       </div>
     <% }) %>
+  </div>
+</section>
+
+<section id="github-activity" class="github-section">
+  <h2>Recent GitHub Activity</h2>
+  <div class="github-stats">
+    <div class="github-card">
+      <h3>Latest Commits</h3>
+      <div id="github-commits" class="commits-list">
+        <div class="loading">Loading commits...</div>
+      </div>
+    </div>
+    <div class="github-card">
+      <h3>GitHub Stats</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" id="total-repos">-</span>
+          <span class="stat-label">Repositories</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="total-commits">-</span>
+          <span class="stat-label">Commits</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

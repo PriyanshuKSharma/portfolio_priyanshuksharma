@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
   parallaxEffect();
   handleContactForm();
   addGlowEffect();
+  fetchGitHubActivity();
 
   // Smooth scroll for navigation links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -204,6 +205,58 @@ function toggleSkill(header) {
 }
 
 
+
+// GitHub API Integration
+async function fetchGitHubActivity() {
+  const username = 'PriyanshuKSharma';
+  
+  try {
+    // Fetch user stats
+    const userResponse = await fetch(`https://api.github.com/users/${username}`);
+    const userData = await userResponse.json();
+    
+    // Fetch recent commits from events
+    const eventsResponse = await fetch(`https://api.github.com/users/${username}/events?per_page=10`);
+    const eventsData = await eventsResponse.json();
+    
+    // Update stats
+    document.getElementById('total-repos').textContent = userData.public_repos || 0;
+    
+    // Filter and display recent commits
+    const commits = eventsData
+      .filter(event => event.type === 'PushEvent')
+      .slice(0, 5)
+      .map(event => ({
+        message: event.payload.commits[0]?.message || 'No message',
+        repo: event.repo.name,
+        date: new Date(event.created_at).toLocaleDateString()
+      }));
+    
+    displayCommits(commits);
+    
+  } catch (error) {
+    console.error('Error fetching GitHub data:', error);
+    document.getElementById('github-commits').innerHTML = '<div class="loading">Unable to load GitHub activity</div>';
+  }
+}
+
+function displayCommits(commits) {
+  const commitsContainer = document.getElementById('github-commits');
+  
+  if (commits.length === 0) {
+    commitsContainer.innerHTML = '<div class="loading">No recent commits found</div>';
+    return;
+  }
+  
+  const commitsHTML = commits.map(commit => `
+    <div class="commit-item">
+      <div class="commit-message">${commit.message}</div>
+      <div class="commit-info">${commit.repo} • ${commit.date}</div>
+    </div>
+  `).join('');
+  
+  commitsContainer.innerHTML = commitsHTML;
+}
 
 // Add some CSS for the glow effect
 const style = document.createElement('style');

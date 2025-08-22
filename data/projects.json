@@ -10,14 +10,14 @@
     "title": "Quantum Cloud Integration",
     "description": "Developed a hybrid cloud-quantum system integrating cloud computing with quantum processing for enhanced computational efficiency using AWS and IBM Quantum.",
     "image": "/images/project2.jpg",
-    "tags": ["AWS", "IBM Quantum", "Docker", "Python"],
+    "tags": ["AWS CLI", "GCP", "IBM Quantum", "Docker", "Python"],
     "github": "https://github.com/PriyanshuKSharma/quantum-cloud-integration.git"
   },
   {
     "title": "SkyVault",
     "description": "Built a personal cloud storage system using Docker containers, providing secure file uploading, listing, and downloading functionalities with interactive UI.",
     "image": "/images/project3.jpg",
-    "tags": ["Docker", "Flask", "Python", "Bcrypt"],
+    "tags": ["Docker", "Flask", "Python", "Bcrypt", "HTML"],
     "github": "https://github.com/PriyanshuKSharma/SkyVault.git",
     "demo": "https://priyanshuksharma.github.io/SkyVault/"
   },
