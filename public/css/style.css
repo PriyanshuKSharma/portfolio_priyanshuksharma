@@ -1070,7 +1070,38 @@ section {
   
   .contact-container {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
+  }
+  
+  .github-container {
+    max-width: 100%;
+  }
+  
+  .github-profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .github-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .months {
+    font-size: 0.7rem;
+    gap: 1px;
+  }
+  
+  .graph {
+    gap: 1px;
+    height: 100px;
+  }
+  
+  .day {
+    width: 10px;
+    height: 10px;
   }
   
   .social-icons {
@@ -1084,6 +1115,49 @@ section {
 }
 
 @media (max-width: 480px) {
+  .contact-form-section h2,
+  .github-activity-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-container {
+    gap: 1.5rem;
+  }
+  
+  .github-profile {
+    padding: 1rem;
+  }
+  
+  .github-avatar img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .github-info h3 {
+    font-size: 1.2rem;
+  }
+  
+  .months {
+    font-size: 0.6rem;
+  }
+  
+  .graph {
+    height: 80px;
+  }
+  
+  .day {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .contribution-graph {
+    padding: 1rem;
+  }
+  
+  .contribution-graph h4 {
+    font-size: 1rem;
+  }
   .hero-content {
     padding: 0.5rem;
   }
