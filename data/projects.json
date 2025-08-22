@@ -4,23 +4,21 @@
     "description": "Built a Software-as-a-Service (SaaS) platform leveraging AI to provide automated business solutions with Next.js 14, Tailwind CSS, and Prisma.",
     "image": "/images/project1.jpg",
     "tags": ["Next.js", "Tailwind CSS", "Prisma", "Clerk", "Cloudinary"],
-    "github": "https://github.com/priyanshu17ks/storage-saas",
-    "demo": "https://storage-saas-demo.com"
+    "github": "https://github.com/PriyanshuKSharma/media-storage-saas.git"
   },
   {
     "title": "Quantum Cloud Integration",
     "description": "Developed a hybrid cloud-quantum system integrating cloud computing with quantum processing for enhanced computational efficiency using AWS and IBM Quantum.",
     "image": "/images/project2.jpg",
     "tags": ["AWS", "IBM Quantum", "Docker", "Python"],
-    "github": "https://github.com/priyanshu17ks/quantum-cloud",
-    "demo": "https://quantum-cloud-demo.com"
+    "github": "https://github.com/PriyanshuKSharma/quantum-cloud-integration.git"
   },
   {
     "title": "SkyVault",
     "description": "Built a personal cloud storage system using Docker containers, providing secure file uploading, listing, and downloading functionalities with interactive UI.",
     "image": "/images/project3.jpg",
     "tags": ["Docker", "Flask", "Python", "Bcrypt"],
-    "github": "https://github.com/priyanshu17ks/skyvault",
+    "github": "https://github.com/PriyanshuKSharma/SkyVault.git",
     "demo": "https://hub.docker.com/r/priyanshu17ks/skyvault"
   },
   {
@@ -28,7 +26,7 @@
     "description": "Cross-platform mobile application built with Flutter SDK for sustainable products marketplace, running on both iOS and Android devices.",
     "image": "/images/project4.jpg",
     "tags": ["Flutter", "Dart", "Firebase", "Mobile"],
-    "github": "https://github.com/priyanshu17ks/ecobizz",
+    "github": "https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024.git",
     "demo": "https://ecobizz-demo.com"
   }
 ]

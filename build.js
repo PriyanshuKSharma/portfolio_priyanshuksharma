@@ -53,15 +53,9 @@ const html = `<!DOCTYPE html>
   
   <main>
     ${fs.readFileSync('./views/index.ejs', 'utf8')
-      .replace(/<%.*?%>/g, (match) => {
-        if (match.includes('skills.forEach')) {
-          return skills.map(skill => `
-            <div class="skill-item">
-              <span>${skill.name}</span>
-              <div class="progress"><div class="progress-inner" style="width: ${skill.level}%;"></div></div>
-            </div>
-          `).join('');
-        }
+      .replace(/\/resume\//g, './resume/')
+      .replace(/\/images\//g, './images/')
+      .replace(/<%[\s\S]*?%>/g, (match) => {
         if (match.includes('projects.forEach')) {
           return projects.map(project => `
             <div class="project-card">
@@ -78,9 +72,18 @@ const html = `<!DOCTYPE html>
             </div>
           `).join('');
         }
-        if (match.includes('timeline.filter')) {
-          const type = match.includes("'work'") ? 'work' : 'education';
-          return timeline.filter(item => item.type === type).map(item => `
+        if (match.includes('timeline.filter') && match.includes("'work'")) {
+          return timeline.filter(item => item.type === 'work').map(item => `
+            <div class="timeline-item ${item.type}">
+              <h3>${item.title}</h3>
+              <span class="timeline-org">${item.organization}</span>
+              <span class="timeline-period">${item.period}</span>
+              <p>${item.description}</p>
+            </div>
+          `).join('');
+        }
+        if (match.includes('timeline.filter') && match.includes("'education'")) {
+          return timeline.filter(item => item.type === 'education').map(item => `
             <div class="timeline-item ${item.type}">
               <h3>${item.title}</h3>
               <span class="timeline-org">${item.organization}</span>
