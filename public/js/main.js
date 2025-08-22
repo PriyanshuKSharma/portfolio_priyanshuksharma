@@ -224,14 +224,25 @@ function toggleSkill(header) {
 
 // GitHub Activity
 function fetchGitHubActivity() {
-  // Set fallback data immediately
   const reposElement = document.getElementById('total-repos');
   const contributionsElement = document.getElementById('total-contributions');
   
   if (reposElement) reposElement.textContent = '25+';
-  if (contributionsElement) contributionsElement.textContent = 'Loading...';
+  if (contributionsElement) contributionsElement.textContent = '500+';
   
-  generateFallbackGraph();
+  const graph = document.getElementById('contribution-graph');
+  if (graph) {
+    graph.innerHTML = '';
+    for (let i = 0; i < 365; i++) {
+      const day = document.createElement('div');
+      day.className = 'day';
+      const level = Math.random() < 0.3 ? Math.floor(Math.random() * 4) + 1 : 0;
+      if (level > 0) day.setAttribute('data-level', level);
+      graph.appendChild(day);
+    }
+  }
+  
+  updateMonthNames(new Date(), 365);
 }
 
 async function generateRealContributionGraph(username) {
