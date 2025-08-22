@@ -38,8 +38,8 @@ const html = `<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Modern portfolio showcasing full-stack development skills">
   <title>Home | Portfolio</title>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/theme.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -95,7 +95,7 @@ const html = `<!DOCTYPE html>
   
   ${fs.readFileSync('./views/partials/footer.ejs', 'utf8')}
   
-  <script src="/js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>`;
 
