@@ -1,4 +1,4 @@
-# 🚀 Modern Cyberpunk Portfolio | Priyanshu Kumar Sharma
+#  Portfolio | Priyanshu Kumar Sharma
 
 <div align="center">
 
@@ -8,7 +8,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-**🌟 A stunning cyberpunk-themed portfolio showcasing cloud technology and cybersecurity expertise 🌟**
+**🌟 I am a B.Tech candidate in Information Technology specializing in Cloud Technology and Information Security. With expertise in cloud computing, cybersecurity, DevOps, and quantum computing, I have hands-on experience with AWS, Azure, Docker, Terraform, and security frameworks. Through research, internships, and open-source contributions, I have worked on secure cloud architectures, serverless computing, and advanced security implementations. 🌟**
 
 [🔗 Live Demo](#) | [📖 Documentation](#features) | [🚀 Quick Start](#installation)
 
