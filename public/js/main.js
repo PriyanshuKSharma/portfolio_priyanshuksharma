@@ -203,6 +203,34 @@ function toggleSkill(header) {
   dropdown.classList.toggle('active');
 }
 
+// Theme toggle function
+function toggleTheme() {
+  const body = document.body;
+  const themeIcon = document.querySelector('.theme-icon');
+  
+  body.classList.toggle('light-theme');
+  
+  if (body.classList.contains('light-theme')) {
+    themeIcon.textContent = '☀️';
+    localStorage.setItem('theme', 'light');
+  } else {
+    themeIcon.textContent = '🌙';
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+// Load saved theme
+function loadTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  const body = document.body;
+  const themeIcon = document.querySelector('.theme-icon');
+  
+  if (savedTheme === 'light') {
+    body.classList.add('light-theme');
+    if (themeIcon) themeIcon.textContent = '☀️';
+  }
+}
+
 // Add some CSS for the glow effect
 const style = document.createElement('style');
 style.textContent = `
@@ -238,5 +266,20 @@ style.textContent = `
   body.loaded .hero-content > * {
     animation-play-state: running;
   }
+  
+  /* Light Theme */
+  body.light-theme {
+    --bg-dark: #ffffff;
+    --bg-card: rgba(255, 255, 255, 0.8);
+    --text-light: #000000;
+    --text-muted: #666666;
+  }
+  
+  body.light-theme .hero-bg {
+    background: linear-gradient(-45deg, #f0f0f0, #e0e0e0, #d0d0d0, #c0c0c0);
+  }
 `;
 document.head.appendChild(style);
+
+// Load theme on page load
+loadTheme();

@@ -26,6 +26,9 @@
         <a href="#contact" class="nav-link">Contact Me</a>
       </li>
     </ul>
+    <button class="theme-toggle" onclick="toggleTheme()">
+      <span class="theme-icon">🌙</span>
+    </button>
     <div class="hamburger">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -97,6 +100,29 @@
 .nav-link:hover {
   color: var(--primary);
   text-shadow: 0 0 10px var(--primary);
+}
+
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--primary);
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  font-size: 1.2rem;
 }
 
 .hamburger {
