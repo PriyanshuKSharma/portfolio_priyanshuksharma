@@ -19,7 +19,7 @@
     "image": "/images/project3.jpg",
     "tags": ["Docker", "Flask", "Python", "Bcrypt"],
     "github": "https://github.com/PriyanshuKSharma/SkyVault.git",
-    "demo": "https://hub.docker.com/r/priyanshu17ks/skyvault"
+    "demo": "https://priyanshuksharma.github.io/SkyVault/"
   },
   {
     "title": "Ecobizz E-commerce App",
