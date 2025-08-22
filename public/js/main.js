@@ -203,33 +203,7 @@ function toggleSkill(header) {
   dropdown.classList.toggle('active');
 }
 
-// Theme toggle function
-function toggleTheme() {
-  const body = document.body;
-  const themeIcon = document.querySelector('.theme-icon');
-  
-  body.classList.toggle('light-theme');
-  
-  if (body.classList.contains('light-theme')) {
-    themeIcon.textContent = '☀️';
-    localStorage.setItem('theme', 'light');
-  } else {
-    themeIcon.textContent = '🌙';
-    localStorage.setItem('theme', 'dark');
-  }
-}
 
-// Load saved theme
-function loadTheme() {
-  const savedTheme = localStorage.getItem('theme');
-  const body = document.body;
-  const themeIcon = document.querySelector('.theme-icon');
-  
-  if (savedTheme === 'light') {
-    body.classList.add('light-theme');
-    if (themeIcon) themeIcon.textContent = '☀️';
-  }
-}
 
 // Add some CSS for the glow effect
 const style = document.createElement('style');
@@ -269,17 +243,38 @@ style.textContent = `
   
   /* Light Theme */
   body.light-theme {
-    --bg-dark: #ffffff;
-    --bg-card: rgba(255, 255, 255, 0.8);
-    --text-light: #000000;
-    --text-muted: #666666;
+    --primary: #2563eb;
+    --secondary: #7c3aed;
+    --accent: #059669;
+    --bg-dark: #f8fafc;
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --text-light: #1e293b;
+    --text-muted: #64748b;
+    --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+    --glow: 0 0 20px rgba(37, 99, 235, 0.3);
   }
   
   body.light-theme .hero-bg {
-    background: linear-gradient(-45deg, #f0f0f0, #e0e0e0, #d0d0d0, #c0c0c0);
+    background: linear-gradient(-45deg, #f1f5f9, #e2e8f0, #cbd5e1, #94a3b8);
+  }
+  
+  body.light-theme .navbar {
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(37, 99, 235, 0.1);
+  }
+  
+  body.light-theme .skill-dropdown,
+  body.light-theme .achievement-card,
+  body.light-theme .project-card,
+  body.light-theme .timeline-item {
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.light-theme .project-card:hover::before,
+  body.light-theme .skill-dropdown:hover::before,
+  body.light-theme .timeline-item:hover::before {
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
   }
 `;
 document.head.appendChild(style);
-
-// Load theme on page load
-loadTheme();
