@@ -26,11 +26,74 @@ const copyDir = (src, dest) => {
 copyDir('./public', './dist');
 
 // Load data
-const skills = JSON.parse(fs.readFileSync('./data/skills.json'));
 const projects = JSON.parse(fs.readFileSync('./data/projects.json'));
 const timeline = JSON.parse(fs.readFileSync('./data/timeline.json'));
 
-// Create static HTML
+// Generate projects HTML
+const projectsHTML = projects.map(project => `
+  <div class="project-card">
+    <img src="${project.image.replace('/images/', './images/')}" alt="${project.title}">
+    <h3>${project.title}</h3>
+    <p>${project.description}</p>
+    <div class="project-tags">
+      ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+    </div>
+    <div class="project-links">
+      <a href="${project.github}" target="_blank">GitHub</a>
+      ${project.demo ? `<a href="${project.demo}" target="_blank">Demo</a>` : ''}
+    </div>
+  </div>
+`).join('');
+
+// Generate experience HTML
+const experienceHTML = timeline.filter(item => item.type === 'work').map(item => `
+  <div class="timeline-item ${item.type}">
+    <h3>${item.title}</h3>
+    <span class="timeline-org">${item.organization}</span>
+    <span class="timeline-period">${item.period}</span>
+    <p>${item.description}</p>
+  </div>
+`).join('');
+
+// Generate education HTML
+const educationHTML = timeline.filter(item => item.type === 'education').map(item => `
+  <div class="timeline-item ${item.type}">
+    <h3>${item.title}</h3>
+    <span class="timeline-org">${item.organization}</span>
+    <span class="timeline-period">${item.period}</span>
+    <p>${item.description}</p>
+  </div>
+`).join('');
+
+// Read and process index content
+let indexContent = fs.readFileSync('./views/index.ejs', 'utf8')
+  .replace(/\/resume\//g, './resume/')
+  .replace(/\/images\//g, './images/');
+
+// Replace EJS templates with generated HTML
+indexContent = indexContent.replace(
+  /<% projects\.forEach\(project => \{ %>[\s\S]*?<% \}\) %>/,
+  projectsHTML
+);
+
+indexContent = indexContent.replace(
+  /<% timeline\.filter\(item => item\.type === 'work'\)\.forEach\(item => \{ %>[\s\S]*?<% \}\) %>/,
+  experienceHTML
+);
+
+indexContent = indexContent.replace(
+  /<% timeline\.filter\(item => item\.type === 'education'\)\.forEach\(item => \{ %>[\s\S]*?<% \}\) %>/,
+  educationHTML
+);
+
+// Remove any remaining EJS tags
+indexContent = indexContent.replace(/<%[\s\S]*?%>/g, '');
+
+// Read navbar and footer
+const navbar = fs.readFileSync('./views/partials/navbar.ejs', 'utf8');
+const footer = fs.readFileSync('./views/partials/footer.ejs', 'utf8');
+
+// Create final HTML
 const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,57 +112,13 @@ const html = `<!DOCTYPE html>
   </div>
   <div class="scroll-indicator"></div>
   
-  ${fs.readFileSync('./views/partials/navbar.ejs', 'utf8')}
+  ${navbar}
   
   <main>
-    ${fs.readFileSync('./views/index.ejs', 'utf8')
-      .replace(/\/resume\//g, './resume/')
-      .replace(/\/images\//g, './images/')
-      .replace(/<% timeline\.filter\([^%]*%>[\s\S]*?<% \}\) %>/g, (match) => {
-        if (match.includes("'work'")) {
-          return timeline.filter(item => item.type === 'work').map(item => `
-            <div class="timeline-item ${item.type}">
-              <h3>${item.title}</h3>
-              <span class="timeline-org">${item.organization}</span>
-              <span class="timeline-period">${item.period}</span>
-              <p>${item.description}</p>
-            </div>
-          `).join('');
-        }
-        if (match.includes("'education'")) {
-          return timeline.filter(item => item.type === 'education').map(item => `
-            <div class="timeline-item ${item.type}">
-              <h3>${item.title}</h3>
-              <span class="timeline-org">${item.organization}</span>
-              <span class="timeline-period">${item.period}</span>
-              <p>${item.description}</p>
-            </div>
-          `).join('');
-        }
-        return '';
-      })
-      .replace(/<% projects\.forEach\([^%]*%>[\s\S]*?<% \}\) %>/g, () => {
-        return projects.map(project => `
-          <div class="project-card">
-            <img src="${project.image.replace('/images/', './images/')}" alt="${project.title}">
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <div class="project-tags">
-              ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-            </div>
-            <div class="project-links">
-              <a href="${project.github}" target="_blank">GitHub</a>
-              ${project.demo ? `<a href="${project.demo}" target="_blank">Demo</a>` : ''}
-            </div>
-          </div>
-        `).join('');
-      })
-      .replace(/<%[\s\S]*?%>/g, '')
-      .replace(/<div class="project-links">\s*<a href="" target="_blank">GitHub<\/a>\s*<a href="" target="_blank">Demo<\/a>\s*<\/div>/g, '')
-      .replace(/<div class="project-card">\s*<img src="" alt="">\s*<h3><\/h3>\s*<p><\/p>\s*<div class="project-tags">\s*<\/div>\s*<\/div>/g, '')}
+    ${indexContent}
   </main>
   
-  ${fs.readFileSync('./views/partials/footer.ejs', 'utf8')}
+  ${footer}
   
   <script src="./js/main.js"></script>
 </body>

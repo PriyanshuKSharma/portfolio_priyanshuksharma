@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern portfolio showcasing full-stack development skills">
+  <title>Home | Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+  <div class="scroll-indicator"></div>
+  
+  <nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="#hero">Priyanshu K Sharma's Portfolio</a>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="#hero" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about" class="nav-link">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a href="#skills" class="nav-link">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a href="#projects" class="nav-link">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="#experience" class="nav-link">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a href="#education" class="nav-link">Education</a>
+      </li>
+      <li class="nav-item">
+        <a href="#contact" class="nav-link">Contact Me</a>
+      </li>
+    </ul>
+    <button class="theme-toggle" onclick="toggleTheme()">
+      <span class="theme-icon">🌙</span>
+    </button>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>
+
+<style>
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--primary);
+}
+
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--primary);
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  font-size: 1.2rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background: var(--primary);
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(0, 255, 255, 0.1);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
+
+  // Active link highlighting
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const scrollPos = window.scrollY + 100;
+
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+      const link = document.querySelector(`.nav-link[href="#${id}"]`);
+
+      if (scrollPos >= top && scrollPos < top + height) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        if (link) link.classList.add('active');
+      }
+    });
+  });
+});
+
+// Theme toggle function
+function toggleTheme() {
+  const body = document.body;
+  const themeIcon = document.querySelector('.theme-icon');
+  
+  body.classList.toggle('light-theme');
+  
+  if (body.classList.contains('light-theme')) {
+    themeIcon.textContent = '☀️';
+    localStorage.setItem('theme', 'light');
+  } else {
+    themeIcon.textContent = '🌙';
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+// Load saved theme
+function loadTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  const body = document.body;
+  const themeIcon = document.querySelector('.theme-icon');
+  
+  if (savedTheme === 'light') {
+    body.classList.add('light-theme');
+    if (themeIcon) themeIcon.textContent = '☀️';
+  }
+}
+
+// Load theme immediately
+loadTheme();
+</script>
+  
+  <main>
+    <section id="hero" class="hero-section">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Priyanshu Kumar Sharma</h1>
+    <p class="hero-welcome">Welcome to my portfolio! Passionate about cloud technology, cybersecurity, and building innovative solutions.</p>
+    <h2 class="hero-role">Cloud & Security Engineer</h2>
+    <p class="hero-tagline"><span id="typewriter"></span></p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Work</a>
+      <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      <a href="./resume/Priyanshu_Kumar_Sharma_Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <div class="about-img">
+    <img src="./images/profile.jpg" alt="Profile" class="profile-pic">
+  </div>
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>B.Tech candidate in Information Technology specializing in Cloud Technology and Information Security. With expertise in cloud computing, cybersecurity, DevOps, and quantum computing, I have hands-on experience with AWS, Azure, Docker, Terraform, and security frameworks.</p>
+  </div>
+</section>
+
+<section id="skills" class="skills-section">
+  <h2>Technical Skills</h2>
+  
+  <div class="skills-dropdown-list">
+    <div class="skill-dropdown">
+      <div class="skill-header" onclick="toggleSkill(this)">
+        <span>Programming Languages</span>
+        <span class="dropdown-arrow">▼</span>
+      </div>
+      <div class="skill-content">
+        <div class="skill-item">
+          <span>Java</span>
+          <div class="progress"><div class="progress-inner" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Python</span>
+          <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
+        </div>
+        <!-- <div class="skill-item">
+          <span>Dart</span>
+          <div class="progress"><div class="progress-inner" style="width: 75%;"></div></div>
+        </div> -->
+        <div class="skill-item">
+          <span>SQL</span>
+          <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Shell Scripting</span>
+          <div class="progress"><div class="progress-inner" style="width: 70%;"></div></div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="skill-dropdown">
+      <div class="skill-header" onclick="toggleSkill(this)">
+        <span>Development</span>
+        <span class="dropdown-arrow">▼</span>
+      </div>
+      <div class="skill-content">
+        <div class="skill-item">
+          <span>HTML</span>
+          <div class="progress"><div class="progress-inner" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>CSS</span>
+          <div class="progress"><div class="progress-inner" style="width: 70%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>JavaScript</span>
+          <div class="progress"><div class="progress-inner" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Node.js</span>
+          <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Express</span>
+          <div class="progress"><div class="progress-inner" style="width: 75%;"></div></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="skill-dropdown">
+      <div class="skill-header" onclick="toggleSkill(this)">
+        <span>DevOps Tools</span>
+        <span class="dropdown-arrow">▼</span>
+      </div>
+      <div class="skill-content">
+        <div class="skill-item">
+          <span>Git/GitHub</span>
+          <div class="progress"><div class="progress-inner" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Docker</span>
+          <div class="progress"><div class="progress-inner" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Terraform</span>
+          <div class="progress"><div class="progress-inner" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>GitLab</span>
+          <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="skill-dropdown">
+      <div class="skill-header" onclick="toggleSkill(this)">
+        <span>CS Fundamentals</span>
+        <span class="dropdown-arrow">▼</span>
+      </div>
+      <div class="skill-content">
+        <div class="skill-item">
+          <span>DSA</span>
+          <div class="progress"><div class="progress-inner" style="width: 65%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>DBMS</span>
+          <div class="progress"><div class="progress-inner" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>OS</span>
+          <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="skill-dropdown">
+      <div class="skill-header" onclick="toggleSkill(this)">
+        <span>Course Activities</span>
+        <span class="dropdown-arrow">▼</span>
+      </div>
+      <div class="skill-content">
+        <div class="skill-item">
+          <span>Cloud Architecture Design</span>
+          <div class="progress"><div class="progress-inner" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Network Security Labs</span>
+          <div class="progress"><div class="progress-inner" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>DevOps Pipelines</span>
+          <div class="progress"><div class="progress-inner" style="width: 80%;"></div></div>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</section>
+
+<section id="awards" class="achievements-section">
+  <h2>Awards</h2>
+  <div class="achievement-grid">
+    <div class="achievement-card">
+      <h3>Creative Cloud Integration Award</h3>
+      <span class="achievement-org">Seamedu Awards 2025</span>
+    </div>
+    <div class="achievement-card">
+      <h3>School Rank: 3rd</h3>
+      <span class="achievement-org">SOF International Mathematics Olympiad (2019)</span>
+    </div>
+  </div>
+</section>
+
+<section id="hackathons" class="achievements-section">
+  <h2>Hackathons</h2>
+  <div class="achievement-grid">
+    <div class="achievement-card">
+      <h3>ADYPU Problem-A-Thon</h3>
+    </div>
+    <div class="achievement-card">
+      <h3>Sharda University Tech-a-thon</h3>
+    </div>
+    <div class="achievement-card">
+      <h3>Smart India Hackathon (Internal)</h3>
+    </div>
+    <div class="achievement-card">
+      <h3>NASA Space App Challenge (2023)</h3>
+    </div>
+    <div class="achievement-card">
+      <h3>UNESCO-MIL 2023</h3>
+    </div>
+    <div class="achievement-card">
+      <h3>Google Solution Challenge 2024</h3>
+    </div>
+    <div class="achievement-card">
+      <h3>Hackron - Newton School x ADYPU (2025)</h3>
+    </div>
+  </div>
+</section>
+
+<section id="certifications" class="achievements-section">
+  <h2>Certifications</h2>
+  <div class="achievement-grid">
+    <div class="achievement-card">
+      <h3>Fortinet Certified Fundamentals in Cybersecurity</h3>
+      <span class="achievement-org">Fortinet</span>
+    </div>
+    <div class="achievement-card">
+      <h3>Fortinet Certified Associate in Cybersecurity</h3>
+      <span class="achievement-org">Fortinet</span>
+    </div>
+    <div class="achievement-card">
+      <h3>Fundamentals of Cybersecurity (EDU-102)</h3>
+      <span class="achievement-org">Zscaler</span>
+    </div>
+    <div class="achievement-card">
+      <h3>Zero Trust Certified Associate (ZTCA)</h3>
+      <span class="achievement-org">Zscaler</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects-section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    
+  <div class="project-card">
+    <img src="./images/project1.jpg" alt="Storage SaaS Platform">
+    <h3>Storage SaaS Platform</h3>
+    <p>Built a Software-as-a-Service (SaaS) platform leveraging AI to provide automated business solutions with Next.js 14, Tailwind CSS, and Prisma.</p>
+    <div class="project-tags">
+      <span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">Prisma</span><span class="tag">Clerk</span><span class="tag">Cloudinary</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/PriyanshuKSharma/media-storage-saas.git" target="_blank">GitHub</a>
+      
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="./images/project2.jpg" alt="Quantum Cloud Integration">
+    <h3>Quantum Cloud Integration</h3>
+    <p>Developed a hybrid cloud-quantum system integrating cloud computing with quantum processing for enhanced computational efficiency using AWS and IBM Quantum.</p>
+    <div class="project-tags">
+      <span class="tag">AWS CLI</span><span class="tag">GCP</span><span class="tag">IBM Quantum</span><span class="tag">Docker</span><span class="tag">Python</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/PriyanshuKSharma/quantum-cloud-integration.git" target="_blank">GitHub</a>
+      
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="./images/project3.jpg" alt="SkyVault">
+    <h3>SkyVault</h3>
+    <p>Built a personal cloud storage system using Docker containers, providing secure file uploading, listing, and downloading functionalities with interactive UI.</p>
+    <div class="project-tags">
+      <span class="tag">Docker</span><span class="tag">Flask</span><span class="tag">Python</span><span class="tag">Bcrypt</span><span class="tag">HTML</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/PriyanshuKSharma/SkyVault.git" target="_blank">GitHub</a>
+      <a href="https://priyanshuksharma.github.io/SkyVault/" target="_blank">Demo</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="./images/project4.jpg" alt="Ecobizz E-commerce App">
+    <h3>Ecobizz E-commerce App</h3>
+    <p>Cross-platform mobile application built with Flutter SDK for sustainable products marketplace, running on both iOS and Android devices.</p>
+    <div class="project-tags">
+      <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase</span><span class="tag">Mobile</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024.git" target="_blank">GitHub</a>
+      
+    </div>
+  </div>
+
+        </div>
+        <div class="project-links">
+          <a href="" target="_blank">GitHub</a>
+          <a href="" target="_blank">Demo</a>
+        </div>
+      </div>
+    
+  </div>
+</section>
+
+<section id="experience" class="timeline-section">
+  <h2>Experience</h2>
+  <div class="timeline">
+    
+  <div class="timeline-item work">
+    <h3>Web Dev Intern</h3>
+    <span class="timeline-org">Marquardt India Pvt. Ltd., Pune</span>
+    <span class="timeline-period">June 2025 - Present</span>
+    <p>Contributing to frontend development, UI/UX enhancements, and full-stack feature implementation using HTML5, CSS3, JavaScript, EJS templates, MySQL, and Express.js.</p>
+  </div>
+
+  <div class="timeline-item work">
+    <h3>IT Intern - Placement Coordinator</h3>
+    <span class="timeline-org">Seamless Education and Services (Seamedu) Pvt. Ltd., Pune</span>
+    <span class="timeline-period">March 2025 - June 2025</span>
+    <p>Coordinated end-to-end placement activities, managed candidate databases, and supported IT solutions integration into placement processes.</p>
+  </div>
+
+  <div class="timeline-item work">
+    <h3>Cloud Research Intern</h3>
+    <span class="timeline-org">Indian Institute of Technology Ropar, Punjab</span>
+    <span class="timeline-period">May 2024 - July 2024</span>
+    <p>Engaged in advanced research on distributed computing and serverless architectures. Implemented XFBench and XFaaS frameworks for Function-as-a-Service environments.</p>
+  </div>
+
+  </div>
+</section>
+
+<section id="education" class="timeline-section">
+  <h2>Education</h2>
+  <div class="timeline">
+    
+  <div class="timeline-item education">
+    <h3>Bachelor of Technology in Information Technology</h3>
+    <span class="timeline-org">Ajeenkya D Y Patil University, Pune</span>
+    <span class="timeline-period">August 2022 - Present</span>
+    <p>Specializing in Cloud Technology and Information Security. Current CGPA: 9.9. Active in hackathons and cybersecurity clubs.</p>
+  </div>
+
+  <div class="timeline-item education">
+    <h3>Intermediate Education</h3>
+    <span class="timeline-org">Sri Chaitanya Jr. Kalasala, Hyderabad</span>
+    <span class="timeline-period">April 2020 - May 2022</span>
+    <p>Completed intermediate education with 93.9% grade, focusing on science and mathematics.</p>
+  </div>
+
+  <div class="timeline-item education">
+    <h3>Higher Secondary Education</h3>
+    <span class="timeline-org">Sri Chaitanya High School, Hyderabad</span>
+    <span class="timeline-period">April 2019 - May 2020</span>
+    <p>Completed higher secondary education with 87.6% grade.</p>
+  </div>
+
+  </div>
+</section>
+
+
+
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+  <form id="contact-form">
+    <input type="text" name="from_name" placeholder="Your Name" required>
+    <input type="email" name="from_email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/" class="social-icon" target="_blank">LinkedIn</a>
+    <a href="https://github.com/PriyanshuKSharma" class="social-icon" target="_blank">GitHub</a>
+    <a href="https://hub.docker.com/repositories/priyanshuksharma" class="social-icon" target="_blank">DockerHub</a>
+  </div>
+</section>
+
+  </main>
+  
+  <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Priyanshu Kumar Sharma. Built with passion and code.</p>
+    <div class="footer-links">
+      <a href="#hero">Back to Top</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+.footer {
+  background: var(--bg-dark);
+  border-top: 1px solid rgba(0, 255, 255, 0.1);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-content p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--primary);
+}
+</style>
+  
+  <script src="./js/main.js"></script>
+</body>
+</html>
