@@ -10,7 +10,7 @@
 
 **🌟 I am a B.Tech candidate in Information Technology specializing in Cloud Technology and Information Security. With expertise in cloud computing, cybersecurity, DevOps, and quantum computing, I have hands-on experience with AWS, Azure, Docker, Terraform, and security frameworks. Through research, internships, and open-source contributions, I have worked on secure cloud architectures, serverless computing, and advanced security implementations. 🌟**
 
-[🔗 Live Demo](#) | [📖 Documentation](#features) | [🚀 Quick Start](#installation)
+[🔗 Live Demo](https://priyanshuksharma.github.io/portfolio_priyanshuksharma/) | [📖 Documentation](#features) | [🚀 Quick Start](#installation)
 
 </div>
 
@@ -249,7 +249,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Priyanshu Kumar Sharma** - B.Tech IT Student specializing in Cloud Technology & Information Security
 
-- 🌐 **Portfolio**: [Live Demo](#)
+- 🌐 **Portfolio**: [Live Demo](https://priyanshuksharma.github.io/portfolio_priyanshuksharma/)
 - 💼 **LinkedIn**: [Priyanshu Kumar Sharma](https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/)
 - 🐙 **GitHub**: [@PriyanshuKSharma](https://github.com/PriyanshuKSharma)
 - 🐳 **DockerHub**: [@priyanshuksharma](https://hub.docker.com/u/priyanshuksharma)
