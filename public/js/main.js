@@ -221,6 +221,12 @@ function toggleSkill(header) {
   dropdown.classList.toggle('active');
 }
 
+// Social sidebar toggle function
+function toggleSocialSidebar() {
+  const sidebar = document.getElementById('socialSidebar');
+  sidebar.classList.toggle('collapsed');
+}
+
 
 
 // GitHub Activity with real contribution graph
@@ -255,22 +261,31 @@ async function fetchGitHubActivity() {
       '💎 Galaxy Brain'
     ];
     
-    // Display GitHub stats with achievements
+    // Display achievements only
     document.getElementById('contribution-calendar').innerHTML = `
-      <div class="contribution-stats">
-        <p>📊 ${userData.public_repos} repositories</p>
-        <p>🔥 ${userData.followers} followers</p>
-        <p>✨ Since ${new Date(userData.created_at).getFullYear()}</p>
-        <p>📍 Pune, India</p>
-        <p>🕰️ ${istTime} IST</p>
-        <p>🏫 Ajeenkya D Y Patil University</p>
-        <div class="github-achievements">
-          <h5>🏅 Achievements</h5>
-          <div class="achievement-images">
-            <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" alt="Pair Extraordinaire" title="Pair Extraordinaire - Coauthored commits">
-            <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" alt="Pull Shark x2" title="Pull Shark x2 - Merged pull requests">
-            <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" alt="Quickdraw" title="Quickdraw - Closed within 5 minutes">
-            <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" alt="YOLO" title="YOLO - Merged without review">
+      <div class="github-achievements">
+        <h5><img src="https://img.icons8.com/color/20/github.png" width="20" height="20"> GitHub Achievements</h5>
+        <div class="achievement-images">
+          <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" alt="Pair Extraordinaire" title="Pair Extraordinaire - Coauthored commits">
+          <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" alt="Pull Shark x2" title="Pull Shark x2 - Merged pull requests">
+          <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" alt="Quickdraw" title="Quickdraw - Closed within 5 minutes">
+          <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" alt="YOLO" title="YOLO - Merged without review">
+        </div>
+      </div>
+      <div class="hackerrank-achievements">
+        <h5><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/20/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-color-tal-revivo.png" width="20" height="20"> HackerRank Badges</h5>
+        <div class="hr-badges-container">
+          <div class="hr-badge-item">
+            <img src="https://hrcdn.net/fcore/assets/badges/python-f70befd824.svg" alt="Python 5 Star">
+            <span class="badge-label">Python 2⭐</span>
+          </div>
+          <div class="hr-badge-item">
+            <img src="https://hrcdn.net/fcore/assets/badges/sql-89e76e7082.svg" alt="SQL 1 Star">
+            <span class="badge-label">SQL 1⭐</span>
+          </div>
+          <div class="hr-badge-item">
+            <img src="https://hrcdn.net/fcore/assets/badges/problem-solving-ecaf59a612.svg" alt="Problem Solving">
+            <span class="badge-label">Problem Solving 2⭐</span>
           </div>
         </div>
       </div>
