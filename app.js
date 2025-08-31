@@ -8,7 +8,7 @@ const expressLayouts = require('express-ejs-layouts');
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(express.static(path.join(__dirname, 'public')));
