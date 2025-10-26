@@ -167,6 +167,55 @@ body {
   transform: translateY(-3px);
 }
 
+/* Resume Dropdown */
+.resume-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resume-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.resume-dropdown.active .resume-options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.resume-options a {
+  display: block;
+  padding: 0.8rem 1rem;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin: 0.3rem;
+}
+
+.resume-options a:hover {
+  background: rgba(0, 255, 255, 0.1);
+  color: var(--primary);
+}
+
 /* Sections */
 section {
   padding: 5rem 2rem;
@@ -283,6 +332,15 @@ section {
 .dropdown-arrow {
   transition: transform 0.3s ease;
   color: var(--accent);
+}
+
+.resume-dropdown .dropdown-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.resume-dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
 }
 
 .skill-dropdown.active .dropdown-arrow {
