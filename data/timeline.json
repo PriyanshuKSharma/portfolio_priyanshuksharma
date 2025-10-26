@@ -24,21 +24,21 @@
     "title": "Bachelor of Technology in Information Technology",
     "organization": "Ajeenkya D Y Patil University, Pune",
     "period": "August 2022 - Present",
-    "description": "Specializing in Cloud Technology and Information Security. Current CGPA: 9.9. Active in hackathons and cybersecurity clubs.",
+    "description": "Specializing in Cloud Technology and Information Security. Current CGPA: <span class=\"highlight\">9.9</span>. Active in hackathons and cybersecurity clubs.",
     "type": "education"
   },
   {
     "title": "Intermediate Education",
     "organization": "Sri Chaitanya Jr. Kalasala, Hyderabad",
     "period": "April 2020 - May 2022",
-    "description": "Completed intermediate education with 93.9% grade, focusing on science and mathematics.",
+    "description": "Completed intermediate education with <span class=\"highlight\">93.9%</span> grade, focusing on science and mathematics.",
     "type": "education"
   },
   {
     "title": "Higher Secondary Education",
     "organization": "Sri Chaitanya High School, Hyderabad",
     "period": "April 2019 - May 2020",
-    "description": "Completed higher secondary education with 87.6% grade.",
+    "description": "Completed higher secondary education with <span class=\"highlight\">87.6%</span> grade.",
     "type": "education"
   }
 ]
