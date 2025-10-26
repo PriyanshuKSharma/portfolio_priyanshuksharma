@@ -14,8 +14,6 @@
     <div class="hero-roles">
       <span class="role-text">Cloud Technology and Information Security</span>
     </div>
-    <p class="hero-description">Building next-generation cloud infrastructures with enterprise-grade security. Passionate about transforming complex challenges into elegant, scalable solutions.</p>
-
     <p class="hero-tagline">Specializing in <span id="typewriter"></span></p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary glow-effect">
@@ -74,7 +72,24 @@
         <div class="section-line"></div>
       </div>
       <div class="about-content">
-        <p class="intro-text">Passionate <span class="highlight">Cloud Technology</span> and <span class="highlight">Information Security</span> specialist pursuing B.Tech in Information Technology.</p>
+        <div class="intro-points">
+          <div class="intro-point">
+            <div class="point-icon">🎓</div>
+            <div class="point-text"><span class="highlight">B.Tech candidate</span> in Information Technology specializing in <span class="highlight">Cloud Technology</span> and <span class="highlight">Information Security</span></div>
+          </div>
+          <div class="intro-point">
+            <div class="point-icon">⚡</div>
+            <div class="point-text">Expertise in <span class="highlight">cloud computing</span>, <span class="highlight">cybersecurity</span>, <span class="highlight">DevOps</span>, and <span class="highlight">quantum computing</span></div>
+          </div>
+          <div class="intro-point">
+            <div class="point-icon">🛠️</div>
+            <div class="point-text">Hands-on experience with <span class="highlight">AWS</span>, <span class="highlight">Azure</span>, <span class="highlight">Docker</span>, <span class="highlight">Terraform</span>, and <span class="highlight">security frameworks</span></div>
+          </div>
+          <div class="intro-point">
+            <div class="point-icon">🚀</div>
+            <div class="point-text">Worked on <span class="highlight">secure cloud architectures</span>, <span class="highlight">serverless computing</span>, and <span class="highlight">advanced security implementations</span></div>
+          </div>
+        </div>
         
         <div class="expertise-grid">
           <div class="expertise-item">
@@ -147,7 +162,7 @@
         <h3><%= item.title %></h3>
         <span class="timeline-org"><%= item.organization %></span>
         <span class="timeline-period"><%= item.period %></span>
-        <p><%= item.description %></p>
+        <p><%- item.description %></p>
       </div>
     <% }) %>
   </div>
@@ -161,7 +176,7 @@
         <h3><%= item.title %></h3>
         <span class="timeline-org"><%= item.organization %></span>
         <span class="timeline-period"><%= item.period %></span>
-        <p><%= item.description %></p>
+        <p><%- item.description %></p>
       </div>
     <% }) %>
   </div>
