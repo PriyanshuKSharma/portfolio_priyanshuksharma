@@ -227,6 +227,20 @@ function toggleSocialSidebar() {
   sidebar.classList.toggle('collapsed');
 }
 
+// Resume dropdown toggle function
+function toggleResumeDropdown() {
+  const dropdown = document.querySelector('.resume-dropdown');
+  dropdown.classList.toggle('active');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+  const dropdown = document.querySelector('.resume-dropdown');
+  if (dropdown && !dropdown.contains(event.target)) {
+    dropdown.classList.remove('active');
+  }
+});
+
 
 
 // GitHub Activity with real contribution graph
