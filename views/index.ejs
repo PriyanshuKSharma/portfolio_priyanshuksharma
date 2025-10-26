@@ -1,13 +1,26 @@
 <section id="hero" class="hero-section">
   <div class="hero-bg"></div>
+  <div class="hero-particles"></div>
   <div class="hero-content">
-    <h1 class="hero-title">Priyanshu Kumar Sharma</h1>
-    <p class="hero-welcome">Welcome to my portfolio! Passionate about cloud technology, cybersecurity, and building innovative solutions.</p>
-    <h2 class="hero-role">Student @ ADYPU</h2>
-    <p class="hero-tagline"><span id="typewriter"></span></p>
+
+    <h1 class="hero-title">
+      <span class="title-line">Priyanshu Kumar</span>
+      <span class="title-line gradient-text">Sharma</span>
+    </h1>
+    <div class="hero-roles">
+      <span class="role-text">Cloud Technology and Information Security</span>
+    </div>
+    <p class="hero-description">Building next-generation cloud infrastructures with enterprise-grade security. Passionate about transforming complex challenges into elegant, scalable solutions.</p>
+
+    <p class="hero-tagline">Specializing in <span id="typewriter"></span></p>
     <div class="hero-cta">
-      <a href="#projects" class="btn btn-primary">View Work</a>
-      <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      <a href="#projects" class="btn btn-primary glow-effect">
+        <span>Explore My Work</span>
+        <div class="btn-glow"></div>
+      </a>
+      <a href="#contact" class="btn btn-secondary">
+        <span>Let's Connect</span>
+      </a>
       <div class="resume-dropdown">
         <button class="btn btn-secondary resume-btn" onclick="toggleResumeDropdown()">
           Resume <span class="dropdown-arrow">▼</span>
@@ -22,20 +35,101 @@
 </section>
 
 <section id="about" class="about-section">
-  <div class="about-img">
-    <img src="/images/profile.jpg" alt="Profile" class="profile-pic">
-  </div>
-  <div class="about-text">
-    <h2>About Me</h2>
-    <p>B.Tech candidate in Information Technology specializing in Cloud Technology and Information Security. With expertise in cloud computing, cybersecurity, DevOps, and quantum computing, I have hands-on experience with AWS, Azure, Docker, Terraform, and security frameworks.</p>
-    <div class="contact-info">
-      <div class="contact-item">
-        <span class="contact-icon">📧</span>
-        <a href="mailto:priyanshu17ks@gmail.com">priyanshu17ks@gmail.com</a>
+  <div class="about-container">
+    <div class="about-img">
+      <div class="profile-wrapper">
+        <img src="/images/profile-1.jpg" alt="Profile" class="profile-pic">
+        <div class="profile-glow"></div>
+        <div class="profile-border"></div>
       </div>
-      <div class="contact-item">
-        <span class="contact-icon">📱</span>
-        <a href="tel:+919876543210">+91 93923 81422</a>
+      <div class="tech-icons">
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="48" alt="Java"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="48" alt="Python"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="48" alt="JavaScript"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="48" alt="Shell"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="48" alt="HTML"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="48" alt="CSS"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="48" alt="Node.js"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="48" alt="Express"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="48" alt="Git"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="48" alt="Docker"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="48" alt="Terraform"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="48" alt="Jenkins"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="48" alt="MySQL"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="48" alt="Redis"></div>
+        <div class="tech-icon"><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="48" alt="Azure"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="48" alt="GCP"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="48" alt="Dart"></div>
+        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="48" alt="Flutter"></div>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-header">
+        <h2 class="quantum-text">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <p class="intro-text">Passionate <span class="highlight">Cloud Technology</span> and <span class="highlight">Information Security</span> specialist pursuing B.Tech in Information Technology.</p>
+        
+        <div class="expertise-grid">
+          <div class="expertise-item">
+            <div class="expertise-icon">🌐</div>
+            <h4>Cloud Computing</h4>
+            <p>AWS, Azure, GCP architecture and deployment</p>
+          </div>
+          <div class="expertise-item">
+            <div class="expertise-icon">🛡️</div>
+            <h4>Cybersecurity</h4>
+            <p>Security frameworks and threat analysis</p>
+          </div>
+          <div class="expertise-item">
+            <div class="expertise-icon">⚙️</div>
+            <h4>DevOps</h4>
+            <p>Docker, Terraform, CI/CD pipelines</p>
+          </div>
+          <div class="expertise-item">
+            <div class="expertise-icon">🔬</div>
+            <h4>Quantum Computing</h4>
+            <p>Next-gen computing research and development</p>
+          </div>
+        </div>
+        
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <div class="metric-number">50+</div>
+            <div class="metric-label">GitHub Repository</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">8+</div>
+            <div class="metric-label">Participated</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">5+</div>
+            <div class="metric-label">Certifications</div>
+          </div>
+        </div>
+        
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon-wrapper">
+              <span class="contact-icon">✉️</span>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">Email</span>
+              <a href="mailto:priyanshu17ks@gmail.com">priyanshu17ks@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrapper">
+              <span class="contact-icon">📞</span>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+919392381422">+91 93923 81422</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
