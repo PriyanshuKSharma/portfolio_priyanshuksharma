@@ -472,6 +472,7 @@ section {
   gap: 0.6rem;
   margin-top: 1rem;
   max-width: 300px;
+  padding-bottom: 2rem;
 }
 
 .tech-icon {
@@ -485,6 +486,8 @@ section {
   justify-content: center;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+  position: relative;
+  cursor: pointer;
 }
 
 .tech-icon img {
@@ -496,6 +499,33 @@ section {
   border-color: var(--primary);
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+}
+
+.tech-icon::after {
+  content: attr(data-tech);
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-dark);
+  color: var(--primary);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary);
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+  z-index: 10;
+}
+
+.tech-icon:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-5px);
 }
 
 .section-header {
