@@ -1,6 +1,7 @@
 class RecruitmentChatbot {
     constructor() {
         this.isOpen = false;
+        this.isExpanded = false;
         this.chatData = null;
         this.init();
     }
@@ -30,7 +31,10 @@ class RecruitmentChatbot {
             <div id="chatbot-container" class="chatbot-container">
                 <div class="chatbot-header">
                     <h4>💼 Recruitment Assistant</h4>
-                    <button id="chatbot-close">&times;</button>
+                    <div class="chatbot-controls">
+                        <button id="chatbot-expand" title="Expand/Collapse">⛶</button>
+                        <button id="chatbot-close" title="Close">&times;</button>
+                    </div>
                 </div>
                 <div class="chatbot-messages" id="chatbot-messages">
                     <div class="bot-message">
@@ -58,6 +62,7 @@ class RecruitmentChatbot {
     bindEvents() {
         document.getElementById('chatbot-toggle').addEventListener('click', () => this.toggleChat());
         document.getElementById('chatbot-close').addEventListener('click', () => this.toggleChat());
+        document.getElementById('chatbot-expand').addEventListener('click', () => this.toggleExpand());
         document.getElementById('chatbot-send').addEventListener('click', () => this.sendMessage());
         document.getElementById('chatbot-input').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') this.sendMessage();
@@ -82,6 +87,24 @@ class RecruitmentChatbot {
         } else {
             container.style.display = 'none';
             toggle.style.display = 'flex';
+            this.isExpanded = false;
+            container.classList.remove('expanded');
+        }
+    }
+
+    toggleExpand() {
+        this.isExpanded = !this.isExpanded;
+        const container = document.getElementById('chatbot-container');
+        const expandBtn = document.getElementById('chatbot-expand');
+        
+        if (this.isExpanded) {
+            container.classList.add('expanded');
+            expandBtn.innerHTML = '⛷';
+            expandBtn.title = 'Collapse';
+        } else {
+            container.classList.remove('expanded');
+            expandBtn.innerHTML = '⛶';
+            expandBtn.title = 'Expand';
         }
     }
 
