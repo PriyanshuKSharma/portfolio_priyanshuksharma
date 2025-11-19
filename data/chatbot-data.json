@@ -1,0 +1,279 @@
+{
+  "personalInfo": {
+    "name": "Priyanshu Kumar Sharma",
+    "role": "B.Tech IT Student & Cloud Security Specialist",
+    "specialization": "Cloud Technology & Information Security",
+    "university": "Ajeenkya D Y Patil University, Pune",
+    "cgpa": "9.9/10",
+    "location": "Pune, Maharashtra, India",
+    "graduationYear": "2026",
+    "careerObjective": "Aspiring Cloud Security Engineer with expertise in distributed systems, serverless architectures, and cybersecurity frameworks"
+  },
+  "technicalSkills": {
+    "programmingLanguages": {
+      "proficient": ["Python", "JavaScript", "Java", "C++"],
+      "familiar": ["Go", "Rust", "Shell Scripting", "SQL", "NoSQL"],
+      "details": "Strong foundation in object-oriented programming, data structures, algorithms, and system design patterns"
+    },
+    "cloudPlatforms": {
+      "aws": [
+        "EC2",
+        "S3",
+        "Lambda",
+        "CloudFormation",
+        "IAM",
+        "VPC",
+        "RDS",
+        "DynamoDB"
+      ],
+      "azure": [
+        "Virtual Machines",
+        "Blob Storage",
+        "Functions",
+        "Resource Manager",
+        "Active Directory"
+      ],
+      "gcp": ["Compute Engine", "Cloud Storage", "Cloud Functions"],
+      "details": "Hands-on experience with multi-cloud deployments, serverless architectures, and infrastructure as code"
+    },
+    "containerization": {
+      "docker": "Advanced proficiency in containerization, multi-stage builds, and optimization",
+      "kubernetes": "Container orchestration, service mesh, and cluster management",
+      "details": "Experience with microservices architecture and container security best practices"
+    },
+    "security": {
+      "cybersecurity": [
+        "Vulnerability Assessment",
+        "Penetration Testing",
+        "Security Auditing"
+      ],
+      "informationSecurity": [
+        "SAST",
+        "DAST",
+        "Security Frameworks",
+        "Compliance"
+      ],
+      "cloudSecurity": [
+        "IAM",
+        "Network Security",
+        "Data Encryption",
+        "Security Monitoring"
+      ],
+      "details": "Specialized in cloud security posture management and zero-trust architecture implementation"
+    },
+    "webDevelopment": {
+      "frontend": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6+",
+        "Responsive Design",
+        "UI/UX"
+      ],
+      "backend": ["Node.js", "Express.js", "RESTful APIs", "GraphQL"],
+      "databases": ["MySQL", "PostgreSQL", "MongoDB", "Redis"],
+      "details": "Full-stack development with modern frameworks and database optimization"
+    },
+    "devopsTools": {
+      "cicd": ["Jenkins", "GitHub Actions", "GitLab CI"],
+      "infrastructure": ["Terraform", "Ansible", "CloudFormation"],
+      "monitoring": ["Prometheus", "Grafana", "ELK Stack"],
+      "details": "End-to-end DevOps pipeline implementation with automated testing and deployment"
+    }
+  },
+  "workExperience": [
+    {
+      "role": "Web Development Intern",
+      "company": "Marquardt India Pvt. Ltd., Pune",
+      "duration": "June 2025 - September 2025",
+      "type": "Full-time Internship",
+      "responsibilities": [
+        "Developed responsive web applications using HTML5, CSS3, and JavaScript",
+        "Implemented full-stack features with Node.js, Express.js, and MySQL",
+        "Enhanced UI/UX design and user experience optimization",
+        "Collaborated with cross-functional teams on agile development processes",
+        "Optimized application performance and implemented security best practices"
+      ],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "EJS"
+      ],
+      "achievements": [
+        "Improved application load time by 40%",
+        "Successfully delivered 3 major feature implementations",
+        "Received excellent feedback for code quality and documentation"
+      ]
+    },
+    {
+      "role": "IT Intern - Placement Coordinator",
+      "company": "Seamless Education and Services (Seamedu) Pvt. Ltd., Pune",
+      "duration": "March 2025 - June 2025",
+      "type": "Part-time Internship",
+      "responsibilities": [
+        "Coordinated end-to-end placement activities for 200+ students",
+        "Managed comprehensive candidate databases and tracking systems",
+        "Integrated IT solutions into placement processes for efficiency",
+        "Facilitated communication between students, companies, and faculty",
+        "Developed automated reporting systems for placement statistics"
+      ],
+      "technologies": [
+        "Database Management",
+        "Excel",
+        "CRM Systems",
+        "Process Automation"
+      ],
+      "achievements": [
+        "Increased placement efficiency by 35%",
+        "Successfully coordinated 50+ company visits",
+        "Implemented digital tracking system reducing manual work by 60%"
+      ]
+    },
+    {
+      "role": "Cloud Research Intern",
+      "company": "Indian Institute of Technology Ropar, Punjab",
+      "duration": "May 2024 - July 2024",
+      "type": "Research Internship",
+      "responsibilities": [
+        "Conducted advanced research on distributed computing systems",
+        "Implemented XFBench framework for Function-as-a-Service performance evaluation",
+        "Developed XFaaS serverless computing optimization algorithms",
+        "Published research findings on serverless architecture efficiency",
+        "Collaborated with PhD researchers on cutting-edge cloud technologies"
+      ],
+      "technologies": [
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "AWS Lambda",
+        "Serverless Framework"
+      ],
+      "achievements": [
+        "Contributed to 2 research papers on serverless computing",
+        "Improved FaaS performance benchmarking by 25%",
+        "Presented findings at internal research symposium"
+      ]
+    }
+  ],
+  "education": {
+    "current": {
+      "degree": "Bachelor of Technology in Information Technology",
+      "university": "Ajeenkya D Y Patil University, Pune",
+      "duration": "August 2022 - Present (Expected: 2026)",
+      "cgpa": "9.9/10",
+      "specialization": "Cloud Technology and Information Security",
+      "relevantCoursework": [
+        "Cloud Computing Architecture",
+        "Information Security Management",
+        "Distributed Systems",
+        "Database Management Systems",
+        "Software Engineering",
+        "Computer Networks",
+        "Operating Systems",
+        "Data Structures and Algorithms"
+      ],
+      "activities": [
+        "Active member of Cybersecurity Club",
+        "Participant in multiple hackathons and coding competitions",
+        "Technical lead in university tech fest",
+        "Mentor for junior students in cloud computing"
+      ]
+    },
+    "previous": [
+      {
+        "level": "Intermediate Education (12th Grade)",
+        "institution": "Sri Chaitanya Jr. Kalasala, Hyderabad",
+        "duration": "April 2020 - May 2022",
+        "percentage": "93.9%",
+        "stream": "Science (PCM - Physics, Chemistry, Mathematics)"
+      },
+      {
+        "level": "Higher Secondary Education (10th Grade)",
+        "institution": "Sri Chaitanya High School, Hyderabad",
+        "duration": "April 2019 - May 2020",
+        "percentage": "87.6%"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "Secure Cloud Architecture Implementation",
+      "description": "Designed and implemented a multi-tier secure cloud architecture with automated scaling and monitoring",
+      "technologies": ["AWS", "Terraform", "Docker", "Kubernetes", "Python"],
+      "features": [
+        "Auto-scaling",
+        "Load balancing",
+        "Security monitoring",
+        "Cost optimization"
+      ],
+      "impact": "Reduced infrastructure costs by 30% while improving security posture"
+    },
+    {
+      "name": "XFBench - Serverless Performance Benchmarking",
+      "description": "Developed a comprehensive benchmarking framework for Function-as-a-Service platforms",
+      "technologies": ["Python", "AWS Lambda", "Docker", "Prometheus"],
+      "features": [
+        "Performance metrics",
+        "Cost analysis",
+        "Scalability testing",
+        "Comparative analysis"
+      ],
+      "impact": "Adopted by IIT Ropar research team for ongoing serverless studies"
+    },
+    {
+      "name": "Modern Portfolio Website",
+      "description": "Built a responsive portfolio with advanced animations and cyberpunk theme",
+      "technologies": ["Node.js", "Express.js", "EJS", "CSS3", "JavaScript"],
+      "features": [
+        "Responsive design",
+        "Interactive animations",
+        "Contact form",
+        "SEO optimization"
+      ],
+      "impact": "Showcases technical skills and attracts potential employers"
+    },
+    {
+      "name": "Recruitment Chatbot",
+      "description": "AI-powered chatbot to help recruiters learn about candidate qualifications",
+      "technologies": ["JavaScript", "Node.js", "JSON", "CSS3"],
+      "features": [
+        "Natural language processing",
+        "Quick responses",
+        "Mobile responsive"
+      ],
+      "impact": "Streamlines initial screening process for recruiters"
+    }
+  ],
+  "certifications": [
+    "AWS Cloud Practitioner (In Progress)",
+    "Microsoft Azure Fundamentals (Planned)",
+    "Cybersecurity Fundamentals",
+    "Docker Certified Associate (Planned)"
+  ],
+  "achievements": [
+    "Maintained 9.9/10 CGPA throughout B.Tech program",
+    "Research internship at prestigious IIT Ropar",
+    "Active participant in 10+ hackathons",
+    "Technical mentor for 20+ junior students",
+    "Published research contributions in serverless computing",
+    "Winner of university-level coding competitions"
+  ],
+  "responses": {
+    "greeting": [
+      "Hello! I'm here to help you learn about Priyanshu Kumar Sharma - a talented B.Tech IT student specializing in Cloud Technology & Information Security. What would you like to know?",
+      "Hi there! I can provide detailed information about Priyanshu's technical skills, work experience, projects, and achievements. How can I assist you today?"
+    ],
+    "skills": "Priyanshu possesses comprehensive technical expertise across multiple domains: \n\n🔹 PROGRAMMING LANGUAGES: Advanced proficiency in Python (data structures, algorithms, automation), JavaScript (ES6+, async programming, DOM manipulation), Java (OOP, enterprise applications), and C++ (system programming, performance optimization). Also familiar with Go, Rust, and various scripting languages. \n\n🔹 CLOUD PLATFORMS: Extensive hands-on experience with AWS (EC2, S3, Lambda, CloudFormation, IAM, VPC, RDS, DynamoDB), Azure (Virtual Machines, Blob Storage, Functions, Resource Manager, Active Directory), and Google Cloud Platform (Compute Engine, Cloud Storage, Cloud Functions). Specializes in multi-cloud deployments and serverless architectures. \n\n🔹 CONTAINERIZATION & ORCHESTRATION: Expert-level Docker skills including multi-stage builds, container optimization, and security best practices. Kubernetes proficiency in container orchestration, service mesh implementation, and cluster management for microservices architecture. \n\n🔹 SECURITY EXPERTISE: Specialized in cybersecurity with focus on vulnerability assessment, penetration testing, security auditing, SAST/DAST implementation, and compliance frameworks. Cloud security expertise includes IAM management, network security, data encryption, and security monitoring. \n\n🔹 DEVOPS & INFRASTRUCTURE: Comprehensive DevOps pipeline implementation using Jenkins, GitHub Actions, GitLab CI for CI/CD. Infrastructure as Code with Terraform, Ansible, CloudFormation. Monitoring and observability with Prometheus, Grafana, and ELK Stack.",
+    "experience": "Priyanshu has gained invaluable industry experience through three distinct internships: \n\n🔹 WEB DEVELOPMENT INTERN at Marquardt India Pvt. Ltd., Pune (June 2025 - September 2025): Led full-stack development initiatives using HTML5, CSS3, JavaScript, Node.js, Express.js, and MySQL. Key achievements include improving application load time by 40%, successfully delivering 3 major feature implementations, and receiving excellent feedback for code quality and documentation. Responsibilities encompassed responsive web application development, UI/UX optimization, performance enhancement, and security implementation. \n\n🔹 IT INTERN - PLACEMENT COORDINATOR at Seamless Education and Services (March 2025 - June 2025): Coordinated comprehensive placement activities for 200+ students, managed candidate databases, and integrated IT solutions for process efficiency. Achieved 35% increase in placement efficiency, coordinated 50+ company visits, and implemented digital tracking systems reducing manual work by 60%. Developed automated reporting systems and facilitated seamless communication between stakeholders. \n\n🔹 CLOUD RESEARCH INTERN at Indian Institute of Technology Ropar (May 2024 - July 2024): Conducted cutting-edge research on distributed computing systems and serverless architectures. Implemented XFBench framework for Function-as-a-Service performance evaluation and developed XFaaS optimization algorithms. Contributed to 2 research papers, improved FaaS performance benchmarking by 25%, and presented findings at internal research symposium. Collaborated with PhD researchers on advanced cloud technologies.",
+    "education": "Priyanshu is currently pursuing Bachelor of Technology in Information Technology at Ajeenkya D Y Patil University, Pune (August 2022 - Present, Expected: 2026) with an exceptional CGPA of 9.9/10. \n\n🔹 SPECIALIZATION: Cloud Technology and Information Security - a cutting-edge program focusing on modern cloud architectures, cybersecurity frameworks, and distributed systems. \n\n🔹 RELEVANT COURSEWORK: Cloud Computing Architecture, Information Security Management, Distributed Systems, Database Management Systems, Software Engineering, Computer Networks, Operating Systems, Data Structures and Algorithms. \n\n🔹 ACADEMIC ACTIVITIES: Active member of Cybersecurity Club, participant in multiple hackathons and coding competitions, technical lead in university tech fest, and mentor for junior students in cloud computing. \n\n🔹 PREVIOUS EDUCATION: Completed Intermediate Education (12th Grade) at Sri Chaitanya Jr. Kalasala, Hyderabad with 93.9% in Science stream (PCM), and Higher Secondary Education (10th Grade) at Sri Chaitanya High School, Hyderabad with 87.6%. Consistent academic excellence throughout educational journey.",
+    "projects": "Priyanshu has developed several impactful projects demonstrating practical application of advanced technologies: \n\n🔹 SECURE CLOUD ARCHITECTURE IMPLEMENTATION: Designed and implemented a comprehensive multi-tier secure cloud architecture featuring automated scaling, load balancing, security monitoring, and cost optimization. Technologies used: AWS, Terraform, Docker, Kubernetes, Python. Impact: Reduced infrastructure costs by 30% while significantly improving security posture. \n\n🔹 XFBENCH - SERVERLESS PERFORMANCE BENCHMARKING: Developed an innovative benchmarking framework for Function-as-a-Service platforms including performance metrics analysis, cost analysis, scalability testing, and comparative analysis. Technologies: Python, AWS Lambda, Docker, Prometheus. Impact: Adopted by IIT Ropar research team for ongoing serverless computing studies. \n\n🔹 MODERN PORTFOLIO WEBSITE: Built a responsive, interactive portfolio featuring advanced animations, cyberpunk theme, responsive design, contact form integration, and SEO optimization. Technologies: Node.js, Express.js, EJS, CSS3, JavaScript. Impact: Effectively showcases technical skills and attracts potential employers. \n\n🔹 AI RECRUITMENT CHATBOT: Developed an intelligent chatbot system to help recruiters learn about candidate qualifications through natural language processing, quick response system, and mobile-responsive design. Technologies: JavaScript, Node.js, JSON, CSS3. Impact: Streamlines initial screening process for recruiters and enhances candidate presentation.",
+    "achievements": "Priyanshu has accomplished remarkable achievements across academic, research, and technical domains: \n\n🔹 ACADEMIC EXCELLENCE: Maintained an outstanding 9.9/10 CGPA throughout his B.Tech program, demonstrating consistent high performance and deep understanding of complex technical concepts. This exceptional academic record places him in the top 1% of his cohort. \n\n🔹 RESEARCH CONTRIBUTIONS: Secured a prestigious research internship at Indian Institute of Technology Ropar, one of India's premier technical institutions. Contributed to 2 research papers on serverless computing, improved FaaS performance benchmarking by 25%, and presented findings at internal research symposium. \n\n🔹 COMPETITIVE PROGRAMMING & HACKATHONS: Active participant in 10+ hackathons and coding competitions, demonstrating problem-solving skills under pressure and innovative thinking. Winner of multiple university-level coding competitions, showcasing algorithmic expertise and programming proficiency. \n\n🔹 LEADERSHIP & MENTORSHIP: Technical mentor for 20+ junior students in cloud computing, demonstrating leadership skills and knowledge sharing capabilities. Served as technical lead in university tech fest, coordinating technical events and managing teams. \n\n🔹 COMMUNITY INVOLVEMENT: Active member of Cybersecurity Club, contributing to security awareness and knowledge dissemination. Regular participant in tech community events, workshops, and seminars. \n\n🔹 PROFESSIONAL RECOGNITION: Received excellent feedback for code quality and documentation during internships. Successfully delivered multiple major feature implementations with measurable impact on performance and efficiency.",
+    "contact": "Priyanshu is actively seeking opportunities in cloud computing, cybersecurity, and full-stack development roles. You can reach him through his portfolio website, LinkedIn, or GitHub. He's particularly interested in positions involving cloud security, DevOps, and distributed systems.",
+    "strengths": "Priyanshu possesses exceptional strengths that make him an ideal candidate for technical roles: \n\n🔹 ANALYTICAL & PROBLEM-SOLVING SKILLS: Demonstrated ability to break down complex problems, analyze requirements, and develop innovative solutions. Research experience at IIT Ropar showcases advanced analytical thinking and systematic approach to problem-solving. \n\n🔹 CLOUD SECURITY EXPERTISE: Specialized knowledge in cloud security architecture, distributed systems, and cybersecurity frameworks. Hands-on experience with security monitoring, vulnerability assessment, and compliance implementation. \n\n🔹 ACADEMIC EXCELLENCE: Outstanding 9.9/10 CGPA demonstrates strong theoretical foundation, consistent performance, and ability to master complex technical concepts quickly. \n\n🔹 RESEARCH & DEVELOPMENT: Proven research capabilities through IIT Ropar internship, contributing to cutting-edge serverless computing research and framework development. \n\n🔹 LEADERSHIP & MENTORSHIP: Natural leadership abilities demonstrated through technical mentorship of 20+ students, tech fest coordination, and community involvement. \n\n🔹 ADAPTABILITY & LEARNING: Quick adaptation to new technologies and frameworks, evidenced by diverse internship experiences and successful project implementations across different domains.",
+    "interests": "Professional interests include cloud security architecture, serverless computing optimization, cybersecurity frameworks, DevOps automation, and emerging technologies like quantum computing. Passionate about contributing to open-source projects and research in distributed systems.",
+    "default": "I can provide detailed information about Priyanshu's technical skills, work experience, education (9.9 CGPA), projects, achievements, or career interests. What specific area would you like to explore?"
+  }
+}
