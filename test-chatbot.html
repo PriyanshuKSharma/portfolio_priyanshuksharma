@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Test</title>
+    <link rel="stylesheet" href="public/css/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: #0a0a0a; color: white; font-family: Arial; }
+        .test-container { padding: 20px; max-width: 800px; margin: 0 auto; }
+        .test-result { margin: 10px 0; padding: 10px; background: rgba(0,255,255,0.1); border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🤖 Chatbot Test Results</h1>
+        <div id="test-results"></div>
+        <button onclick="runTests()">Run Tests</button>
+    </div>
+
+    <script src="public/js/chatbot.js"></script>
+    <script>
+        function runTests() {
+            const testQueries = [
+                'skills',
+                'experience', 
+                'education',
+                'projects',
+                'contact',
+                'hello'
+            ];
+
+            const resultsDiv = document.getElementById('test-results');
+            resultsDiv.innerHTML = '';
+
+            // Create a test chatbot instance
+            const testBot = new RecruitmentChatbot();
+            
+            testQueries.forEach(query => {
+                const response = testBot.generateResponse(query);
+                const resultDiv = document.createElement('div');
+                resultDiv.className = 'test-result';
+                resultDiv.innerHTML = `<strong>Query:</strong> ${query}<br><strong>Response:</strong> ${response}`;
+                resultsDiv.appendChild(resultDiv);
+            });
+        }
+
+        // Auto-run tests when page loads
+        setTimeout(runTests, 1000);
+    </script>
+</body>
+</html>
