@@ -160,8 +160,8 @@ body {
 .gradient-text {
   background: var(--gradient);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-roles {
@@ -636,6 +636,7 @@ section {
 .highlight {
   background: var(--gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
 }
@@ -734,6 +735,7 @@ section {
   margin-bottom: 3rem;
   background: var(--gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -839,6 +841,7 @@ section {
   margin-bottom: 3rem;
   background: var(--gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -885,6 +888,7 @@ section {
   margin-bottom: 3rem;
   background: var(--gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1268,6 +1272,7 @@ section {
   margin-bottom: 3rem;
   background: var(--gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1286,6 +1291,7 @@ section {
   overflow: hidden;
   transition: all 0.3s ease;
   position: relative;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -1590,6 +1596,7 @@ section {
   margin-bottom: 3rem;
   background: var(--gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1717,6 +1724,7 @@ section {
   margin-bottom: clamp(1rem, 3vw, 2rem);
   background: var(--gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
@@ -1874,6 +1882,7 @@ section {
   margin-bottom: clamp(2rem, 4vw, 3rem);
   background: var(--gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
