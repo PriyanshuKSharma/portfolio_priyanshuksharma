@@ -37,14 +37,6 @@ ejs.renderFile('./views/layout.ejs', {
   timeline
 }, (err, html) => {
   if (err) throw err;
-  let content = html;
-  // Safer replacements that target attributes and point to public folder
-  content = content.replace(/href="\/css\//g, 'href="./public/css/');
-  content = content.replace(/src="\/js\//g, 'src="./public/js/');
-  content = content.replace(/src="\/images\//g, 'src="./public/images/');
-  content = content.replace(/href="\/resume\//g, 'href="./public/resume/');
-  content = content.replace(/href="\/images\//g, 'href="./public/images/');
-  
-  fs.writeFileSync('./index.html', content);
-  console.log('Build completed! index.html generated in root.');
+  fs.writeFileSync('./dist/index.html', html.replace(/\/css\//g, './css/').replace(/\/js\//g, './js/').replace(/\/images\//g, './images/').replace(/\/resume\//g, './resume/'));
+  console.log('Build completed!');
 });
