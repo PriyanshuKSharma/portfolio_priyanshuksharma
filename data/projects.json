@@ -1,21 +1,35 @@
 [
   {
     "title": "Storage SaaS Platform",
-    "description": "Built a Software-as-a-Service (SaaS) platform leveraging AI to provide automated business solutions with Next.js 14, Tailwind CSS, and Prisma.",
+    "description": "I built a Software-as-a-Service (SaaS) platform leveraging AI to provide automated business solutions for modern video management. The platform utilizes a robust tech stack, including Next.js 14 for the frontend framework, TypeScript and JavaScript for application logic, and Tailwind CSS for responsive styling. For secure user authentication, it integrates Clerk, while Prisma ORM with Neon DB (PostgreSQL) manages the database. Cloudinary is used for scalable video storage and optimized delivery, and the platform is deployed seamlessly on Vercel. AI is harnessed to automate business workflows and enhance video-related operations, creating an efficient, scalable, and user-friendly solution.",
     "image": "/images/project1.jpg",
     "tags": ["Next.js", "Tailwind CSS", "Prisma", "Clerk", "Cloudinary"],
     "github": "https://github.com/PriyanshuKSharma/media-storage-saas.git"
   },
   {
     "title": "Quantum Cloud Integration",
-    "description": "Developed a hybrid cloud-quantum system integrating cloud computing with quantum processing for enhanced computational efficiency using AWS and IBM Quantum.",
+    "description": "I developed a hybrid cloud-quantum system that seamlessly integrates classical cloud computing with quantum processing to achieve enhanced computational efficiency. The workflow enables interoperability between traditional cloud services and quantum systems, providing secure and scalable solutions. This hybrid architecture is implemented using AWS for cloud infrastructure, IBM Quantum for quantum resources, and Docker for containerization, ensuring flexible deployment and robust integration across platforms.",
     "image": "/images/project2.jpg",
     "tags": ["AWS CLI", "GCP", "IBM Quantum", "Docker", "Python"],
     "github": "https://github.com/PriyanshuKSharma/quantum-cloud-integration.git"
   },
   {
+    "title": "Rural Gyan Platform",
+    "description": "I developed a comprehensive full-stack educational management system featuring role-based dashboards, integrated AI-powered tools, and bilingual (English/Hindi) support. The platform offers streamlined admin, teacher, and student workflows, including live virtual classes, automated quiz grading, real-time analytics, AI-assisted tutoring, and activity monitoring. The tech stack includes React.js and Tailwind CSS for the frontend, Node.js, Express.js, and Socket.io for the backend, and MongoDB for data storage. Secure authentication is implemented using JWT, with AI functionalities powered by OpenAI API and TensorFlow.js. Translation is enabled via the Google Cloud Translate API, and the system is deployed using Docker and Nginx for scalability and reliability.",
+    "image": "/images/rural-gyan.png",
+    "tags": ["React.js", "Node.js", "MongoDB", "Socket.io", "OpenAI", "Docker"],
+    "github": "https://github.com/PriyanshuKSharma/rural-gyan-paltform"
+  },
+  {
+    "title": "XAI Interpret",
+    "description": "I developed XAI Interpret, a hands-on platform for model interpretability that implements state-of-the-art Explainable AI (XAI) techniques using SHAP and LIME. The project provides a complete machine learning pipeline, from data preprocessing and model training to real-time, interactive explanations for individual predictions. Supporting various ML algorithms, the system helps users understand both global and local model behavior, feature interactions, and produces rich visualizations for interpretability. Built for practical use, it’s compatible with Google Colab and supports cloud deployment on Vertex AI, featuring production-ready model persistence, scalable architecture, and comprehensive LaTeX documentation. This solution fosters transparency and trust in machine learning models, making it especially valuable for black-box medical diagnostics and other high-stakes domains.",
+    "image": "/images/xai.png",
+    "tags": ["Python", "SHAP", "LIME", "Machine Learning", "Vertex AI"],
+    "github": "https://github.com/PriyanshuKSharma/xai_explainaibility"
+  },
+  {
     "title": "SkyVault",
-    "description": "Built a personal cloud storage system using Docker containers, providing secure file uploading, listing, and downloading functionalities with interactive UI.",
+    "description": "I built a personal cloud storage system using Docker containers, featuring an interactive user interface for seamless file management. The platform supports file uploading, listing, and downloading functionalities, while Dockerized deployment ensures easy scalability. Secure authentication mechanisms and robust data storage practices safeguard user data, making the system both efficient and secure for personal cloud storage needs",
     "image": "/images/project3.jpg",
     "tags": ["Docker", "Flask", "Python", "Bcrypt", "HTML"],
     "github": "https://github.com/PriyanshuKSharma/SkyVault.git",
