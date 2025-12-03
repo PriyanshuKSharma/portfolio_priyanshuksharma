@@ -1,7 +1,7 @@
 .chatbot-toggle {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     width: 70px;
     height: 70px;
     background: rgba(10, 10, 10, 0.8);
@@ -38,7 +38,7 @@
 
 .chat-notification {
     position: absolute;
-    right: 70px;
+    left: 75px;
     background: rgba(0, 0, 0, 0.8);
     color: #00ffff;
     padding: 8px 12px;
@@ -51,7 +51,7 @@
 .chatbot-container {
     position: fixed;
     bottom: 100px;
-    right: 30px;
+    left: 30px;
     width: 380px;
     height: 600px;
     background: rgba(5, 5, 10, 0.85);
@@ -63,7 +63,7 @@
     backdrop-filter: blur(20px);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 243, 255, 0.1);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transform-origin: bottom right;
+    transform-origin: bottom left;
     overflow: hidden;
 }
 
@@ -71,7 +71,7 @@
     width: 500px;
     height: 650px;
     bottom: 10px;
-    right: 10px;
+    left: 10px;
 }
 
 .chatbot-header {
@@ -243,11 +243,11 @@
         width: 300px;
         height: 450px;
         bottom: 10px;
-        right: 10px;
+        left: 10px;
     }
     
     .chatbot-toggle {
         bottom: 10px;
-        right: 10px;
+        left: 10px;
     }
 }
