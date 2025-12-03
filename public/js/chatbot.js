@@ -37,7 +37,7 @@ class RecruitmentChatbot {
         const chatWidget = document.createElement('div');
         chatWidget.innerHTML = `
             <div id="chatbot-toggle" class="chatbot-toggle">
-                <i class="fas fa-robot"></i>
+                <i class="fa-solid fa-robot"></i>
                 <span class="chat-notification">Ask about Priyanshu!</span>
             </div>
             <div id="chatbot-container" class="chatbot-container">

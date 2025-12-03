@@ -23,6 +23,11 @@
 .chatbot-toggle i {
     font-size: 24px;
     color: white;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
 }
 
 .chat-notification {
