@@ -24,8 +24,8 @@
 }
 
 .chatbot-icon-img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     filter: drop-shadow(0 0 5px rgba(0, 243, 255, 0.5));
     transition: all 0.3s ease;
