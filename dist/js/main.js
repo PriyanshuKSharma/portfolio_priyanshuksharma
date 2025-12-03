@@ -167,10 +167,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const txtElement = document.querySelector('#typewriter');
   if (txtElement) {
     const words = [
-      'Cloud Technology & Information Security',
-      'DevOps & Infrastructure Engineer',
-      'Quantum Computing Researcher',
-      'Cybersecurity Specialist'
+      'Cloud Technology',
+      'Information Security',
+      'DevOps & Infrastructure',
+      'Full Stack Web Development'
+      
     ];
     new TypeWriter(txtElement, words, 2000);
   }
@@ -184,6 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
   parallaxEffect();
   handleContactForm();
   addGlowEffect();
+  fetchGitHubActivity();
   
 
 
@@ -219,9 +221,97 @@ function toggleSkill(header) {
   dropdown.classList.toggle('active');
 }
 
+// Social sidebar toggle function
+function toggleSocialSidebar() {
+  const sidebar = document.getElementById('socialSidebar');
+  sidebar.classList.toggle('collapsed');
+}
+
+// Resume dropdown toggle function
+function toggleResumeDropdown() {
+  const dropdown = document.querySelector('.resume-dropdown');
+  dropdown.classList.toggle('active');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+  const dropdown = document.querySelector('.resume-dropdown');
+  if (dropdown && !dropdown.contains(event.target)) {
+    dropdown.classList.remove('active');
+  }
+});
 
 
-// Real-time GitHub Activity
+
+// GitHub Activity with real contribution graph
+async function fetchGitHubActivity() {
+  try {
+    const username = 'PriyanshuKSharma';
+    const userResponse = await fetch(`https://api.github.com/users/${username}`);
+    const userData = await userResponse.json();
+    
+    // Update profile info
+    document.getElementById('github-avatar').src = userData.avatar_url;
+    document.getElementById('github-name').textContent = userData.name || userData.login;
+    document.getElementById('github-followers').textContent = `${userData.followers} followers`;
+    document.getElementById('github-following').textContent = `${userData.following} following`;
+    document.getElementById('github-repos').textContent = `${userData.public_repos} repositories`;
+    
+    // Get current IST time
+    const now = new Date();
+    const istTime = now.toLocaleString('en-IN', {
+      timeZone: 'Asia/Kolkata',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true
+    });
+    
+    // GitHub achievements (common ones)
+    const achievements = [
+      '🌟 Quickdraw',
+      '⭐ Starstruck', 
+      '🎯 Pull Shark',
+      '🔥 YOLO',
+      '💎 Galaxy Brain'
+    ];
+    
+    // Display achievements only
+    document.getElementById('contribution-calendar').innerHTML = `
+      <div class="github-achievements">
+        <h5><img src="https://img.icons8.com/color/20/github.png" width="20" height="20"> GitHub Achievements</h5>
+        <div class="achievement-images">
+          <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" alt="Pair Extraordinaire" title="Pair Extraordinaire - Coauthored commits">
+          <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" alt="Pull Shark x2" title="Pull Shark x2 - Merged pull requests">
+          <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" alt="Quickdraw" title="Quickdraw - Closed within 5 minutes">
+          <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" alt="YOLO" title="YOLO - Merged without review">
+        </div>
+      </div>
+      <div class="hackerrank-achievements">
+        <h5><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/20/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-color-tal-revivo.png" width="20" height="20"> HackerRank Badges</h5>
+        <div class="hr-badges-container">
+          <div class="hr-badge-item">
+            <img src="https://hrcdn.net/fcore/assets/badges/python-f70befd824.svg" alt="Python 5 Star">
+            <span class="badge-label">Python 2⭐</span>
+          </div>
+          <div class="hr-badge-item">
+            <img src="https://hrcdn.net/fcore/assets/badges/sql-89e76e7082.svg" alt="SQL 1 Star">
+            <span class="badge-label">SQL 1⭐</span>
+          </div>
+          <div class="hr-badge-item">
+            <img src="https://hrcdn.net/fcore/assets/badges/problem-solving-ecaf59a612.svg" alt="Problem Solving">
+            <span class="badge-label">Problem Solving 2⭐</span>
+          </div>
+        </div>
+      </div>
+    `;
+    
+  } catch (error) {
+    console.error('Error fetching GitHub data:', error);
+    document.getElementById('contribution-calendar').innerHTML = '<p>Unable to load GitHub data</p>';
+  }
+}
+
+
 
 
 
