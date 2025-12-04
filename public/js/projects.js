@@ -36,14 +36,28 @@ function initProjectTerminal() {
     // Typing effect for commands
     const commands = currentProject.querySelectorAll('.command-text');
     commands.forEach(cmd => {
-      const text = cmd.textContent;
+      const text = cmd.getAttribute('data-text') || cmd.textContent;
+      cmd.setAttribute('data-text', text); // Store original text
       cmd.textContent = '';
+      
+      const cursor = document.createElement('span');
+      cursor.className = 'cursor';
+      cursor.textContent = '▋';
+      cursor.style.animation = 'blink 1s step-end infinite';
+      cursor.style.color = 'var(--primary)';
+      cursor.style.marginLeft = '5px';
+      
+      cmd.parentNode.appendChild(cursor);
+      
       let i = 0;
       const type = () => {
         if (i < text.length) {
           cmd.textContent += text.charAt(i);
           i++;
-          setTimeout(type, 50); // Typing speed
+          setTimeout(type, 30 + Math.random() * 50); // Random typing speed
+        } else {
+           // Keep cursor blinking or remove it
+           // cursor.remove(); 
         }
       };
       type();

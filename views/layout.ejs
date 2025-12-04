@@ -17,14 +17,26 @@
 </head>
 <body>
   <div class="loading-overlay">
-    <div class="loading-container">
-      <div class="loading-text">INITIALIZING</div>
-      <div class="loading-bar">
-        <div class="loading-progress"></div>
+    <div class="cyber-grid"></div>
+    <div class="loading-content">
+      <div class="scanner-line"></div>
+      <div class="system-status">
+        <div class="status-header">SYSTEM BOOT SEQUENCE</div>
+        <div class="status-log" id="boot-log">
+          <div>> INITIALIZING KERNEL...</div>
+          <div>> LOADING MODULES...</div>
+          <div>> VERIFYING SECURITY PROTOCOLS...</div>
+        </div>
       </div>
-      <div class="loading-dots">
-        <span></span><span></span><span></span>
+      <div class="loader-ring">
+        <div class="ring-inner"></div>
+        <div class="ring-core"></div>
       </div>
+      <div class="loading-bar-container">
+        <div class="loading-bar-cyber"></div>
+        <div class="loading-percentage">0%</div>
+      </div>
+      <div class="access-text">ACCESSING MAINFRAME</div>
     </div>
   </div>
   <div class="scroll-indicator"></div>
@@ -70,5 +82,7 @@
   <script src="js/projects.js"></script>
   <script src="js/futuristic-effects.js"></script>
   <script src="js/chatbot.js"></script>
+  <script src="js/innovative.js"></script>
+  <script src="js/github.js"></script>
 </body>
 </html>
