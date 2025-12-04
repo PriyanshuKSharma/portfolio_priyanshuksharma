@@ -31,12 +31,23 @@ const projects = JSON.parse(fs.readFileSync('./data/projects.json'));
 const timeline = JSON.parse(fs.readFileSync('./data/timeline.json'));
 
 // Set EJS options
-ejs.renderFile('./views/layout.ejs', {
-  title: 'Home',
+// Render index.ejs first
+ejs.renderFile('./views/index.ejs', {
   projects,
-  timeline
-}, (err, html) => {
+  timeline,
+  skills: JSON.parse(fs.readFileSync('./data/skills.json')) // Load skills as well if needed
+}, (err, body) => {
   if (err) throw err;
-  fs.writeFileSync('./dist/index.html', html.replace(/\/css\//g, './css/').replace(/\/js\//g, './js/').replace(/\/images\//g, './images/').replace(/\/resume\//g, './resume/'));
-  console.log('Build completed!');
+
+  // Then render layout.ejs
+  ejs.renderFile('./views/layout.ejs', {
+    title: 'Home',
+    body: body,
+    projects,
+    timeline
+  }, (err, html) => {
+    if (err) throw err;
+    fs.writeFileSync('./dist/index.html', html.replace(/\/css\//g, './css/').replace(/\/js\//g, './js/').replace(/\/images\//g, './images/').replace(/\/resume\//g, './resume/'));
+    console.log('Build completed!');
+  });
 });
