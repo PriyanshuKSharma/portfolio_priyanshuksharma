@@ -82,46 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdown.classList.remove('active');
     }
   });
-  // Tech Icon Rotation
-  const techIcons = document.querySelectorAll('.tech-icon');
-  if (techIcons.length > 0) {
-    let activeIndex = 0;
-    
-    // Set initial positions
-    const updateIcons = () => {
-      techIcons.forEach((icon, index) => {
-        const offset = (index - activeIndex + techIcons.length) % techIcons.length;
-        icon.className = 'tech-icon'; // Reset classes
-        
-        if (offset === 0) {
-          icon.classList.add('active');
-          icon.style.transform = 'translateX(-50%) scale(1.2)';
-          icon.style.opacity = '1';
-          icon.style.zIndex = '10';
-        } else if (offset === 1) {
-          icon.classList.add('next');
-          icon.style.transform = 'translateX(50%) scale(0.8)';
-          icon.style.opacity = '0.6';
-          icon.style.zIndex = '5';
-        } else if (offset === techIcons.length - 1) {
-          icon.classList.add('prev');
-          icon.style.transform = 'translateX(-150%) scale(0.8)';
-          icon.style.opacity = '0.6';
-          icon.style.zIndex = '5';
-        } else {
-          icon.style.transform = 'translateX(-50%) scale(0.5)';
-          icon.style.opacity = '0';
-          icon.style.zIndex = '0';
-        }
-      });
-    };
-
-    updateIcons();
-    setInterval(() => {
-      activeIndex = (activeIndex + 1) % techIcons.length;
-      updateIcons();
-    }, 3000);
-  }
+  // Tech Icon Rotation - Disabled for Grid Layout
+  // const techIcons = document.querySelectorAll('.tech-icon');
+  // if (techIcons.length > 0) { ... }
 
   // Contact Form Handling
   const contactForm = document.getElementById('contact-form');
@@ -202,11 +165,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     type();
   }
+  // Drag to Scroll removed in favor of CSS Marquee
+  // const slider = document.querySelector('.skills-grid');
+  // if (slider) { ... }
 });
 
 function toggleResumeDropdown() {
   const dropdown = document.querySelector('.resume-dropdown');
   if (dropdown) {
     dropdown.classList.toggle('active');
+  }
+}
+
+function toggleSkill(element) {
+  const dropdown = element.parentElement;
+  dropdown.classList.toggle('active');
+}
+
+function toggleSocialSidebar() {
+  const sidebar = document.getElementById('socialSidebar');
+  if (sidebar) {
+    sidebar.classList.toggle('active');
   }
 }
