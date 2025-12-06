@@ -168,6 +168,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Drag to Scroll removed in favor of CSS Marquee
   // const slider = document.querySelector('.skills-grid');
   // if (slider) { ... }
+
+  // Initialize theme
+  loadTheme();
+  
+  // Theme toggle click handler
+  const themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+  }
 });
 
 function toggleResumeDropdown() {
@@ -186,5 +195,28 @@ function toggleSocialSidebar() {
   const sidebar = document.getElementById('socialSidebar');
   if (sidebar) {
     sidebar.classList.toggle('active');
+  }
+}
+
+// Theme toggle function
+function toggleTheme() {
+  const body = document.body;
+  
+  body.classList.toggle('light-theme');
+  
+  if (body.classList.contains('light-theme')) {
+    localStorage.setItem('theme', 'light');
+  } else {
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+// Load saved theme
+function loadTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  const body = document.body;
+  
+  if (savedTheme === 'light') {
+    body.classList.add('light-theme');
   }
 }
