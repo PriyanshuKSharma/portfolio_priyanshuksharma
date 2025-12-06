@@ -73,7 +73,7 @@ function initCustomCursor() {
 }
 
 function init3DTilt() {
-  const cards = document.querySelectorAll('.metric-card, .expertise-item, .skill-dropdown, .achievement-card, .project-content, .intro-point');
+  const cards = document.querySelectorAll('.metric-card, .expertise-item, .skill-dropdown, .skill-card, .achievement-card, .project-content, .intro-point');
 
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
