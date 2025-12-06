@@ -17,6 +17,21 @@
   --glass-border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.light-theme {
+  --primary: #00bcd4;
+  --primary-dim: rgba(0, 188, 212, 0.1);
+  --secondary: #9c27b0;
+  --accent: #6200ea;
+  --bg-dark: #f0f2f5;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --bg-card-hover: rgba(255, 255, 255, 1);
+  --text-light: #1a1a1a;
+  --text-muted: #555555;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --glass-border: 1px solid rgba(0, 0, 0, 0.08);
+  --glow: 0 0 20px rgba(0, 188, 212, 0.3);
+}
+
 * {
   margin: 0;
   padding: 0;
