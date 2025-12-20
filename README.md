@@ -1,4 +1,4 @@
-#  Portfolio | Priyanshu Kumar Sharma
+# Portfolio | Priyanshu Kumar Sharma
 
 <div align="center">
 
@@ -19,12 +19,14 @@
 ## ✨ Features
 
 ### 🎨 **Modern Design**
+
 - **Cyberpunk Neon Theme** with cyan, magenta, and green accents
 - **Glassmorphism Effects** with backdrop blur and transparency
 - **Animated Gradient Backgrounds** and particle effects
 - **Custom Scrollbar** with gradient styling
 
 ### 🎭 **Interactive Animations**
+
 - **Typewriter Effect** for dynamic taglines
 - **Scroll-triggered Animations** for all sections
 - **3D Hover Effects** on cards and buttons
@@ -32,12 +34,14 @@
 - **Smooth Transitions** throughout the site
 
 ### 📱 **Fully Responsive**
+
 - **Mobile-first Design** with breakpoints
 - **Hamburger Navigation** for mobile devices
 - **Touch-friendly Interactions**
 - **Optimized for all screen sizes**
 
 ### 🛠️ **Technical Features**
+
 - **Express.js Backend** with EJS templating
 - **Modular Architecture** with partials and data files
 - **Contact Form** with email integration ready
@@ -80,6 +84,7 @@ portfolio/
 ## 🚀 Installation
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - npm or yarn
 
@@ -107,37 +112,54 @@ http://localhost:3000
 ## 🎯 Sections Overview
 
 ### 🏠 **Hero Section**
+
 - **Animated name display** with gradient text
 - **Welcome message** and role description
 - **Typewriter animation** with rotating taglines
 - **Call-to-action buttons** with hover effects
+- **Interactive 3D Particle System** 🆕
+  - Real-time hand tracking via webcam
+  - Dynamic particle interactions and shape morphing
+  - **Gestures**:
+    - 🖐️ **Open Palm**: Firework/Explosion
+    - ✌️ **Peace Sign**: Heart Shape
+    - ☝️ **Index Finger**: Flower Shape
+    - 👍 **Thumbs Up**: Saturn Ring
+    - 👊 **Fist**: Vortex/DNA Helix
+    - 🤟 **Rock On**: Spiral Galaxy
 
 ### 👨‍💻 **About Me**
+
 - **Professional summary** with expertise highlights
 - **Profile image** with hover animations
 - **Cloud & Security focus** description
 
 ### 🛠️ **Technical Skills**
+
 - **Interactive dropdown sections** for skill categories
 - **Animated progress bars** showing proficiency levels
 - **Categories**: Programming, Development, DevOps, CS Fundamentals
 
 ### 🏆 **Achievements**
+
 - **Awards** with organization details
 - **Hackathons** participation showcase
 - **Certifications** from industry leaders
 
 ### 💼 **Projects**
+
 - **Interactive project cards** with 3D hover effects
 - **Technology tags** and live demo links
 - **GitHub integration** for source code access
 
 ### 📚 **Experience & Education**
+
 - **Separate timeline sections** for work and education
 - **Animated timeline** with glowing indicators
 - **Detailed descriptions** of roles and achievements
 
 ### 📞 **Contact**
+
 - **Functional contact form** with validation
 - **Social media links** with hover effects
 - **Resume download** functionality
@@ -147,25 +169,28 @@ http://localhost:3000
 ## 🎨 Customization
 
 ### 🎭 **Themes**
+
 The portfolio uses CSS custom properties for easy theming:
 
 ```css
 :root {
-  --primary: #00ffff;      /* Cyan */
-  --secondary: #ff00ff;    /* Magenta */
-  --accent: #00ff88;       /* Green */
-  --bg-dark: #0a0a0a;      /* Dark background */
-  --text-light: #ffffff;   /* Light text */
+  --primary: #00ffff; /* Cyan */
+  --secondary: #ff00ff; /* Magenta */
+  --accent: #00ff88; /* Green */
+  --bg-dark: #0a0a0a; /* Dark background */
+  --text-light: #ffffff; /* Light text */
 }
 ```
 
 ### 📝 **Content Updates**
+
 - **Personal Info**: Update `views/index.ejs`
 - **Projects**: Modify `data/projects.json`
 - **Skills**: Edit `data/skills.json`
 - **Experience**: Update `data/timeline.json`
 
 ### 🖼️ **Images**
+
 - Place project images in `public/images/`
 - Add resume PDF to `public/resume/`
 - Update image paths in JSON files
@@ -175,6 +200,7 @@ The portfolio uses CSS custom properties for easy theming:
 ## 🚀 Deployment
 
 ### **Vercel** (Recommended)
+
 ```bash
 # Install Vercel CLI
 npm i -g vercel
@@ -184,6 +210,7 @@ vercel
 ```
 
 ### **Heroku**
+
 ```bash
 # Login to Heroku
 heroku login
@@ -196,6 +223,7 @@ git push heroku main
 ```
 
 ### **Netlify**
+
 1. Connect your GitHub repository
 2. Set build command: `npm run build`
 3. Set publish directory: `public`
