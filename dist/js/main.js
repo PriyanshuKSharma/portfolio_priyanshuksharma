@@ -177,6 +177,44 @@ document.addEventListener('DOMContentLoaded', () => {
   if (themeToggle) {
     themeToggle.addEventListener('click', toggleTheme);
   }
+
+  // Mobile Menu Toggle
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+  }
+
+  // Scroll Spy for refreshing active state of nav links
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  function activeMenu() {
+    let len = sections.length;
+    while (--len && window.scrollY + 97 < sections[len].offsetTop) {}
+    navLinks.forEach(ltx => ltx.classList.remove("active"));
+    // Check if sections[len] exists to avoid errors on pages without sections matching the logic
+    if (sections[len]) {
+        // Find the link that corresponds to this section
+        const activeId = sections[len].id;
+        const activeLink = document.querySelector(`.nav-link[href="#${activeId}"]`);
+        if (activeLink) {
+            activeLink.classList.add("active");
+        }
+    }
+  }
+  activeMenu();
+  window.addEventListener("scroll", activeMenu);
 });
 
 function toggleResumeDropdown() {
