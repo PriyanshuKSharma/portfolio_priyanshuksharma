@@ -221,6 +221,46 @@ I embrace a project-based learning approach and have accumulated hands-on experi
 
 ---
 
+## 🎓 Education
+
+```mermaid
+timeline
+    %%{init: { 'theme': 'dark', 'themeVariables': { 'primaryColor': '#00ffff', 'primaryTextColor': '#fff', 'secondaryColor': '#ff00ff', 'secondaryTextColor': '#fff', 'tertiaryColor': '#00ff88', 'tertiaryTextColor': '#000', 'timeLineColor': '#fff' } } }%%
+    title Education History
+    2019
+        : Higher Secondary @ Sri Chaitanya (Apr 2019 - May 2020)
+    2020
+        : Intermediate @ Sri Chaitanya (Apr 2020 - May 2022)
+    2022
+        : B.Tech IT Started @ ADYPU (Aug 2022)
+    Present
+        : Current CGPA: 9.9
+```
+
+<div align="center">
+  <div style="background-color: #0D1117; border-radius: 6px; padding: 20px; border: 1px solid #30363d; margin-bottom: 20px;">
+    <h3>Academic Background</h3>
+    <table width="90%" align="center" style="border: none;">
+      <tr>
+        <td align="right" width="180px" valign="top"><b>Aug 2022 – Present 🏫</b></td>
+        <td><b>Bachelor of Technology in Information Technology</b><br>Ajeenkya D Y Patil University, Pune<br><i>Specializing in Cloud Technology and Information Security.<br>Active in hackathons and cybersecurity clubs.<br>Current CGPA: 9.9</i></td>
+      </tr>
+      <tr><td colspan="2" height="10"></td></tr>
+      <tr>
+        <td align="right" width="180px" valign="top"><b>Apr 2020 – May 2022 🎓</b></td>
+        <td><b>Intermediate Education</b><br>Sri Chaitanya Jr. Kalasala, Hyderabad<br><i>Focusing on Science and Mathematics.<br>Grade: 93.9%</i></td>
+      </tr>
+      <tr><td colspan="2" height="10"></td></tr>
+      <tr>
+        <td align="right" width="180px" valign="top"><b>Apr 2019 – May 2020 🏫</b></td>
+        <td><b>Higher Secondary Education</b><br>Sri Chaitanya High School, Hyderabad<br><i>Completed higher secondary education.<br>Grade: 87.6%</i></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+---
+
 ## 📅 My Tech Journey
 
 ```mermaid

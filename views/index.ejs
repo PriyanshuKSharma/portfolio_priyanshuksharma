@@ -903,6 +903,20 @@
   </div>
 </section>
 
+<section id="education" class="timeline-section">
+  <h2>Education</h2>
+  <div class="timeline">
+    <% timeline.filter(item => item.type === 'education').forEach(item => { %>
+    <div class="timeline-item <%= item.type %>">
+      <h3><%= item.title %></h3>
+      <span class="timeline-org"><%= item.organization %></span>
+      <span class="timeline-period"><%= item.period %></span>
+      <p><%- item.description %></p>
+    </div>
+    <% }) %>
+  </div>
+</section>
+
 <section id="awards" class="achievements-section">
   <h2>Awards</h2>
   <div class="achievement-grid">
