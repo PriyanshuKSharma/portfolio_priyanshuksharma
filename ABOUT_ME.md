@@ -224,6 +224,7 @@ I embrace a project-based learning approach and have accumulated hands-on experi
 
 ```mermaid
 timeline
+    %%{init: { 'theme': 'base', 'themeVariables': { 'primaryColor': '#00ffff', 'primaryTextColor': '#000', 'secondaryColor': '#ff00ff', 'secondaryTextColor': '#fff', 'tertiaryColor': '#00ff88', 'tertiaryTextColor': '#000' } } }%%
     title Priyanshu's Career Timeline
     2022
         : Student Intern @ Mindler (Nov-Dec)
@@ -320,22 +321,19 @@ timeline
 ## 📊 GitHub Stats
 
 <div align="center">
-  <div style="background-color: #0D1117; border-radius: 6px; padding: 20px; border: 1px solid #30363d; margin-bottom: 20px;">
-  <!-- GitHub Streak Stats -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PriyanshuKSharma&theme=github-dark&hide_border=false&stroke=0000&background=0D1117&ring=00ffff&fire=00ffff&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=8B949E&sideLabels=8B949E&dates=8B949E" alt="GitHub Streak Stats" width="500" />
 
-<br/><br/>
+![GitHub Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=PriyanshuKSharma&theme=github-dark&hide_border=false&stroke=0000&background=0D1117&ring=00ffff&fire=00ffff&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=8B949E&sideLabels=8B949E&dates=8B949E)
 
-  <!-- Compact Stats -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshuKSharma&layout=compact&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00ffff&text_color=C9D1D9&icon_color=00ffff" alt="Top Languages" width="370" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api?username=PriyanshuKSharma&show_icons=true&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00ffff&text_color=C9D1D9&icon_color=00ffff&count_private=true&include_all_commits=true" alt="GitHub Stats" width="370" />
+<br/>
 
-<br/><br/>
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshuKSharma&layout=compact&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00ffff&text_color=C9D1D9&icon_color=00ffff)
+&nbsp;&nbsp;
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PriyanshuKSharma&show_icons=true&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00ffff&text_color=C9D1D9&icon_color=00ffff&count_private=true&include_all_commits=true)
 
-  <!-- Activity Graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PriyanshuKSharma&bg_color=0d1117&color=00ffff&line=00ffff&point=ffffff&hide_border=false&area=true&area_color=161b22" width="90%" />
-  </div>
+<br/>
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=PriyanshuKSharma&bg_color=0d1117&color=00ffff&line=00ffff&point=ffffff&hide_border=false&area=true&area_color=161b22)
+
 </div>
 
 ---
