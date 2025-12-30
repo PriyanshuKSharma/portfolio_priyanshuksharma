@@ -99,10 +99,12 @@ I embrace a project-based learning approach and have accumulated hands-on experi
 1. **Ubuntu Linux Installation Manual**
 
    - A comprehensive guide on installing and configuring **Ubuntu Linux on VirtualBox**. Covers setup, installation, and optimization tips for performance.
+
 2. **Shell Scripting for Beginners**
 
    - Guide on **shell scripting basics** with examples of **file permissions**, **system service management**, and scripting tasks.
    - Example scripts for **text manipulation** in files, displaying **days of the week** in reverse, and setting permissions.
+
 3. **Fit Raho Gym Website**
 
    - Developed an interactive website for **Fit Raho Gym** using **HTML, CSS, and JavaScript** with sections like **About Us**, background images, and buttons for user engagement.
@@ -319,6 +321,7 @@ timeline
 
 ## 📊 GitHub Stats
 
+<!--
 <div align="center">
 
 ![GitHub Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=PriyanshuKSharma&theme=github-dark&hide_border=false&stroke=0000&background=0D1117&ring=00ffff&fire=00ffff&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=8B949E&sideLabels=8B949E&dates=8B949E)
@@ -334,6 +337,7 @@ timeline
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=PriyanshuKSharma&bg_color=0d1117&color=00ffff&line=00ffff&point=ffffff&hide_border=false&area=true&area_color=161b22)
 
 </div>
+-->
 
 ---
 
