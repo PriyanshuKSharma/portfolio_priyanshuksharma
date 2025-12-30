@@ -99,13 +99,12 @@ I embrace a project-based learning approach and have accumulated hands-on experi
 1. **Ubuntu Linux Installation Manual**
 
    - A comprehensive guide on installing and configuring **Ubuntu Linux on VirtualBox**. Covers setup, installation, and optimization tips for performance.
-
 2. **Shell Scripting for Beginners**
 
    - Guide on **shell scripting basics** with examples of **file permissions**, **system service management**, and scripting tasks.
    - Example scripts for **text manipulation** in files, displaying **days of the week** in reverse, and setting permissions.
-
 3. **Fit Raho Gym Website**
+
    - Developed an interactive website for **Fit Raho Gym** using **HTML, CSS, and JavaScript** with sections like **About Us**, background images, and buttons for user engagement.
 
 ---
@@ -245,7 +244,7 @@ timeline
 
 <div align="center">
 
-  <div style="background-color: #0D1117; border-radius: 6px; padding: 20px; border: 1px solid #30363d; margin-bottom: 20px;">
+<div style="background-color: #0D1117; border-radius: 6px; padding: 20px; border: 1px solid #30363d; margin-bottom: 20px;">
     <h3>Professional Timeline</h3>
     <table width="90%" align="center" style="border: none;">
       <tr>
