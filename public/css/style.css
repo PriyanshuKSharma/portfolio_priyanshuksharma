@@ -2293,28 +2293,24 @@ body.light-theme .label-light {
 .chronicle-section--education,
 .chronicle-section--experience,
 .chronicle-section--skills {
-  background:
-    radial-gradient(circle at 15% 20%, rgba(213, 0, 249, 0.18), transparent 55%),
-    radial-gradient(circle at 85% 10%, rgba(0, 255, 242, 0.18), transparent 50%),
-    linear-gradient(180deg, rgba(8, 8, 20, 0.75), rgba(3, 3, 5, 0.95));
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 26px;
-  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
 .chronicle-section--education::after,
 .chronicle-section--experience::after,
 .chronicle-section--skills::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(transparent 95%, rgba(0, 255, 242, 0.08) 96%),
-    linear-gradient(90deg, transparent 95%, rgba(213, 0, 249, 0.08) 96%);
-  background-size: 60px 60px;
-  opacity: 0.25;
-  pointer-events: none;
+  content: none;
+}
+
+.chronicle-section--education::before,
+.chronicle-section--experience::before,
+.chronicle-section--skills::before {
+  background: none;
+  opacity: 0;
 }
 
 .chronicle-section::before {
@@ -2529,18 +2525,22 @@ body.light-theme .label-light {
 .light-theme .chronicle-section--education,
 .light-theme .chronicle-section--experience,
 .light-theme .chronicle-section--skills {
-  background:
-    radial-gradient(circle at 15% 20%, rgba(0, 119, 182, 0.18), transparent 55%),
-    radial-gradient(circle at 85% 10%, rgba(114, 9, 183, 0.15), transparent 50%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(233, 241, 255, 0.9));
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
 }
 
 .light-theme .chronicle-section--education::after,
 .light-theme .chronicle-section--experience::after,
 .light-theme .chronicle-section--skills::after {
-  opacity: 0.18;
+  content: none;
+}
+
+.light-theme .chronicle-section--education::before,
+.light-theme .chronicle-section--experience::before,
+.light-theme .chronicle-section--skills::before {
+  background: none;
+  opacity: 0;
 }
 
 .light-theme .chronicle-command {
@@ -4653,4 +4653,82 @@ body {
     .nav-item:last-child {
         border-bottom: none;
     }
+}
+
+/* Scrollable Navbar for Small Screens */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .nav-menu {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100%;
+    margin: 0;
+    padding: 0.25rem 0 0.35rem;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    gap: 0.6rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    text-align: left;
+    z-index: auto;
+  }
+
+  .nav-menu.active {
+    left: auto !important;
+  }
+
+  .nav-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: none !important;
+    flex: 0 0 auto;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background: var(--bg-card);
+    white-space: nowrap;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .hamburger {
+    display: none !important;
+  }
+
+  .theme-toggle {
+    margin-right: 0;
+  }
+
+  .nav-menu::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .nav-menu::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .nav-menu::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.5);
+    border-radius: 999px;
+  }
 }
