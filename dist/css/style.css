@@ -1854,6 +1854,14 @@ body.light-theme .label-light {
   display: block;
 }
 
+.dock-emoji {
+  font-size: 17px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .dock-link::after {
   display: none;
 }

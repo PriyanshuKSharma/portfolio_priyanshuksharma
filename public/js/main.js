@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navDock = document.querySelector('.bottom-nav-dock');
   const dockCollapseToggle = document.getElementById('dock-collapse-toggle');
   if (navDock && dockCollapseToggle) {
-    const dockStateKey = 'nav_dock_collapsed';
+    const dockStateKey = 'nav_dock_collapsed_v2';
     const setDockState = (collapsed) => {
       navDock.classList.toggle('is-collapsed', collapsed);
       dockCollapseToggle.setAttribute('aria-expanded', String(!collapsed));
