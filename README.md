@@ -40,10 +40,19 @@ I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Clo
 - Serverless benchmarking and XFBench/XFaaS research.
 - Security-first cloud architectures with IAM and Zero Trust patterns.
 
-**Research and Internships**
-- Research Intern at IIT Ropar: XFBench and XFaaS development for serverless benchmarking.
-- Research on Quantum Computing and Cloud Storage: hybrid cloud-quantum integration using AWS and IBM Quantum.
-- IAM Security Research: authentication protocols, access control models, and AAA framework implementation.
+**Experience // Mission Timeline**
+```text
+2025 Jun-Sep | Web Development Intern @ Marquardt India | MERN, UI/UX, feature delivery
+2025 Mar-Jun | IT Intern @ Seamedu | placement operations, coordination
+2024 Jul-Sep | Fortinet Network Security Virtual Intern @ EduSkills | threat landscape, network security
+2024 Jul-Aug | Project Intern @ OctaNet Services | frontend projects
+2024 May-Jul | Cloud Research Intern @ IIT Ropar | XFBench/XFaaS serverless benchmarking
+2024 Apr-Jun | Zscaler Zero Trust Cloud Security Virtual Intern @ EduSkills | Zero Trust architecture
+2023 Apr-May | Project Intern @ InternPe | web development
+2022 Nov-Dec | Student Intern @ Mindler | career counseling operations
+Research | Quantum-Cloud Integration | AWS + IBM Quantum
+Research | IAM Security | protocols, access control, AAA framework
+```
 
 **Selected Projects**
 - [Multi-Cloud SaaS Orchestration Platform](https://github.com/PriyanshuKSharma/multi-cloud)
@@ -120,10 +129,18 @@ I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Clo
   </p>
 </div>
 
-**Education**
-- Aug 2022 - Present: B.Tech in Information Technology, Ajeenkya D Y Patil University, Pune. Current CGPA: 9.9.
-- Apr 2020 - May 2022: Intermediate Education, Sri Chaitanya Jr. Kalasala, Hyderabad. Grade: 93.9%.
-- Apr 2019 - May 2020: Higher Secondary Education, Sri Chaitanya High School, Hyderabad. Grade: 87.6%.
+**Education // Build Log**
+```ini
+[2022..Present] B.Tech in Information Technology @ Ajeenkya D Y Patil University, Pune
+focus = Cloud Technology, Information Security
+cgpa = 9.9
+
+[2020..2022] Intermediate Education @ Sri Chaitanya Jr. Kalasala, Hyderabad
+grade = 93.9%
+
+[2019..2020] Higher Secondary Education @ Sri Chaitanya High School, Hyderabad
+grade = 87.6%
+```
 
 **Certifications and Virtual Internships**
 - Zscaler Zero Trust Cloud Security Virtual Internship, EduSkills Foundation (Apr 2024 - Jun 2024).
