@@ -13,10 +13,10 @@
     <img src="https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=blue&style=flat" alt="Profile Views" />
   </p>
   <p>
-    <img src="https://img.icons8.com/color/96/amazon-web-services.png" height="36" alt="AWS" />
+    <img src="https://cdn.simpleicons.org/amazonaws/FF9900" height="36" alt="AWS" />
     <img src="https://cdn.simpleicons.org/microsoftazure/0078D4" height="36" alt="Microsoft Azure" />
     <img src="https://cdn.simpleicons.org/googlecloud/4285F4" height="36" alt="Google Cloud" />
-    <img src="https://img.icons8.com/color/96/ibm.png" height="36" alt="IBM" />
+    <img src="https://cdn.simpleicons.org/ibm/054ADA" height="36" alt="IBM" />
     <img src="https://cdn.simpleicons.org/docker/2496ED" height="36" alt="Docker" />
     <img src="https://cdn.simpleicons.org/kubernetes/326CE5" height="36" alt="Kubernetes" />
     <img src="https://cdn.simpleicons.org/terraform/7B42BC" height="36" alt="Terraform" />
@@ -40,19 +40,10 @@ I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Clo
 - Serverless benchmarking and XFBench/XFaaS research.
 - Security-first cloud architectures with IAM and Zero Trust patterns.
 
-**Experience // Mission Timeline**
-```text
-2025 Jun-Sep | Web Development Intern @ Marquardt India | MERN, UI/UX, feature delivery
-2025 Mar-Jun | IT Intern @ Seamedu | placement operations, coordination
-2024 Jul-Sep | Fortinet Network Security Virtual Intern @ EduSkills | threat landscape, network security
-2024 Jul-Aug | Project Intern @ OctaNet Services | frontend projects
-2024 May-Jul | Cloud Research Intern @ IIT Ropar | XFBench/XFaaS serverless benchmarking
-2024 Apr-Jun | Zscaler Zero Trust Cloud Security Virtual Intern @ EduSkills | Zero Trust architecture
-2023 Apr-May | Project Intern @ InternPe | web development
-2022 Nov-Dec | Student Intern @ Mindler | career counseling operations
-Research | Quantum-Cloud Integration | AWS + IBM Quantum
-Research | IAM Security | protocols, access control, AAA framework
-```
+**Research and Internships**
+- Research Intern at IIT Ropar: XFBench and XFaaS development for serverless benchmarking.
+- Research on Quantum Computing and Cloud Storage: hybrid cloud-quantum integration using AWS and IBM Quantum.
+- IAM Security Research: authentication protocols, access control models, and AAA framework implementation.
 
 **Selected Projects**
 - [Multi-Cloud SaaS Orchestration Platform](https://github.com/PriyanshuKSharma/multi-cloud)
@@ -92,16 +83,16 @@ Research | IAM Security | protocols, access control, AAA framework
   </p>
   <p><strong>Cloud and Serverless</strong></p>
   <p>
-    <img src="https://img.icons8.com/color/96/amazon-web-services.png" height="42" alt="AWS" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" height="42" alt="AWS" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" height="42" alt="Microsoft Azure" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="42" alt="Google Cloud" />
-    <img src="https://img.icons8.com/color/96/ibm.png" height="42" alt="IBM" />
+    <img src="https://cdn.simpleicons.org/ibm/054ADA" height="42" alt="IBM" />
     <img src="https://cdn.simpleicons.org/openfaas/3C5CCF" height="42" alt="OpenFaaS" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" height="42" alt="Cloudflare" />
   </p>
   <p><strong>Security</strong></p>
   <p>
-    <img src="https://img.icons8.com/color/96/nmap.png" height="42" alt="Nmap" />
+    <img src="https://cdn.simpleicons.org/nmap/0094D6" height="42" alt="Nmap" />
     <img src="https://cdn.simpleicons.org/owasp/000000" height="42" alt="OWASP" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="42" alt="Linux" />
   </p>
@@ -119,28 +110,20 @@ Research | IAM Security | protocols, access control, AAA framework
   <p>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="42" alt="MySQL" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="42" alt="PostgreSQL" />
-    <img src="https://img.icons8.com/color/96/amazon-s3.png" height="42" alt="Amazon S3" />
+    <img src="https://cdn.simpleicons.org/amazons3/569A31" height="42" alt="Amazon S3" />
     <img src="https://cdn.simpleicons.org/googlecloud/4285F4" height="42" alt="Google Cloud SQL" />
   </p>
   <p><strong>Quantum</strong></p>
   <p>
-    <img src="https://img.icons8.com/color/96/ibm.png" height="42" alt="IBM Quantum" />
-    <img src="https://img.icons8.com/color/96/amazon-web-services.png" height="42" alt="AWS Braket" />
+    <img src="https://cdn.simpleicons.org/ibm/054ADA" height="42" alt="IBM Quantum" />
+    <img src="https://cdn.simpleicons.org/amazonaws/FF9900" height="42" alt="AWS Braket" />
   </p>
 </div>
 
-**Education // Build Log**
-```ini
-[2022..Present] B.Tech in Information Technology @ Ajeenkya D Y Patil University, Pune
-focus = Cloud Technology, Information Security
-cgpa = 9.9
-
-[2020..2022] Intermediate Education @ Sri Chaitanya Jr. Kalasala, Hyderabad
-grade = 93.9%
-
-[2019..2020] Higher Secondary Education @ Sri Chaitanya High School, Hyderabad
-grade = 87.6%
-```
+**Education**
+- Aug 2022 - Present: B.Tech in Information Technology, Ajeenkya D Y Patil University, Pune. Current CGPA: 9.9.
+- Apr 2020 - May 2022: Intermediate Education, Sri Chaitanya Jr. Kalasala, Hyderabad. Grade: 93.9%.
+- Apr 2019 - May 2020: Higher Secondary Education, Sri Chaitanya High School, Hyderabad. Grade: 87.6%.
 
 **Certifications and Virtual Internships**
 - Zscaler Zero Trust Cloud Security Virtual Internship, EduSkills Foundation (Apr 2024 - Jun 2024).
