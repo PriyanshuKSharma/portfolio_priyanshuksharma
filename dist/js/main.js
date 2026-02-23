@@ -173,10 +173,10 @@ document.addEventListener('DOMContentLoaded', () => {
   loadTheme();
   
   // Theme toggle click handler
-  const themeToggle = document.querySelector('.theme-toggle');
-  if (themeToggle) {
-    themeToggle.addEventListener('click', toggleTheme);
-  }
+  const themeToggles = document.querySelectorAll('.theme-toggle, .dock-theme-toggle');
+  themeToggles.forEach((toggleControl) => {
+    toggleControl.addEventListener('click', toggleTheme);
+  });
 
   // Mobile Menu Toggle
   const hamburger = document.querySelector('.hamburger');
@@ -207,10 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (sections[len]) {
         // Find the link that corresponds to this section
         const activeId = sections[len].id;
-        const activeLink = document.querySelector(`.nav-link[href="#${activeId}"]`);
-        if (activeLink) {
-            activeLink.classList.add("active");
-        }
+        const activeLinks = document.querySelectorAll(`.nav-link[href="#${activeId}"]`);
+        activeLinks.forEach(link => link.classList.add("active"));
     }
   }
   activeMenu();

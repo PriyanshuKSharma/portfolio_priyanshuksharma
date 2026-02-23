@@ -7,6 +7,8 @@ class RecruitmentChatbot {
     }
 
     async init() {
+        if (window.__portfolioChatbotInitialized) return;
+        window.__portfolioChatbotInitialized = true;
         await this.loadChatData();
         this.createChatWidget();
         this.bindEvents();
@@ -34,7 +36,9 @@ class RecruitmentChatbot {
     }
 
     createChatWidget() {
+        if (document.querySelector('.chatbot-root')) return;
         const chatWidget = document.createElement('div');
+        chatWidget.className = 'chatbot-root';
         chatWidget.innerHTML = `
             <div id="chatbot-toggle" class="chatbot-toggle">
                 <img src="images/chatbot-icon.png" alt="Chatbot" class="chatbot-icon-img">
@@ -73,6 +77,16 @@ class RecruitmentChatbot {
 
     bindEvents() {
         document.getElementById('chatbot-toggle').addEventListener('click', () => this.toggleChat());
+        const dockTrigger = document.getElementById('chatbot-dock-trigger');
+        if (dockTrigger) {
+            dockTrigger.addEventListener('click', () => {
+                this.toggleChat();
+                const navMenu = document.querySelector('.nav-menu');
+                const hamburger = document.querySelector('.hamburger');
+                if (navMenu) navMenu.classList.remove('active');
+                if (hamburger) hamburger.classList.remove('active');
+            });
+        }
         document.getElementById('chatbot-close').addEventListener('click', () => this.toggleChat());
         document.getElementById('chatbot-expand').addEventListener('click', () => this.toggleExpand());
         document.getElementById('chatbot-send').addEventListener('click', () => this.sendMessage());
@@ -92,13 +106,16 @@ class RecruitmentChatbot {
         this.isOpen = !this.isOpen;
         const container = document.getElementById('chatbot-container');
         const toggle = document.getElementById('chatbot-toggle');
+        const dockTrigger = document.getElementById('chatbot-dock-trigger');
         
         if (this.isOpen) {
             container.style.display = 'flex';
             toggle.style.display = 'none';
+            if (dockTrigger) dockTrigger.classList.add('active');
         } else {
             container.style.display = 'none';
             toggle.style.display = 'flex';
+            if (dockTrigger) dockTrigger.classList.remove('active');
             this.isExpanded = false;
             container.classList.remove('expanded');
         }

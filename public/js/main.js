@@ -173,10 +173,10 @@ document.addEventListener('DOMContentLoaded', () => {
   loadTheme();
   
   // Theme toggle click handler
-  const themeToggle = document.querySelector('.theme-toggle');
-  if (themeToggle) {
-    themeToggle.addEventListener('click', toggleTheme);
-  }
+  const themeToggles = document.querySelectorAll('.theme-toggle, .dock-theme-toggle');
+  themeToggles.forEach((toggleControl) => {
+    toggleControl.addEventListener('click', toggleTheme);
+  });
 
   // Mobile Menu Toggle
   const hamburger = document.querySelector('.hamburger');

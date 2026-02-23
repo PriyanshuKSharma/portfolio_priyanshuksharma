@@ -262,7 +262,6 @@
     }
     
     .chatbot-toggle {
-        bottom: 10px;
-        left: 10px;
+        display: none !important;
     }
 }
