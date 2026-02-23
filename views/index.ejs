@@ -242,46 +242,77 @@
   </div>
 </section>
 
-<section id="education" class="timeline-section">
-  <h2>Education</h2>
-  <div class="timeline">
-    <% timeline.filter(item => item.type === 'education').forEach(item => { %>
-    <div class="timeline-item <%= item.type %>">
-      <h3><%= item.title %></h3>
-      <span class="timeline-org"><%= item.organization %></span>
-      <span class="timeline-period"><%= item.period %></span>
-      <p><%- item.description %></p>
-    </div>
+<section id="education" class="chronicle-section chronicle-section--education">
+  <div class="chronicle-header">
+    <p class="chronicle-kicker">/education.stack</p>
+    <h2 class="chronicle-title glitch-text" data-text="Education Kernel">Education Kernel</h2>
+    <p class="chronicle-subtitle">Academic upgrades logged as system builds and milestones.</p>
+  </div>
+  <div class="chronicle-grid">
+    <% timeline.filter(item => item.type === 'education').forEach((item, index) => { 
+      const isLive = item.period.toLowerCase().includes('present');
+    %>
+    <article class="chronicle-card">
+      <div class="chronicle-card-header">
+        <span class="chronicle-id">EDU-<%= String(index + 1).padStart(2, '0') %></span>
+        <span class="chronicle-period"><%= item.period %></span>
+      </div>
+      <h3 class="chronicle-role"><%= item.title %></h3>
+      <span class="chronicle-org"><%= item.organization %></span>
+      <p class="chronicle-desc"><%- item.description %></p>
+      <div class="chronicle-tags">
+        <span class="chronicle-tag <%= isLive ? 'tag-live' : 'tag-archived' %>">
+          <%= isLive ? 'live' : 'archived' %>
+        </span>
+      </div>
+    </article>
     <% }) %>
   </div>
 </section>
 
-<section id="experience" class="timeline-section">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <% timeline.filter(item => item.type === 'work').forEach(item => { %>
-    <div class="timeline-item <%= item.type %>">
-      <h3><%= item.title %></h3>
-      <span class="timeline-org"><%= item.organization %></span>
-      <span class="timeline-period"><%= item.period %></span>
-      <p><%- item.description %></p>
-    </div>
+<section id="experience" class="chronicle-section chronicle-section--experience">
+  <div class="chronicle-header">
+    <p class="chronicle-kicker">/experience.runbook</p>
+    <h2 class="chronicle-title glitch-text" data-text="Experience Runbook">Experience Runbook</h2>
+    <p class="chronicle-subtitle">Internships and research as ops logs and deployed missions.</p>
+  </div>
+  <div class="chronicle-grid chronicle-grid--experience">
+    <% timeline.filter(item => item.type === 'work').forEach((item, index) => { %>
+    <article class="chronicle-card chronicle-card--experience">
+      <div class="chronicle-card-header">
+        <span class="chronicle-id">EXP-<%= String(index + 1).padStart(2, '0') %></span>
+        <span class="chronicle-period"><%= item.period %></span>
+      </div>
+      <h3 class="chronicle-role"><%= item.title %></h3>
+      <span class="chronicle-org"><%= item.organization %></span>
+      <p class="chronicle-desc"><%- item.description %></p>
+      <div class="chronicle-command">
+        <span class="command-prompt">priyanshu@ops</span>
+        <span class="command-sep">:</span>
+        <span class="command-path">~/experience</span>
+        <span class="command-sep">$</span>
+        <span class="command-text">deploy --role <%= item.title.toLowerCase().replace(/\s+/g, '-') %></span>
+      </div>
+    </article>
     <% }) %>
   </div>
 </section>
 
-<section id="skills" class="skills-section">
-  <h2>Technical Skills</h2>
-
-  <div class="skills-grid">
-    <div class="skills-track">
-      <!-- Original Cards -->
-      <!-- Programming Languages -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">💻</div>
-          <h3>Languages</h3>
-        </div>
+<section id="skills" class="skills-section chronicle-section chronicle-section--skills">
+  <div class="chronicle-header">
+    <p class="chronicle-kicker">/skills.matrix</p>
+    <h2 class="chronicle-title glitch-text" data-text="Technical Skills Matrix">Technical Skills Matrix</h2>
+    <p class="chronicle-subtitle">Single-column modules that expand on demand.</p>
+  </div>
+  <div class="chronicle-accordion">
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-01</span>
+        <span class="chronicle-title-sm">Programming Languages</span>
+        <span class="chronicle-period">Languages</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Core stack</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -321,13 +352,16 @@
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- Development -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🚀</div>
-          <h3>Development</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-02</span>
+        <span class="chronicle-title-sm">Web and App Engineering</span>
+        <span class="chronicle-period">Development</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Frontend to backend</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -367,13 +401,16 @@
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- DevOps Tools -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">⚙️</div>
-          <h3>DevOps</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-03</span>
+        <span class="chronicle-title-sm">Delivery and Automation</span>
+        <span class="chronicle-period">DevOps</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Pipelines and infra</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -408,7 +445,7 @@
               <span class="skill-percentage">60%</span>
             </div>
             <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
+              <div class="progress-bar" style="width: 60%"></div>
             </div>
           </div>
           <div class="skill-item">
@@ -417,7 +454,7 @@
               <span class="skill-percentage">65%</span>
             </div>
             <div class="cyber-progress">
-              <div class="progress-bar" style="width: 45%"></div>
+              <div class="progress-bar" style="width: 65%"></div>
             </div>
           </div>
           <div class="skill-item">
@@ -426,18 +463,21 @@
               <span class="skill-percentage">65%</span>
             </div>
             <div class="cyber-progress">
-              <div class="progress-bar" style="width: 45%"></div>
+              <div class="progress-bar" style="width: 65%"></div>
             </div>
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- Database & Storage -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">💾</div>
-          <h3>Data & Storage</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-04</span>
+        <span class="chronicle-title-sm">Data and Storage</span>
+        <span class="chronicle-period">Data</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Persistence layer</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -477,13 +517,16 @@
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- Cloud Services -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">☁️</div>
-          <h3>Cloud Platforms</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-05</span>
+        <span class="chronicle-title-sm">Cloud Platforms</span>
+        <span class="chronicle-period">Cloud</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Core providers</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -514,13 +557,16 @@
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- CS Fundamentals -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🧠</div>
-          <h3>CS Fundamentals</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-06</span>
+        <span class="chronicle-title-sm">Computer Science Fundamentals</span>
+        <span class="chronicle-period">Core CS</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Foundational systems</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -560,13 +606,16 @@
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- Course Activities -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🎓</div>
-          <h3>Coursework</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-07</span>
+        <span class="chronicle-title-sm">Academic Focus</span>
+        <span class="chronicle-period">Coursework</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Specialized modules</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -597,325 +646,9 @@
           </div>
         </div>
       </div>
-
-      <!-- Duplicated Cards for Infinite Scroll -->
-      <!-- Programming Languages -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">💻</div>
-          <h3>Languages</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Java</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Python</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>SQL</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Shell Scripting</span>
-              <span class="skill-percentage">70%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 70%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Development -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🚀</div>
-          <h3>Development</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>HTML/CSS</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>JavaScript</span>
-              <span class="skill-percentage">85%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Node.js</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Express</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- DevOps Tools -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">⚙️</div>
-          <h3>DevOps</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Git/GitHub</span>
-              <span class="skill-percentage">90%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Docker</span>
-              <span class="skill-percentage">85%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Terraform</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>GitLab</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Jenkins</span>
-              <span class="skill-percentage">45%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 45%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Database & Storage -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">💾</div>
-          <h3>Data & Storage</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>AWS S3</span>
-              <span class="skill-percentage">85%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>MySQL</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Google Cloud SQL</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Neon DB</span>
-              <span class="skill-percentage">70%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 70%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cloud Services -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">☁️</div>
-          <h3>Cloud Platforms</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>AWS</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Microsoft Azure</span>
-              <span class="skill-percentage">65%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 65%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Google Cloud</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CS Fundamentals -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🧠</div>
-          <h3>CS Fundamentals</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>DSA</span>
-              <span class="skill-percentage">35%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 35%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>DBMS</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>OS</span>
-              <span class="skill-percentage">70%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 70%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>CN</span>
-              <span class="skill-percentage">65%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 65%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Course Activities -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🎓</div>
-          <h3>Coursework</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Cloud Architecture</span>
-              <span class="skill-percentage">90%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Network Security</span>
-              <span class="skill-percentage">85%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>DevOps Pipelines</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </details>
   </div>
 </section>
-
-
 <section id="awards" class="achievements-section">
   <h2>Awards</h2>
   <div class="achievement-grid">

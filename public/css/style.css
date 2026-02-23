@@ -1032,12 +1032,12 @@ section {
   backdrop-filter: blur(10px);
   border: var(--glass-border);
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-dropdown:hover {
   border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
+  transform: none;
 }
 
 .skill-header {
@@ -1384,24 +1384,26 @@ section {
 
 .skills-grid {
   display: flex;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   width: 100%;
   margin-top: 2rem;
   padding: 2rem 0;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: none;
+  -webkit-mask-image: none;
 }
 
 .skills-track {
   display: flex;
   gap: 2rem;
-  animation: scroll 40s linear infinite;
-  width: max-content;
+  animation: none;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills-track:hover {
-  animation-play-state: paused;
+  animation-play-state: initial;
 }
 
 @keyframes scroll {
@@ -1422,7 +1424,7 @@ section {
   border-radius: 16px;
   padding: 1.5rem;
   backdrop-filter: blur(10px);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -1440,7 +1442,7 @@ section {
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
+  transform: none;
   box-shadow: 0 10px 30px rgba(0, 255, 242, 0.15);
   border-color: rgba(0, 255, 242, 0.5);
 }
@@ -2280,6 +2282,379 @@ body.light-theme .label-light {
   font-size: 0.9rem;
   display: block;
   margin-bottom: 0.5rem;
+}
+
+/* Chronicle Sections (Education and Experience) */
+.chronicle-section {
+  position: relative;
+  text-align: left;
+}
+
+.chronicle-section--education,
+.chronicle-section--experience,
+.chronicle-section--skills {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(213, 0, 249, 0.18), transparent 55%),
+    radial-gradient(circle at 85% 10%, rgba(0, 255, 242, 0.18), transparent 50%),
+    linear-gradient(180deg, rgba(8, 8, 20, 0.75), rgba(3, 3, 5, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 26px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.chronicle-section--education::after,
+.chronicle-section--experience::after,
+.chronicle-section--skills::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(transparent 95%, rgba(0, 255, 242, 0.08) 96%),
+    linear-gradient(90deg, transparent 95%, rgba(213, 0, 249, 0.08) 96%);
+  background-size: 60px 60px;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.chronicle-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(0, 255, 242, 0.12), transparent 40%),
+    radial-gradient(circle at 90% 0%, rgba(213, 0, 249, 0.12), transparent 45%),
+    radial-gradient(circle at 80% 90%, rgba(112, 0, 255, 0.12), transparent 50%);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.chronicle-header {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+}
+
+.chronicle-kicker {
+  font-family: "Fira Code", "Consolas", monospace;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.chronicle-title {
+  font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+  margin: 0.4rem 0 0.6rem;
+}
+
+.chronicle-subtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 720px;
+}
+
+.chronicle-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+}
+
+.chronicle-card {
+  position: relative;
+  background: var(--bg-card);
+  border: var(--glass-border);
+  border-radius: 18px;
+  padding: 1.8rem;
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chronicle-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 255, 242, 0.08), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chronicle-card::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 26px;
+  height: 26px;
+  border-top: 2px solid rgba(0, 255, 242, 0.35);
+  border-right: 2px solid rgba(0, 255, 242, 0.35);
+  opacity: 0.6;
+}
+
+.chronicle-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 255, 242, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.chronicle-card:hover::before {
+  opacity: 1;
+}
+
+.chronicle-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chronicle-id {
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  color: var(--primary);
+  background: rgba(0, 255, 242, 0.12);
+  border: 1px solid rgba(0, 255, 242, 0.35);
+}
+
+.chronicle-period {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.chronicle-role {
+  color: var(--text-light);
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.chronicle-org {
+  display: block;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.chronicle-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.chronicle-tags {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.chronicle-tag {
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  color: var(--text-muted);
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.chronicle-tag.tag-live {
+  color: #00ff88;
+  border-color: rgba(0, 255, 136, 0.5);
+  background: rgba(0, 255, 136, 0.12);
+}
+
+.chronicle-tag.tag-archived {
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.5);
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.chronicle-card--experience::after {
+  border-top-color: rgba(213, 0, 249, 0.35);
+  border-right-color: rgba(213, 0, 249, 0.35);
+}
+
+.chronicle-card--experience:hover {
+  border-color: rgba(213, 0, 249, 0.6);
+  box-shadow: 0 25px 60px rgba(213, 0, 249, 0.15);
+}
+
+.chronicle-command {
+  margin-top: 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px dashed rgba(0, 255, 242, 0.4);
+  background: rgba(0, 0, 0, 0.35);
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  color: var(--text-muted);
+}
+
+.command-prompt {
+  color: var(--primary);
+}
+
+.command-path {
+  color: var(--secondary);
+}
+
+.command-text {
+  color: var(--text-light);
+}
+
+.light-theme .chronicle-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-card);
+}
+
+.light-theme .chronicle-card::after {
+  border-top-color: rgba(0, 0, 0, 0.2);
+  border-right-color: rgba(0, 0, 0, 0.2);
+}
+
+.light-theme .chronicle-section--education,
+.light-theme .chronicle-section--experience,
+.light-theme .chronicle-section--skills {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0, 119, 182, 0.18), transparent 55%),
+    radial-gradient(circle at 85% 10%, rgba(114, 9, 183, 0.15), transparent 50%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(233, 241, 255, 0.9));
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+}
+
+.light-theme .chronicle-section--education::after,
+.light-theme .chronicle-section--experience::after,
+.light-theme .chronicle-section--skills::after {
+  opacity: 0.18;
+}
+
+.light-theme .chronicle-command {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 900px) {
+  .chronicle-header {
+    text-align: center;
+  }
+
+  .chronicle-period {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 600px) {
+  .chronicle-card {
+    padding: 1.4rem;
+  }
+
+  .chronicle-command {
+    font-size: 0.72rem;
+  }
+}
+
+.chronicle-grid--skills {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.skills-section .chronicle-title {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: var(--text-light);
+  color: var(--text-light);
+  margin: 0.4rem 0 0.6rem;
+}
+
+.chronicle-section--skills .skill-list {
+  margin-top: 0.8rem;
+}
+
+.chronicle-section--skills .cyber-progress .progress-bar,
+.chronicle-section--skills .cyber-progress .progress-bar::after {
+  animation: none;
+}
+
+.chronicle-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.chronicle-accordion-item {
+  background: var(--bg-card);
+  border: var(--glass-border);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chronicle-accordion-item[open] {
+  border-color: rgba(0, 255, 242, 0.45);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.chronicle-accordion-header {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.chronicle-accordion-header::-webkit-details-marker {
+  display: none;
+}
+
+.chronicle-accordion-header::after {
+  content: "▾";
+  margin-left: auto;
+  color: var(--primary);
+  transition: transform 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.chronicle-accordion-item[open] .chronicle-accordion-header::after {
+  transform: rotate(180deg);
+}
+
+.chronicle-title-sm {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.chronicle-accordion-body {
+  padding: 0 1.8rem 1.8rem;
+}
+
+.chronicle-accordion-body .chronicle-org {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.light-theme .chronicle-accordion-header {
+  background: rgba(0, 0, 0, 0.02);
 }
 
 /* Contact Section */
@@ -3736,42 +4111,74 @@ body {
 }
 
 .custom-cursor {
+  --x: 0px;
+  --y: 0px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--primary);
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(0, 255, 242, 0.85);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width 0.3s, height 0.3s, background-color 0.3s;
-  mix-blend-mode: difference;
+  transform: translate(var(--x), var(--y)) translate(-50%, -50%);
+  background:
+    radial-gradient(circle at center, rgba(0, 255, 242, 0.35) 0 2px, transparent 3px),
+    linear-gradient(transparent 48%, rgba(0, 255, 242, 0.4) 49%, rgba(0, 255, 242, 0.4) 51%, transparent 52%),
+    linear-gradient(90deg, transparent 48%, rgba(0, 255, 242, 0.4) 49%, rgba(0, 255, 242, 0.4) 51%, transparent 52%);
+  box-shadow: 0 0 18px rgba(0, 255, 242, 0.3), inset 0 0 12px rgba(0, 255, 242, 0.2);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  mix-blend-mode: screen;
+}
+
+.custom-cursor::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px dashed rgba(0, 255, 242, 0.45);
+  border-radius: 50%;
+  animation: spin 6s linear infinite;
+}
+
+.custom-cursor::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(213, 0, 249, 0.35);
+  border-radius: 50%;
+  opacity: 0.8;
 }
 
 .custom-cursor-dot {
+  --x: 0px;
+  --y: 0px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 8px;
-  height: 8px;
-  background-color: var(--primary);
-  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: var(--secondary);
+  border-radius: 2px;
   pointer-events: none;
   z-index: 10000;
-  transform: translate(-50%, -50%);
+  transform: translate(var(--x), var(--y)) translate(-50%, -50%);
+  box-shadow: 0 0 12px rgba(213, 0, 249, 0.75);
 }
 
 .custom-cursor.hover {
-  width: 60px;
-  height: 60px;
-  background-color: rgba(0, 255, 242, 0.1);
-  border-color: transparent;
+  width: 52px;
+  height: 52px;
+  border-color: rgba(213, 0, 249, 0.8);
+  box-shadow: 0 0 24px rgba(213, 0, 249, 0.35), inset 0 0 14px rgba(213, 0, 249, 0.2);
+  background:
+    radial-gradient(circle at center, rgba(213, 0, 249, 0.35) 0 2px, transparent 3px),
+    linear-gradient(transparent 48%, rgba(213, 0, 249, 0.35) 49%, rgba(213, 0, 249, 0.35) 51%, transparent 52%),
+    linear-gradient(90deg, transparent 48%, rgba(213, 0, 249, 0.35) 49%, rgba(213, 0, 249, 0.35) 51%, transparent 52%);
 }
 
 .custom-cursor-dot.hover {
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(var(--x), var(--y)) translate(-50%, -50%) scale(1.6);
 }
 
 /* 3D Tilt Shine */
@@ -4247,4 +4654,3 @@ body {
         border-bottom: none;
     }
 }
-
