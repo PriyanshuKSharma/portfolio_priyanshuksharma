@@ -37,13 +37,11 @@ class RecruitmentChatbot {
 
     createChatWidget() {
         if (document.querySelector('.chatbot-root')) return;
+        // Remove any legacy floating toggle node from older builds.
+        document.querySelectorAll('#chatbot-toggle').forEach((node) => node.remove());
         const chatWidget = document.createElement('div');
         chatWidget.className = 'chatbot-root';
         chatWidget.innerHTML = `
-            <div id="chatbot-toggle" class="chatbot-toggle">
-                <img src="images/chatbot-icon.png" alt="Chatbot" class="chatbot-icon-img">
-                <span class="chat-notification">Ask about Priyanshu!</span>
-            </div>
             <div id="chatbot-container" class="chatbot-container">
                 <div class="chatbot-header">
                     <h4>💼 Recruitment Assistant</h4>
@@ -76,7 +74,6 @@ class RecruitmentChatbot {
     }
 
     bindEvents() {
-        document.getElementById('chatbot-toggle').addEventListener('click', () => this.toggleChat());
         const dockTrigger = document.getElementById('chatbot-dock-trigger');
         if (dockTrigger) {
             dockTrigger.addEventListener('click', () => {
@@ -105,16 +102,13 @@ class RecruitmentChatbot {
     toggleChat() {
         this.isOpen = !this.isOpen;
         const container = document.getElementById('chatbot-container');
-        const toggle = document.getElementById('chatbot-toggle');
         const dockTrigger = document.getElementById('chatbot-dock-trigger');
         
         if (this.isOpen) {
             container.style.display = 'flex';
-            toggle.style.display = 'none';
             if (dockTrigger) dockTrigger.classList.add('active');
         } else {
             container.style.display = 'none';
-            toggle.style.display = 'flex';
             if (dockTrigger) dockTrigger.classList.remove('active');
             this.isExpanded = false;
             container.classList.remove('expanded');

@@ -85,14 +85,11 @@ class RecruitmentChatbot {
 
     createWidget() {
         if (document.querySelector(".chatbot-root")) return;
+        // Remove any legacy floating toggle node from older builds.
+        document.querySelectorAll("#chatbot-toggle").forEach((node) => node.remove());
         const root = document.createElement("div");
         root.className = "chatbot-root";
         root.innerHTML = `
-            <div id="chatbot-toggle" class="chatbot-toggle">
-                <img src="images/chatbot-icon.png" alt="Chatbot" class="chatbot-icon-img">
-                <span class="chatbot-toggle-pulse"></span>
-                <span class="chat-notification">Ask about Priyanshu</span>
-            </div>
             <div id="chatbot-container" class="chatbot-container">
                 <div class="chatbot-header">
                     <div class="chatbot-title-wrap">
@@ -110,7 +107,6 @@ class RecruitmentChatbot {
 
     bindEvents() {
         const input = () => document.getElementById("chatbot-input");
-        document.getElementById("chatbot-toggle").addEventListener("click", () => this.toggle(true));
         const dockTrigger = document.getElementById("chatbot-dock-trigger");
         if (dockTrigger) {
             dockTrigger.addEventListener("click", () => this.toggle());
@@ -136,10 +132,8 @@ class RecruitmentChatbot {
     toggle(force) {
         this.isOpen = typeof force === "boolean" ? force : !this.isOpen;
         const c = document.getElementById("chatbot-container");
-        const t = document.getElementById("chatbot-toggle");
         const dockTrigger = document.getElementById("chatbot-dock-trigger");
         c.style.display = this.isOpen ? "flex" : "none";
-        t.style.display = this.isOpen ? "none" : "flex";
         if (dockTrigger) {
             dockTrigger.classList.toggle("active", this.isOpen);
         }

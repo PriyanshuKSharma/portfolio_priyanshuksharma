@@ -17,6 +17,11 @@
     backdrop-filter: blur(10px);
 }
 
+/* Chatbot opens from dock navbar button; keep floating toggle hidden */
+.chatbot-toggle {
+    display: none !important;
+}
+
 .chatbot-root {
     z-index: 1000;
 }

@@ -178,6 +178,37 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleControl.addEventListener('click', toggleTheme);
   });
 
+  // Bottom dock collapse/expand
+  const navDock = document.querySelector('.bottom-nav-dock');
+  const dockCollapseToggle = document.getElementById('dock-collapse-toggle');
+  if (navDock && dockCollapseToggle) {
+    const dockStateKey = 'nav_dock_collapsed';
+    const setDockState = (collapsed) => {
+      navDock.classList.toggle('is-collapsed', collapsed);
+      dockCollapseToggle.setAttribute('aria-expanded', String(!collapsed));
+      dockCollapseToggle.setAttribute('aria-label', collapsed ? 'Expand Navigation' : 'Collapse Navigation');
+      dockCollapseToggle.setAttribute('title', collapsed ? 'Expand Navigation' : 'Collapse Navigation');
+    };
+
+    let initialCollapsed = false;
+    try {
+      initialCollapsed = localStorage.getItem(dockStateKey) === '1';
+    } catch (_) {
+      initialCollapsed = false;
+    }
+    setDockState(initialCollapsed);
+
+    dockCollapseToggle.addEventListener('click', () => {
+      const collapsed = !navDock.classList.contains('is-collapsed');
+      setDockState(collapsed);
+      try {
+        localStorage.setItem(dockStateKey, collapsed ? '1' : '0');
+      } catch (_) {
+        // no-op when storage is unavailable
+      }
+    });
+  }
+
   // Mobile Menu Toggle
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
