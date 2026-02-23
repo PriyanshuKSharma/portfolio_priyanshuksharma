@@ -96,7 +96,7 @@ class RecruitmentChatbot {
                         <h4>Recruitment Assistant</h4>
                         <div class="chatbot-meta"><span class="chatbot-status">online</span><span id="chatbot-context" class="chatbot-context">context: general</span></div>
                     </div>
-                    <div class="chatbot-controls"><button id="chatbot-expand" title="Expand/Collapse">⛶</button><button id="chatbot-close" title="Close">&times;</button></div>
+                    <div class="chatbot-controls"><button id="chatbot-expand" title="Expand/Collapse" aria-label="Expand chat"><i class="fa-solid fa-expand"></i></button><button id="chatbot-close" title="Close" aria-label="Close chat"><i class="fa-solid fa-xmark"></i></button></div>
                 </div>
                 <div class="chatbot-messages" id="chatbot-messages"></div>
                 <div class="quick-questions" id="chatbot-quick-actions"></div>
@@ -145,7 +145,9 @@ class RecruitmentChatbot {
         this.isExpanded = !this.isExpanded;
         const c = document.getElementById("chatbot-container");
         c.classList.toggle("expanded", this.isExpanded);
-        document.getElementById("chatbot-expand").textContent = this.isExpanded ? "⤢" : "⛶";
+        document.getElementById("chatbot-expand").innerHTML = this.isExpanded
+            ? '<i class="fa-solid fa-compress"></i>'
+            : '<i class="fa-solid fa-expand"></i>';
     }
 
     async send(override = "") {

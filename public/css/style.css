@@ -183,6 +183,10 @@ h1, h2, h3, h4, h5, h6 {
   animation: sparkle 2s ease-in-out infinite;
 }
 
+.badge-icon i {
+  line-height: 1;
+}
+
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
@@ -888,6 +892,12 @@ section {
   background: rgba(0, 255, 255, 0.1);
   border-radius: 50%;
   border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.point-icon i {
+  font-size: 1.1em;
+  line-height: 1;
 }
 
 .point-text {
@@ -946,7 +956,21 @@ section {
 
 .expertise-icon {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: var(--primary);
+  background: rgba(0, 255, 242, 0.08);
+  border: 1px solid rgba(0, 255, 242, 0.24);
+}
+
+.expertise-icon i {
+  font-size: 1.15rem;
+  line-height: 1;
 }
 
 .expertise-item h4 {
@@ -1722,6 +1746,12 @@ body.light-theme .toggle-thumb {
   z-index: 1;
   opacity: 0.7;
   transition: opacity 0.3s ease;
+}
+
+.label-dark i,
+.label-light i {
+  font-size: 0.85rem;
+  line-height: 1;
 }
 
 body:not(.light-theme) .label-dark {
@@ -2808,6 +2838,11 @@ body.light-theme .label-light {
 
 .contact-icon {
   font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.contact-icon i {
+  line-height: 1;
 }
 
 .contact-details {
@@ -2926,11 +2961,13 @@ body.light-theme .label-light {
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1.2rem;
+  color: var(--primary);
 }
 
 .social-toggle:hover {
   background: var(--primary);
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  color: #021318;
 }
 
 .social-content {
@@ -4662,11 +4699,16 @@ body {
 }
 
 .dock-emoji {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.dock-emoji i {
+  font-size: 15px;
+  line-height: 1;
 }
 
 .dock-link::after {

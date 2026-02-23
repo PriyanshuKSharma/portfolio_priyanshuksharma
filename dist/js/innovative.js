@@ -54,8 +54,10 @@ function initCustomCursor() {
   document.body.appendChild(cursorDot);
 
   document.addEventListener('mousemove', (e) => {
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-    cursorDot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    cursor.style.setProperty('--x', `${e.clientX}px`);
+    cursor.style.setProperty('--y', `${e.clientY}px`);
+    cursorDot.style.setProperty('--x', `${e.clientX}px`);
+    cursorDot.style.setProperty('--y', `${e.clientY}px`);
   });
 
   const interactiveElements = document.querySelectorAll('a, button, .card, .skill-header, .tech-icon, input, textarea');
@@ -73,7 +75,7 @@ function initCustomCursor() {
 }
 
 function init3DTilt() {
-  const cards = document.querySelectorAll('.metric-card, .expertise-item, .skill-dropdown, .skill-card, .achievement-card, .project-content, .intro-point');
+  const cards = document.querySelectorAll('.metric-card, .expertise-item, .achievement-card, .project-content, .intro-point');
 
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {

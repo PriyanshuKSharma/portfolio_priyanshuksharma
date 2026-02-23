@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/chatbot.css?v=3.1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0./css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -42,7 +42,7 @@
   <div class="scroll-indicator"></div>
   <div class="social-sidebar" id="socialSidebar">
     <div class="social-toggle" onclick="toggleSocialSidebar()" title="Toggle Social Links">
-      <span>⚡</span>
+      <span aria-hidden="true"><i class="fa-solid fa-share-nodes"></i></span>
     </div>
     <div class="social-content">
       <div class="social-line"></div>
@@ -102,8 +102,8 @@
     </ul>
     <div class="theme-toggle">
       <div class="toggle-slider">
-        <span class="label-dark">🌙</span>
-        <span class="label-light">☀️</span>
+        <span class="label-dark" aria-hidden="true"><i class="fa-solid fa-moon"></i></span>
+        <span class="label-light" aria-hidden="true"><i class="fa-solid fa-sun"></i></span>
         <div class="toggle-thumb"></div>
       </div>
     </div>
@@ -113,55 +113,73 @@
       <span class="bar"></span>
     </div>
   </div>
-  <ul class="bottom-nav-dock" aria-label="Quick navigation">
+  <ul class="bottom-nav-dock" aria-label="Mobile quick navigation">
     <li class="dock-item">
       <a href="#hero" class="nav-link dock-link" aria-label="Home" title="Home">
-        <span class="dock-emoji" aria-hidden="true">🏠</span>
+        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
       </a>
     </li>
     <li class="dock-item">
       <a href="#about" class="nav-link dock-link" aria-label="About Me" title="About Me">
-        <span class="dock-emoji" aria-hidden="true">👤</span>
+        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-user"></i></span>
       </a>
     </li>
     <li class="dock-item">
       <a href="#education" class="nav-link dock-link" aria-label="Education" title="Education">
-        <span class="dock-emoji" aria-hidden="true">🎓</span>
+        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
       </a>
     </li>
     <li class="dock-item">
       <a href="#experience" class="nav-link dock-link" aria-label="Experience" title="Experience">
-        <span class="dock-emoji" aria-hidden="true">💼</span>
+        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
       </a>
     </li>
     <li class="dock-item">
       <a href="#skills" class="nav-link dock-link" aria-label="Technical Skills" title="Skills">
-        <span class="dock-emoji" aria-hidden="true">⌨️</span>
+        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
       </a>
     </li>
     <li class="dock-item">
       <a href="#projects" class="nav-link dock-link" aria-label="Projects" title="Projects">
-        <span class="dock-emoji" aria-hidden="true">📁</span>
+        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-folder-open"></i></span>
       </a>
     </li>
     <li class="dock-item">
       <a href="#contact" class="nav-link dock-link" aria-label="Contact Me" title="Contact">
-        <span class="dock-emoji" aria-hidden="true">✉️</span>
+        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-paper-plane"></i></span>
       </a>
     </li>
     <li class="dock-item">
-      <button class="dock-link dock-theme-toggle" type="button" aria-label="Toggle Theme" title="Toggle Theme">
-        <span class="dock-theme-icon dock-theme-icon--dark"><span class="dock-emoji" aria-hidden="true">🌙</span></span>
-        <span class="dock-theme-icon dock-theme-icon--light"><span class="dock-emoji" aria-hidden="true">☀️</span></span>
+      <button
+        class="dock-link dock-theme-toggle"
+        type="button"
+        aria-label="Toggle Theme"
+        title="Toggle Theme"
+      >
+        <span class="dock-theme-icon dock-theme-icon--dark"><span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-moon"></i></span></span>
+        <span class="dock-theme-icon dock-theme-icon--light"><span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-sun"></i></span></span>
       </button>
     </li>
     <li class="dock-item">
-      <button id="chatbot-dock-trigger" class="dock-link dock-chat-trigger" type="button" aria-label="Open Chatbot" title="Chatbot">
-        <span class="dock-emoji" aria-hidden="true">🤖</span>
+      <button
+        id="chatbot-dock-trigger"
+        class="dock-link dock-chat-trigger"
+        type="button"
+        aria-label="Open Chatbot"
+        title="Chatbot"
+      >
+        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-robot"></i></span>
       </button>
     </li>
     <li class="dock-item dock-item--collapse">
-      <button id="dock-collapse-toggle" class="dock-link dock-collapse-toggle" type="button" aria-label="Collapse Navigation" aria-expanded="true" title="Collapse Navigation">
+      <button
+        id="dock-collapse-toggle"
+        class="dock-link dock-collapse-toggle"
+        type="button"
+        aria-label="Collapse Navigation"
+        aria-expanded="true"
+        title="Collapse Navigation"
+      >
         <svg class="dock-collapse-icon" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
         </svg>
@@ -169,13 +187,14 @@
     </li>
   </ul>
 </nav>
+
   <main>
     <section id="hero" class="hero-section">
   <div class="hero-bg"></div>
   <div class="hero-particles"></div>
   <div class="hero-content">
     <div class="hero-badge">
-      <span class="badge-icon">✨</span>
+      <span class="badge-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
       <span>Available for Opportunities</span>
     </div>
 
@@ -275,6 +294,9 @@
             <div class="tech-icon" data-tech="Git">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="48" alt="Git" />
             </div>
+            <div class="tech-icon" data-tech="Kubernetes">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" width="48" alt="Kubernetes" />
+            </div>
           </div>
         </div>
 
@@ -308,7 +330,7 @@
       <div class="about-content">
         <div class="intro-points">
           <div class="intro-point">
-            <div class="point-icon">🎓</div>
+            <div class="point-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
             <div class="point-text">
               <span class="highlight">B.Tech candidate</span> in Information
               Technology specializing in
@@ -317,7 +339,7 @@
             </div>
           </div>
           <div class="intro-point">
-            <div class="point-icon">⚡</div>
+            <div class="point-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
             <div class="point-text">
               Expertise in <span class="highlight">cloud computing</span>,
               <span class="highlight">cybersecurity</span>,
@@ -326,7 +348,7 @@
             </div>
           </div>
           <div class="intro-point">
-            <div class="point-icon">🛠️</div>
+            <div class="point-icon" aria-hidden="true"><i class="fa-solid fa-screwdriver-wrench"></i></div>
             <div class="point-text">
               Hands-on experience with <span class="highlight">AWS</span>,
               <span class="highlight">Azure</span>,
@@ -336,7 +358,7 @@
             </div>
           </div>
           <div class="intro-point">
-            <div class="point-icon">🚀</div>
+            <div class="point-icon" aria-hidden="true"><i class="fa-solid fa-rocket"></i></div>
             <div class="point-text">
               Worked on
               <span class="highlight">secure cloud architectures</span>,
@@ -348,22 +370,22 @@
 
         <div class="expertise-grid">
           <div class="expertise-item">
-            <div class="expertise-icon">🌐</div>
+            <div class="expertise-icon" aria-hidden="true"><i class="fa-solid fa-cloud"></i></div>
             <h4>Cloud Computing</h4>
             <p>AWS, Azure, GCP architecture and deployment</p>
           </div>
           <div class="expertise-item">
-            <div class="expertise-icon">🛡️</div>
+            <div class="expertise-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
             <h4>Cybersecurity</h4>
             <p>Security frameworks and threat analysis</p>
           </div>
           <div class="expertise-item">
-            <div class="expertise-icon">⚙️</div>
+            <div class="expertise-icon" aria-hidden="true"><i class="fa-solid fa-gears"></i></div>
             <h4>DevOps</h4>
             <p>Docker, Terraform, CI/CD pipelines</p>
           </div>
           <div class="expertise-item">
-            <div class="expertise-icon">🔬</div>
+            <div class="expertise-icon" aria-hidden="true"><i class="fa-solid fa-microchip"></i></div>
             <h4>Quantum Computing</h4>
             <p>Next-gen computing research and development</p>
           </div>
@@ -387,7 +409,7 @@
         <div class="contact-info">
           <div class="contact-item">
             <div class="contact-icon-wrapper">
-              <span class="contact-icon">✉️</span>
+              <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
             </div>
             <div class="contact-details">
               <span class="contact-label">Email</span>
@@ -398,7 +420,7 @@
           </div>
           <div class="contact-item">
             <div class="contact-icon-wrapper">
-              <span class="contact-icon">📞</span>
+              <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
             </div>
             <div class="contact-details">
               <span class="contact-label">Phone</span>
@@ -411,74 +433,138 @@
   </div>
 </section>
 
-<section id="education" class="timeline-section">
-  <h2>Education</h2>
-  <div class="timeline">
+<section id="education" class="chronicle-section chronicle-section--education">
+  <div class="chronicle-header">
+    <p class="chronicle-kicker">/education.stack</p>
+    <h2 class="chronicle-title glitch-text" data-text="Education Kernel">Education Kernel</h2>
+    <p class="chronicle-subtitle">Academic upgrades logged as system builds and milestones.</p>
+  </div>
+  <div class="chronicle-grid">
     
-    <div class="timeline-item education">
-      <h3>Bachelor of Technology in Information Technology</h3>
-      <span class="timeline-org">Ajeenkya D Y Patil University, Pune</span>
-      <span class="timeline-period">August 2022 - Present</span>
-      <p>Specializing in Cloud Technology and Information Security. Active in hackathons and cybersecurity clubs. Current CGPA: <span class="highlight">9.9</span>.</p>
-    </div>
+    <article class="chronicle-card">
+      <div class="chronicle-card-header">
+        <span class="chronicle-id">EDU-01</span>
+        <span class="chronicle-period">August 2022 - Present</span>
+      </div>
+      <h3 class="chronicle-role">Bachelor of Technology in Information Technology</h3>
+      <span class="chronicle-org">Ajeenkya D Y Patil University, Pune</span>
+      <p class="chronicle-desc">Specializing in Cloud Technology and Information Security. Active in hackathons and cybersecurity clubs. Current CGPA: <span class="highlight">9.9</span>.</p>
+      <div class="chronicle-tags">
+        <span class="chronicle-tag tag-live">
+          live
+        </span>
+      </div>
+    </article>
     
-    <div class="timeline-item education">
-      <h3>Intermediate Education</h3>
-      <span class="timeline-org">Sri Chaitanya Jr. Kalasala, Hyderabad</span>
-      <span class="timeline-period">April 2020 - May 2022</span>
-      <p>Completed intermediate education focusing on science and mathematics. Grade: <span class="highlight">93.9%</span>.</p>
-    </div>
+    <article class="chronicle-card">
+      <div class="chronicle-card-header">
+        <span class="chronicle-id">EDU-02</span>
+        <span class="chronicle-period">April 2020 - May 2022</span>
+      </div>
+      <h3 class="chronicle-role">Intermediate Education</h3>
+      <span class="chronicle-org">Sri Chaitanya Jr. Kalasala, Hyderabad</span>
+      <p class="chronicle-desc">Completed intermediate education focusing on science and mathematics. Grade: <span class="highlight">93.9%</span>.</p>
+      <div class="chronicle-tags">
+        <span class="chronicle-tag tag-archived">
+          archived
+        </span>
+      </div>
+    </article>
     
-    <div class="timeline-item education">
-      <h3>Higher Secondary Education</h3>
-      <span class="timeline-org">Sri Chaitanya High School, Hyderabad</span>
-      <span class="timeline-period">April 2019 - May 2020</span>
-      <p>Completed higher secondary education. Grade: <span class="highlight">87.6%</span>.</p>
-    </div>
+    <article class="chronicle-card">
+      <div class="chronicle-card-header">
+        <span class="chronicle-id">EDU-03</span>
+        <span class="chronicle-period">April 2019 - May 2020</span>
+      </div>
+      <h3 class="chronicle-role">Higher Secondary Education</h3>
+      <span class="chronicle-org">Sri Chaitanya High School, Hyderabad</span>
+      <p class="chronicle-desc">Completed higher secondary education. Grade: <span class="highlight">87.6%</span>.</p>
+      <div class="chronicle-tags">
+        <span class="chronicle-tag tag-archived">
+          archived
+        </span>
+      </div>
+    </article>
     
   </div>
 </section>
 
-<section id="experience" class="timeline-section">
-  <h2>Experience</h2>
-  <div class="timeline">
+<section id="experience" class="chronicle-section chronicle-section--experience">
+  <div class="chronicle-header">
+    <p class="chronicle-kicker">/experience.runbook</p>
+    <h2 class="chronicle-title glitch-text" data-text="Experience Runbook">Experience Runbook</h2>
+    <p class="chronicle-subtitle">Internships and research as ops logs and deployed missions.</p>
+  </div>
+  <div class="chronicle-grid chronicle-grid--experience">
     
-    <div class="timeline-item work">
-      <h3>Web Dev Intern</h3>
-      <span class="timeline-org">Marquardt India Pvt. Ltd., Pune</span>
-      <span class="timeline-period">June 2025 - September 2025</span>
-      <p>Contributing to frontend development, UI/UX enhancements, and full-stack feature implementation using HTML5, CSS3, JavaScript, EJS templates, MySQL, and Express.js.</p>
-    </div>
+    <article class="chronicle-card chronicle-card--experience">
+      <div class="chronicle-card-header">
+        <span class="chronicle-id">EXP-01</span>
+        <span class="chronicle-period">June 2025 - September 2025</span>
+      </div>
+      <h3 class="chronicle-role">Web Dev Intern</h3>
+      <span class="chronicle-org">Marquardt India Pvt. Ltd., Pune</span>
+      <p class="chronicle-desc">Contributing to frontend development, UI/UX enhancements, and full-stack feature implementation using HTML5, CSS3, JavaScript, EJS templates, MySQL, and Express.js.</p>
+      <div class="chronicle-command">
+        <span class="command-prompt">priyanshu@ops</span>
+        <span class="command-sep">:</span>
+        <span class="command-path">~/experience</span>
+        <span class="command-sep">$</span>
+        <span class="command-text">deploy --role web-dev-intern</span>
+      </div>
+    </article>
     
-    <div class="timeline-item work">
-      <h3>IT Intern - Placement Coordinator</h3>
-      <span class="timeline-org">Seamless Education and Services (Seamedu) Pvt. Ltd., Pune</span>
-      <span class="timeline-period">March 2025 - June 2025</span>
-      <p>Coordinated end-to-end placement activities, managed candidate databases, and supported IT solutions integration into placement processes.</p>
-    </div>
+    <article class="chronicle-card chronicle-card--experience">
+      <div class="chronicle-card-header">
+        <span class="chronicle-id">EXP-02</span>
+        <span class="chronicle-period">March 2025 - June 2025</span>
+      </div>
+      <h3 class="chronicle-role">IT Intern - Placement Coordinator</h3>
+      <span class="chronicle-org">Seamless Education and Services (Seamedu) Pvt. Ltd., Pune</span>
+      <p class="chronicle-desc">Coordinated end-to-end placement activities, managed candidate databases, and supported IT solutions integration into placement processes.</p>
+      <div class="chronicle-command">
+        <span class="command-prompt">priyanshu@ops</span>
+        <span class="command-sep">:</span>
+        <span class="command-path">~/experience</span>
+        <span class="command-sep">$</span>
+        <span class="command-text">deploy --role it-intern---placement-coordinator</span>
+      </div>
+    </article>
     
-    <div class="timeline-item work">
-      <h3>Cloud Research Intern</h3>
-      <span class="timeline-org">Indian Institute of Technology Ropar, Punjab</span>
-      <span class="timeline-period">May 2024 - July 2024</span>
-      <p>Engaged in advanced research on distributed computing and serverless architectures. Implemented XFBench and XFaaS frameworks for Function-as-a-Service environments.</p>
-    </div>
+    <article class="chronicle-card chronicle-card--experience">
+      <div class="chronicle-card-header">
+        <span class="chronicle-id">EXP-03</span>
+        <span class="chronicle-period">May 2024 - July 2024</span>
+      </div>
+      <h3 class="chronicle-role">Cloud Research Intern</h3>
+      <span class="chronicle-org">Indian Institute of Technology Ropar, Punjab</span>
+      <p class="chronicle-desc">Engaged in advanced research on distributed computing and serverless architectures. Implemented XFBench and XFaaS frameworks for Function-as-a-Service environments.</p>
+      <div class="chronicle-command">
+        <span class="command-prompt">priyanshu@ops</span>
+        <span class="command-sep">:</span>
+        <span class="command-path">~/experience</span>
+        <span class="command-sep">$</span>
+        <span class="command-text">deploy --role cloud-research-intern</span>
+      </div>
+    </article>
     
   </div>
 </section>
 
-<section id="skills" class="skills-section">
-  <h2>Technical Skills</h2>
-
-  <div class="skills-grid">
-    <div class="skills-track">
-      <!-- Original Cards -->
-      <!-- Programming Languages -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">💻</div>
-          <h3>Languages</h3>
-        </div>
+<section id="skills" class="skills-section chronicle-section chronicle-section--skills">
+  <div class="chronicle-header">
+    <p class="chronicle-kicker">/skills.matrix</p>
+    <h2 class="chronicle-title glitch-text" data-text="Technical Skills Matrix">Technical Skills Matrix</h2>
+  </div>
+  <div class="chronicle-accordion">
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-01</span>
+        <span class="chronicle-title-sm">Programming Languages</span>
+        <span class="chronicle-period">Languages</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Core stack</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -518,13 +604,16 @@
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- Development -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🚀</div>
-          <h3>Development</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-02</span>
+        <span class="chronicle-title-sm">Web and App Engineering</span>
+        <span class="chronicle-period">Development</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Frontend to backend</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -564,13 +653,16 @@
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- DevOps Tools -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">⚙️</div>
-          <h3>DevOps</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-03</span>
+        <span class="chronicle-title-sm">Delivery and Automation</span>
+        <span class="chronicle-period">DevOps</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Pipelines and infra</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -602,30 +694,42 @@
           <div class="skill-item">
             <div class="skill-info">
               <span>GitLab</span>
-              <span class="skill-percentage">80%</span>
+              <span class="skill-percentage">60%</span>
             </div>
             <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
+              <div class="progress-bar" style="width: 60%"></div>
             </div>
           </div>
           <div class="skill-item">
             <div class="skill-info">
               <span>Jenkins</span>
-              <span class="skill-percentage">45%</span>
+              <span class="skill-percentage">65%</span>
             </div>
             <div class="cyber-progress">
-              <div class="progress-bar" style="width: 45%"></div>
+              <div class="progress-bar" style="width: 65%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Kubernetes</span>
+              <span class="skill-percentage">65%</span>
+            </div>
+            <div class="cyber-progress">
+              <div class="progress-bar" style="width: 65%"></div>
             </div>
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- Database & Storage -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">💾</div>
-          <h3>Data & Storage</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-04</span>
+        <span class="chronicle-title-sm">Data and Storage</span>
+        <span class="chronicle-period">Data</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Persistence layer</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -665,13 +769,16 @@
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- Cloud Services -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">☁️</div>
-          <h3>Cloud Platforms</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-05</span>
+        <span class="chronicle-title-sm">Cloud Platforms</span>
+        <span class="chronicle-period">Cloud</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Core providers</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -702,13 +809,16 @@
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- CS Fundamentals -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🧠</div>
-          <h3>CS Fundamentals</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-06</span>
+        <span class="chronicle-title-sm">Computer Science Fundamentals</span>
+        <span class="chronicle-period">Core CS</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Foundational systems</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -748,13 +858,16 @@
           </div>
         </div>
       </div>
+    </details>
 
-      <!-- Course Activities -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🎓</div>
-          <h3>Coursework</h3>
-        </div>
+    <details class="chronicle-accordion-item">
+      <summary class="chronicle-accordion-header">
+        <span class="chronicle-id">SKL-07</span>
+        <span class="chronicle-title-sm">Academic Focus</span>
+        <span class="chronicle-period">Coursework</span>
+      </summary>
+      <div class="chronicle-accordion-body">
+        <span class="chronicle-org">Specialized modules</span>
         <div class="skill-list">
           <div class="skill-item">
             <div class="skill-info">
@@ -785,337 +898,26 @@
           </div>
         </div>
       </div>
-
-      <!-- Duplicated Cards for Infinite Scroll -->
-      <!-- Programming Languages -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">💻</div>
-          <h3>Languages</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Java</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Python</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>SQL</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Shell Scripting</span>
-              <span class="skill-percentage">70%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 70%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Development -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🚀</div>
-          <h3>Development</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>HTML/CSS</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>JavaScript</span>
-              <span class="skill-percentage">85%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Node.js</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Express</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- DevOps Tools -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">⚙️</div>
-          <h3>DevOps</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Git/GitHub</span>
-              <span class="skill-percentage">90%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Docker</span>
-              <span class="skill-percentage">85%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Terraform</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>GitLab</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Jenkins</span>
-              <span class="skill-percentage">45%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 45%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Database & Storage -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">💾</div>
-          <h3>Data & Storage</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>AWS S3</span>
-              <span class="skill-percentage">85%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>MySQL</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Google Cloud SQL</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Neon DB</span>
-              <span class="skill-percentage">70%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 70%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cloud Services -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">☁️</div>
-          <h3>Cloud Platforms</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>AWS</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Microsoft Azure</span>
-              <span class="skill-percentage">65%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 65%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Google Cloud</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CS Fundamentals -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🧠</div>
-          <h3>CS Fundamentals</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>DSA</span>
-              <span class="skill-percentage">35%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 35%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>DBMS</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>OS</span>
-              <span class="skill-percentage">70%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 70%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>CN</span>
-              <span class="skill-percentage">65%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 65%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Course Activities -->
-      <div class="skill-card">
-        <div class="card-header">
-          <div class="header-icon">🎓</div>
-          <h3>Coursework</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Cloud Architecture</span>
-              <span class="skill-percentage">90%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>Network Security</span>
-              <span class="skill-percentage">85%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>DevOps Pipelines</span>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="cyber-progress">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </details>
   </div>
 </section>
-
 <section id="awards" class="achievements-section">
   <h2>Awards</h2>
   <div class="achievement-grid">
-    <div class="achievement-card">
-      <h3>Creative Cloud Integration Award</h3>
-      <span class="achievement-org">Seamedu Awards 2025</span>
-    </div>
+
     <div class="achievement-card">
       <h3>School Rank: 3rd</h3>
       <span class="achievement-org"
         >SOF International Mathematics Olympiad (2019)</span
       >
     </div>
+
+
+    <div class="achievement-card">
+      <h3>Creative Cloud Integration Award</h3>
+      <span class="achievement-org">Seamedu Awards 2025</span>
+    </div>
+    
     <div class="achievement-card">
       <h3>Bronze Medal</h3>
       <span class="achievement-org"
@@ -1129,10 +931,10 @@
   <h2>Hackathons</h2>
   <div class="achievement-grid">
     <div class="achievement-card">
-      <h3>ADYPU Problem-A-Thon</h3>
+      <h3>ADYPU Problem-A-Thon(2022)</h3>
     </div>
     <div class="achievement-card">
-      <h3>Sharda University Tech-a-thon</h3>
+      <h3>Sharda University Tech-a-thon(2022)</h3>
     </div>
     <div class="achievement-card">
       <h3>Smart India Hackathon (Internal)(2023)</h3>
@@ -1183,6 +985,18 @@
       </h3>
       <span class="achievement-org">Oracle University</span>
     </div>
+    <div class="achievement-card">
+      <h3>AWS Services for Solutions Architect Associate - Udemy</h3>
+      <span class="achievement-org">Udemy</span>
+    </div>
+    <div class="achievement-card">
+      <h3>SQL (Basic)</h3>
+      <span class="achievement-org">HackerRank</span>
+    </div>
+    <div class="achievement-card">
+      <h3>Python Mastery for Beginners</h3>
+      <span class="achievement-org">Udemy</span>
+    </div>
   </div>
 </section>
 
@@ -1205,6 +1019,63 @@
         <div
           class="project-content active"
           data-index="0"
+          data-title="multi-cloud-saas-orchestration-platform"
+        >
+          <div class="terminal-line">
+            <span class="prompt-user">priyanshu@portfolio</span><span class="prompt-symbol">:</span><span class="prompt-path">~/projects/multi-cloud-saas-orchestration-platform</span><span class="prompt-symbol">$</span> <span class="command-text">cat README.md</span>
+          </div>
+          <h3>Multi-Cloud SaaS Orchestration Platform</h3>
+          <p>Built and deployed a cloud-native multi-cloud orchestration platform with containerized microservices using Docker and infrastructure provisioning via Terraform. Implemented automated background jobs with Celery and Redis for periodic synchronization of cloud resource data from AWS, Azure, and GCP APIs. Designed CI/CD-friendly architecture and production-ready deployments with secure JWT authentication, PostgreSQL-backed services, and scalable FastAPI backend. This project highlights practical experience in infrastructure automation, containerization, service orchestration, and operational reliability.</p>
+          
+          <div class="terminal-line">
+            <span class="prompt-user">priyanshu@portfolio</span><span class="prompt-symbol">:</span><span class="prompt-path">~/projects/multi-cloud-saas-orchestration-platform</span><span class="prompt-symbol">$</span> <span class="command-text">ls technologies/</span>
+          </div>
+          <div class="project-tags">
+            
+            <span class="tag">React.js</span>
+            
+            <span class="tag">Tailwind CSS</span>
+            
+            <span class="tag">AWS</span>
+            
+            <span class="tag">Azure</span>
+            
+            <span class="tag">GCP</span>
+            
+            <span class="tag">Docker</span>
+            
+            <span class="tag">FastAPI</span>
+            
+            <span class="tag">Celery</span>
+            
+            <span class="tag">Redis</span>
+            
+            <span class="tag">PostgreSQL</span>
+            
+            <span class="tag">JWT</span>
+            
+            <span class="tag">Terraform</span>
+            
+            <span class="tag">Jenkins</span>
+            
+          </div>
+          
+          <div class="terminal-line">
+            <span class="prompt-user">priyanshu@portfolio</span><span class="prompt-symbol">:</span><span class="prompt-path">~/projects/multi-cloud-saas-orchestration-platform</span><span class="prompt-symbol">$</span> <span class="command-text">open links</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/PriyanshuKSharma/multi-cloud" target="_blank">GitHub</a>
+            
+          </div>
+          
+          <div class="terminal-line">
+            <span class="prompt-user">priyanshu@portfolio</span><span class="prompt-symbol">:</span><span class="prompt-path">~/projects/multi-cloud-saas-orchestration-platform</span><span class="prompt-symbol">$</span> <span class="cursor-blink"></span>
+          </div>
+        </div>
+        
+        <div
+          class="project-content "
+          data-index="1"
           data-title="storage-saas-platform"
         >
           <div class="terminal-line">
@@ -1245,7 +1116,7 @@
         
         <div
           class="project-content "
-          data-index="1"
+          data-index="2"
           data-title="quantum-cloud-integration"
         >
           <div class="terminal-line">
@@ -1286,7 +1157,7 @@
         
         <div
           class="project-content "
-          data-index="2"
+          data-index="3"
           data-title="rural-gyan-platform"
         >
           <div class="terminal-line">
@@ -1329,7 +1200,7 @@
         
         <div
           class="project-content "
-          data-index="3"
+          data-index="4"
           data-title="xai-interpret"
         >
           <div class="terminal-line">
@@ -1370,7 +1241,7 @@
         
         <div
           class="project-content "
-          data-index="4"
+          data-index="5"
           data-title="skyvault"
         >
           <div class="terminal-line">
@@ -1413,7 +1284,7 @@
         
         <div
           class="project-content "
-          data-index="5"
+          data-index="6"
           data-title="ecobizz-e-commerce-app"
         >
           <div class="terminal-line">
@@ -1454,7 +1325,7 @@
         <div class="terminal-controls">
           <button id="prev-project" class="terminal-btn">&lt; Prev</button>
           <span class="terminal-pagination" id="project-pagination"
-            >1 / 6</span
+            >1 / 7</span
           >
           <button id="next-project" class="terminal-btn">Next &gt;</button>
         </div>
@@ -1512,15 +1383,15 @@
             <div class="hr-badges-container">
               <div class="hr-badge-item">
                 <img src="https://hrcdn.net/fcore/assets/badges/python-f70befd824.svg" alt="Python 5 Star">
-                <span class="badge-label">Python 2⭐</span>
+                <span class="badge-label">Python 4⭐(Silver)</span>
               </div>
               <div class="hr-badge-item">
                 <img src="https://hrcdn.net/fcore/assets/badges/sql-89e76e7082.svg" alt="SQL 1 Star">
-                <span class="badge-label">SQL 1⭐</span>
+                <span class="badge-label">SQL 4⭐(Silver)</span>
               </div>
               <div class="hr-badge-item">
                 <img src="https://hrcdn.net/fcore/assets/badges/problem-solving-ecaf59a612.svg" alt="Problem Solving">
-                <span class="badge-label">Problem Solving 2⭐</span>
+                <span class="badge-label">Problem Solving 2⭐(Bronze)</span>
               </div>
             </div>
           </div>
@@ -1589,12 +1460,6 @@
   <!-- Three.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   
-  <!-- MediaPipe -->
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
-
   <script src="js/main.js?v=4.2"></script>
   <script src="js/projects.js"></script>
   <script src="js/futuristic-effects.js"></script>

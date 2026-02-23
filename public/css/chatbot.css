@@ -170,12 +170,21 @@
     background: none;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     padding: 0;
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s ease;
+}
+
+#chatbot-expand i,
+#chatbot-close i {
+    line-height: 1;
+    pointer-events: none;
 }
 
 #chatbot-expand:hover, #chatbot-close:hover {
