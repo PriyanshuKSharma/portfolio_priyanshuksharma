@@ -1780,6 +1780,41 @@ body.light-theme .label-light {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+.mobile-chat-only {
+  display: none;
+}
+
+.nav-chat-trigger {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+@media (max-width: 768px) {
+  .mobile-chat-only {
+    display: block;
+  }
+
+  .nav-chat-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    min-width: 132px;
+    background: rgba(0, 255, 255, 0.08);
+  }
+
+  .nav-chat-trigger:hover,
+  .nav-chat-trigger.active {
+    color: var(--primary);
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.28);
+  }
+}
 .repo-description {
   color: var(--text-muted);
   font-size: 0.9rem;
@@ -4247,4 +4282,3 @@ body {
         border-bottom: none;
     }
 }
-

@@ -4676,6 +4676,18 @@ body {
     position: relative;
   }
 
+  .dock-chat-trigger {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .dock-chat-trigger:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
   .dock-link::after {
     display: none;
   }

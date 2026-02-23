@@ -561,20 +561,19 @@
         width: calc(100vw - 20px);
         max-width: 360px;
         height: 500px;
-        bottom: 10px;
+        bottom: calc(6.2rem + env(safe-area-inset-bottom));
         left: 10px;
     }
 
     .chatbot-container.expanded {
         width: calc(100vw - 20px);
         height: 560px;
-        bottom: 10px;
+        bottom: calc(6.2rem + env(safe-area-inset-bottom));
         left: 10px;
     }
     
     .chatbot-toggle {
-        bottom: 10px;
-        left: 10px;
+        display: none !important;
     }
 
     .chat-notification {
