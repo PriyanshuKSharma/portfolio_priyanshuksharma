@@ -47,7 +47,10 @@ ejs.renderFile('./views/index.ejs', {
     timeline
   }, (err, html) => {
     if (err) throw err;
-    fs.writeFileSync('./dist/index.html', html.replace(/\/css\//g, './css/').replace(/\/js\//g, './js/').replace(/\/images\//g, './images/').replace(/\/resume\//g, './resume/'));
+    const toRelativeAssetPaths = (markup) =>
+      markup.replace(/([="'(])\/(css|js|images|resume|data)\//g, '$1./$2/');
+
+    fs.writeFileSync('./dist/index.html', toRelativeAssetPaths(html));
     console.log('Build completed!');
   });
 });
