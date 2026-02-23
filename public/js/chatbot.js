@@ -15,6 +15,8 @@ class RecruitmentChatbot {
     }
 
     async init() {
+        if (window.__portfolioChatbotInitialized) return;
+        window.__portfolioChatbotInitialized = true;
         await this.loadData();
         this.createWidget();
         this.bindEvents();
@@ -82,6 +84,7 @@ class RecruitmentChatbot {
     }
 
     createWidget() {
+        if (document.querySelector(".chatbot-root")) return;
         const root = document.createElement("div");
         root.className = "chatbot-root";
         root.innerHTML = `
@@ -100,7 +103,7 @@ class RecruitmentChatbot {
                 </div>
                 <div class="chatbot-messages" id="chatbot-messages"></div>
                 <div class="quick-questions" id="chatbot-quick-actions"></div>
-                <div class="chatbot-input"><input type="text" id="chatbot-input" placeholder="Ask about skills, projects, experience, contact..."><button id="chatbot-send"><i class="fas fa-paper-plane"></i></button></div>
+                <div class="chatbot-input"><input type="text" id="chatbot-input" placeholder="Ask about skills, projects, experience, contact..."><button id="chatbot-send" aria-label="Send message"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg></button></div>
             </div>`;
         document.body.appendChild(root);
     }
@@ -108,6 +111,10 @@ class RecruitmentChatbot {
     bindEvents() {
         const input = () => document.getElementById("chatbot-input");
         document.getElementById("chatbot-toggle").addEventListener("click", () => this.toggle(true));
+        const dockTrigger = document.getElementById("chatbot-dock-trigger");
+        if (dockTrigger) {
+            dockTrigger.addEventListener("click", () => this.toggle());
+        }
         document.getElementById("chatbot-close").addEventListener("click", () => this.toggle(false));
         document.getElementById("chatbot-expand").addEventListener("click", () => this.expand());
         document.getElementById("chatbot-send").addEventListener("click", () => this.send());
@@ -130,8 +137,12 @@ class RecruitmentChatbot {
         this.isOpen = typeof force === "boolean" ? force : !this.isOpen;
         const c = document.getElementById("chatbot-container");
         const t = document.getElementById("chatbot-toggle");
+        const dockTrigger = document.getElementById("chatbot-dock-trigger");
         c.style.display = this.isOpen ? "flex" : "none";
         t.style.display = this.isOpen ? "none" : "flex";
+        if (dockTrigger) {
+            dockTrigger.classList.toggle("active", this.isOpen);
+        }
         if (this.isOpen) document.getElementById("chatbot-input").focus();
         if (!this.isOpen) { c.classList.remove("expanded"); this.isExpanded = false; }
     }

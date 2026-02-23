@@ -207,10 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (sections[len]) {
         // Find the link that corresponds to this section
         const activeId = sections[len].id;
-        const activeLink = document.querySelector(`.nav-link[href="#${activeId}"]`);
-        if (activeLink) {
-            activeLink.classList.add("active");
-        }
+        const activeLinks = document.querySelectorAll(`.nav-link[href="#${activeId}"]`);
+        activeLinks.forEach(link => link.classList.add("active"));
     }
   }
   activeMenu();

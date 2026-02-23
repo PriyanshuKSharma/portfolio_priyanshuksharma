@@ -1,6 +1,6 @@
 /**
  * Real-time Interactive 3D Particle System
- * Uses Three.js for rendering and MediaPipe for hand tracking.
+ * Uses Three.js for rendering.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,18 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
         particleCount: 3500, 
         particleSize: 0.2,   // Fine detail size (reduced from 0.35)
         colors: [0x00ffff, 0xff00ff, 0x00ff00, 0xffaa00, 0xffffff, 0xff0088, 0x0088ff], 
-        cameraZ: 30,
-        interactionRadius: 8,
-        repulsionForce: 0.5,
-        attractionForce: 0.3
+        cameraZ: 30
     };
 
     // --- State ---
     let particles;
     let particleSystem;
     let scene, camera, renderer;
-    let handPosition = new THREE.Vector3(0, 0, 0);
-    let isHandDetected = false;
     let currentShape = 'default';
     let targetPositions = [];
     let isThreeInitialized = false;
@@ -44,13 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateDebugBox("Error: Three.js not loaded", true);
         return;
     }
-    if (typeof Hands === 'undefined') {
-         updateDebugBox("Warning: MediaPipe Hands not loaded. Hand tracking disabled.", true);
-    }
-    if (typeof Camera === 'undefined') {
-        updateDebugBox("Warning: MediaPipe Camera Utils not loaded. Hand tracking disabled.", true);
-    }
-
     // --- Three.js Setup (Called Immediately) ---
     function initThree() {
         if (isThreeInitialized) return;
@@ -256,26 +244,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 px += Math.cos(Date.now() * 0.002 + py * 0.1) * 0.02;
             }
 
-            if (isHandDetected) {
-                const dx = px - handPosition.x;
-                const dy = py - handPosition.y;
-                const dz = pz - handPosition.z;
-                const dist = Math.sqrt(dx*dx + dy*dy + dz*dz);
-
-                if (dist < config.interactionRadius) {
-                    if (currentShape === 'firework') {
-                        const force = (config.interactionRadius - dist) * config.repulsionForce;
-                        px += (dx / dist) * force;
-                        py += (dy / dist) * force;
-                        pz += (dz / dist) * force;
-                    } else {
-                         const force = (config.interactionRadius - dist) * config.attractionForce;
-                         px -= (dy / dist) * force;
-                         py += (dx / dist) * force;
-                         pz -= (dz / dist) * force * 0.5;
-                    }
-                }
-            }
             positions[ix] = px;
             positions[iy] = py;
             positions[iz] = pz;
@@ -284,56 +252,6 @@ document.addEventListener('DOMContentLoaded', () => {
         particleSystem.geometry.attributes.position.needsUpdate = true;
         particleSystem.rotation.y += 0.001;
         renderer.render(scene, camera);
-    }
-
-    // --- MediaPipe Hand Handling ---
-    function onHandsResults(results) {
-        if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
-            isHandDetected = true;
-            updateDebugBox("Hand Detected! Gesture active.");
-            
-            const landmarks = results.multiHandLandmarks[0];
-            const x = (1 - landmarks[9].x) * 2 - 1;
-            const y = (1 - landmarks[9].y) * 2 - 1;
-            handPosition.set(x * 20, y * 15, 0);
-
-            detectGesture(landmarks);
-        } else {
-            isHandDetected = false;
-        }
-    }
-
-    function detectGesture(landmarks) {
-        const indexTip = landmarks[8];
-        const middleTip = landmarks[12];
-        const ringTip = landmarks[16];
-        const pinkyTip = landmarks[20];
-        const thumbTip = landmarks[4];
-        
-        const isIndexOpen = indexTip.y < landmarks[6].y;
-        const isMiddleOpen = middleTip.y < landmarks[10].y;
-        const isRingOpen = ringTip.y < landmarks[14].y;
-        const isPinkyOpen = pinkyTip.y < landmarks[18].y;
-
-        const openFingers = [isIndexOpen, isMiddleOpen, isRingOpen, isPinkyOpen].filter(Boolean).length;
-
-        if (openFingers === 4) {
-            // Open Hand -> Firework
-            if (currentShape !== 'firework') generateShape('firework');
-        } else if (openFingers === 0) {
-            // Fist -> Vortex (DNA/Helix)
-            if (currentShape !== 'vortex') generateShape('vortex');
-        } else if (isIndexOpen && isPinkyOpen && !isMiddleOpen && !isRingOpen) {
-            // Rock On / Spiderman -> Spiral
-            if (currentShape !== 'spiral') generateShape('spiral');
-        } else if (isIndexOpen && isMiddleOpen && !isRingOpen && !isPinkyOpen) {
-            if (currentShape !== 'heart') generateShape('heart');
-        } else if (isIndexOpen && !isMiddleOpen && !isRingOpen && !isPinkyOpen) {
-             if (currentShape !== 'flower') generateShape('flower');
-        } else if (!isIndexOpen && !isMiddleOpen && !isRingOpen && !isPinkyOpen && thumbTip.y < landmarks[3].y) {
-             // Thumbs Up -> Saturn
-             if (currentShape !== 'saturn') generateShape('saturn');
-        }
     }
 
     function onWindowResize() {
@@ -345,44 +263,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Three.js immediately for visuals
     initThree();
-
-    // Initialize Camera for interaction (progressive enhancement)
-    if (typeof Hands !== 'undefined' && typeof Camera !== 'undefined') {
-        const videoElement = document.createElement('video');
-        videoElement.style.display = 'none';
-        document.body.appendChild(videoElement);
-
-        const hands = new Hands({
-            locateFile: (file) => {
-                return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
-            }
-        });
-
-        hands.setOptions({
-            maxNumHands: 1,
-            modelComplexity: 1,
-            minDetectionConfidence: 0.5,
-            minTrackingConfidence: 0.5
-        });
-
-        hands.onResults(onHandsResults);
-
-        const cameraUtils = new Camera(videoElement, {
-            onFrame: async () => {
-                await hands.send({image: videoElement});
-            },
-            width: 640,
-            height: 480
-        });
-        
-        updateDebugBox("Initializing Camera...");
-        cameraUtils.start()
-            .then(() => {
-                updateDebugBox("Camera Active. Interaction Enabled.");
-            })
-            .catch(err => {
-                console.warn("Camera failed to start:", err);
-                updateDebugBox("Camera access denied. Interaction disabled.", true);
-            });
-    }
 });
