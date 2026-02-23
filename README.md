@@ -28,24 +28,29 @@
 ---
 
 **About**
+
 I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Cloud Technology and Information Security. I build cloud-native systems, explore Zero Trust security, and research hybrid quantum-cloud systems. I learn by shipping projects, publishing research, and contributing to open-source.
 
 **What I Do**
+
 - Build cloud and DevOps projects with real infrastructure workflows.
 - Research serverless performance and cloud security.
 - Design systems that prioritize IAM, Zero Trust, and reliability.
 
 **Current Focus**
+
 - Hybrid quantum-cloud systems with AWS and IBM Quantum.
 - Serverless benchmarking and XFBench/XFaaS research.
 - Security-first cloud architectures with IAM and Zero Trust patterns.
 
 **Research and Internships**
+
 - Research Intern at IIT Ropar: XFBench and XFaaS development for serverless benchmarking.
 - Research on Quantum Computing and Cloud Storage: hybrid cloud-quantum integration using AWS and IBM Quantum.
 - IAM Security Research: authentication protocols, access control models, and AAA framework implementation.
 
 **Selected Projects**
+
 - [Multi-Cloud SaaS Orchestration Platform](https://github.com/PriyanshuKSharma/multi-cloud)
 - [Media Storage SaaS](https://github.com/PriyanshuKSharma/media-storage-saas)
 - [Quantum-Cloud Integration](https://github.com/PriyanshuKSharma/quantum-cloud-integration)
@@ -53,18 +58,20 @@ I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Clo
 - [EcoBizz: Sustainably Yours](https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024)
 
 **Technical Skills**
-| Area | Tools |
-| --- | --- |
-| Languages | Java, Python, Dart, Bash |
-| Web/App | HTML5, CSS3, JavaScript, Django, Flutter |
-| Cloud | AWS, Azure, Google Cloud, OpenFaaS, Cloudflare |
-| Security | IAM, Zero Trust, Nmap, Network Security |
-| DevOps | Docker, Kubernetes, GitHub, GitLab, Redis |
-| IaC | Terraform, Pulumi |
-| Data | MySQL, AWS S3, Google Cloud SQL, Neon DB |
-| Quantum | IBM Quantum, AWS Braket |
+
+| Area      | Tools                                          |
+| --------- | ---------------------------------------------- |
+| Languages | Java, Python, Dart, Bash                       |
+| Web/App   | HTML5, CSS3, JavaScript, Django, Flutter       |
+| Cloud     | AWS, Azure, Google Cloud, OpenFaaS, Cloudflare |
+| Security  | IAM, Zero Trust, Nmap, Network Security        |
+| DevOps    | Docker, Kubernetes, GitHub, GitLab, Redis      |
+| IaC       | Terraform, Pulumi                              |
+| Data      | MySQL, AWS S3, Google Cloud SQL, Neon DB       |
+| Quantum   | IBM Quantum, AWS Braket                        |
 
 **Stack Logos**
+
 <div align="center">
   <p><strong>Languages</strong></p>
   <p>
@@ -121,19 +128,23 @@ I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Clo
 </div>
 
 **Education**
+
 - Aug 2022 - Present: B.Tech in Information Technology, Ajeenkya D Y Patil University, Pune. Current CGPA: 9.9.
 - Apr 2020 - May 2022: Intermediate Education, Sri Chaitanya Jr. Kalasala, Hyderabad. Grade: 93.9%.
 - Apr 2019 - May 2020: Higher Secondary Education, Sri Chaitanya High School, Hyderabad. Grade: 87.6%.
 
 **Certifications and Virtual Internships**
+
 - Zscaler Zero Trust Cloud Security Virtual Internship, EduSkills Foundation (Apr 2024 - Jun 2024).
 - Fortinet Network Security Associate, AICTE EduSkills.
 
 **Open Source**
+
 - Contributor at Interns-MQI-25, focused on Docker, Cloud, and DevOps.
 - Linux Practicals: scripts and labs for Linux fundamentals.
 
 **Future Goals**
+
 - Ship SkyVault as a production-grade personal cloud storage system.
 - Publish research on Quantum-Cloud Systems and IAM.
 - Contribute to open-source security tools.
@@ -142,11 +153,14 @@ I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Clo
 This repository also contains my portfolio website built with Express and EJS.
 
 Quick start:
-1. `npm install`
-1. `npm start`
-1. Open `http://localhost:3000`
+
+1. `npm installSingle-column modules that expand on demand.
+2. 
+3. `npm start`
+4. Open `http://localhost:3000`
 
 **Contact**
+
 <p align="center">
   <a href="mailto:priyanshu17ks@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="36" alt="Gmail" /></a>
   <a href="https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/"><img src="https://img.icons8.com/color/48/linkedin.png" height="36" alt="LinkedIn" /></a>
