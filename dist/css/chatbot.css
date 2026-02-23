@@ -208,6 +208,13 @@
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
 }
 
+#chatbot-send svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    display: block;
+}
+
 #chatbot-send:hover {
     transform: scale(1.1);
     background: #00ffff;
