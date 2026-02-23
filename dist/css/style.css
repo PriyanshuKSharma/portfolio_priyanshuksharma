@@ -1838,11 +1838,20 @@ body.light-theme .label-light {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  border: 1px solid rgba(0, 255, 242, 0.24);
+  background: rgba(0, 255, 242, 0.08);
   color: var(--text-light);
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.25s ease;
   position: relative;
+}
+
+.dock-link i,
+.dock-link svg {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 .dock-link::after {
@@ -2007,6 +2016,8 @@ body.light-theme .bottom-nav-dock {
 
 body.light-theme .dock-link {
   color: #0f172a;
+  border-color: rgba(59, 130, 246, 0.28);
+  background: rgba(59, 130, 246, 0.1);
 }
 
 body.light-theme .dock-link:hover {
