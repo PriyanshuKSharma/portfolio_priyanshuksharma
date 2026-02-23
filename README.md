@@ -1,293 +1,187 @@
-# Portfolio | Priyanshu Kumar Sharma
+# Priyanshu Kumar Sharma | Cloud, Security, DevOps Portfolio
 
 <div align="center">
-
-![Portfolio Banner](https://img.shields.io/badge/Portfolio-Live-00ffff?style=for-the-badge&logo=vercel&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-**🌟 I am a B.Tech candidate in Information Technology specializing in Cloud Technology and Information Security. With expertise in cloud computing, cybersecurity, DevOps, and quantum computing, I have hands-on experience with AWS, Azure, Docker, Terraform, and security frameworks. Through research, internships, and open-source contributions, I have worked on secure cloud architectures, serverless computing, and advanced security implementations. 🌟**
-
-[🔗 Live Demo](https://priyanshuksharma.github.io/portfolio_priyanshuksharma/) | [📖 Documentation](#features) | [🚀 Quick Start](#installation)
-
+  <p>High-signal, data-driven portfolio built with Express and EJS. Designed for motion, clarity, and fast updates.</p>
+  <p>
+    <a href="https://priyanshuksharma.github.io/portfolio_priyanshuksharma/">Live Demo</a> |
+    <a href="#quick-start">Quick Start</a> |
+    <a href="#customization">Customization</a> |
+    <a href="#deployment">Deployment</a>
+  </p>
+  <p>
+    <img src="https://cdn.simpleicons.org/amazonaws/FF9900" height="36" alt="AWS" />
+    <img src="https://cdn.simpleicons.org/microsoftazure/0078D4" height="36" alt="Microsoft Azure" />
+    <img src="https://cdn.simpleicons.org/googlecloud/4285F4" height="36" alt="Google Cloud" />
+    <img src="https://cdn.simpleicons.org/docker/2496ED" height="36" alt="Docker" />
+    <img src="https://cdn.simpleicons.org/terraform/7B42BC" height="36" alt="Terraform" />
+    <img src="https://cdn.simpleicons.org/vercel/000000" height="36" alt="Vercel" />
+    <img src="https://cdn.simpleicons.org/github/181717" height="36" alt="GitHub" />
+    <img src="https://cdn.simpleicons.org/nodedotjs/339933" height="36" alt="Node.js" />
+    <img src="https://cdn.simpleicons.org/express/000000" height="36" alt="Express" />
+    <img src="https://cdn.simpleicons.org/ejs/B4CA65" height="36" alt="EJS" />
+    <img src="https://cdn.simpleicons.org/javascript/F7DF1E" height="36" alt="JavaScript" />
+    <img src="https://cdn.simpleicons.org/html5/E34F26" height="36" alt="HTML5" />
+    <img src="https://cdn.simpleicons.org/css3/1572B6" height="36" alt="CSS3" />
+  </p>
 </div>
 
 ---
 
-## ✨ Features
+## Table of Contents
+1. [At a Glance](#at-a-glance)
+1. [What Makes It Different](#what-makes-it-different)
+1. [Feature Highlights](#feature-highlights)
+1. [Information Architecture](#information-architecture)
+1. [Data Model](#data-model)
+1. [Architecture](#architecture)
+1. [Project Structure](#project-structure)
+1. [Tech Stack](#tech-stack)
+1. [Quick Start](#quick-start)
+1. [Customization](#customization)
+1. [Deployment](#deployment)
+1. [Scripts](#scripts)
+1. [Contributing](#contributing)
+1. [License](#license)
+1. [Author](#author)
 
-### 🎨 **Modern Design**
+## At a Glance
+| Focus | Built With | Update Flow |
+| --- | --- | --- |
+| Cloud, Security, DevOps portfolio | Express, EJS, GSAP, ScrollReveal | Edit JSON -> refresh -> done |
 
-- **Cyberpunk Neon Theme** with cyan, magenta, and green accents
-- **Glassmorphism Effects** with backdrop blur and transparency
-- **Animated Gradient Backgrounds** and particle effects
-- **Custom Scrollbar** with gradient styling
+## What Makes It Different
+- Data-first content: update JSON and the site updates automatically.
+- Command palette navigation for instant section jumps and project search.
+- Motion-focused UI with particles, 3D hovers, and scroll reveals.
 
-### 🎭 **Interactive Animations**
+## Feature Highlights
+- Neon glassmorphism theme with gradient lighting.
+- Responsive layout with mobile navigation and touch-friendly interactions.
+- SEO-ready metadata and clean semantic structure.
+- Modular EJS partials for rapid iteration.
+- Contact form wiring ready for email delivery.
 
-- **Typewriter Effect** for dynamic taglines
-- **Scroll-triggered Animations** for all sections
-- **3D Hover Effects** on cards and buttons
-- **Animated Progress Bars** for skills
-- **Smooth Transitions** throughout the site
+## Information Architecture
+- Hero with dynamic tagline.
+- About.
+- Timeline for experience and education.
+- Skills and achievements.
+- Projects and case studies.
+- Contact and command palette.
 
-### 📱 **Fully Responsive**
+## Data Model
+Content is sourced from `data/*.json` and rendered through EJS partials.
 
-- **Mobile-first Design** with breakpoints
-- **Hamburger Navigation** for mobile devices
-- **Touch-friendly Interactions**
-- **Optimized for all screen sizes**
-
-### 🛠️ **Technical Features**
-
-- **Express.js Backend** with EJS templating
-- **Modular Architecture** with partials and data files
-- **Contact Form** with email integration ready
-- **SEO Optimized** with proper meta tags
-- **Performance Optimized** CSS and JavaScript
-
----
-
-## 🏗️ Project Structure
-
-```
-portfolio/
-├── 📁 data/
-│   ├── projects.json      # Project information
-│   ├── skills.json        # Skills data
-│   └── timeline.json      # Experience & education
-├── 📁 public/
-│   ├── 📁 css/
-│   │   ├── style.css      # Main styles
-│   │   └── theme.css      # Additional effects
-│   ├── 📁 js/
-│   │   └── main.js        # Interactive features
-│   ├── 📁 images/         # Project images
-│   └── 📁 resume/         # Resume downloads
-├── 📁 routes/
-│   └── main.js            # Express routes
-├── 📁 views/
-│   ├── 📁 partials/
-│   │   ├── navbar.ejs     # Navigation component
-│   │   └── footer.ejs     # Footer component
-│   ├── index.ejs          # Main page
-│   ├── layout.ejs         # Base template
-│   └── 404.ejs            # Error page
-├── app.js                 # Express server
-└── package.json           # Dependencies
-```
-
----
-
-## 🚀 Installation
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/PriyanshuKSharma/portfolio.git
-
-# Navigate to project directory
-cd portfolio
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm start
-
-# Open your browser and visit
-http://localhost:3000
-```
-
----
-
-## 🎯 Sections Overview
-
-### 🏠 **Hero Section**
-
-- **Animated name display** with gradient text
-- **Welcome message** and role description
-- **Typewriter animation** with rotating taglines
-- **Call-to-action buttons** with hover effects
-- **Interactive 3D Particle System** 🆕
-  - Real-time hand tracking via webcam
-  - Dynamic particle interactions and shape morphing
-  - **Gestures**:
-    - 🖐️ **Open Palm**: Firework/Explosion
-    - ✌️ **Peace Sign**: Heart Shape
-    - ☝️ **Index Finger**: Flower Shape
-    - 👍 **Thumbs Up**: Saturn Ring
-    - 👊 **Fist**: Vortex/DNA Helix
-    - 🤟 **Rock On**: Spiral Galaxy
-
-### 👨‍💻 **About Me**
-
-- **Professional summary** with expertise highlights
-- **Profile image** with hover animations
-- **Cloud & Security focus** description
-
-### 🛠️ **Technical Skills**
-
-- **Interactive dropdown sections** for skill categories
-- **Animated progress bars** showing proficiency levels
-- **Categories**: Programming, Development, DevOps, CS Fundamentals
-
-### 🏆 **Achievements**
-
-- **Awards** with organization details
-- **Hackathons** participation showcase
-- **Certifications** from industry leaders
-
-### 💼 **Projects**
-
-- **Interactive project cards** with 3D hover effects
-- **Technology tags** and live demo links
-- **GitHub integration** for source code access
-
-### 📚 **Experience & Education**
-
-- **Separate timeline sections** for work and education
-- **Animated timeline** with glowing indicators
-- **Detailed descriptions** of roles and achievements
-
-### 📞 **Contact**
-
-- **Functional contact form** with validation
-- **Social media links** with hover effects
-- **Resume download** functionality
-
----
-
-## 🎨 Customization
-
-### 🎭 **Themes**
-
-The portfolio uses CSS custom properties for easy theming:
-
-```css
-:root {
-  --primary: #00ffff; /* Cyan */
-  --secondary: #ff00ff; /* Magenta */
-  --accent: #00ff88; /* Green */
-  --bg-dark: #0a0a0a; /* Dark background */
-  --text-light: #ffffff; /* Light text */
+Project card schema:
+```json
+{
+  "title": "Project Name",
+  "description": "Short description of the project.",
+  "image": "/images/project.png",
+  "tags": ["Tech 1", "Tech 2"],
+  "github": "https://github.com/your/repo",
+  "demo": "https://your-demo-link"
 }
 ```
 
-### 📝 **Content Updates**
+## Architecture
+```text
+Request -> Express routes -> EJS templates -> HTML/CSS/JS -> Browser
+                         ^
+                         |
+                   data/*.json
+```
 
-- **Personal Info**: Update `views/index.ejs`
-- **Projects**: Modify `data/projects.json`
-- **Skills**: Edit `data/skills.json`
-- **Experience**: Update `data/timeline.json`
+## Project Structure
+```text
+portfolio/
+├─ data/
+│  ├─ projects.json
+│  ├─ skills.json
+│  └─ timeline.json
+├─ public/
+│  ├─ css/
+│  ├─ js/
+│  ├─ images/
+│  └─ resume/
+├─ routes/
+│  └─ main.js
+├─ views/
+│  ├─ partials/
+│  │  └─ command-palette.ejs
+│  ├─ index.ejs
+│  └─ layout.ejs
+├─ app.js
+├─ build.js
+└─ package.json
+```
 
-### 🖼️ **Images**
+## Tech Stack
+| Layer | Tech |
+| --- | --- |
+| Backend | Node.js, Express |
+| Templating | EJS, express-ejs-layouts |
+| Motion | GSAP, ScrollReveal |
+| UI | HTML5, CSS3, JavaScript |
+| Email | Nodemailer |
 
-- Place project images in `public/images/`
-- Add resume PDF to `public/resume/`
-- Update image paths in JSON files
+## Quick Start
+Prerequisites:
+- Node.js v14+
+- npm
 
----
+1. `git clone https://github.com/PriyanshuKSharma/portfolio.git`
+2. `cd portfolio`
+3. `npm install`
+4. `npm start`
+5. Open `http://localhost:3000`
 
-## 🚀 Deployment
+## Customization
+- `views/index.ejs` for page composition and ordering.
+- `views/partials/*` for individual sections and reusable blocks.
+- `data/projects.json` to add or update project cards.
+- `data/skills.json` to edit skill categories and levels.
+- `data/timeline.json` for experience and education entries.
+- `public/images/` for project and profile images.
+- `public/resume/` for resume files.
+- `EMAILJS_SETUP.md` for contact email setup details.
 
-### **Vercel** (Recommended)
-
+## Deployment
+### Vercel
 ```bash
-# Install Vercel CLI
 npm i -g vercel
-
-# Deploy
 vercel
 ```
 
-### **Heroku**
+### Netlify
+1. Connect the GitHub repository.
+2. Set build command to `npm run build`.
+3. Set publish directory to `public`.
 
+### Heroku
 ```bash
-# Login to Heroku
 heroku login
-
-# Create app
 heroku create your-portfolio-name
-
-# Deploy
 git push heroku main
 ```
 
-### **Netlify**
+## Scripts
+- `npm start` runs the server.
+- `npm run build` runs the build script.
 
-1. Connect your GitHub repository
-2. Set build command: `npm run build`
-3. Set publish directory: `public`
+## Contributing
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push to the branch.
+5. Open a Pull Request.
 
----
+## License
+MIT License. See `LICENSE`.
 
-## 🛠️ Technologies Used
-
-<div align="center">
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
-![EJS](https://img.shields.io/badge/EJS-B4CA65?style=flat-square&logo=ejs&logoColor=black)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-
-</div>
-
----
-
-## 📈 Performance Features
-
-- ⚡ **Optimized CSS** with minimal render-blocking
-- 🚀 **Lazy loading** for images and animations
-- 📱 **Mobile-first** responsive design
-- 🎯 **SEO optimized** with proper meta tags
-- 🔄 **Smooth scrolling** and transitions
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 About the Developer
-
-**Priyanshu Kumar Sharma** - B.Tech IT Student specializing in Cloud Technology & Information Security
-
-- 🌐 **Portfolio**: [Live Demo](https://priyanshuksharma.github.io/portfolio_priyanshuksharma/)
-- 💼 **LinkedIn**: [Priyanshu Kumar Sharma](https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/)
-- 🐙 **GitHub**: [@PriyanshuKSharma](https://github.com/PriyanshuKSharma)
-- 🐳 **DockerHub**: [@priyanshuksharma](https://hub.docker.com/u/priyanshuksharma)
-
----
-
-<div align="center">
-
-**⭐ Star this repository if you found it helpful! ⭐**
-
-Made with ❤️ and lots of ☕ by [Priyanshu Kumar Sharma](https://github.com/PriyanshuKSharma)
-
-</div>
+## Author
+Priyanshu Kumar Sharma
+- Portfolio: https://priyanshuksharma.github.io/portfolio_priyanshuksharma/
+- LinkedIn: https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/
+- GitHub: https://github.com/PriyanshuKSharma
+- DockerHub: https://hub.docker.com/u/priyanshuksharma
