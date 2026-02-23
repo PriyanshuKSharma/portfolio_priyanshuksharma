@@ -41,8 +41,33 @@
   </div>
   <div class="scroll-indicator"></div>
   <div class="social-sidebar" id="socialSidebar">
-    <div class="social-toggle" onclick="toggleSocialSidebar()" title="Toggle Social Links">
-      <span aria-hidden="true"><i class="fa-solid fa-share-nodes"></i></span>
+    <div class="social-controls">
+      <button
+        class="social-toggle"
+        type="button"
+        onclick="toggleSocialSidebar()"
+        title="Toggle Social Links"
+        aria-label="Toggle Social Links"
+      >
+        <span aria-hidden="true"><i class="fa-solid fa-share-nodes"></i></span>
+      </button>
+      <button
+        class="social-toggle social-action-btn social-theme-trigger"
+        type="button"
+        title="Toggle Theme"
+        aria-label="Toggle Theme"
+      >
+        <span aria-hidden="true"><i class="fa-solid fa-circle-half-stroke"></i></span>
+      </button>
+      <button
+        class="social-toggle social-action-btn social-chat-trigger"
+        type="button"
+        title="Open Chatbot"
+        aria-label="Open Chatbot"
+        data-chatbot-trigger
+      >
+        <span aria-hidden="true"><i class="fa-solid fa-robot"></i></span>
+      </button>
     </div>
     <div class="social-content">
       <div class="social-line"></div>
@@ -100,13 +125,6 @@
         <a href="#contact" class="nav-link">Contact Me</a>
       </li>
     </ul>
-    <div class="theme-toggle">
-      <div class="toggle-slider">
-        <span class="label-dark" aria-hidden="true"><i class="fa-solid fa-moon"></i></span>
-        <span class="label-light" aria-hidden="true"><i class="fa-solid fa-sun"></i></span>
-        <div class="toggle-thumb"></div>
-      </div>
-    </div>
     <div class="hamburger">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -148,28 +166,6 @@
       <a href="#contact" class="nav-link dock-link" aria-label="Contact Me" title="Contact">
         <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-paper-plane"></i></span>
       </a>
-    </li>
-    <li class="dock-item">
-      <button
-        class="dock-link dock-theme-toggle"
-        type="button"
-        aria-label="Toggle Theme"
-        title="Toggle Theme"
-      >
-        <span class="dock-theme-icon dock-theme-icon--dark"><span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-moon"></i></span></span>
-        <span class="dock-theme-icon dock-theme-icon--light"><span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-sun"></i></span></span>
-      </button>
-    </li>
-    <li class="dock-item">
-      <button
-        id="chatbot-dock-trigger"
-        class="dock-link dock-chat-trigger"
-        type="button"
-        aria-label="Open Chatbot"
-        title="Chatbot"
-      >
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-robot"></i></span>
-      </button>
     </li>
     <li class="dock-item dock-item--collapse">
       <button

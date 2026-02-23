@@ -107,10 +107,10 @@ class RecruitmentChatbot {
 
     bindEvents() {
         const input = () => document.getElementById("chatbot-input");
-        const dockTrigger = document.getElementById("chatbot-dock-trigger");
-        if (dockTrigger) {
-            dockTrigger.addEventListener("click", () => this.toggle());
-        }
+        const triggerNodes = document.querySelectorAll("[data-chatbot-trigger]");
+        triggerNodes.forEach((trigger) => {
+            trigger.addEventListener("click", () => this.toggle());
+        });
         document.getElementById("chatbot-close").addEventListener("click", () => this.toggle(false));
         document.getElementById("chatbot-expand").addEventListener("click", () => this.expand());
         document.getElementById("chatbot-send").addEventListener("click", () => this.send());
@@ -132,11 +132,11 @@ class RecruitmentChatbot {
     toggle(force) {
         this.isOpen = typeof force === "boolean" ? force : !this.isOpen;
         const c = document.getElementById("chatbot-container");
-        const dockTrigger = document.getElementById("chatbot-dock-trigger");
+        const triggerNodes = document.querySelectorAll("[data-chatbot-trigger]");
         c.style.display = this.isOpen ? "flex" : "none";
-        if (dockTrigger) {
-            dockTrigger.classList.toggle("active", this.isOpen);
-        }
+        triggerNodes.forEach((trigger) => {
+            trigger.classList.toggle("active", this.isOpen);
+        });
         if (this.isOpen) document.getElementById("chatbot-input").focus();
         if (!this.isOpen) { c.classList.remove("expanded"); this.isExpanded = false; }
     }

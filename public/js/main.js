@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadTheme();
   
   // Theme toggle click handler
-  const themeToggles = document.querySelectorAll('.theme-toggle, .dock-theme-toggle');
+  const themeToggles = document.querySelectorAll('.theme-toggle, .dock-theme-toggle, .social-theme-trigger');
   themeToggles.forEach((toggleControl) => {
     toggleControl.addEventListener('click', toggleTheme);
   });

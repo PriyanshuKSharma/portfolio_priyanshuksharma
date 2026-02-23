@@ -2949,6 +2949,14 @@ body.light-theme .label-light {
   transition: all 0.3s ease;
 }
 
+.social-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
 .social-toggle {
   width: 40px;
   height: 40px;
@@ -2962,12 +2970,26 @@ body.light-theme .label-light {
   transition: all 0.3s ease;
   font-size: 1.2rem;
   color: var(--primary);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.social-toggle i {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .social-toggle:hover {
   background: var(--primary);
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
   color: #021318;
+}
+
+.social-action-btn.active,
+.social-chat-trigger.active {
+  color: #041118;
+  background: linear-gradient(135deg, var(--primary), #68efff);
+  box-shadow: 0 0 16px rgba(0, 255, 242, 0.45);
 }
 
 .social-content {
