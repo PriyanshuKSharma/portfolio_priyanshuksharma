@@ -154,10 +154,10 @@ This repository also contains my portfolio website built with Express and EJS.
 
 Quick start:
 
-1. `npm installSingle-column modules that expand on demand.
-2. 
-3. `npm start`
-4. Open `http://localhost:3000`
+1. Single-column modules that expand on demand.
+   `npm install`
+2. `npm start`
+3. Open `http://localhost:3000`
 
 **Contact**
 
