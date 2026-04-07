@@ -17,6 +17,7 @@
   <img src="https://img.shields.io/badge/Final%20Year-B.Tech%20IT-111827?style=for-the-badge" alt="Final Year B.Tech IT" />
   <img src="https://img.shields.io/badge/CGPA-9.9-0F766E?style=for-the-badge" alt="CGPA 9.9" />
   <img src="https://img.shields.io/badge/Focus-Cloud%20%7C%20Security%20%7C%20Research-1D4ED8?style=for-the-badge" alt="Focus Areas" />
+  <img src="https://img.shields.io/badge/Credentials-8-7C3AED?style=for-the-badge" alt="8 Credentials" />
   <img src="https://img.shields.io/badge/Open%20Source-Builder-F59E0B?style=for-the-badge" alt="Open Source Builder" />
 </p>
 
@@ -41,6 +42,7 @@
 - Research experience at **IIT Ropar** under the **Indian Academy of Sciences Summer Research Fellowship Program (2024)**.
 - Hands-on with **AWS, Azure, GCP, Docker, Kubernetes, Terraform, Linux, IAM, and Zero Trust concepts**.
 - Exploring the intersection of **serverless systems, cybersecurity, cloud architecture, and hybrid quantum-cloud computing**.
+- Built a growing stack of **8 certifications and credentials** spanning cybersecurity, cloud, AI, SQL, and developer learning.
 - Open-source contributor who enjoys building developer-first tools, educational resources, and infrastructure-focused projects.
 
 ---
@@ -190,10 +192,25 @@ Security is one of the foundations of my work, especially the challenge of givin
 
 ---
 
-## Certifications and Virtual Internships
+## Certifications and Credentials
 
-- **Zscaler Zero Trust Cloud Security Internship** — EduSkills Foundation, Apr 2024 to Jun 2024
-- **Fortinet Network Security Associate** — AICTE EduSkills, focused on threat landscape, cyber defense, and security fundamentals
+A blend of vendor certifications, technical credentials, and focused course-based learning across cybersecurity, cloud, AI, and core developer skills.
+
+| Credential | Provider | Type |
+| --- | --- | --- |
+| **Fortinet Certified Fundamentals in Cybersecurity** | Fortinet | Vendor certification |
+| **Fortinet Certified Associate in Cybersecurity** | Fortinet | Vendor certification |
+| **Fundamentals of Cybersecurity (EDU-102)** | Zscaler | Security credential |
+| **Zero Trust Certified Associate (ZTCA)** | Zscaler | Vendor certification |
+| **Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate** | Oracle University | Cloud and AI certification |
+| **AWS Services for Solutions Architect Associate - Udemy** | Udemy | Course certificate |
+| **SQL (Basic)** | HackerRank | Skill credential |
+| **Python Mastery for Beginners** | Udemy | Course certificate |
+
+### Virtual Internships
+
+- **Zscaler Zero Trust Cloud Security Virtual Internship** — EduSkills Foundation, Apr 2024 to Jun 2024
+- **Fortinet Network Security Virtual Internship** — AICTE EduSkills, Jul 2024 to Sep 2024
 
 ---
 
@@ -242,6 +259,19 @@ timeline
 - **Fit Raho Gym Website** — Interactive website project built with HTML, CSS, and JavaScript.
 
 </details>
+
+---
+
+## Fun Facts
+
+| Signal | What It Usually Means |
+| --- | --- |
+| `terminal open, architecture sketch nearby` | I am probably turning a research idea into a working system. |
+| `IAM policy on screen` | I have entered puzzle-solving mode and will stay there until the access model makes sense. |
+| `benchmark notes everywhere` | Curiosity has become experimentation, and experimentation is becoming engineering. |
+| `IBM Quantum and cloud docs both open` | I am exploring how future infrastructure could connect classical and quantum systems. |
+| `a repetitive task annoys me twice` | It is one script away from being automated. |
+| `new repo appears suddenly` | A side idea just got promoted into a prototype. |
 
 ---
 
