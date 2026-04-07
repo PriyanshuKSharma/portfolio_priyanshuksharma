@@ -13,18 +13,6 @@
   <img src="https://img.shields.io/badge/%F0%9F%94%92_Security_Architecture-Focused-1D4ED8?style=for-the-badge" alt="Security Architecture Focused" />
   <img src="https://img.shields.io/badge/%E2%9A%99%EF%B8%8F_Systems_Building-Enabled-7C3AED?style=for-the-badge" alt="Systems Building Enabled" />
   <img src="https://img.shields.io/badge/%F0%9F%93%98_Research_Direction-Quantum-F59E0B?style=for-the-badge" alt="Research Direction Quantum" />
-</p>
-
-<p align="center">
-  I build secure cloud-native systems, explore multi-cloud orchestration, benchmark serverless platforms, and research how quantum computing can shape the future of infrastructure.
-</p>
-
-<p align="center">
-  <a href="https://github.com/PriyanshuKSharma"><img src="https://img.shields.io/github/followers/PriyanshuKSharma?style=social" alt="GitHub Followers" /></a>
-  <a href="https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=blue&style=flat"><img src="https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=blue&style=flat" alt="Profile Views" /></a>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/Final%20Year-B.Tech%20IT-111827?style=for-the-badge" alt="Final Year B.Tech IT" />
   <img src="https://img.shields.io/badge/CGPA-9.9-0F766E?style=for-the-badge" alt="CGPA 9.9" />
   <img src="https://img.shields.io/badge/Focus-Cloud%20%7C%20Security%20%7C%20Research-1D4ED8?style=for-the-badge" alt="Focus Areas" />
@@ -33,6 +21,14 @@
   <img src="https://img.shields.io/badge/Job%20Experience-Fresher-475569?style=for-the-badge" alt="Job Experience Fresher" />
   <img src="https://img.shields.io/badge/Open%20Source-Builder-F59E0B?style=for-the-badge" alt="Open Source Builder" />
 </p>
+
+
+<p align="center">
+  <a href="https://github.com/PriyanshuKSharma"><img src="https://img.shields.io/github/followers/PriyanshuKSharma?style=social" alt="GitHub Followers" /></a>
+  <a href="https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=blue&style=flat"><img src="https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=blue&style=flat" alt="Profile Views" /></a>
+</p>
+
+> I build secure cloud-native systems, explore multi-cloud orchestration, benchmark serverless platforms, and research how quantum computing can shape the future of infrastructure.
 
 > I enjoy working on problems where architecture, security, and experimentation overlap, especially when the result is a system that is both practical today and future-facing tomorrow.
 
