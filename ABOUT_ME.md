@@ -1,18 +1,18 @@
 <h1 align="center">Priyanshu Kumar Sharma</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=900&lines=Cloud+Builder+%E2%98%81%EF%B8%8F;Security+Explorer+%F0%9F%94%90;Serverless+Researcher+%F0%9F%9A%80;Quantum-Curious+Engineer+%E2%9A%9B%EF%B8%8F" alt="Typing animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=900&lines=Cloud+Engineering+%E2%98%81%EF%B8%8F;Security+Architecture+%F0%9F%94%92;Serverless+Research+%E2%9A%99%EF%B8%8F;Quantum+Systems+%F0%9F%93%98" alt="Typing animation" />
 </p>
 
 <p align="center">
-  <strong>🎓 B.Tech Information Technology Student</strong> • <strong>☁️ Cloud Technology</strong> • <strong>🔐 Information Security</strong> • <strong>🚀 Research-Driven Systems Builder</strong>
+  <strong>🎓 B.Tech Information Technology Student</strong> • <strong>☁️ Cloud Technology</strong> • <strong>🔒 Information Security</strong> • <strong>⚙️ Research-Driven Systems Builder</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/%E2%98%81%EF%B8%8F_Cloud_Architecture-Live-0EA5E9?style=for-the-badge" alt="Cloud Architecture Live" />
-  <img src="https://img.shields.io/badge/%F0%9F%94%90_Security_Mindset-Active-1D4ED8?style=for-the-badge" alt="Security Mindset Active" />
-  <img src="https://img.shields.io/badge/%F0%9F%9A%80_Build_Mode-On-7C3AED?style=for-the-badge" alt="Build Mode On" />
-  <img src="https://img.shields.io/badge/%E2%9A%9B%EF%B8%8F_Quantum_Curiosity-Exploring-F59E0B?style=for-the-badge" alt="Quantum Curiosity Exploring" />
+  <img src="https://img.shields.io/badge/%E2%98%81%EF%B8%8F_Cloud_Engineering-Active-0EA5E9?style=for-the-badge" alt="Cloud Engineering Active" />
+  <img src="https://img.shields.io/badge/%F0%9F%94%92_Security_Architecture-Focused-1D4ED8?style=for-the-badge" alt="Security Architecture Focused" />
+  <img src="https://img.shields.io/badge/%E2%9A%99%EF%B8%8F_Systems_Building-Enabled-7C3AED?style=for-the-badge" alt="Systems Building Enabled" />
+  <img src="https://img.shields.io/badge/%F0%9F%93%98_Research_Direction-Quantum-F59E0B?style=for-the-badge" alt="Research Direction Quantum" />
 </p>
 
 <p align="center">
@@ -29,6 +29,7 @@
   <img src="https://img.shields.io/badge/CGPA-9.9-0F766E?style=for-the-badge" alt="CGPA 9.9" />
   <img src="https://img.shields.io/badge/Focus-Cloud%20%7C%20Security%20%7C%20Research-1D4ED8?style=for-the-badge" alt="Focus Areas" />
   <img src="https://img.shields.io/badge/Credentials-8-7C3AED?style=for-the-badge" alt="8 Credentials" />
+  <img src="https://img.shields.io/badge/Experience-8-2563EB?style=for-the-badge" alt="8 Experience Entries" />
   <img src="https://img.shields.io/badge/Open%20Source-Builder-F59E0B?style=for-the-badge" alt="Open Source Builder" />
 </p>
 
