@@ -29,7 +29,8 @@
   <img src="https://img.shields.io/badge/CGPA-9.9-0F766E?style=for-the-badge" alt="CGPA 9.9" />
   <img src="https://img.shields.io/badge/Focus-Cloud%20%7C%20Security%20%7C%20Research-1D4ED8?style=for-the-badge" alt="Focus Areas" />
   <img src="https://img.shields.io/badge/Credentials-8-7C3AED?style=for-the-badge" alt="8 Credentials" />
-  <img src="https://img.shields.io/badge/Experience-8-2563EB?style=for-the-badge" alt="8 Experience Entries" />
+  <img src="https://img.shields.io/badge/Internship%20Experience-1%20yr%2011%20mo-2563EB?style=for-the-badge" alt="Internship Experience 1 year 11 months" />
+  <img src="https://img.shields.io/badge/Job%20Experience-Fresher-475569?style=for-the-badge" alt="Job Experience Fresher" />
   <img src="https://img.shields.io/badge/Open%20Source-Builder-F59E0B?style=for-the-badge" alt="Open Source Builder" />
 </p>
 
@@ -236,7 +237,7 @@ timeline
   <img src="https://img.icons8.com/color/96/amazon-s3.png" width="96" height="96" title="Amazon S3" alt="Amazon S3" />
   <img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/github.png" width="96" height="96" title="GitHub" alt="GitHub" />
   <img src="https://img.icons8.com/color/96/gitlab.png" width="96" height="96" title="GitLab" alt="GitLab" />
-  <img src="https://cdn.simpleicons.org/neon/00E599" width="96" height="96" title="Neon" alt="Neon" />
+  <img src="https://neon.com/brand/neon-logomark-light-color.svg?dpl=dpl_GfEvs43Fxt4MNm2V4NnNfkh4yvph" width="96" height="96" title="Neon DB" alt="Neon DB" />
 </p>
 
 <p align="center"><sub>Redis • MySQL • Amazon S3 • GitHub • GitLab • Neon</sub></p>
