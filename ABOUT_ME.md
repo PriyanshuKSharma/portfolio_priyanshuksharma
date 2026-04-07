@@ -101,13 +101,15 @@ Security is one of the foundations of my work, especially the challenge of givin
 
 ## Selected Projects
 
-| Project | What It Focuses On | Link |
+| Project | What It Focuses On | Links |
 | --- | --- | --- |
-| **Media Storage SaaS** | Scalable cloud-based media storage software-as-a-service platform | [View Project](https://github.com/PriyanshuKSharma/media-storage-saas) |
-| **SkyVault** | Personal cloud platform with Docker and an interactive frontend | [View Project](https://github.com/PriyanshuKSharma/SkyVault) |
-| **EcoBizz: Sustainably Yours** | Sustainability-focused project built for the GDSC Solution Challenge 2024 | [View Project](https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024) |
-| **Linux Practicals** | Linux exercises and commands for scripting, administration, and student learning | [View Project](https://github.com/PriyanshuKSharma/Linux-Practicals) |
-| **Fit Raho Gym Website** | Interactive frontend project using HTML, CSS, and JavaScript | Portfolio project |
+| **Multi-Cloud SaaS Orchestration Platform** | Cloud-native orchestration platform across AWS, Azure, and GCP with Dockerized microservices, Terraform provisioning, Celery jobs, Redis sync workflows, JWT auth, and a scalable FastAPI backend. | [GitHub](https://github.com/PriyanshuKSharma/multi-cloud) |
+| **Storage SaaS Platform** | AI-powered video and business workflow SaaS built with Next.js 14, Tailwind CSS, Clerk authentication, Prisma, Neon DB, Cloudinary, and Vercel deployment. | [GitHub](https://github.com/PriyanshuKSharma/media-storage-saas.git) |
+| **Quantum Cloud Integration** | Hybrid cloud-quantum architecture connecting classical cloud infrastructure with IBM Quantum resources using AWS, Docker, and Python for secure, scalable experimentation. | [GitHub](https://github.com/PriyanshuKSharma/quantum-cloud-integration.git) |
+| **Rural Gyan Platform** | Full-stack educational platform with role-based dashboards, bilingual support, AI-assisted features, JWT auth, Docker deployment, and a React plus Node.js stack. | [GitHub](https://github.com/PriyanshuKSharma/rural-gyan-paltform) |
+| **XAI Interpret** | Explainable AI platform using SHAP and LIME to deliver interactive model interpretability, visual insights, and cloud-ready ML workflows for high-stakes use cases. | [GitHub](https://github.com/PriyanshuKSharma/xai_explainaibility) |
+| **SkyVault** | Personal cloud storage system with Dockerized deployment, secure file management workflows, and a clean interactive interface for uploads, listings, and downloads. | [GitHub](https://github.com/PriyanshuKSharma/SkyVault.git) • [Demo](https://priyanshuksharma.github.io/SkyVault/) |
+| **Ecobizz E-commerce App** | Cross-platform Flutter application for sustainable commerce, designed for Android and iOS with a product-focused mobile experience. | [GitHub](https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024.git) |
 
 ---
 
