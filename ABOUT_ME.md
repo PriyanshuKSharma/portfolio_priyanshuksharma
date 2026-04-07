@@ -55,11 +55,11 @@ I embrace a project-based learning approach and have accumulated hands-on experi
   - Implementing the **AAA framework** for improved security in distributed networks.
 - **Outcome**: Practical understanding of IAM policies and their implementation in secure networks.
 
-### 4. **Cloud-Simplify: Multi-Cloud Architecture**
+### 4. **Nebula: The Multi-Cloud Command Center**
 
-- **Project**: Development and research on **Cloud-Simplify**, a scalable multi-cloud management platform.
-- **Objective**: Streamlining and optimizing multi-cloud deployments across various providers. Currently authoring and publishing a research paper detailing the project's technical architecture and capabilities.
-- **GitHub Repository**: [Multi-Cloud](https://github.com/PriyanshuKSharma/multi-cloud)
+- **Project**: Development and research on **Nebula**, a high-performance, API-first orchestration engine.
+- **Objective**: Unifying the fragmented multi-cloud landscape (AWS, Azure, GCP) into a single control plane. Currently authoring and publishing a research paper detailing the project's architecture, including the Nebula AI Copilot and Async Provisioning Engine.
+- **GitHub Repository**: [Nebula Multi-Cloud](https://github.com/PriyanshuKSharma/multi-cloud)
 
 ---
 
@@ -217,7 +217,7 @@ I embrace a project-based learning approach and have accumulated hands-on experi
 
 ## 💻 Notable Projects
 
-- 🌐 [**Cloud-Simplify (Multi-Cloud)**](https://github.com/PriyanshuKSharma/multi-cloud) – A comprehensive multi-cloud management platform (Research Paper in progress).
+- 🌌 [**Nebula: The Multi-Cloud Command Center**](https://github.com/PriyanshuKSharma/multi-cloud) – An API-first orchestration engine abstracting AWS, Azure, and GCP (Research Paper in progress).
 - 🌩️ [**Media Storage SaaS**](https://github.com/PriyanshuKSharma/media-storage-saas) – A scalable cloud-based storage SaaS.
 - ⚛️ [**Quantum-Cloud Integration**](https://github.com/PriyanshuKSharma/quantum-cloud-integration) – Hybrid Quantum-Cloud system with AWS & IBM Q.
 - ☁️ [**SkyVault**](https://github.com/PriyanshuKSharma/SkyVault) – Personal cloud platform with Docker & interactive frontend.
@@ -385,8 +385,8 @@ timeline
 
 ## 🎯 Future Goals
 
-- 🚀 Build **Multi-Cloud Orchestrator**
-- 📑 Publish research on **Quantum-Cloud Systems, IAM, & Multi-Cloud Architecture**
+- 🚀 Build **Nebula: Multi-Cloud Orchestrator**
+- 📑 Publish research on **Quantum-Cloud Systems, IAM, & Nebula Multi-Cloud Architecture**
 - 🔐 Contribute to **open-source InfoSec tools**
 
 ---
