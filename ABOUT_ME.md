@@ -205,7 +205,7 @@ timeline
   <img src="https://img.icons8.com/color/96/amazon-web-services.png" width="96" height="96" title="AWS" alt="AWS" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="96" height="96" title="Microsoft Azure" alt="Microsoft Azure" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="96" height="96" title="Google Cloud Platform" alt="Google Cloud Platform" />
-  <img src="https://cdn.simpleicons.org/awslambda/FF9900" width="96" height="96" title="AWS Lambda" alt="AWS Lambda" />
+  <img src="https://www.awsicon.com/static/images/Service-Icons/Compute/64/svg/Lambda.svg" width="96" height="96" title="AWS Lambda" alt="AWS Lambda" />
   <img src="https://avatars.githubusercontent.com/u/33404658?s=200&v=4" width="96" height="96" title="OpenFaaS" alt="OpenFaaS" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" width="96" height="96" title="Cloudflare" alt="Cloudflare" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="96" height="96" title="Terraform" alt="Terraform" />
