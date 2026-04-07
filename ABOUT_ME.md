@@ -1,406 +1,289 @@
-# 👨💻 Priyanshu Kumar Sharma | B.Tech IT Student | Cloud Technology & Information Security
-
-Hello! I'm **Priyanshu Kumar Sharma**, a final-year **B.Tech Information Technology** student and a driven technologist with a profound focus on **Cloud Architecture**, **Cybersecurity**, **Machine Learning**, and **Quantum Computing**. I thrive on designing scalable systems and am constantly expanding my expertise in serverless paradigms, multi-cloud orchestration (like my work on **Nebula**), and advanced security domains including **Identity & Access Management (IAM)**, **Zero Trust Security**, and exploratory **Hybrid Quantum-Cloud Integrations**.
-
-Driven by a rigorous, hands-on philosophy, I have built a diverse engineering track record spanning academic cloud research, open-source development, and enterprise-grade security solutions. This portfolio outlines my professional journey, ongoing research endeavors, certifications, and the cutting-edge systems I'm building to solve complex infrastructure challenges.
-
-<div align="center">
-
-[![GitHub followers](https://img.shields.io/github/followers/PriyanshuKSharma?style=social)](https://github.com/PriyanshuKSharma) [![Profile Views](https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=blue&style=flat)](https://github.com/PriyanshuKSharma)
-
-</div>
-
----
-
-## 🚀 Summary
-
-- **🎓 B.Tech IT (4th Year)** student focused on Cybersecurity and Cloud Computing.
-- **🔐 InfoSec Enthusiast**: Hands-on experience in Zero Trust, IAM, and network security.
-- **☁️ Cloud and Quantum Computing**: Actively researching Hybrid Quantum-Cloud Systems and practical applications of quantum computing.
-- **💼 Ex- Research Intern at IIT Ropar**: Working on XFBench and XFaaS development in a cutting-edge research setting.
-- **📈 Open-Source Contributor**: Contributing tools, scripts, and resources for the tech community.
-
----
-
-## 🔬 Research Projects & Internships
-
-### 1. **XFBench and XFaaS Development - Research Intern at IIT Ropar**
-
-- **Position**: Research Intern | **Program**: Summer Research Fellowship Program, Indian Academy of Sciences (2024)
-- **Description**: As a research intern at **IIT Ropar**, I am contributing to XFBench and XFaaS—tools that enhance benchmarking and flexibility in serverless architectures. My work involves analyzing and optimizing cloud-based workflows and infrastructures.
-- **Responsibilities**:
-  - Implementing **XFBench** and **XFaaS** for serverless workload testing.
-  - Conducting performance assessments and data-driven optimizations.
-  - Documenting deployment and performance insights for XFBench.
-- **Repositories**:
-  - [Serverless Workbench - XFBench](https://github.com/PriyanshuKSharma/serverless-faas-workbench_IIT_Rpr.git)
-  - [XFaaS Framework](https://github.com/PriyanshuKSharma/XFaaS-IIT_Rpr.git)
-  - [AWS Lambda Addition Module](https://github.com/PriyanshuKSharma/aws-lambda-addition.git)
-
-### 2. **Quantum Computing and Cloud Storage: Hybrid Cloud-Quantum Systems**
-
-- **Project**: Research on integrating **Quantum Computing** within cloud storage to enhance data security and operational efficiency.
-- **Objective**: To explore the **impact of quantum computing** on data storage and develop hybrid systems on **AWS**, **GitHub**, and **IBM Quantum**.
-- **Implementation Details**:
-  - Establishing **hybrid cloud systems** with quantum applications using **Docker**, **AWS Lambda**, and **IBM Quantum Experience**.
-  - Documenting and presenting findings in a research paper titled **"Potential Impact of Quantum Computing on Cloud Storage: Hybrid Cloud-Quantum Systems"**.
-- **GitHub Repository**: [Quantum Cloud Integration](https://github.com/PriyanshuKSharma/quantum-cloud-integration)
-
-### 3. **Identity and Access Management (IAM) - Security Research**
-
-- **Focus**: Understanding and implementing IAM for organizational security.
-- **Topics Covered**:
-  - Authentication protocols: **EAP, PAP, RADIUS, TACACS+, Kerberos, OAuth, OpenID**.
-  - Access control models: **DAC, MAC, RBAC, ABAC**.
-  - Implementing the **AAA framework** for improved security in distributed networks.
-- **Outcome**: Practical understanding of IAM policies and their implementation in secure networks.
-
-### 4. **Nebula: The Multi-Cloud Command Center**
-
-- **Project**: Development and research on **Nebula**, a high-performance, API-first orchestration engine.
-- **Objective**: Unifying the fragmented multi-cloud landscape (AWS, Azure, GCP) into a single control plane. Currently authoring and publishing a research paper detailing the project's architecture, including the Nebula AI Copilot and Async Provisioning Engine.
-- **GitHub Repository**: [Nebula Multi-Cloud](https://github.com/PriyanshuKSharma/multi-cloud)
-
----
-
-## 📜 Certifications & Virtual Internships
-
-### 1. **Zscaler Zero Trust Cloud Security Internship**
-
-- **Organized by**: EduSkills Foundation (April 2024 - June 2024)
-- **Skills Gained**:
-  - **Zero Trust** architecture design and device access management.
-  - Labs and simulations covering identity and security in cloud infrastructures.
-
-### 2. **Fortinet Network Security Associate - AICTE Eduskills**
-
-- **Certification**: **Introduction to the Threat Landscape 2.0**
-- **Focus**: Cyber threat analysis, network vulnerability detection, and security protocols.
-
----
-
-## 💻 Open-Source Projects & Repositories
-
-### 1. **Linux Practicals**
-
-- **Repository**: [Linux Practicals Repository](https://github.com/PriyanshuKSharma/Linux-Practicals)
-- **Description**: Hands-on exercises on Linux covering scripting, file management, and system administration basics, created for students and Linux enthusiasts.
-
-### 2. **Win-KeX for Kali Linux on WSL 2 - Setup Guide**
-
-- **Repository (Planned)**: A guide for setting up **Win-KeX** on **Kali Linux for Windows Subsystem for Linux (WSL 2)**.
-- **Goal**: Steps and configurations for a graphical interface on Kali Linux, easing setup for security testing and labs.
-
-### 3. **Java Swing Online Test Application**
-
-- **Repository (Planned)**: Java Swing-based application for an online test environment.
-- **Features**:
-  - User-friendly GUI for administering tests.
-  - Integrated timer and score calculation.
-
----
-
-## 📘 Lab Manuals & Educational Guides
-
-1. **Ubuntu Linux Installation Manual**
-   - A comprehensive guide on installing and configuring **Ubuntu Linux on VirtualBox**. Covers setup, installation, and optimization tips for performance.
-
-2. **Shell Scripting for Beginners**
-   - Guide on **shell scripting basics** with examples of **file permissions**, **system service management**, and scripting tasks.
-   - Example scripts for **text manipulation** in files, displaying **days of the week** in reverse, and setting permissions.
-
-3. **Fit Raho Gym Website**
-   - Developed an interactive website for **Fit Raho Gym** using **HTML, CSS, and JavaScript** with sections like **About Us**, background images, and buttons for user engagement.
-
----
-
-## 🛠️ Technical Skills
-
-<div align="center">
-
-### Programming Languages
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60" height="60" title="Java" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="60" height="60" title="Python" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="60" height="60" title="Dart" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="60" height="60" title="Bash" />
-
----
-
-### Web/App Development
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60" height="60" title="HTML5" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60" height="60" title="CSS3" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" height="60" title="JavaScript" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="60" height="60" title="Django" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="60" height="60" title="Flutter" />
-
----
-
-### Serverless & Cloud Computing
-
-<img src="https://img.icons8.com/color/96/amazon-web-services.png" width="60" height="60" title="AWS" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="60" height="60" title="Microsoft Azure" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="60" height="60" title="Google Cloud Platform" />  
-<img src="https://tse1.mm.bing.net/th/id/OIP.yD8TOIFQLEe7JmOAnktnMgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" width="" height="60" title="OpenFaaS" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" width="60" height="60" title="Cloudflare" />
-
----
-
-### Cybersecurity
-
-<img src="https://img.icons8.com/color/96/security-checked.png" width="60" height="60" title="Security Analysis"/>  
-<img src="https://img.icons8.com/color/96/hacking.png" width="60" height="60" title="Ethical Hacking"/>  
-<img src="https://img.icons8.com/color/96/nmap.png" width="60" height="60" title="Nmap"/>  
-<img src="https://cdn0.iconfinder.com/data/icons/it-infrastructure-3/64/Untitled-1-41-512.png" width="60" height="60" title="Network Security"/>
-
----
-
-### Virtualization & Docker
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="60" height="60" title="Docker" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="60" height="60" title="Kubernetes" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="60" height="60" title="Linux"/>  
-<img src="https://img.icons8.com/color/96/virtualbox.png" width="60" height="60" title="VirtualBox"/>  
-<img src="https://img.icons8.com/color/96/vmware.png" width="60" height="60" title="VMware"/>
-
----
-
-### Quantum Computing
-
-<img src="https://img.icons8.com/color/96/ibm.png" width="95" height="60" title="IBM Quantum"/>  
-<img src="https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2021/11/amazon-braket-800x420.png" width="" height="60" title="AWS Braket"/>
-
----
-
-### DevOps
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="60" height="60" title="Redis" />  
-<img src="https://img.icons8.com/color/96/github.png" width="60" height="60" title="GitHub"/>  
-<img src="https://img.icons8.com/color/96/gitlab.png" width="60" height="60" title="GitLab"/>
-
----
-
-### Infrastructure as Code
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="60" height="70" title="Terraform" />  
-<img src="https://www.honeycomb.io/wp-content/uploads/2022/12/integration_pulumi_featured_image.svg" width="" height="60" title="Pulumi" />
-
----
-
-### Database & Storage
-
-<img src="https://img.icons8.com/color/96/amazon-s3.png" width="60" height="60" title="AWS S3" />  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60" height="60" title="MySQL" />  
-<img src="https://img.icons8.com/color/96/google-cloud.png" width="70" height="60" title="Google Cloud SQL" />  
-<img src="https://th.bing.com/th/id/OIP.JyOjMB_PRv25V3fV-7Wg6gHaEB?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" width="" height="60" title="Neon DB" />
-
-</div>
-
----
-
-## 🌐 Open Source Contribution
-
-### 🔹 Organization: [Interns-MQI-25](https://github.com/Interns-MQI-25)
-
-- Contributed to: [project-interns](https://github.com/Interns-MQI-25/project-interns)
-- Focus: **Docker, Cloud, and DevOps**
-- Collaboration with peers to build impactful **industry-level projects**
-
-<div align="center">
-
-![Org Stats](https://github-readme-stats.vercel.app/api/pin/?username=Interns-MQI-25&repo=project-interns&theme=tokyonight)
-
-</div>
-
----
-
-## 💻 Notable Projects
-
-- 🌌 [**Nebula: The Multi-Cloud Command Center**](https://github.com/PriyanshuKSharma/multi-cloud) – An API-first orchestration engine abstracting AWS, Azure, and GCP (Research Paper in progress).
-- 🌩️ [**Media Storage SaaS**](https://github.com/PriyanshuKSharma/media-storage-saas) – A scalable cloud-based storage SaaS.
-- ⚛️ [**Quantum-Cloud Integration**](https://github.com/PriyanshuKSharma/quantum-cloud-integration) – Hybrid Quantum-Cloud system with AWS & IBM Q.
-- ☁️ [**SkyVault**](https://github.com/PriyanshuKSharma/SkyVault) – Personal cloud platform with Docker & interactive frontend.
-- 🌱 [**EcoBizz: Sustainably Yours**](https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024) – GDSC 2024 Solution Challenge project for sustainability.
-
----
-
-## 🎓 Education
-
-```mermaid
-timeline
-    %%{init: { 'theme': 'dark', 'themeVariables': { 'primaryColor': '#00ffff', 'primaryTextColor': '#fff', 'secondaryColor': '#ff00ff', 'secondaryTextColor': '#fff', 'tertiaryColor': '#00ff88', 'tertiaryTextColor': '#000', 'timeLineColor': '#fff' } } }%%
-    title Education History
-    2019
-        : Higher Secondary @ Sri Chaitanya (Apr 2019 - May 2020)
-    2020
-        : Intermediate @ Sri Chaitanya (Apr 2020 - May 2022)
-    2022
-        : B.Tech IT Started @ ADYPU (Aug 2022)
-    Present
-        : Current CGPA: 9.9
-```
-
-<div align="center">
-  <div style="background-color: #0D1117; border-radius: 6px; padding: 20px; border: 1px solid #30363d; margin-bottom: 20px;">
-    <h3>Academic Background</h3>
-    <table width="90%" align="center" style="border: none;">
-      <tr>
-        <td align="right" width="180px" valign="top"><b>Aug 2022 – Present 🏫</b></td>
-        <td><b>Bachelor of Technology in Information Technology</b><br>Ajeenkya D Y Patil University, Pune<br><i>Specializing in Cloud Technology and Information Security.<br>Active in hackathons and cybersecurity clubs.<br>Current CGPA: 9.9</i></td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td align="right" width="180px" valign="top"><b>Apr 2020 – May 2022 🎓</b></td>
-        <td><b>Intermediate Education</b><br>Sri Chaitanya Jr. Kalasala, Hyderabad<br><i>Focusing on Science and Mathematics.<br>Grade: 93.9%</i></td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td align="right" width="180px" valign="top"><b>Apr 2019 – May 2020 🏫</b></td>
-        <td><b>Higher Secondary Education</b><br>Sri Chaitanya High School, Hyderabad<br><i>Completed higher secondary education.<br>Grade: 87.6%</i></td>
-      </tr>
-    </table>
-  </div>
-</div>
-
----
-
-## 📅 My Tech Journey
-
-```mermaid
-timeline
-    %%{init: { 'theme': 'base', 'themeVariables': { 'primaryColor': '#00ffff', 'primaryTextColor': '#000', 'secondaryColor': '#ff00ff', 'secondaryTextColor': '#fff', 'tertiaryColor': '#00ff88', 'tertiaryTextColor': '#000' } } }%%
-    title Priyanshu's Career Timeline
-    2022
-        : Student Intern @ Mindler (Nov-Dec)
-    2023
-        : Project Intern @ InternPe (Apr-May)
-    2024
-        : Zscaler Virtual Intern (Apr-Jun)
-        : Cloud Research Intern @ IIT Ropar (May-Jul)
-        : Project Intern @ OctaNet Services (Jul-Aug)
-        : Fortinet Virtual Intern (Jul-Sep)
-    2025
-        : IT Intern @ Seamedu (Mar-Jun)
-        : Web Dev Intern @ Marquardt India (Jun-Sep)
-    Future
-        : Cloud Architecture
-        : Advanced Security
-```
-
-<div align="center">
-
-<div style="background-color: #0D1117; border-radius: 6px; padding: 20px; border: 1px solid #30363d; margin-bottom: 20px;">
-    <h3>Professional Timeline</h3>
-    <table width="90%" align="center" style="border: none;">
-      <tr>
-        <td align="right" width="180px" valign="top"><b>June 2025 – Sep 2025 💼</b></td>
-        <td><b>Web Development Intern @ Marquardt India</b><br>Full-stack development, UI/UX optimization, and feature implementation using MERN stack.<br><i>Skills: JavaScript, React.js, Tailwind CSS, HTML5, SQL Server</i></td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td align="right" width="180px" valign="top"><b>Mar 2025 – Jun 2025 🎓</b></td>
-        <td><b>IT Intern @ Seamedu</b><br>Student & employer coordination, placement drive management, and documentation.<br><i>Skills: Strategic Planning, Student Services</i></td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td align="right" width="180px" valign="top"><b>Jul 2024 – Sep 2024 🛡️</b></td>
-        <td><b>Fortinet Network Security Virtual Intern @ EduSkills</b><br>Cyber threat analysis, network vulnerability detection, and security protocols.<br><i>Skills: Red Hat Linux, Network Security</i></td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td align="right" width="180px" valign="top"><b>Jul 2024 – Aug 2024 💻</b></td>
-        <td><b>Project Intern @ OctaNet Services Pvt Ltd.</b><br>Web development projects focusing on frontend technologies.<br><i>Skills: HTML5, CSS, Programming</i></td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td align="right" width="180px" valign="top"><b>May 2024 – Jul 2024 🔬</b></td>
-        <td><b>Cloud Research Intern @ IIT Ropar</b><br>Serverless architecture research, XFBench implementation, and performance benchmarking.<br><i>Skills: AWS, Cloud Computing, DevOps, Research</i></td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td align="right" width="180px" valign="top"><b>Apr 2024 – Jun 2024 ☁️</b></td>
-        <td><b>Zscaler Zero Trust Cloud Security Virtual Intern</b><br>Zero Trust architecture design and cloud security implementation.<br><i>Skills: Zscaler Zero Trust Exchange, Cloud Security</i></td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td align="right" width="180px" valign="top"><b>Apr 2023 – May 2023 🌐</b></td>
-        <td><b>Project Intern @ InternPe</b><br>Web development tasks and project implementation.<br><i>Skills: Web Development</i></td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td align="right" width="180px" valign="top"><b>Nov 2022 – Dec 2022 🎓</b></td>
-        <td><b>Student Intern @ Mindler</b><br>Gained insights into career counseling and organizational operations.<br><i>Skills: Presentation, Communication</i></td>
-      </tr>
-    </table>
-  </div>
-</div>
-
----
-
-## ✨ Fun Facts
-
-<div align="center">
-  <div style="background-color: #0D1117; border-radius: 6px; padding: 20px; border: 1px solid #30363d; margin-bottom: 20px;">
-    <table width="90%" align="center">
-      <tr>
-        <td width="5%" align="right"><img src="https://img.shields.io/badge/☁️-333333?style=for-the-badge" alt="Cloud" /></td>
-        <td width="50%" align="left">I spend more time configuring IAM policies than I do sleeping.</td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td width="5%" align="right"><img src="https://img.shields.io/badge/⚛️-333333?style=for-the-badge" alt="Quantum" /></td>
-        <td width="50%" align="left">Exploring the quantum realm (literally, with IBM Quantum).</td>
-      </tr>
-      <tr><td colspan="2" height="10"></td></tr>
-      <tr>
-        <td width="5%" align="right"><img src="https://img.shields.io/badge/🐧-333333?style=for-the-badge" alt="Linux" /></td>
-        <td width="50%" align="left">Linux enthusiast - I probably have a script for that.</td>
-      </tr>
-    </table>
-  </div>
-</div>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=PriyanshuKSharma&theme=github-dark&hide_border=false&stroke=0000&background=0D1117&ring=00ffff&fire=00ffff&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=8B949E&sideLabels=8B949E&dates=8B949E)
-
-<br/>
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshuKSharma&layout=compact&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00ffff&text_color=C9D1D9&icon_color=00ffff)
-&nbsp;&nbsp;
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PriyanshuKSharma&show_icons=true&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00ffff&text_color=C9D1D9&icon_color=00ffff&count_private=true&include_all_commits=true)
-
-<br/>
-
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=PriyanshuKSharma&bg_color=0d1117&color=00ffff&line=00ffff&point=ffffff&hide_border=false&area=true&area_color=161b22)
-
-</div>
-
----
-
-## 🎯 Future Goals
-
-- 🚀 Build **Nebula: Multi-Cloud Orchestrator**
-- 📑 Publish research on **Quantum-Cloud Systems, IAM, & Nebula Multi-Cloud Architecture**
-- 🔐 Contribute to **open-source InfoSec tools**
-
----
-
-## 📫 Connect with Me
+# Priyanshu Kumar Sharma
 
 <p align="center">
-  <a href="mailto:priyanshu17ks@gmail.com"><img src="https://img.icons8.com/color/48/gmail.png"/></a>
-  <a href="https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251"><img src="https://img.icons8.com/color/48/linkedin.png"/></a>
-  <a href="https://github.com/PriyanshuKSharma"><img src="https://img.icons8.com/ios-glyphs/48/github.png"/></a>
-  <a href="https://hub.docker.com/u/priyanshuksharma"><img src="https://img.icons8.com/fluency/48/docker.png"/></a>
-  <a href="https://priyanshuksharma.github.io/portfolio_priyanshuksharma/"><img src="https://img.icons8.com/color/48/domain.png"/></a>
+  <strong>B.Tech Information Technology Student</strong> • <strong>Cloud Technology</strong> • <strong>Information Security</strong> • <strong>Research-Driven Systems Builder</strong>
+</p>
+
+<p align="center">
+  I build secure cloud-native systems, explore multi-cloud orchestration, benchmark serverless platforms, and research how quantum computing can shape the future of infrastructure.
+</p>
+
+<p align="center">
+  <a href="https://github.com/PriyanshuKSharma"><img src="https://img.shields.io/github/followers/PriyanshuKSharma?style=social" alt="GitHub Followers" /></a>
+  <a href="https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=blue&style=flat"><img src="https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=blue&style=flat" alt="Profile Views" /></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Final%20Year-B.Tech%20IT-111827?style=for-the-badge" alt="Final Year B.Tech IT" />
+  <img src="https://img.shields.io/badge/CGPA-9.9-0F766E?style=for-the-badge" alt="CGPA 9.9" />
+  <img src="https://img.shields.io/badge/Focus-Cloud%20%7C%20Security%20%7C%20Research-1D4ED8?style=for-the-badge" alt="Focus Areas" />
+  <img src="https://img.shields.io/badge/Open%20Source-Builder-F59E0B?style=for-the-badge" alt="Open Source Builder" />
+</p>
+
+> I enjoy working on problems where architecture, security, and experimentation overlap, especially when the result is a system that is both practical today and future-facing tomorrow.
+
+---
+
+## Engineering in Four Directions
+
+| Area | What I Do |
+| --- | --- |
+| **Cloud Systems** | Design scalable systems across AWS, Azure, and GCP with a strong interest in serverless and multi-cloud orchestration. |
+| **Security Engineering** | Study IAM, AAA, Zero Trust, and secure access models for modern distributed environments. |
+| **Research Thinking** | Approach projects with benchmarking, experimentation, and architecture-level reasoning. |
+| **Builder Mindset** | Turn ideas into working repositories, guides, prototypes, and systems people can actually use. |
+
+---
+
+## Snapshot
+
+- Final-year **B.Tech Information Technology** student specializing in **Cloud Technology and Information Security**.
+- Research experience at **IIT Ropar** under the **Indian Academy of Sciences Summer Research Fellowship Program (2024)**.
+- Hands-on with **AWS, Azure, GCP, Docker, Kubernetes, Terraform, Linux, IAM, and Zero Trust concepts**.
+- Exploring the intersection of **serverless systems, cybersecurity, cloud architecture, and hybrid quantum-cloud computing**.
+- Open-source contributor who enjoys building developer-first tools, educational resources, and infrastructure-focused projects.
+
+---
+
+## Current Radar
+
+| Now Building | Now Researching | Long-Term Direction |
+| --- | --- | --- |
+| **Nebula**, an API-first multi-cloud command center | **Hybrid quantum-cloud systems** for security and efficiency | Becoming a cloud architect and security-focused systems engineer |
+| Serverless benchmarking workflows and infra experiments | Secure identity and access models in distributed systems | Publishing research-backed engineering work |
+| Portfolio-grade products with strong architecture stories | Practical cloud performance optimization | Building resilient platforms that scale cleanly |
+
+---
+
+## Flagship Work
+
+### 1. Nebula: The Multi-Cloud Command Center
+
+**Nebula** is an API-first orchestration engine designed to unify AWS, Azure, and GCP behind a single control plane. The vision is to simplify fragmented multi-cloud operations while making provisioning, observability, and intelligence more cohesive.
+
+- Building toward a centralized orchestration layer for multi-cloud environments.
+- Authoring research around the architecture, including the **Nebula AI Copilot** and **Async Provisioning Engine**.
+- Focused on abstraction, scalability, and developer ergonomics.
+
+**Repository:** [Nebula Multi-Cloud](https://github.com/PriyanshuKSharma/multi-cloud)
+
+### 2. XFBench and XFaaS Development at IIT Ropar
+
+During my research internship at **IIT Ropar**, I worked on systems that improve flexibility and benchmarking in serverless environments.
+
+- Implemented and explored **XFBench** and **XFaaS** for serverless workload testing.
+- Conducted performance assessment and optimization studies around cloud workflows.
+- Contributed deployment notes and performance documentation for reproducible experimentation.
+
+**Repositories:** [XFBench](https://github.com/PriyanshuKSharma/serverless-faas-workbench_IIT_Rpr.git) • [XFaaS](https://github.com/PriyanshuKSharma/XFaaS-IIT_Rpr.git) • [AWS Lambda Addition Module](https://github.com/PriyanshuKSharma/aws-lambda-addition.git)
+
+### 3. Quantum Computing and Cloud Storage
+
+This research explores how **quantum computing** can strengthen the future of cloud storage through hybrid architectures that improve security and operational design.
+
+- Investigated hybrid cloud-quantum systems using **AWS**, **Docker**, and **IBM Quantum Experience**.
+- Focused on the impact of quantum computing on storage systems and cloud security models.
+- Documented findings in the paper **"Potential Impact of Quantum Computing on Cloud Storage: Hybrid Cloud-Quantum Systems."**
+
+**Repository:** [Quantum Cloud Integration](https://github.com/PriyanshuKSharma/quantum-cloud-integration)
+
+### 4. Identity and Access Management Research
+
+Security is one of the foundations of my work, especially the challenge of giving systems the right access at the right time with minimal friction and maximum control.
+
+- Studied **EAP, PAP, RADIUS, TACACS+, Kerberos, OAuth, and OpenID**.
+- Explored **DAC, MAC, RBAC, and ABAC** access-control models.
+- Applied the **AAA framework** to understand secure authentication and authorization in distributed networks.
+
+---
+
+## Selected Projects
+
+| Project | What It Focuses On | Link |
+| --- | --- | --- |
+| **Media Storage SaaS** | Scalable cloud-based media storage software-as-a-service platform | [View Project](https://github.com/PriyanshuKSharma/media-storage-saas) |
+| **SkyVault** | Personal cloud platform with Docker and an interactive frontend | [View Project](https://github.com/PriyanshuKSharma/SkyVault) |
+| **EcoBizz: Sustainably Yours** | Sustainability-focused project built for the GDSC Solution Challenge 2024 | [View Project](https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024) |
+| **Linux Practicals** | Linux exercises and commands for scripting, administration, and student learning | [View Project](https://github.com/PriyanshuKSharma/Linux-Practicals) |
+| **Fit Raho Gym Website** | Interactive frontend project using HTML, CSS, and JavaScript | Portfolio project |
+
+---
+
+## Experience Highlights
+
+| Timeline | Role | Organization | Focus |
+| --- | --- | --- | --- |
+| **Jun 2025 - Sep 2025** | Web Development Intern | Marquardt India | Full-stack development, UI/UX improvement, and feature implementation |
+| **Mar 2025 - Jun 2025** | IT Intern | Seamedu | Coordination, operations, documentation, and process support |
+| **Jul 2024 - Sep 2024** | Fortinet Network Security Virtual Intern | EduSkills | Cyber threat analysis, security protocols, and network defense fundamentals |
+| **Jul 2024 - Aug 2024** | Project Intern | OctaNet Services Pvt. Ltd. | Frontend web development and practical project delivery |
+| **May 2024 - Jul 2024** | Cloud Research Intern | IIT Ropar | Serverless benchmarking, cloud research, and infrastructure experimentation |
+| **Apr 2024 - Jun 2024** | Zscaler Zero Trust Cloud Security Virtual Intern | EduSkills | Zero Trust architecture and cloud security workflows |
+| **Apr 2023 - May 2023** | Project Intern | InternPe | Web development tasks and project implementation |
+| **Nov 2022 - Dec 2022** | Student Intern | Mindler | Communication, presentation, and early professional exposure |
+
+---
+
+## Education
+
+| Degree / Stage | Institution | Timeline | Highlight |
+| --- | --- | --- | --- |
+| **B.Tech in Information Technology** | Ajeenkya D Y Patil University, Pune | Aug 2022 - Present | Specialization in Cloud Technology and Information Security, **CGPA: 9.9** |
+| **Intermediate Education** | Sri Chaitanya Jr. Kalasala, Hyderabad | Apr 2020 - May 2022 | Science and Mathematics, **93.9%** |
+| **Higher Secondary Education** | Sri Chaitanya High School, Hyderabad | Apr 2019 - May 2020 | Completed higher secondary education, **87.6%** |
+
+---
+
+## Technical Arsenal
+
+**Languages**
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnubash&logoColor=white)
+
+**Web and App Development**
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Tailwind_CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+
+**Cloud, Serverless, and Infrastructure**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Microsoft Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
+![OpenFaaS](https://img.shields.io/badge/OpenFaaS-3B82F6?style=flat-square&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
+![Pulumi](https://img.shields.io/badge/Pulumi-8A3391?style=flat-square&logo=pulumi&logoColor=white)
+
+**Security and Systems**
+
+![IAM](https://img.shields.io/badge/IAM-0F172A?style=flat-square&logoColor=white)
+![Zero Trust](https://img.shields.io/badge/Zero_Trust-1D4ED8?style=flat-square&logoColor=white)
+![Network Security](https://img.shields.io/badge/Network_Security-DC2626?style=flat-square&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-2563EB?style=flat-square&logoColor=white)
+
+**Data, DevOps, and Storage**
+
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon_S3-569A31?style=flat-square&logo=amazons3&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
+![Neon](https://img.shields.io/badge/Neon-00E599?style=flat-square&logo=neon&logoColor=black)
+
+**Exploring Next**
+
+![IBM Quantum](https://img.shields.io/badge/IBM_Quantum-052FAD?style=flat-square&logo=ibm&logoColor=white)
+![AWS Braket](https://img.shields.io/badge/AWS_Braket-111827?style=flat-square&logo=amazonaws&logoColor=FF9900)
+
+---
+
+## Certifications and Virtual Internships
+
+- **Zscaler Zero Trust Cloud Security Internship** — EduSkills Foundation, Apr 2024 to Jun 2024
+- **Fortinet Network Security Associate** — AICTE EduSkills, focused on threat landscape, cyber defense, and security fundamentals
+
+---
+
+## Open Source and Community
+
+- Contributed to **[Interns-MQI-25](https://github.com/Interns-MQI-25)** and its **[project-interns](https://github.com/Interns-MQI-25/project-interns)** repository.
+- Worked in collaborative environments around **Docker, Cloud, and DevOps**.
+- Enjoy sharing what I learn through code, documentation, experiments, and student-friendly guides.
+
+<p align="center">
+  <a href="https://github.com/Interns-MQI-25/project-interns">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Interns-MQI-25&repo=project-interns&theme=github_dark" alt="Interns-MQI-25 project-interns" />
+  </a>
 </p>
 
 ---
 
-⭐ _Thank you for visiting my profile! Let's innovate and build the future together._
+## Timeline
+
+```mermaid
+timeline
+    title Priyanshu's Tech Journey
+    2022 : Started B.Tech in Information Technology at ADYPU
+         : Student Intern at Mindler
+    2023 : Project Intern at InternPe
+    2024 : Zscaler Zero Trust Cloud Security Internship
+         : Cloud Research Internship at IIT Ropar
+         : Project Internship at OctaNet Services
+         : Fortinet Network Security Virtual Internship
+    2025 : IT Internship at Seamedu
+         : Web Development Internship at Marquardt India
+    Present : Building Nebula and deepening research in cloud, security, and quantum systems
+```
+
+---
+
+## Learning Lab
+
+<details>
+<summary><strong>Guides, manuals, and side builds</strong></summary>
+
+- **Ubuntu Linux Installation Manual** — A practical guide for installing and configuring Ubuntu on VirtualBox.
+- **Shell Scripting for Beginners** — Introductory scripting guide covering permissions, services, text manipulation, and beginner automation tasks.
+- **Win-KeX for Kali Linux on WSL 2** — Planned setup guide for bringing a graphical Kali Linux workflow to Windows.
+- **Java Swing Online Test Application** — Planned desktop application with timer-based test flow and score calculation.
+- **Fit Raho Gym Website** — Interactive website project built with HTML, CSS, and JavaScript.
+
+</details>
+
+---
+
+## GitHub Snapshot
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PriyanshuKSharma&theme=github-dark&hide_border=false&stroke=0000&background=0D1117&ring=00FFFF&fire=00FFFF&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=8B949E&sideLabels=8B949E&dates=8B949E" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshuKSharma&layout=compact&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00FFFF&text_color=C9D1D9&icon_color=00FFFF" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=PriyanshuKSharma&show_icons=true&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00FFFF&text_color=C9D1D9&icon_color=00FFFF&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PriyanshuKSharma&bg_color=0D1117&color=00FFFF&line=00FFFF&point=FFFFFF&hide_border=false&area=true&area_color=161B22" alt="Activity Graph" />
+</p>
+
+---
+
+## What I Am Aiming For
+
+- Build **Nebula** into a serious multi-cloud orchestration platform.
+- Publish research on **quantum-cloud systems**, **IAM**, and **multi-cloud architecture**.
+- Contribute to **open-source security and cloud tooling** that helps developers build faster and safer.
+- Keep growing into a role where I can design platforms that are secure, elegant, and genuinely useful.
+
+---
+
+## Connect With Me
+
+<p align="center">
+  <a href="mailto:priyanshu17ks@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
+  <a href="https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/PriyanshuKSharma"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://hub.docker.com/u/priyanshuksharma"><img src="https://img.shields.io/badge/Docker_Hub-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Hub" /></a>
+  <a href="https://priyanshuksharma.github.io/portfolio_priyanshuksharma/"><img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+</p>
+
+---
+
+<p align="center">
+  <strong>Thanks for stopping by.</strong><br />
+  If you are building in cloud, security, research, or modern infrastructure, I would be glad to connect and collaborate.
+</p>
