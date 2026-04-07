@@ -164,8 +164,8 @@ timeline
 | Degree / Stage                       | Institution                           | Timeline            | Highlight                                                                 |
 | ------------------------------------ | ------------------------------------- | ------------------- | ------------------------------------------------------------------------- |
 | **B.Tech in Information Technology** | Ajeenkya D Y Patil University, Pune   | Aug 2022 - Present  | Specialization in Cloud Technology and Information Security,**CGPA: 9.9** |
-| **Intermediate Education**           | Sri Chaitanya Jr. Kalasala, Hyderabad | Apr 2020 - May 2022 | Science and Mathematics,**93.9%**                                         |
-| **Higher Secondary Education**       | Sri Chaitanya High School, Hyderabad  | Apr 2019 - May 2020 | Completed higher secondary education,**87.6%**                            |
+| **Intermediate Education (11th and 12th)**           | Sri Chaitanya Jr. Kalasala, Hyderabad | Apr 2020 - May 2022 | Science and Mathematics,**93.9%**                                         |
+| **Higher Secondary Education (10th)**       | Sri Chaitanya High School, Hyderabad  | Apr 2019 - May 2020 | Completed higher secondary education,**87.6%**                            |
 
 ---
 
