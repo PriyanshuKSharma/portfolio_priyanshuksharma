@@ -1,8 +1,8 @@
 # 👨💻 Priyanshu Kumar Sharma | B.Tech IT Student | Cloud Technology & Information Security
 
-Hello! I'm **Priyanshu Kumar Sharma**, a fourth-year **B.Tech** student specializing in **Information Technology** with a deep passion for **Cloud Computing**, **Cybersecurity**, **Machine Learning** and **Quantum Computing**. I enjoy exploring new frameworks, expanding my expertise in serverless and cloud infrastructures, and advancing in areas like **Identity and Access Management (IAM)**, **Hybrid Quantum-Cloud Systems**, and **Zero Trust Security**.
+Hello! I'm **Priyanshu Kumar Sharma**, a final-year **B.Tech Information Technology** student and a driven technologist with a profound focus on **Cloud Architecture**, **Cybersecurity**, **Machine Learning**, and **Quantum Computing**. I thrive on designing scalable systems and am constantly expanding my expertise in serverless paradigms, multi-cloud orchestration (like my work on **Nebula**), and advanced security domains including **Identity & Access Management (IAM)**, **Zero Trust Security**, and exploratory **Hybrid Quantum-Cloud Integrations**.
 
-I embrace a project-based learning approach and have accumulated hands-on experience in research, open-source projects, and security solutions. This README summarizes my experiences, certifications, and projects, highlighting my journey and ambitions in technology.
+Driven by a rigorous, hands-on philosophy, I have built a diverse engineering track record spanning academic cloud research, open-source development, and enterprise-grade security solutions. This portfolio outlines my professional journey, ongoing research endeavors, certifications, and the cutting-edge systems I'm building to solve complex infrastructure challenges.
 
 <div align="center">
 
