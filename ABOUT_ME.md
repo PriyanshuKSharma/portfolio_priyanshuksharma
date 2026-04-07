@@ -113,6 +113,19 @@ Security is one of the foundations of my work, especially the challenge of givin
 
 ## Experience Highlights
 
+```mermaid
+timeline
+    title Experience Highlights
+    2022 : Student Intern at Mindler
+    2023 : Project Intern at InternPe
+    2024 : Zscaler Zero Trust Cloud Security Virtual Internship
+         : Cloud Research Internship at IIT Ropar
+         : Project Internship at OctaNet Services Pvt. Ltd.
+         : Fortinet Network Security Virtual Internship
+    2025 : IT Internship at Seamedu
+         : Web Development Internship at Marquardt India
+```
+
 | Timeline | Role | Organization | Focus |
 | --- | --- | --- | --- |
 | **Jun 2025 - Sep 2025** | Web Development Intern | Marquardt India | Full-stack development, UI/UX improvement, and feature implementation |
@@ -128,6 +141,15 @@ Security is one of the foundations of my work, especially the challenge of givin
 
 ## Education
 
+```mermaid
+timeline
+    title Education Journey
+    2019 : Higher Secondary Education at Sri Chaitanya High School
+    2020 : Intermediate Education begins at Sri Chaitanya Jr. Kalasala
+    2022 : B.Tech in Information Technology begins at ADYPU
+    Present : Specializing in Cloud Technology and Information Security with CGPA 9.9
+```
+
 | Degree / Stage | Institution | Timeline | Highlight |
 | --- | --- | --- | --- |
 | **B.Tech in Information Technology** | Ajeenkya D Y Patil University, Pune | Aug 2022 - Present | Specialization in Cloud Technology and Information Security, **CGPA: 9.9** |
@@ -140,61 +162,135 @@ Security is one of the foundations of my work, especially the challenge of givin
 
 **Languages**
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnubash&logoColor=white)
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="96" height="96" title="Java" alt="Java" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="96" height="96" title="Python" alt="Python" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="96" height="96" title="JavaScript" alt="JavaScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="96" height="96" title="Dart" alt="Dart" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="96" height="96" title="Bash" alt="Bash" />
+</p>
+
+<p align="center"><sub>Java • Python • JavaScript • Dart • Bash</sub></p>
 
 **Web and App Development**
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Tailwind_CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="96" height="96" title="HTML5" alt="HTML5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="96" height="96" title="CSS3" alt="CSS3" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="96" height="96" title="React" alt="React" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="96" height="96" title="Django" alt="Django" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="96" height="96" title="Flutter" alt="Flutter" />
+  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="96" height="96" title="Tailwind CSS" alt="Tailwind CSS" />
+</p>
+
+<p align="center"><sub>HTML5 • CSS3 • React • Django • Flutter • Tailwind CSS</sub></p>
 
 **Cloud, Serverless, and Infrastructure**
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![Microsoft Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
-![OpenFaaS](https://img.shields.io/badge/OpenFaaS-3B82F6?style=flat-square&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
-![Pulumi](https://img.shields.io/badge/Pulumi-8A3391?style=flat-square&logo=pulumi&logoColor=white)
+<p align="center">
+  <img src="https://img.icons8.com/color/96/amazon-web-services.png" width="96" height="96" title="AWS" alt="AWS" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="96" height="96" title="Microsoft Azure" alt="Microsoft Azure" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="96" height="96" title="Google Cloud Platform" alt="Google Cloud Platform" />
+  <img src="https://cdn.simpleicons.org/awslambda/FF9900" width="96" height="96" title="AWS Lambda" alt="AWS Lambda" />
+  <img src="https://avatars.githubusercontent.com/u/33404658?s=200&v=4" width="96" height="96" title="OpenFaaS" alt="OpenFaaS" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" width="96" height="96" title="Cloudflare" alt="Cloudflare" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="96" height="96" title="Terraform" alt="Terraform" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pulumi/pulumi-original.svg" width="96" height="96" title="Pulumi" alt="Pulumi" />
+</p>
+
+<p align="center"><sub>AWS • Azure • GCP • AWS Lambda • OpenFaaS • Cloudflare • Terraform • Pulumi</sub></p>
 
 **Security and Systems**
 
-![IAM](https://img.shields.io/badge/IAM-0F172A?style=flat-square&logoColor=white)
-![Zero Trust](https://img.shields.io/badge/Zero_Trust-1D4ED8?style=flat-square&logoColor=white)
-![Network Security](https://img.shields.io/badge/Network_Security-DC2626?style=flat-square&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Nmap](https://img.shields.io/badge/Nmap-2563EB?style=flat-square&logoColor=white)
+<p align="center">
+  <img src="https://img.icons8.com/color/96/security-checked.png" width="96" height="96" title="IAM" alt="IAM" />
+  <img src="https://img.icons8.com/color/96/privacy.png" width="96" height="96" title="Zero Trust" alt="Zero Trust" />
+  <img src="https://img.icons8.com/color/96/firewall.png" width="96" height="96" title="Network Security" alt="Network Security" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="96" height="96" title="Linux" alt="Linux" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="96" height="96" title="Docker" alt="Docker" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="96" height="96" title="Kubernetes" alt="Kubernetes" />
+  <img src="https://img.icons8.com/color/96/nmap.png" width="96" height="96" title="Nmap" alt="Nmap" />
+</p>
+
+<p align="center"><sub>IAM • Zero Trust • Network Security • Linux • Docker • Kubernetes • Nmap</sub></p>
 
 **Data, DevOps, and Storage**
 
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Amazon S3](https://img.shields.io/badge/Amazon_S3-569A31?style=flat-square&logo=amazons3&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
-![Neon](https://img.shields.io/badge/Neon-00E599?style=flat-square&logo=neon&logoColor=black)
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="96" height="96" title="Redis" alt="Redis" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="96" height="96" title="MySQL" alt="MySQL" />
+  <img src="https://img.icons8.com/color/96/amazon-s3.png" width="96" height="96" title="Amazon S3" alt="Amazon S3" />
+  <img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/github.png" width="96" height="96" title="GitHub" alt="GitHub" />
+  <img src="https://img.icons8.com/color/96/gitlab.png" width="96" height="96" title="GitLab" alt="GitLab" />
+  <img src="https://cdn.simpleicons.org/neon/00E599" width="96" height="96" title="Neon" alt="Neon" />
+</p>
+
+<p align="center"><sub>Redis • MySQL • Amazon S3 • GitHub • GitLab • Neon</sub></p>
 
 **Exploring Next**
 
-![IBM Quantum](https://img.shields.io/badge/IBM_Quantum-052FAD?style=flat-square&logo=ibm&logoColor=white)
-![AWS Braket](https://img.shields.io/badge/AWS_Braket-111827?style=flat-square&logo=amazonaws&logoColor=FF9900)
+<p align="center">
+  <img src="https://img.icons8.com/color/96/ibm.png" width="110" height="96" title="IBM Quantum" alt="IBM Quantum" />
+  <img src="https://img.icons8.com/color/96/amazon-web-services.png" width="110" height="96" title="AWS Braket" alt="AWS Braket" />
+</p>
+
+<p align="center"><sub>IBM Quantum • AWS Braket</sub></p>
+
+```mermaid
+flowchart TD
+    A[Technical Arsenal] --> B[Languages]
+    A --> C[Web and App]
+    A --> D[Cloud and Infrastructure]
+    A --> E[Security and Systems]
+    A --> F[Research]
+    B --> B1[Java]
+    B --> B2[Python]
+    B --> B3[JavaScript]
+    B --> B4[Dart]
+    B --> B5[Bash]
+    C --> C1[HTML5]
+    C --> C2[CSS3]
+    C --> C3[React]
+    C --> C4[Django]
+    C --> C5[Flutter]
+    C --> C6[Tailwind CSS]
+    D --> D1[AWS]
+    D --> D2[Azure]
+    D --> D3[GCP]
+    D --> D4[Docker]
+    D --> D5[Kubernetes]
+    D --> D6[Terraform]
+    D --> D7[Pulumi]
+    E --> E1[IAM]
+    E --> E2[Zero Trust]
+    E --> E3[Network Security]
+    E --> E4[Nmap]
+    F --> F1[IBM Quantum]
+    F --> F2[AWS Braket]
+```
 
 ---
 
 ## Certifications and Credentials
 
 A blend of vendor certifications, technical credentials, and focused course-based learning across cybersecurity, cloud, AI, and core developer skills.
+
+```mermaid
+flowchart TD
+    A[Credentials] --> B[Fortinet]
+    A --> C[Zscaler]
+    A --> D[Oracle University]
+    A --> E[Udemy]
+    A --> F[HackerRank]
+    B --> B1[Fundamentals in Cybersecurity]
+    B --> B2[Associate in Cybersecurity]
+    C --> C1[EDU-102]
+    C --> C2[ZTCA]
+    D --> D1[OCI 2025 AI Foundations Associate]
+    E --> E1[AWS Services for Solutions Architect Associate]
+    E --> E2[Python Mastery for Beginners]
+    F --> F1[SQL Basic]
+```
 
 | Credential | Provider | Type |
 | --- | --- | --- |
