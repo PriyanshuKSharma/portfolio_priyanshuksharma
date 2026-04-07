@@ -1,7 +1,18 @@
-# Priyanshu Kumar Sharma
+<h1 align="center">Priyanshu Kumar Sharma</h1>
 
 <p align="center">
-  <strong>B.Tech Information Technology Student</strong> • <strong>Cloud Technology</strong> • <strong>Information Security</strong> • <strong>Research-Driven Systems Builder</strong>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=900&lines=Cloud+Builder+%E2%98%81%EF%B8%8F;Security+Explorer+%F0%9F%94%90;Serverless+Researcher+%F0%9F%9A%80;Quantum-Curious+Engineer+%E2%9A%9B%EF%B8%8F" alt="Typing animation" />
+</p>
+
+<p align="center">
+  <strong>🎓 B.Tech Information Technology Student</strong> • <strong>☁️ Cloud Technology</strong> • <strong>🔐 Information Security</strong> • <strong>🚀 Research-Driven Systems Builder</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/%E2%98%81%EF%B8%8F_Cloud_Architecture-Live-0EA5E9?style=for-the-badge" alt="Cloud Architecture Live" />
+  <img src="https://img.shields.io/badge/%F0%9F%94%90_Security_Mindset-Active-1D4ED8?style=for-the-badge" alt="Security Mindset Active" />
+  <img src="https://img.shields.io/badge/%F0%9F%9A%80_Build_Mode-On-7C3AED?style=for-the-badge" alt="Build Mode On" />
+  <img src="https://img.shields.io/badge/%E2%9A%9B%EF%B8%8F_Quantum_Curiosity-Exploring-F59E0B?style=for-the-badge" alt="Quantum Curiosity Exploring" />
 </p>
 
 <p align="center">
@@ -27,12 +38,12 @@
 
 ## Engineering in Four Directions
 
-| Area | What I Do |
-| --- | --- |
-| **Cloud Systems** | Design scalable systems across AWS, Azure, and GCP with a strong interest in serverless and multi-cloud orchestration. |
-| **Security Engineering** | Study IAM, AAA, Zero Trust, and secure access models for modern distributed environments. |
-| **Research Thinking** | Approach projects with benchmarking, experimentation, and architecture-level reasoning. |
-| **Builder Mindset** | Turn ideas into working repositories, guides, prototypes, and systems people can actually use. |
+| Area                     | What I Do                                                                                                              |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| **Cloud Systems**        | Design scalable systems across AWS, Azure, and GCP with a strong interest in serverless and multi-cloud orchestration. |
+| **Security Engineering** | Study IAM, AAA, Zero Trust, and secure access models for modern distributed environments.                              |
+| **Research Thinking**    | Approach projects with benchmarking, experimentation, and architecture-level reasoning.                                |
+| **Builder Mindset**      | Turn ideas into working repositories, guides, prototypes, and systems people can actually use.                         |
 
 ---
 
@@ -49,11 +60,11 @@
 
 ## Current Radar
 
-| Now Building | Now Researching | Long-Term Direction |
-| --- | --- | --- |
-| **Nebula**, an API-first multi-cloud command center | **Hybrid quantum-cloud systems** for security and efficiency | Becoming a cloud architect and security-focused systems engineer |
-| Serverless benchmarking workflows and infra experiments | Secure identity and access models in distributed systems | Publishing research-backed engineering work |
-| Portfolio-grade products with strong architecture stories | Practical cloud performance optimization | Building resilient platforms that scale cleanly |
+| Now Building                                              | Now Researching                                              | Long-Term Direction                                              |
+| --------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------- |
+| **Nebula**, an API-first multi-cloud command center       | **Hybrid quantum-cloud systems** for security and efficiency | Becoming a cloud architect and security-focused systems engineer |
+| Serverless benchmarking workflows and infra experiments   | Secure identity and access models in distributed systems     | Publishing research-backed engineering work                      |
+| Portfolio-grade products with strong architecture stories | Practical cloud performance optimization                     | Building resilient platforms that scale cleanly                  |
 
 ---
 
@@ -101,15 +112,15 @@ Security is one of the foundations of my work, especially the challenge of givin
 
 ## Selected Projects
 
-| Project | What It Focuses On | Links |
-| --- | --- | --- |
-| **Multi-Cloud SaaS Orchestration Platform** | Cloud-native orchestration platform across AWS, Azure, and GCP with Dockerized microservices, Terraform provisioning, Celery jobs, Redis sync workflows, JWT auth, and a scalable FastAPI backend. | [GitHub](https://github.com/PriyanshuKSharma/multi-cloud) |
-| **Storage SaaS Platform** | AI-powered video and business workflow SaaS built with Next.js 14, Tailwind CSS, Clerk authentication, Prisma, Neon DB, Cloudinary, and Vercel deployment. | [GitHub](https://github.com/PriyanshuKSharma/media-storage-saas.git) |
-| **Quantum Cloud Integration** | Hybrid cloud-quantum architecture connecting classical cloud infrastructure with IBM Quantum resources using AWS, Docker, and Python for secure, scalable experimentation. | [GitHub](https://github.com/PriyanshuKSharma/quantum-cloud-integration.git) |
-| **Rural Gyan Platform** | Full-stack educational platform with role-based dashboards, bilingual support, AI-assisted features, JWT auth, Docker deployment, and a React plus Node.js stack. | [GitHub](https://github.com/PriyanshuKSharma/rural-gyan-paltform) |
-| **XAI Interpret** | Explainable AI platform using SHAP and LIME to deliver interactive model interpretability, visual insights, and cloud-ready ML workflows for high-stakes use cases. | [GitHub](https://github.com/PriyanshuKSharma/xai_explainaibility) |
-| **SkyVault** | Personal cloud storage system with Dockerized deployment, secure file management workflows, and a clean interactive interface for uploads, listings, and downloads. | [GitHub](https://github.com/PriyanshuKSharma/SkyVault.git) • [Demo](https://priyanshuksharma.github.io/SkyVault/) |
-| **Ecobizz E-commerce App** | Cross-platform Flutter application for sustainable commerce, designed for Android and iOS with a product-focused mobile experience. | [GitHub](https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024.git) |
+| Project                                     | What It Focuses On                                                                                                                                                                                 | Links                                                                                                             |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Multi-Cloud SaaS Orchestration Platform** | Cloud-native orchestration platform across AWS, Azure, and GCP with Dockerized microservices, Terraform provisioning, Celery jobs, Redis sync workflows, JWT auth, and a scalable FastAPI backend. | [GitHub](https://github.com/PriyanshuKSharma/multi-cloud)                                                         |
+| **Storage SaaS Platform**                   | AI-powered video and business workflow SaaS built with Next.js 14, Tailwind CSS, Clerk authentication, Prisma, Neon DB, Cloudinary, and Vercel deployment.                                         | [GitHub](https://github.com/PriyanshuKSharma/media-storage-saas.git)                                              |
+| **Quantum Cloud Integration**               | Hybrid cloud-quantum architecture connecting classical cloud infrastructure with IBM Quantum resources using AWS, Docker, and Python for secure, scalable experimentation.                         | [GitHub](https://github.com/PriyanshuKSharma/quantum-cloud-integration.git)                                       |
+| **Rural Gyan Platform**                     | Full-stack educational platform with role-based dashboards, bilingual support, AI-assisted features, JWT auth, Docker deployment, and a React plus Node.js stack.                                  | [GitHub](https://github.com/PriyanshuKSharma/rural-gyan-paltform)                                                 |
+| **XAI Interpret**                           | Explainable AI platform using SHAP and LIME to deliver interactive model interpretability, visual insights, and cloud-ready ML workflows for high-stakes use cases.                                | [GitHub](https://github.com/PriyanshuKSharma/xai_explainaibility)                                                 |
+| **SkyVault**                                | Personal cloud storage system with Dockerized deployment, secure file management workflows, and a clean interactive interface for uploads, listings, and downloads.                                | [GitHub](https://github.com/PriyanshuKSharma/SkyVault.git) • [Demo](https://priyanshuksharma.github.io/SkyVault/) |
+| **Ecobizz E-commerce App**                  | Cross-platform Flutter application for sustainable commerce, designed for Android and iOS with a product-focused mobile experience.                                                                | [GitHub](https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024.git)        |
 
 ---
 
@@ -128,16 +139,16 @@ timeline
          : Web Development Internship at Marquardt India
 ```
 
-| Timeline | Role | Organization | Focus |
-| --- | --- | --- | --- |
-| **Jun 2025 - Sep 2025** | Web Development Intern | Marquardt India | Full-stack development, UI/UX improvement, and feature implementation |
-| **Mar 2025 - Jun 2025** | IT Intern | Seamedu | Coordination, operations, documentation, and process support |
-| **Jul 2024 - Sep 2024** | Fortinet Network Security Virtual Intern | EduSkills | Cyber threat analysis, security protocols, and network defense fundamentals |
-| **Jul 2024 - Aug 2024** | Project Intern | OctaNet Services Pvt. Ltd. | Frontend web development and practical project delivery |
-| **May 2024 - Jul 2024** | Cloud Research Intern | IIT Ropar | Serverless benchmarking, cloud research, and infrastructure experimentation |
-| **Apr 2024 - Jun 2024** | Zscaler Zero Trust Cloud Security Virtual Intern | EduSkills | Zero Trust architecture and cloud security workflows |
-| **Apr 2023 - May 2023** | Project Intern | InternPe | Web development tasks and project implementation |
-| **Nov 2022 - Dec 2022** | Student Intern | Mindler | Communication, presentation, and early professional exposure |
+| Timeline                | Role                                             | Organization               | Focus                                                                       |
+| ----------------------- | ------------------------------------------------ | -------------------------- | --------------------------------------------------------------------------- |
+| **Jun 2025 - Sep 2025** | Web Development Intern                           | Marquardt India            | Full-stack development, UI/UX improvement, and feature implementation       |
+| **Mar 2025 - Jun 2025** | IT Intern                                        | Seamedu                    | Coordination, operations, documentation, and process support                |
+| **Jul 2024 - Sep 2024** | Fortinet Network Security Virtual Intern         | EduSkills                  | Cyber threat analysis, security protocols, and network defense fundamentals |
+| **Jul 2024 - Aug 2024** | Project Intern                                   | OctaNet Services Pvt. Ltd. | Frontend web development and practical project delivery                     |
+| **May 2024 - Jul 2024** | Cloud Research Intern                            | IIT Ropar                  | Serverless benchmarking, cloud research, and infrastructure experimentation |
+| **Apr 2024 - Jun 2024** | Zscaler Zero Trust Cloud Security Virtual Intern | EduSkills                  | Zero Trust architecture and cloud security workflows                        |
+| **Apr 2023 - May 2023** | Project Intern                                   | InternPe                   | Web development tasks and project implementation                            |
+| **Nov 2022 - Dec 2022** | Student Intern                                   | Mindler                    | Communication, presentation, and early professional exposure                |
 
 ---
 
@@ -152,11 +163,11 @@ timeline
     Present : Specializing in Cloud Technology and Information Security with CGPA 9.9
 ```
 
-| Degree / Stage | Institution | Timeline | Highlight |
-| --- | --- | --- | --- |
-| **B.Tech in Information Technology** | Ajeenkya D Y Patil University, Pune | Aug 2022 - Present | Specialization in Cloud Technology and Information Security, **CGPA: 9.9** |
-| **Intermediate Education** | Sri Chaitanya Jr. Kalasala, Hyderabad | Apr 2020 - May 2022 | Science and Mathematics, **93.9%** |
-| **Higher Secondary Education** | Sri Chaitanya High School, Hyderabad | Apr 2019 - May 2020 | Completed higher secondary education, **87.6%** |
+| Degree / Stage                       | Institution                           | Timeline            | Highlight                                                                 |
+| ------------------------------------ | ------------------------------------- | ------------------- | ------------------------------------------------------------------------- |
+| **B.Tech in Information Technology** | Ajeenkya D Y Patil University, Pune   | Aug 2022 - Present  | Specialization in Cloud Technology and Information Security,**CGPA: 9.9** |
+| **Intermediate Education**           | Sri Chaitanya Jr. Kalasala, Hyderabad | Apr 2020 - May 2022 | Science and Mathematics,**93.9%**                                         |
+| **Higher Secondary Education**       | Sri Chaitanya High School, Hyderabad  | Apr 2019 - May 2020 | Completed higher secondary education,**87.6%**                            |
 
 ---
 
@@ -294,16 +305,16 @@ flowchart TD
     F --> F1[SQL Basic]
 ```
 
-| Credential | Provider | Type |
-| --- | --- | --- |
-| **Fortinet Certified Fundamentals in Cybersecurity** | Fortinet | Vendor certification |
-| **Fortinet Certified Associate in Cybersecurity** | Fortinet | Vendor certification |
-| **Fundamentals of Cybersecurity (EDU-102)** | Zscaler | Security credential |
-| **Zero Trust Certified Associate (ZTCA)** | Zscaler | Vendor certification |
+| Credential                                                              | Provider          | Type                       |
+| ----------------------------------------------------------------------- | ----------------- | -------------------------- |
+| **Fortinet Certified Fundamentals in Cybersecurity**                    | Fortinet          | Vendor certification       |
+| **Fortinet Certified Associate in Cybersecurity**                       | Fortinet          | Vendor certification       |
+| **Fundamentals of Cybersecurity (EDU-102)**                             | Zscaler           | Security credential        |
+| **Zero Trust Certified Associate (ZTCA)**                               | Zscaler           | Vendor certification       |
 | **Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate** | Oracle University | Cloud and AI certification |
-| **AWS Services for Solutions Architect Associate - Udemy** | Udemy | Course certificate |
-| **SQL (Basic)** | HackerRank | Skill credential |
-| **Python Mastery for Beginners** | Udemy | Course certificate |
+| **AWS Services for Solutions Architect Associate - Udemy**              | Udemy             | Course certificate         |
+| **SQL (Basic)**                                                         | HackerRank        | Skill credential           |
+| **Python Mastery for Beginners**                                        | Udemy             | Course certificate         |
 
 ### Virtual Internships
 
@@ -362,14 +373,14 @@ timeline
 
 ## Fun Facts
 
-| Signal | What It Usually Means |
-| --- | --- |
-| `terminal open, architecture sketch nearby` | I am probably turning a research idea into a working system. |
-| `IAM policy on screen` | I have entered puzzle-solving mode and will stay there until the access model makes sense. |
-| `benchmark notes everywhere` | Curiosity has become experimentation, and experimentation is becoming engineering. |
-| `IBM Quantum and cloud docs both open` | I am exploring how future infrastructure could connect classical and quantum systems. |
-| `a repetitive task annoys me twice` | It is one script away from being automated. |
-| `new repo appears suddenly` | A side idea just got promoted into a prototype. |
+| Signal                                      | What It Usually Means                                                                      |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| `terminal open, architecture sketch nearby` | I am probably turning a research idea into a working system.                               |
+| `IAM policy on screen`                      | I have entered puzzle-solving mode and will stay there until the access model makes sense. |
+| `benchmark notes everywhere`                | Curiosity has become experimentation, and experimentation is becoming engineering.         |
+| `IBM Quantum and cloud docs both open`      | I am exploring how future infrastructure could connect classical and quantum systems.      |
+| `a repetitive task annoys me twice`         | It is one script away from being automated.                                                |
+| `new repo appears suddenly`                 | A side idea just got promoted into a prototype.                                            |
 
 ---
 
