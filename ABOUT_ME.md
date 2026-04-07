@@ -55,6 +55,12 @@ I embrace a project-based learning approach and have accumulated hands-on experi
   - Implementing the **AAA framework** for improved security in distributed networks.
 - **Outcome**: Practical understanding of IAM policies and their implementation in secure networks.
 
+### 4. **Cloud-Simplify: Multi-Cloud Architecture**
+
+- **Project**: Development and research on **Cloud-Simplify**, a scalable multi-cloud management platform.
+- **Objective**: Streamlining and optimizing multi-cloud deployments across various providers. Currently authoring and publishing a research paper detailing the project's technical architecture and capabilities.
+- **GitHub Repository**: [Multi-Cloud](https://github.com/PriyanshuKSharma/multi-cloud)
+
 ---
 
 ## 📜 Certifications & Virtual Internships
@@ -97,16 +103,13 @@ I embrace a project-based learning approach and have accumulated hands-on experi
 ## 📘 Lab Manuals & Educational Guides
 
 1. **Ubuntu Linux Installation Manual**
-
    - A comprehensive guide on installing and configuring **Ubuntu Linux on VirtualBox**. Covers setup, installation, and optimization tips for performance.
 
 2. **Shell Scripting for Beginners**
-
    - Guide on **shell scripting basics** with examples of **file permissions**, **system service management**, and scripting tasks.
    - Example scripts for **text manipulation** in files, displaying **days of the week** in reverse, and setting permissions.
 
 3. **Fit Raho Gym Website**
-
    - Developed an interactive website for **Fit Raho Gym** using **HTML, CSS, and JavaScript** with sections like **About Us**, background images, and buttons for user engagement.
 
 ---
@@ -214,6 +217,7 @@ I embrace a project-based learning approach and have accumulated hands-on experi
 
 ## 💻 Notable Projects
 
+- 🌐 [**Cloud-Simplify (Multi-Cloud)**](https://github.com/PriyanshuKSharma/multi-cloud) – A comprehensive multi-cloud management platform (Research Paper in progress).
 - 🌩️ [**Media Storage SaaS**](https://github.com/PriyanshuKSharma/media-storage-saas) – A scalable cloud-based storage SaaS.
 - ⚛️ [**Quantum-Cloud Integration**](https://github.com/PriyanshuKSharma/quantum-cloud-integration) – Hybrid Quantum-Cloud system with AWS & IBM Q.
 - ☁️ [**SkyVault**](https://github.com/PriyanshuKSharma/SkyVault) – Personal cloud platform with Docker & interactive frontend.
@@ -381,8 +385,8 @@ timeline
 
 ## 🎯 Future Goals
 
-- 🚀 Build **SkyVault: Personal Docker-based Cloud Storage**
-- 📑 Publish research on **Quantum-Cloud Systems & IAM**
+- 🚀 Build **Multi-Cloud Orchestrator**
+- 📑 Publish research on **Quantum-Cloud Systems, IAM, & Multi-Cloud Architecture**
 - 🔐 Contribute to **open-source InfoSec tools**
 
 ---
