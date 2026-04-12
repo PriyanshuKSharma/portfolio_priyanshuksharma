@@ -9,17 +9,12 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/%E2%98%81%EF%B8%8F_Cloud_Engineering-Active-0EA5E9?style=for-the-badge" alt="Cloud Engineering Active" />
-  <img src="https://img.shields.io/badge/%F0%9F%94%92_Security_Architecture-Focused-1D4ED8?style=for-the-badge" alt="Security Architecture Focused" />
-  <img src="https://img.shields.io/badge/%E2%9A%99%EF%B8%8F_Systems_Building-Enabled-7C3AED?style=for-the-badge" alt="Systems Building Enabled" />
-  <img src="https://img.shields.io/badge/%F0%9F%93%98_Research_Direction-Quantum-F59E0B?style=for-the-badge" alt="Research Direction Quantum" />
-  <img src="https://img.shields.io/badge/Final%20Year-B.Tech%20IT-111827?style=for-the-badge" alt="Final Year B.Tech IT" />
+  <img src="https://img.shields.io/badge/Building-Nebula-0EA5E9?style=for-the-badge" alt="Building Nebula" />
+  <img src="https://img.shields.io/badge/Research-IIT%20Ropar-1D4ED8?style=for-the-badge" alt="Research at IIT Ropar" />
+  <img src="https://img.shields.io/badge/Focus-Cloud%20%7C%20Security%20%7C%20Quantum-7C3AED?style=for-the-badge" alt="Cloud Security Quantum" />
+  <img src="https://img.shields.io/badge/Architecture-Multi--Cloud%20%26%20Serverless-F59E0B?style=for-the-badge" alt="Multi-Cloud and Serverless Architecture" />
   <img src="https://img.shields.io/badge/CGPA-9.9-0F766E?style=for-the-badge" alt="CGPA 9.9" />
-  <img src="https://img.shields.io/badge/Focus-Cloud%20%7C%20Security%20%7C%20Research-1D4ED8?style=for-the-badge" alt="Focus Areas" />
-  <img src="https://img.shields.io/badge/Credentials-8-7C3AED?style=for-the-badge" alt="8 Credentials" />
-  <img src="https://img.shields.io/badge/Internship%20Experience-1%20yr%2011%20mo-2563EB?style=for-the-badge" alt="Internship Experience 1 year 11 months" />
-  <img src="https://img.shields.io/badge/Job%20Experience-Fresher-475569?style=for-the-badge" alt="Job Experience Fresher" />
-  <img src="https://img.shields.io/badge/Open%20Source-Builder-F59E0B?style=for-the-badge" alt="Open Source Builder" />
+  <img src="https://img.shields.io/badge/Open%20To-Collaboration-111827?style=for-the-badge" alt="Open to Collaboration" />
 </p>
 
 
@@ -28,41 +23,85 @@
   <a href="https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=blue&style=flat"><img src="https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=blue&style=flat" alt="Profile Views" /></a>
 </p>
 
-> I build secure cloud-native systems, explore multi-cloud orchestration, benchmark serverless platforms, and research how quantum computing can shape the future of infrastructure.
-
-> I enjoy working on problems where architecture, security, and experimentation overlap, especially when the result is a system that is both practical today and future-facing tomorrow.
+<p align="center">
+  <em>Cloud architecture, security thinking, and research-backed building for systems that are meant to be used, not just described.</em>
+</p>
 
 ---
 
-## Engineering in Four Directions
+## Mission Control
 
-| Area                     | What I Do                                                                                                              |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Cloud Systems**        | Design scalable systems across AWS, Azure, and GCP with a strong interest in serverless and multi-cloud orchestration. |
-| **Security Engineering** | Study IAM, AAA, Zero Trust, and secure access models for modern distributed environments.                              |
-| **Research Thinking**    | Approach projects with benchmarking, experimentation, and architecture-level reasoning.                                |
-| **Builder Mindset**      | Turn ideas into working repositories, guides, prototypes, and systems people can actually use.                         |
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Builder Mode</strong><br /><br />
+      I like projects where architecture, security, and experimentation all matter at once.<br /><br />
+      • Turning ideas into working systems, not just concept notes<br />
+      • Treating security as a design choice, not a late add-on<br />
+      • Shipping reproducible setups, docs, and developer-friendly workflows<br />
+      • Building products with a strong architecture story behind them
+
+  </td>
+    <td width="50%" valign="top">
+      <strong>Research Mode</strong><br /><br />
+      The problems that keep me curious usually sit right at the edge of infrastructure.<br /><br />
+      • Multi-cloud orchestration and unified control planes<br />
+      • Serverless benchmarking and cloud performance analysis<br />
+      • IAM, AAA, Zero Trust, and distributed access models<br />
+      • Hybrid quantum-cloud systems and future-facing infrastructure
+
+  </td>
+  </tr>
+</table>
 
 ---
 
 ## Snapshot
 
 - Final-year **B.Tech Information Technology** student specializing in **Cloud Technology and Information Security**.
-- Research experience at **IIT Ropar** under the **Indian Academy of Sciences Summer Research Fellowship Program (2024)**.
-- Hands-on with **AWS, Azure, GCP, Docker, Kubernetes, Terraform, Linux, IAM, and Zero Trust concepts**.
-- Exploring the intersection of **serverless systems, cybersecurity, cloud architecture, and hybrid quantum-cloud computing**.
-- Built a growing stack of **8 certifications and credentials** spanning cybersecurity, cloud, AI, SQL, and developer learning.
-- Open-source contributor who enjoys building developer-first tools, educational resources, and infrastructure-focused projects.
+- Research intern at **IIT Ropar** through the **Indian Academy of Sciences Summer Research Fellowship Program (2024)**.
+- Comfortable across **AWS, Azure, GCP, Docker, Kubernetes, Terraform, Linux, IAM, and Zero Trust** concepts.
+- Most interested in the overlap between **cloud systems, security architecture, serverless platforms, and quantum-inspired infrastructure research**.
+- Built a growing stack of **certifications, internships, and project work** across cybersecurity, cloud, AI, SQL, and developer tooling.
+- I enjoy building repositories that are practical, well-documented, and strong enough to double as learning resources.
+
+---
+
+## Core Themes
+
+| Theme                    | How It Shows Up In My Work                                                                                  |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| **Cloud Systems**        | Multi-cloud orchestration, serverless workflows, infra experimentation, and architecture-heavy builds.     |
+| **Security Engineering** | IAM, Zero Trust, access-control models, network security thinking, and secure system design.               |
+| **Research Thinking**    | Benchmarking, experimentation, performance reasoning, and documenting ideas with engineering depth.         |
+| **Builder Mindset**      | Turning concepts into repositories, guides, demos, and usable systems that other developers can learn from. |
 
 ---
 
 ## Current Radar
 
-| Now Building                                              | Now Researching                                              | Long-Term Direction                                              |
-| --------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------- |
-| **Nebula**, an API-first multi-cloud command center       | **Hybrid quantum-cloud systems** for security and efficiency | Becoming a cloud architect and security-focused systems engineer |
-| Serverless benchmarking workflows and infra experiments   | Secure identity and access models in distributed systems     | Publishing research-backed engineering work                      |
-| Portfolio-grade products with strong architecture stories | Practical cloud performance optimization                     | Building resilient platforms that scale cleanly                  |
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <strong>Now Building</strong><br /><br />
+      Nebula, an API-first multi-cloud command center<br />
+      Serverless benchmarking workflows and infra experiments<br />
+      Portfolio-grade products with strong architecture stories
+    </td>
+    <td width="33%" valign="top">
+      <strong>Now Researching</strong><br /><br />
+      Hybrid quantum-cloud systems for security and efficiency<br />
+      Secure identity and access models in distributed systems<br />
+      Practical performance optimization for cloud workloads
+    </td>
+    <td width="33%" valign="top">
+      <strong>Long-Term Direction</strong><br /><br />
+      Becoming a cloud architect with a security-first mindset<br />
+      Publishing research-backed engineering work<br />
+      Designing resilient platforms that scale cleanly
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -119,6 +158,28 @@ Security is one of the foundations of my work, especially the challenge of givin
 | **XAI Interpret**                           | Explainable AI platform using SHAP and LIME to deliver interactive model interpretability, visual insights, and cloud-ready ML workflows for high-stakes use cases.                                | [GitHub](https://github.com/PriyanshuKSharma/xai_explainaibility)                                                 |
 | **SkyVault**                                | Personal cloud storage system with Dockerized deployment, secure file management workflows, and a clean interactive interface for uploads, listings, and downloads.                                | [GitHub](https://github.com/PriyanshuKSharma/SkyVault.git) • [Demo](https://priyanshuksharma.github.io/SkyVault/) |
 | **Ecobizz E-commerce App**                  | Cross-platform Flutter application for sustainable commerce, designed for Android and iOS with a product-focused mobile experience.                                                                | [GitHub](https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024.git)        |
+
+---
+
+## Featured Repository Deck
+
+<p align="center">
+  <a href="https://github.com/PriyanshuKSharma/multi-cloud">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=multi-cloud&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00FFFF&text_color=C9D1D9&icon_color=00FFFF" alt="Nebula repository card" />
+  </a>
+  <a href="https://github.com/PriyanshuKSharma/quantum-cloud-integration">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=quantum-cloud-integration&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00FFFF&text_color=C9D1D9&icon_color=00FFFF" alt="Quantum Cloud Integration repository card" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/PriyanshuKSharma/rural-gyan-paltform">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=rural-gyan-paltform&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00FFFF&text_color=C9D1D9&icon_color=00FFFF" alt="Rural Gyan repository card" />
+  </a>
+  <a href="https://github.com/PriyanshuKSharma/xai_explainaibility">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=xai_explainaibility&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0D1117&title_color=00FFFF&text_color=C9D1D9&icon_color=00FFFF" alt="XAI Interpret repository card" />
+  </a>
+</p>
 
 ---
 
