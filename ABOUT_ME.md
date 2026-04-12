@@ -174,11 +174,11 @@ timeline
 **Languages**
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="96" height="96" title="Java" alt="Java" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="96" height="96" title="Python" alt="Python" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="96" height="96" title="JavaScript" alt="JavaScript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="96" height="96" title="Dart" alt="Dart" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="96" height="96" title="Bash" alt="Bash" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="64" height="64" title="Java" alt="Java" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="64" height="64" title="Python" alt="Python" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="64" height="64" title="JavaScript" alt="JavaScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="64" height="64" title="Dart" alt="Dart" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="64" height="64" title="Bash" alt="Bash" />
 </p>
 
 <p align="center"><sub>Java • Python • JavaScript • Dart • Bash</sub></p>
@@ -186,12 +186,12 @@ timeline
 **Web and App Development**
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="96" height="96" title="HTML5" alt="HTML5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="96" height="96" title="CSS3" alt="CSS3" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="96" height="96" title="React" alt="React" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="96" height="96" title="Django" alt="Django" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="96" height="96" title="Flutter" alt="Flutter" />
-  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="96" height="96" title="Tailwind CSS" alt="Tailwind CSS" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="64" height="64" title="HTML5" alt="HTML5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="64" height="64" title="CSS3" alt="CSS3" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="64" height="64" title="React" alt="React" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="64" height="64" title="Django" alt="Django" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="64" height="64" title="Flutter" alt="Flutter" />
+  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="64" height="64" title="Tailwind CSS" alt="Tailwind CSS" />
 </p>
 
 <p align="center"><sub>HTML5 • CSS3 • React • Django • Flutter • Tailwind CSS</sub></p>
@@ -199,14 +199,14 @@ timeline
 **Cloud, Serverless, and Infrastructure**
 
 <p align="center">
-  <img src="https://img.icons8.com/color/96/amazon-web-services.png" width="96" height="96" title="AWS" alt="AWS" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="96" height="96" title="Microsoft Azure" alt="Microsoft Azure" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="96" height="96" title="Google Cloud Platform" alt="Google Cloud Platform" />
-  <img src="https://www.awsicon.com/static/images/Service-Icons/Compute/64/svg/Lambda.svg" width="96" height="96" title="AWS Lambda" alt="AWS Lambda" />
-  <img src="https://avatars.githubusercontent.com/u/33404658?s=200&v=4" width="96" height="96" title="OpenFaaS" alt="OpenFaaS" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" width="96" height="96" title="Cloudflare" alt="Cloudflare" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="96" height="96" title="Terraform" alt="Terraform" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pulumi/pulumi-original.svg" width="96" height="96" title="Pulumi" alt="Pulumi" />
+  <img src="https://img.icons8.com/color/96/amazon-web-services.png" width="64" height="64" title="AWS" alt="AWS" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="64" height="64" title="Microsoft Azure" alt="Microsoft Azure" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="64" height="64" title="Google Cloud Platform" alt="Google Cloud Platform" />
+  <img src="https://www.awsicon.com/static/images/Service-Icons/Compute/64/svg/Lambda.svg" width="64" height="64" title="AWS Lambda" alt="AWS Lambda" />
+  <img src="https://avatars.githubusercontent.com/u/33404658?s=200&v=4" width="64" height="64" title="OpenFaaS" alt="OpenFaaS" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" width="64" height="64" title="Cloudflare" alt="Cloudflare" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="64" height="64" title="Terraform" alt="Terraform" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pulumi/pulumi-original.svg" width="64" height="64" title="Pulumi" alt="Pulumi" />
 </p>
 
 <p align="center"><sub>AWS • Azure • GCP • AWS Lambda • OpenFaaS • Cloudflare • Terraform • Pulumi</sub></p>
@@ -214,13 +214,13 @@ timeline
 **Security and Systems**
 
 <p align="center">
-  <img src="https://img.icons8.com/color/96/security-checked.png" width="96" height="96" title="IAM" alt="IAM" />
-  <img src="https://img.icons8.com/color/96/privacy.png" width="96" height="96" title="Zero Trust" alt="Zero Trust" />
-  <img src="https://img.icons8.com/color/96/firewall.png" width="96" height="96" title="Network Security" alt="Network Security" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="96" height="96" title="Linux" alt="Linux" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="96" height="96" title="Docker" alt="Docker" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="96" height="96" title="Kubernetes" alt="Kubernetes" />
-  <img src="https://img.icons8.com/color/96/nmap.png" width="96" height="96" title="Nmap" alt="Nmap" />
+  <img src="https://img.icons8.com/color/96/security-checked.png" width="64" height="64" title="IAM" alt="IAM" />
+  <img src="https://img.icons8.com/color/96/privacy.png" width="64" height="64" title="Zero Trust" alt="Zero Trust" />
+  <img src="https://img.icons8.com/color/96/firewall.png" width="64" height="64" title="Network Security" alt="Network Security" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="64" height="64" title="Linux" alt="Linux" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="64" height="64" title="Docker" alt="Docker" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="64" height="64" title="Kubernetes" alt="Kubernetes" />
+  <img src="https://img.icons8.com/color/96/nmap.png" width="64" height="64" title="Nmap" alt="Nmap" />
 </p>
 
 <p align="center"><sub>IAM • Zero Trust • Network Security • Linux • Docker • Kubernetes • Nmap</sub></p>
@@ -228,12 +228,12 @@ timeline
 **Data, DevOps, and Storage**
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="96" height="96" title="Redis" alt="Redis" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="96" height="96" title="MySQL" alt="MySQL" />
-  <img src="https://img.icons8.com/color/96/amazon-s3.png" width="96" height="96" title="Amazon S3" alt="Amazon S3" />
-  <img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/github.png" width="96" height="96" title="GitHub" alt="GitHub" />
-  <img src="https://img.icons8.com/color/96/gitlab.png" width="96" height="96" title="GitLab" alt="GitLab" />
-  <img src="https://neon.com/brand/neon-logomark-light-color.svg?dpl=dpl_GfEvs43Fxt4MNm2V4NnNfkh4yvph" width="96" height="96" title="Neon DB" alt="Neon DB" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="64" height="64" title="Redis" alt="Redis" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="64" height="64" title="MySQL" alt="MySQL" />
+  <img src="https://img.icons8.com/color/96/amazon-s3.png" width="64" height="64" title="Amazon S3" alt="Amazon S3" />
+  <img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/github.png" width="64" height="64" title="GitHub" alt="GitHub" />
+  <img src="https://img.icons8.com/color/96/gitlab.png" width="64" height="64" title="GitLab" alt="GitLab" />
+  <img src="https://neon.com/brand/neon-logomark-light-color.svg?dpl=dpl_GfEvs43Fxt4MNm2V4NnNfkh4yvph" width="64" height="64" title="Neon DB" alt="Neon DB" />
 </p>
 
 <p align="center"><sub>Redis • MySQL • Amazon S3 • GitHub • GitLab • Neon</sub></p>
