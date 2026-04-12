@@ -14,6 +14,8 @@
   <img src="https://img.shields.io/badge/Focus-Cloud%20%7C%20Security%20%7C%20Quantum-7C3AED?style=for-the-badge" alt="Cloud Security Quantum" />
   <img src="https://img.shields.io/badge/Architecture-Multi--Cloud%20%26%20Serverless-F59E0B?style=for-the-badge" alt="Multi-Cloud and Serverless Architecture" />
   <img src="https://img.shields.io/badge/CGPA-9.9-0F766E?style=for-the-badge" alt="CGPA 9.9" />
+  <img src="https://img.shields.io/badge/Internship%20Experience-1%20yr%2011%20mo-2563EB?style=for-the-badge" alt="Internship Experience 1 year 11 months" />
+  <img src="https://img.shields.io/badge/Job%20Experience-Fresher-475569?style=for-the-badge" alt="Job Experience Fresher" />
   <img src="https://img.shields.io/badge/Open%20To-Collaboration-111827?style=for-the-badge" alt="Open to Collaboration" />
 </p>
 
