@@ -398,6 +398,121 @@ h1, h2, h3, h4, h5, h6 {
   right: 2px;
   bottom: 2px;
   background: var(--bg-dark);
+
+/* Mobile bottom dock navigation styles */
+.bottom-nav-dock {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 10px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 999px;
+  box-shadow: 0 6px 24px rgba(2,6,23,0.6);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  border: 1px solid rgba(255,255,255,0.04);
+  z-index: 9999;
+}
+
+.bottom-nav-dock .dock-item {
+  list-style: none;
+}
+
+.bottom-nav-dock .dock-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+  position: relative;
+  outline: none;
+}
+
+.bottom-nav-dock .dock-link .dock-emoji {
+  font-size: 1.15rem;
+  display: inline-block;
+}
+
+.bottom-nav-dock .dock-link:hover,
+.bottom-nav-dock .dock-link:focus {
+  transform: translateY(-4px);
+  color: var(--text-light);
+}
+
+.bottom-nav-dock .dock-link.active,
+.bottom-nav-dock .dock-link[aria-current="true"] {
+  background: var(--primary);
+  color: var(--bg-dark);
+  box-shadow: 0 6px 18px rgba(0,255,242,0.14), 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.bottom-nav-dock .dock-link .label {
+  display: none; /* keep labels hidden to save space; can be shown on expand */
+}
+
+.dock-item--collapse .dock-collapse-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-muted);
+  border: none;
+  cursor: pointer;
+}
+
+.dock-collapse-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  transition: transform 180ms ease;
+}
+
+.dock-item--collapse .dock-collapse-toggle[aria-expanded="false"] .dock-collapse-icon {
+  transform: rotate(0deg);
+}
+.dock-item--collapse .dock-collapse-toggle[aria-expanded="true"] .dock-collapse-icon {
+  transform: rotate(180deg);
+}
+
+/* Hide mobile dock on large screens */
+@media (min-width: 900px) {
+  .bottom-nav-dock {
+    display: none;
+  }
+}
+
+/* Slightly smaller and closer on very small screens */
+@media (max-width: 380px) {
+  .bottom-nav-dock { bottom: 12px; padding: 6px; gap:6px; }
+  .bottom-nav-dock .dock-link { width:44px; height:44px; }
+}
+
+/* Accessible focus ring */
+.bottom-nav-dock .dock-link:focus-visible {
+  box-shadow: 0 0 0 3px rgba(0,255,242,0.12);
+  border-radius: 50%;
+}
+
+/* Optional: make the dock expand to show labels when .dock-expanded is toggled on body */
+body.dock-expanded .bottom-nav-dock {
+  padding: 10px 14px;
+}
+body.dock-expanded .bottom-nav-dock .dock-link {
+  width: auto; padding: 0 12px; height: 44px; border-radius: 999px; gap: 8px;
+}
+body.dock-expanded .bottom-nav-dock .dock-link .label { display: inline-block; font-size: 0.85rem; color: var(--text-muted); }
+
   clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
   z-index: -1;
   transition: all 0.3s ease;
