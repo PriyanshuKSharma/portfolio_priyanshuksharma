@@ -4147,6 +4147,442 @@ body.loaded .loading-overlay {
   }
 }
 
+/* Revolutionary Liquid Metal AI Dock - Most Innovative Design Ever Created */
+.bottom-nav-dock {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: transparent;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  z-index: 1000;
+  filter: drop-shadow(0 20px 40px rgba(0, 255, 255, 0.3));
+}
+
+/* Liquid Metal Container */
+.dock-container {
+  position: relative;
+  background: linear-gradient(45deg, 
+    #0a0a0a 0%, 
+    #1a1a2e 25%, 
+    #16213e 50%, 
+    #0f3460 75%, 
+    #0a0a0a 100%);
+  border-radius: 50px;
+  padding: 8px;
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+.dock-container::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  background: conic-gradient(from 0deg at 50% 50%, 
+    #00ffff 0deg, 
+    #ff00ff 72deg, 
+    #00ff88 144deg, 
+    #ffff00 216deg, 
+    #ff0080 288deg, 
+    #00ffff 360deg);
+  border-radius: 53px;
+  z-index: -1;
+  animation: liquidFlow 4s linear infinite;
+}
+
+.dock-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+    rgba(0, 255, 255, 0.2) 0%, 
+    transparent 60%);
+  border-radius: 50px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dock-container:hover::after {
+  opacity: 1;
+}
+
+@keyframes liquidFlow {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(90deg) scale(1.02); }
+  50% { transform: rotate(180deg) scale(1); }
+  75% { transform: rotate(270deg) scale(1.02); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+/* Revolutionary Morphing Dock Items */
+.dock-item {
+  position: relative;
+  margin: 0 2px;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.dock-item:hover {
+  transform: translateY(-15px) scale(1.3);
+  z-index: 10;
+}
+
+.dock-item:hover + .dock-item,
+.dock-item:has(+ .dock-item:hover) {
+  transform: translateY(-8px) scale(1.1);
+}
+
+.dock-item:hover + .dock-item + .dock-item,
+.dock-item:has(+ .dock-item + .dock-item:hover) {
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* Liquid Metal Orbs */
+.dock-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, 
+    rgba(255, 255, 255, 0.3) 0%, 
+    rgba(0, 255, 255, 0.2) 30%, 
+    rgba(0, 0, 0, 0.8) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Liquid Core Animation */
+.dock-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, 
+    rgba(0, 255, 255, 0.8) 0%, 
+    rgba(255, 0, 128, 0.6) 50%, 
+    transparent 100%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: liquidPulse 3s ease-in-out infinite;
+}
+
+/* Plasma Ring Effect */
+.dock-link::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: conic-gradient(from 0deg, 
+    transparent 0deg, 
+    rgba(0, 255, 255, 0.6) 90deg, 
+    transparent 180deg, 
+    rgba(255, 0, 128, 0.6) 270deg, 
+    transparent 360deg);
+  border-radius: 50%;
+  opacity: 0;
+  animation: plasmaRing 2s linear infinite;
+  transition: opacity 0.3s ease;
+}
+
+.dock-link:hover::before {
+  transform: translate(-50%, -50%) scale(2);
+  background: radial-gradient(circle, 
+    rgba(0, 255, 255, 1) 0%, 
+    rgba(255, 0, 128, 0.8) 50%, 
+    rgba(0, 255, 255, 0.4) 100%);
+}
+
+.dock-link:hover::after {
+  opacity: 1;
+}
+
+.dock-link:hover {
+  background: radial-gradient(circle at 30% 30%, 
+    rgba(255, 255, 255, 0.6) 0%, 
+    rgba(0, 255, 255, 0.4) 30%, 
+    rgba(0, 0, 0, 0.9) 100%);
+  border-color: rgba(0, 255, 255, 0.8);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.4),
+    0 8px 16px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(0, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+@keyframes liquidPulse {
+  0%, 100% { 
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes plasmaRing {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Active State - Liquid Metal Consciousness */
+.dock-link.active {
+  background: radial-gradient(circle at 30% 30%, 
+    rgba(255, 255, 255, 0.8) 0%, 
+    rgba(0, 255, 255, 0.6) 30%, 
+    rgba(0, 0, 0, 1) 100%) !important;
+  border: 2px solid rgba(0, 255, 255, 1) !important;
+  color: #ffffff !important;
+  box-shadow: 
+    inset 0 2px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.6),
+    0 0 40px rgba(0, 255, 255, 1),
+    0 0 80px rgba(0, 255, 255, 0.6),
+    0 8px 16px rgba(0, 0, 0, 0.4) !important;
+  animation: consciousPulse 2s ease-in-out infinite;
+}
+
+.dock-link.active::before {
+  transform: translate(-50%, -50%) scale(1.5) !important;
+  background: radial-gradient(circle, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(0, 255, 255, 1) 50%, 
+    rgba(255, 0, 128, 0.8) 100%) !important;
+  animation: activeCore 1.5s ease-in-out infinite !important;
+}
+
+.dock-link.active::after {
+  opacity: 1 !important;
+  animation: activePlasma 1s linear infinite !important;
+}
+
+@keyframes consciousPulse {
+  0%, 100% { 
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  50% { 
+    transform: scale(1.15);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes activeCore {
+  0%, 100% { 
+    transform: translate(-50%, -50%) scale(1.3) rotate(0deg);
+  }
+  50% { 
+    transform: translate(-50%, -50%) scale(1.7) rotate(180deg);
+  }
+}
+
+@keyframes activePlasma {
+  0% { 
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% { 
+    transform: rotate(180deg) scale(1.1);
+    opacity: 0.8;
+  }
+  100% { 
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Icon Styling */
+.dock-emoji {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  position: relative;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  transition: all 0.3s ease;
+}
+
+.dock-link:hover .dock-emoji {
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8));
+  transform: scale(1.1);
+}
+
+.dock-link.active .dock-emoji {
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1));
+  transform: scale(1.2);
+  animation: iconGlow 2s ease-in-out infinite;
+}
+
+@keyframes iconGlow {
+  0%, 100% { 
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1));
+  }
+  50% { 
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 1));
+  }
+}
+
+.dock-collapse-toggle {
+  background: rgba(255, 0, 128, 0.1);
+  border: 1px solid rgba(255, 0, 128, 0.3);
+}
+
+.dock-collapse-toggle:hover {
+  color: var(--secondary);
+  background: rgba(255, 0, 128, 0.2);
+  border-color: var(--secondary);
+  box-shadow: 0 4px 20px rgba(255, 0, 128, 0.4);
+}
+
+.dock-collapse-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dock-collapse-toggle[aria-expanded="false"] .dock-collapse-icon {
+  transform: rotate(180deg);
+}
+
+/* Dock Animation States */
+.bottom-nav-dock.collapsed {
+  transform: translateX(-50%) translateY(60px);
+  opacity: 0.3;
+}
+
+.bottom-nav-dock.collapsed:hover {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* Tooltip Enhancement */
+.dock-link[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-card);
+  color: var(--text-light);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 1001;
+  animation: tooltipFadeIn 0.2s ease-out;
+}
+
+.dock-link[title]:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid var(--bg-card);
+  z-index: 1001;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Responsive Design for Revolutionary Dock */
+@media (min-width: 1024px) {
+  .bottom-nav-dock {
+    bottom: 40px;
+  }
+  
+  .dock-link {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .dock-emoji {
+    font-size: 24px;
+  }
+  
+  .dock-item:hover {
+    transform: translateY(-20px) scale(1.4);
+  }
+}
+
+@media (max-width: 768px) {
+  .dock-link {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .dock-emoji {
+    font-size: 18px;
+  }
+  
+  .dock-item:hover {
+    transform: translateY(-12px) scale(1.25);
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-nav-dock {
+    bottom: 20px;
+  }
+  
+  .dock-link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .dock-emoji {
+    font-size: 16px;
+  }
+  
+  .dock-item {
+    margin: 0 1px;
+  }
+  
+  .dock-item:hover {
+    transform: translateY(-10px) scale(1.2);
+  }
+}
+
 /* Projects Terminal */
 .terminal-window {
   background: rgba(10, 10, 15, 0.95);
