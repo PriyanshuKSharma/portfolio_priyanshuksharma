@@ -1,14 +1,18 @@
-<nav class="navbar">
+<nav class="navbar" id="main-navbar">
   <div class="nav-container">
     <div class="nav-logo">
-      <a href="#hero">Portfolio</a>
+      <a href="#hero">
+        <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+        <span class="logo-text">Priyanshu<span class="accent">.</span></span>
+      </a>
     </div>
+
     <ul class="nav-menu">
       <li class="nav-item">
         <a href="#hero" class="nav-link">Home</a>
       </li>
       <li class="nav-item">
-        <a href="#about" class="nav-link">About Me</a>
+        <a href="#about" class="nav-link">About</a>
       </li>
       <li class="nav-item">
         <a href="#education" class="nav-link">Education</a>
@@ -23,64 +27,25 @@
         <a href="#projects" class="nav-link">Projects</a>
       </li>
       <li class="nav-item">
-        <a href="#contact" class="nav-link">Contact Me</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </li>
     </ul>
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+
+    <div class="nav-actions">
+      <button class="theme-toggle-btn theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon dark-icon"></i>
+        <i class="fa-solid fa-sun light-icon"></i>
+      </button>
+      <button class="theme-toggle-btn dock-chat-trigger" data-chatbot-trigger aria-label="Open Chatbot" title="Chat with AI Assistant">
+        <i class="fa-solid fa-robot"></i>
+      </button>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
   </div>
-  <ul class="bottom-nav-dock" aria-label="Mobile quick navigation">
-    <li class="dock-item">
-      <a href="#hero" class="nav-link dock-link" aria-label="Home" title="Home">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#about" class="nav-link dock-link" aria-label="About Me" title="About Me">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-user"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#education" class="nav-link dock-link" aria-label="Education" title="Education">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#experience" class="nav-link dock-link" aria-label="Experience" title="Experience">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#skills" class="nav-link dock-link" aria-label="Technical Skills" title="Skills">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#projects" class="nav-link dock-link" aria-label="Projects" title="Projects">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-folder-open"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#contact" class="nav-link dock-link" aria-label="Contact Me" title="Contact">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-paper-plane"></i></span>
-      </a>
-    </li>
-    <li class="dock-item dock-item--collapse">
-      <button
-        id="dock-collapse-toggle"
-        class="dock-link dock-collapse-toggle"
-        type="button"
-        aria-label="Collapse Navigation"
-        aria-expanded="true"
-        title="Collapse Navigation"
-      >
-        <svg class="dock-collapse-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
-        </svg>
-      </button>
-    </li>
-  </ul>
 </nav>
+
