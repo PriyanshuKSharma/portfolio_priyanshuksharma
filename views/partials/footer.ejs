@@ -11,9 +11,17 @@
 .footer {
   background: var(--bg-dark);
   border-top: 1px solid rgba(0, 255, 255, 0.1);
-  padding: 2rem 0;
+  padding: 3rem 0; /* Base padding */
+  padding-bottom: 90px; /* Offset for floating dock on desktop */
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .footer {
+     padding-bottom: calc(6rem + env(safe-area-inset-bottom)); /* Offset for floating dock on mobile */
+  }
+}
+
 
 .footer-content {
   max-width: 1200px;
