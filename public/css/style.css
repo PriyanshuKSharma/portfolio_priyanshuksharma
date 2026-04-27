@@ -14,8 +14,8 @@
   --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
   --gradient-hover: linear-gradient(135deg, var(--secondary), var(--primary));
   --glow: 0 0 20px rgba(0, 255, 242, 0.5);
-  --border-color: rgba(255, 255, 255, 0.1);
-  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --border-color: rgba(255, 255, 255, 0.05);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.05);
   --bg-navbar: rgba(10, 10, 10, 0.8);
   --bg-toggle: rgba(255, 255, 255, 0.2);
   --shadow-card: none;
@@ -79,50 +79,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Animated Background */
+/* Pure Professional Background */
 .hero-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--bg-hero);
+  background: var(--bg-dark);
   z-index: -1;
   overflow: hidden;
-  transition: background 0.5s ease;
 }
 
-.hero-bg::before {
+.hero-bg::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
-    linear-gradient(rgba(0, 255, 242, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 255, 242, 0.03) 1px, transparent 1px);
-  background-size: 50px 50px;
-  mask-image: radial-gradient(circle at 50% 50%, black 40%, transparent 80%);
-  -webkit-mask-image: radial-gradient(circle at 50% 50%, black 40%, transparent 80%);
-  z-index: 0;
-}
-
-.hero-bg::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at 50% 50%, rgba(112, 0, 255, 0.1), transparent 60%);
-  animation: pulseGlow 10s ease-in-out infinite alternate;
-  z-index: 0;
-}
-
-@keyframes pulseGlow {
-  0% { transform: scale(1); opacity: 0.5; }
-  100% { transform: scale(1.2); opacity: 0.8; }
+  background: radial-gradient(circle at 80% 20%, rgba(0, 255, 242, 0.02), transparent 50%);
+  z-index: -1;
 }
 
 /* Hero Section */
@@ -176,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
   box-shadow: 0 0 15px rgba(0, 255, 242, 0.1);
   backdrop-filter: blur(5px);
-  animation: fadeInUp 1s ease 0.1s both;
+  animation: fadeIn 0.8s ease both;
 }
 
 .badge-icon {
@@ -197,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title-line {
   display: block;
-  animation: fadeInUp 1s ease 0.2s both;
+  animation: fadeIn 0.8s ease both;
 }
 
 .gradient-text {
@@ -209,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-roles {
   margin-bottom: 1.5rem;
-  animation: fadeInUp 1s ease 0.3s both;
+  animation: fadeIn 0.8s ease both;
 }
 
 .role-text {
@@ -241,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
-  animation: fadeInUp 1s ease 0.4s both;
+  animation: fadeIn 0.8s ease both;
 }
 
 .hero-metrics {
@@ -250,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1.5rem;
   max-width: 600px;
   margin: 2rem auto;
-  animation: fadeInUp 1s ease 0.5s both;
+  animation: fadeIn 0.8s ease both;
 }
 
 .metric-card {
@@ -315,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-muted);
   margin-bottom: 3rem;
   min-height: 2rem;
-  animation: fadeInUp 1s ease 0.6s both;
+  animation: fadeIn 0.8s ease both;
 }
 
 .hero-cta {
@@ -323,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-  animation: fadeInUp 1s ease 0.8s both;
+  animation: fadeIn 0.8s ease both;
 }
 
 .btn-glow {
@@ -343,15 +320,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.2;
 }
 
-@keyframes particleFloat {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-20px) rotate(180deg);
-  }
-}
 
 
 /* Buttons */
@@ -578,25 +546,6 @@ body.dock-expanded .bottom-nav-dock .dock-link .label { display: inline-block; f
   left: 100%;
 }
 
-/* Button Glitch Effect on Hover */
-.btn:hover {
-  animation: glitch-skew 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-}
-
-@keyframes borderFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-@keyframes glitch-skew {
-  0% { transform: skew(0deg); }
-  20% { transform: skew(-2deg); }
-  40% { transform: skew(2deg); }
-  60% { transform: skew(-1deg); }
-  80% { transform: skew(1deg); }
-  100% { transform: skew(0deg); }
-}
 
 /* Specific Resume Button Tweaks */
 .resume-dropdown .btn-secondary {
@@ -1574,9 +1523,9 @@ section {
 }
 
 .skill-card:hover {
-  transform: none;
-  box-shadow: 0 10px 30px rgba(0, 255, 242, 0.15);
-  border-color: rgba(0, 255, 242, 0.5);
+  transform: translateY(-2px);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .skill-card:hover::before {
@@ -5804,16 +5753,13 @@ body.light-theme .dock-link.active {
   --light-text-secondary: #475569;
   --light-accent: #6366f1; /* Indigo accent for light mode */
   --light-accent-soft: rgba(99, 102, 241, 0.1);
-  --light-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --light-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  --light-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --light-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+  --light-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.03);
+  --light-shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 .light-theme {
-  background-color: var(--light-bg);
-  background-image: 
-    radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.03) 1px, transparent 0);
-  background-size: 40px 40px;
+  background-color: #ffffff;
   color: var(--light-text-primary);
 }
 
@@ -6003,14 +5949,14 @@ body.light-theme .dock-link.active {
 
 .research-archive-card {
   display: flex;
-  background: rgba(10, 10, 10, 0.8);
-  border: 1px solid rgba(0, 255, 242, 0.15);
-  border-radius: 20px;
+  background: rgba(15, 15, 15, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
   overflow: hidden;
   position: relative;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  backdrop-filter: blur(10px);
+  box-shadow: none;
+  transition: all 0.4s ease;
   transform-style: preserve-3d;
 }
 
@@ -6021,16 +5967,7 @@ body.light-theme .dock-link.active {
 }
 
 .card-scanner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--primary), transparent);
-  box-shadow: 0 0 15px var(--primary);
-  z-index: 10;
-  animation: scan-vertical 4s linear infinite;
-  opacity: 0.5;
+  display: none;
 }
 
 @keyframes scan-vertical {
