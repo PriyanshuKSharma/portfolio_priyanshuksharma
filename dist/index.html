@@ -41,34 +41,6 @@
   </div>
   <div class="scroll-indicator"></div>
   <div class="social-sidebar" id="socialSidebar">
-    <div class="social-controls">
-      <button
-        class="social-toggle"
-        type="button"
-        onclick="toggleSocialSidebar()"
-        title="Toggle Social Links"
-        aria-label="Toggle Social Links"
-      >
-        <span aria-hidden="true"><i class="fa-solid fa-share-nodes"></i></span>
-      </button>
-      <button
-        class="social-toggle social-action-btn social-theme-trigger"
-        type="button"
-        title="Toggle Theme"
-        aria-label="Toggle Theme"
-      >
-        <span aria-hidden="true"><i class="fa-solid fa-circle-half-stroke"></i></span>
-      </button>
-      <button
-        class="social-toggle social-action-btn social-chat-trigger"
-        type="button"
-        title="Open Chatbot"
-        aria-label="Open Chatbot"
-        data-chatbot-trigger
-      >
-        <span aria-hidden="true"><i class="fa-solid fa-robot"></i></span>
-      </button>
-    </div>
     <div class="social-content">
       <div class="social-line"></div>
       <div class="social-icons-innovative">
@@ -123,6 +95,9 @@
         <a href="#skills" class="nav-link">Skills</a>
       </li>
       <li class="nav-item">
+        <a href="#research" class="nav-link">Research</a>
+      </li>
+      <li class="nav-item">
         <a href="#projects" class="nav-link">Projects</a>
       </li>
       <li class="nav-item">
@@ -131,11 +106,13 @@
     </ul>
 
     <div class="nav-actions">
-      <button class="theme-toggle-btn theme-toggle" aria-label="Toggle Theme">
-        <i class="fa-solid fa-moon dark-icon"></i>
-        <i class="fa-solid fa-sun light-icon"></i>
+      <button class="theme-toggle-btn social-toggle" type="button" onclick="toggleSocialSidebar()" title="Toggle Social Links" aria-label="Toggle Social Links">
+        <i class="fa-solid fa-share-nodes"></i>
       </button>
-      <button class="theme-toggle-btn dock-chat-trigger" data-chatbot-trigger aria-label="Open Chatbot" title="Chat with AI Assistant">
+      <button class="theme-toggle-btn theme-toggle social-theme-trigger" type="button" title="Toggle Theme" aria-label="Toggle Theme">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
+      <button class="theme-toggle-btn dock-chat-trigger social-chat-trigger" type="button" title="Open Chatbot" aria-label="Open Chatbot" data-chatbot-trigger="">
         <i class="fa-solid fa-robot"></i>
       </button>
 
@@ -152,7 +129,6 @@
   <main>
     <section id="hero" class="hero-section">
   <div class="hero-bg"></div>
-  <div class="hero-particles"></div>
   <div class="hero-content">
     <div class="hero-badge">
       <span class="badge-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
@@ -923,46 +899,65 @@
   </div>
 </section>
 
-<section id="research" class="achievements-section research-section">
-  <div class="section-header">
-    <h2 class="quantum-text">Research Publications</h2>
-    <div class="section-line"></div>
+<section id="research" class="research-section chronicle-section">
+  <div class="chronicle-header">
+    <p class="chronicle-kicker">/research.kernel</p>
+    <h2 class="chronicle-title glitch-text" data-text="Research Archive">Research Archive</h2>
+    <p class="chronicle-subtitle">Academic intelligence and system engineering papers.</p>
   </div>
-  <div class="research-grid">
-    <div class="research-card glass-card">
-      <div class="research-badge">
-        <span class="badge-dot"></span> Published Paper
-      </div>
-      <h3 class="paper-title">Potential Impact of Quantum Computing on Cloud Storage: Hybrid Cloud-Quantum Systems</h3>
-      <p class="journal-name">International Journal of Creative Research Thoughts (IJCRT)</p>
-      <div class="publication-meta">
-        <div class="meta-item">
-          <i class="fa-solid fa-calendar-days"></i>
-          <span>April 2026</span>
+
+  <div class="research-kernel-container">
+    <div class="research-archive-card">
+      <div class="card-scanner"></div>
+      
+      <div class="research-card-sidebar">
+        <div class="research-id">PAPER-26-04</div>
+        <div class="research-status">
+          <span class="status-indicator live"></span>
+          PUBLISHED
         </div>
-        <div class="meta-item">
-          <i class="fa-solid fa-book-open"></i>
-          <span>Vol 14, Issue 4</span>
-        </div>
-        <div class="meta-item">
-          <i class="fa-solid fa-fingerprint"></i>
-          <span>ISSN: 2320-2882</span>
-        </div>
+        <div class="research-category">Cloud Ops</div>
       </div>
-      <div class="doi-container">
-        <span class="doi-label">DOI:</span>
-        <a href="https://doi.org/10.56975/ijcrt.v14i4.305033" target="_blank" class="doi-link">
-          10.56975/ijcrt.v14i4.305033
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-      </div>
-      <div class="research-actions">
-        <a href="Research/IJCRT2604384.pdf" target="_blank" class="btn-research">
-          <i class="fa-solid fa-file-pdf"></i> View Paper
-        </a>
-        <a href="Research/IJCRT_Confirmation_Letter_305033.pdf" target="_blank" class="btn-research outline">
-          <i class="fa-solid fa-certificate"></i> Confirmation
-        </a>
+
+      <div class="research-card-main">
+        <div class="research-header">
+          <div class="journal-tag">IJCRT JOURNAL</div>
+          <h3 class="research-paper-title">Democratizing AWS Cloud Operations: A Unified Orchestration Approach To Standardized Infrastructure Management</h3>
+        </div>
+
+        <div class="research-abstract-preview">
+          <div class="abstract-label">ABSTRACT ANALYSIS</div>
+          <p class="abstract-text">
+            Introducing <strong>Nebula</strong>: An AWS orchestration platform solving the gap between infrastructure capabilities and operability. Integrating 
+            <span class="text-highlight">provisioning</span>, <span class="text-highlight">inventory sync</span>, and 
+            <span class="text-highlight">cost observability</span> into a unified control plane.
+          </p>
+        </div>
+
+        <div class="research-tech-stack">
+          <span class="tech-pill">AWS</span>
+          <span class="tech-pill">Terraform</span>
+          <span class="tech-pill">FastAPI</span>
+          <span class="tech-pill">Celery/Redis</span>
+        </div>
+
+        <div class="research-footer">
+          <div class="publication-details">
+            <span class="pub-info"><i class="fa-solid fa-calendar"></i> April 07, 2026</span>
+            <span class="pub-info"><i class="fa-solid fa-fingerprint"></i> DOI: <a href="https://doi.org/10.56975/ijcrt.v14i4.305033" target="_blank" class="doi-archive-link">10.56975/ijcrt.v14i4.305033</a></span>
+          </div>
+          <div class="research-cta-group">
+            <a href="Research/IJCRT2604384.pdf" target="_blank" class="research-btn main-btn">
+              <i class="fa-solid fa-file-pdf"></i> Read Paper
+            </a>
+            <a href="https://github.com/PriyanshuKSharma/multi-cloud" target="_blank" class="research-btn sub-btn">
+              <i class="fa-brands fa-github"></i> Source
+            </a>
+            <a href="Research/IJCRT_Confirmation_Letter_305033.pdf" target="_blank" class="research-btn sub-btn">
+              <i class="fa-solid fa-certificate"></i> Verified
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1532,13 +1527,8 @@
 }
 </style>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <!-- Three.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  
   <script src="js/main.js?v=4.2"></script>
   <script src="js/projects.js"></script>
-  <script src="js/futuristic-effects.js"></script>
-  <script src="js/particle-system.js"></script>
   <script src="js/chatbot.js?v=3.1"></script>
   <script src="js/innovative.js"></script>
   <script src="js/github.js"></script>
