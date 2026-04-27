@@ -6,7 +6,7 @@
   --secondary: #d500f9;
   --accent: #7000ff;
   --bg-dark: #030305;
-  --bg-hero: radial-gradient(circle at top, #101826 0%, #06080d 48%, #030305 100%);
+  --bg-hero: radial-gradient(circle at top, rgba(16, 24, 38, 0.84) 0%, rgba(6, 8, 13, 0.9) 48%, rgba(3, 3, 5, 0.96) 100%);
   --bg-card: rgba(255, 255, 255, 0.03);
   --bg-card-hover: rgba(255, 255, 255, 0.07);
   --text-light: #ffffff;
@@ -19,6 +19,8 @@
   --bg-navbar: rgba(10, 10, 10, 0.8);
   --bg-toggle: rgba(255, 255, 255, 0.2);
   --shadow-card: none;
+  --site-art-opacity: 0.24;
+  --site-art-filter: saturate(0.95) brightness(1.02);
 }
 
 .light-theme {
@@ -27,7 +29,7 @@
   --secondary: #7209b7; /* Deep Purple */
   --accent: #4361ee; /* Royal Blue */
   --bg-dark: #f8f9fa; /* Off White */
-  --bg-hero: radial-gradient(circle at top, #ffffff 0%, #f3f6fb 45%, #e2e8f0 100%);
+  --bg-hero: radial-gradient(circle at top, rgba(255, 255, 255, 0.82) 0%, rgba(243, 246, 251, 0.9) 45%, rgba(226, 232, 240, 0.94) 100%);
   --bg-card: rgba(255, 255, 255, 0.9);
   --bg-card-hover: #ffffff;
   --text-light: #1e293b; /* Slate 800 */
@@ -38,6 +40,8 @@
   --bg-navbar: rgba(255, 255, 255, 0.95);
   --bg-toggle: rgba(0, 0, 0, 0.05);
   --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  --site-art-opacity: 0.14;
+  --site-art-filter: saturate(0.72) contrast(0.9) brightness(1.03);
 }
 
 * {
@@ -53,14 +57,39 @@ html {
 
 body {
   font-family: "Outfit", sans-serif;
-  background: var(--bg-dark);
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
   color: var(--text-light);
   overflow-x: hidden;
   width: 100%;
   max-width: 100vw;
   padding-bottom: 0px; // Handled by footer to avoid gaps
   line-height: 1.6;
-  transition: background 0.3s ease, color 0.3s ease;
+  isolation: isolate;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    url("../images/hero-abstract-bg.svg"),
+    radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.05), transparent 24%),
+    radial-gradient(circle at 84% 14%, rgba(0, 255, 242, 0.08), transparent 28%);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center top 4rem, left top, right top;
+  background-size: min(92rem, 96vw), 36rem 36rem, 32rem 32rem;
+  opacity: var(--site-art-opacity);
+  filter: var(--site-art-filter);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,14 +125,9 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: 0;
   background:
-    url("../images/hero-abstract-bg.svg"),
     linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, transparent 30%),
-    linear-gradient(135deg, rgba(0, 255, 242, 0.04), transparent 42%);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: right -4rem center, center, center;
-  background-size: min(56rem, 78vw), cover, cover;
-  opacity: 0.28;
-  filter: saturate(0.92) brightness(1.02);
+    linear-gradient(135deg, rgba(0, 255, 242, 0.06), transparent 42%);
+  opacity: 0.76;
 }
 
 .hero-bg::after {
@@ -118,8 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .light-theme .hero-bg::before {
-  opacity: 0.18;
-  filter: saturate(0.75) contrast(0.88);
+  opacity: 0.7;
 }
 
 .hero-content {
