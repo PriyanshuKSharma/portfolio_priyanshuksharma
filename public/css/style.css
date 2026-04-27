@@ -180,7 +180,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-icon {
-  animation: sparkle 2s ease-in-out infinite;
+  display: flex;
+  align-items: center;
 }
 
 .badge-icon i {
@@ -352,15 +353,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@keyframes sparkle {
-  0%,
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-  50% {
-    transform: scale(1.2) rotate(180deg);
-  }
-}
 
 /* Buttons */
 /* Buttons */
