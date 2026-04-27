@@ -107,54 +107,40 @@
 
 ---
 
-## Flagship Work
+## Research Publications & Academic Contributions
+
+### 📄 Published Research: Democratizing AWS Cloud Operations
+This research presents **Nebula**, an implementation-based AWS orchestration platform that integrates provisioning, inventory synchronization, health monitoring, and cost observability into a common control plane.
+- **Title:** "Democratizing AWS Cloud Operations: A Unified Orchestration Approach To Standardized Infrastructure Management"
+- **Venue:** International Journal of Creative Research Thoughts (IJCRT), Vol. 14, Issue 4, April 2026.
+- **DOI:** [10.56975/ijcrt.v14i4.305033](https://doi.org/10.56975/ijcrt.v14i4.305033)
+- **Key Contribution:** A framework for decoupling user-facing cloud workflows from long-running provisioning tasks using asynchronous execution (Celery/Redis).
+
+### 🏛️ Cloud Research Internship at IIT Ropar
+Through the **Indian Academy of Sciences (IAS)** Summer Research Fellowship Program, I worked on serverless flexibility and performance.
+- **Project:** XFBench & XFaaS Development.
+- **Focus:** Benchmarking serverless workloads across FaaS providers (AWS Lambda, OpenFaaS) to assess latency and scalability.
+- **Repositories:** [XFBench](https://github.com/PriyanshuKSharma/serverless-faas-workbench_IIT_Rpr.git) | [XFaaS](https://github.com/PriyanshuKSharma/XFaaS-IIT_Rpr.git)
+
+### ⚛️ Hybrid Quantum-Cloud Systems
+Exploring the intersection of classical cloud storage and quantum computing resources.
+- **Focus:** Strengthening cloud storage security through quantum-inspired cryptographic models.
+- **Tools:** IBM Quantum Experience, AWS Braket, Docker.
+- **Repository:** [Quantum Cloud Integration](https://github.com/PriyanshuKSharma/quantum-cloud-integration)
+
+---
+
+## Flagship Engineering Work
 
 ### 1. Nebula: The Multi-Cloud Command Center
+An API-first orchestration engine designed to unify AWS, Azure, and GCP behind a single control plane.
+- **Vision:** Simplify fragmented multi-cloud operations while maintaining high security and observability.
+- **Repository:** [Nebula Multi-Cloud](https://github.com/PriyanshuKSharma/multi-cloud)
 
-**Nebula** is an API-first orchestration engine designed to unify AWS, Azure, and GCP behind a single control plane. The vision is to simplify fragmented multi-cloud operations while making provisioning, observability, and intelligence more cohesive.
-
-- Building toward a centralized orchestration layer for multi-cloud environments.
-- Authoring research around the architecture, including the **Nebula AI Copilot** and **Async Provisioning Engine**.
-- Focused on abstraction, scalability, and developer ergonomics.
-
-**Repository:** [Nebula Multi-Cloud](https://github.com/PriyanshuKSharma/multi-cloud)
-
-### 2. XFBench and XFaaS Development at IIT Ropar
-
-During my research internship at **IIT Ropar**, I worked on systems that improve flexibility and benchmarking in serverless environments.
-
-- Implemented and explored **XFBench** and **XFaaS** for serverless workload testing.
-- Conducted performance assessment and optimization studies around cloud workflows.
-- Contributed deployment notes and performance documentation for reproducible experimentation.
-
-**Repositories:** [XFBench](https://github.com/PriyanshuKSharma/serverless-faas-workbench_IIT_Rpr.git) • [XFaaS](https://github.com/PriyanshuKSharma/XFaaS-IIT_Rpr.git) • [AWS Lambda Addition Module](https://github.com/PriyanshuKSharma/aws-lambda-addition.git)
-
-### 3. Quantum Computing and Cloud Storage
-
-This research explores how **quantum computing** can strengthen the future of cloud storage through hybrid architectures that improve security and operational design.
-
-- Investigated hybrid cloud-quantum systems using **AWS**, **Docker**, and **IBM Quantum Experience**.
-- Focused on the impact of quantum computing on storage systems and cloud security models.
-
-**Repository:** [Quantum Cloud Integration](https://github.com/PriyanshuKSharma/quantum-cloud-integration)
-
-### 4. Published Research: Democratizing AWS Cloud Operations
-
-This research presents **Nebula**, an implementation-based AWS orchestration platform that integrates provisioning, inventory synchronization, health monitoring, and cost observability into a common control plane.
-
-- **Title:** "Democratizing AWS Cloud Operations: A Unified Orchestration Approach To Standardized Infrastructure Management"
-- **Published in:** International Journal of Creative Research Thoughts (IJCRT), Volume 14, Issue 4, April 2026.
-- **DOI:** [10.56975/ijcrt.v14i4.305033](https://doi.org/10.56975/ijcrt.v14i4.305033)
-- **Links:** [Paper PDF](public/Research/IJCRT2604384.pdf) | [Confirmation Letter](public/Research/IJCRT_Confirmation_Letter_305033.pdf)
-- **Status:** Contributed a framework for decoupling user-facing workflows from long-running cloud processes.
-
-### 5. Identity and Access Management Research
-
-Security is one of the foundations of my work, especially the challenge of giving systems the right access at the right time with minimal friction and maximum control.
-
-- Studied **EAP, PAP, RADIUS, TACACS+, Kerberos, OAuth, and OpenID**.
-- Explored **DAC, MAC, RBAC, and ABAC** access-control models.
-- Applied the **AAA framework** to understand secure authentication and authorization in distributed networks.
+### 2. Identity and Access Management (IAM) Lab
+A deep dive into secure identity models for distributed systems.
+- **Scope:** EAP, RADIUS, Kerberos, OAuth, and Zero Trust implementations.
+- **Focus:** Applying the AAA framework to modern cloud-native environments.
 
 ---
 
