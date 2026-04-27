@@ -271,8 +271,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Handle new theme toggle
-  const newThemeToggle = document.querySelector('.theme-toggle-btn');
+  // Handle new theme toggle - restricted to .theme-toggle class
+  const newThemeToggle = document.querySelector('.navbar .theme-toggle');
   if (newThemeToggle) {
     newThemeToggle.addEventListener('click', toggleTheme);
   }
