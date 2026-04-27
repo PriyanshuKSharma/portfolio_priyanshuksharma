@@ -46,8 +46,15 @@ I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Clo
 **Research and Internships**
 
 - Research Intern at IIT Ropar: XFBench and XFaaS development for serverless benchmarking.
-- Research on Quantum Computing and Cloud Storage: hybrid cloud-quantum integration using AWS and IBM Quantum.
+- Published research on **Quantum Computing and Cloud Storage**: hybrid cloud-quantum integration using AWS and IBM Quantum.
 - IAM Security Research: authentication protocols, access control models, and AAA framework implementation.
+
+**Research Publications**
+
+- **Democratizing AWS Cloud Operations: A Unified Orchestration Approach To Standardized Infrastructure Management**
+  - Published in: **International Journal of Creative Research Thoughts (IJCRT)**, Volume 14, Issue 4, April 2026.
+  - DOI: [https://doi.org/10.56975/ijcrt.v14i4.305033](https://doi.org/10.56975/ijcrt.v14i4.305033)
+  - Paper: [View Paper (PDF)](public/Research/IJCRT2604384.pdf) | [Confirmation Letter](public/Research/IJCRT_Confirmation_Letter_305033.pdf)
 
 **Selected Projects**
 
@@ -146,7 +153,7 @@ I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Clo
 **Future Goals**
 
 - Ship SkyVault as a production-grade personal cloud storage system.
-- Publish research on Quantum-Cloud Systems and IAM.
+- Further research on IAM and Secure Multi-Cloud Architectures.
 - Contribute to open-source security tools.
 
 **Portfolio Site**
