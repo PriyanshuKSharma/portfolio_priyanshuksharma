@@ -1,6 +1,6 @@
 /* Additional Theme Enhancements */
 
-/* Floating particles effect */
+/* Subtle hero texture */
 .hero-section::before {
   content: '';
   position: absolute;
@@ -8,24 +8,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
-    radial-gradient(2px 2px at 20px 30px, var(--primary), transparent),
-    radial-gradient(2px 2px at 40px 70px, var(--secondary), transparent),
-    radial-gradient(1px 1px at 90px 40px, var(--accent), transparent),
-    radial-gradient(1px 1px at 130px 80px, var(--primary), transparent),
-    radial-gradient(2px 2px at 160px 30px, var(--secondary), transparent);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-repeat: repeat;
-  background-size: 200px 100px;
-  animation: float 20s linear infinite;
-  opacity: 0.1;
-  z-index: 1;
-}
-
-@keyframes float {
-  0% { transform: translateY(0px) translateX(0px); }
-  33% { transform: translateY(-10px) translateX(10px); }
-  66% { transform: translateY(5px) translateX(-5px); }
-  100% { transform: translateY(0px) translateX(0px); }
+  background-size: 120px 120px;
+  opacity: 0.18;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* Enhanced button effects */
@@ -45,17 +35,6 @@
 }
 
 
-
-/* Pulse animation for CTA buttons */
-.btn-primary {
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--primary); }
-  70% { box-shadow: 0 0 0 10px transparent; }
-  100% { box-shadow: 0 0 0 0 transparent; }
-}
 
 /* Enhanced card hover effects */
 .project-card {
