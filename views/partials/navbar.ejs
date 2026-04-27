@@ -24,6 +24,9 @@
         <a href="#skills" class="nav-link">Skills</a>
       </li>
       <li class="nav-item">
+        <a href="#research" class="nav-link">Research</a>
+      </li>
+      <li class="nav-item">
         <a href="#projects" class="nav-link">Projects</a>
       </li>
       <li class="nav-item">
@@ -32,11 +35,13 @@
     </ul>
 
     <div class="nav-actions">
-      <button class="theme-toggle-btn theme-toggle" aria-label="Toggle Theme">
-        <i class="fa-solid fa-moon dark-icon"></i>
-        <i class="fa-solid fa-sun light-icon"></i>
+      <button class="theme-toggle-btn social-toggle" type="button" onclick="toggleSocialSidebar()" title="Toggle Social Links" aria-label="Toggle Social Links">
+        <i class="fa-solid fa-share-nodes"></i>
       </button>
-      <button class="theme-toggle-btn dock-chat-trigger" data-chatbot-trigger aria-label="Open Chatbot" title="Chat with AI Assistant">
+      <button class="theme-toggle-btn theme-toggle social-theme-trigger" type="button" title="Toggle Theme" aria-label="Toggle Theme">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
+      <button class="theme-toggle-btn dock-chat-trigger social-chat-trigger" type="button" title="Open Chatbot" aria-label="Open Chatbot" data-chatbot-trigger="">
         <i class="fa-solid fa-robot"></i>
       </button>
 
