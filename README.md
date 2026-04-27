@@ -46,8 +46,9 @@ I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Clo
 **Research and Internships**
 
 - Research Intern at IIT Ropar: XFBench and XFaaS development for serverless benchmarking.
-- Published research on **Quantum Computing and Cloud Storage**: hybrid cloud-quantum integration using AWS and IBM Quantum.
-- IAM Security Research: authentication protocols, access control models, and AAA framework implementation.
+- **Published Research**: Author of **"Democratizing AWS Cloud Operations: A Unified Orchestration Approach To Standardized Infrastructure Management"** (IJCRT, 2026).
+- **Nebula Platform**: Developed an implementation-based AWS orchestration platform for unified provisioning and observability.
+- IAM Security Research: Authentication protocols, access control models, and AAA framework implementation.
 
 **Research Publications**
 
