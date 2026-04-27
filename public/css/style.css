@@ -5721,8 +5721,18 @@ body.light-theme .dock-link.active {
   .navbar {
     width: 95%;
     height: 60px;
+    padding: 0 15px;
   }
 
+  .nav-logo a {
+    font-size: 1.2rem;
+  }
+
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
   .nav-menu {
     position: fixed;
     top: -100vh;
@@ -5765,6 +5775,29 @@ body.light-theme .dock-link.active {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Smaller controls for tight mobile screens */
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .theme-toggle-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+  }
+
+  .theme-toggle-btn i {
+    font-size: 0.9rem;
+  }
+
+  .hamburger {
+    gap: 4px;
+  }
+
+  .hamburger .bar {
+    width: 20px;
   }
 }
 
