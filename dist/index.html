@@ -97,17 +97,21 @@
       <div class="social-line"></div>
     </div>
   </div>
-  <nav class="navbar">
+  <nav class="navbar" id="main-navbar">
   <div class="nav-container">
     <div class="nav-logo">
-      <a href="#hero">Portfolio</a>
+      <a href="#hero">
+        <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+        <span class="logo-text">Priyanshu<span class="accent">.</span></span>
+      </a>
     </div>
+
     <ul class="nav-menu">
       <li class="nav-item">
         <a href="#hero" class="nav-link">Home</a>
       </li>
       <li class="nav-item">
-        <a href="#about" class="nav-link">About Me</a>
+        <a href="#about" class="nav-link">About</a>
       </li>
       <li class="nav-item">
         <a href="#education" class="nav-link">Education</a>
@@ -122,67 +126,28 @@
         <a href="#projects" class="nav-link">Projects</a>
       </li>
       <li class="nav-item">
-        <a href="#contact" class="nav-link">Contact Me</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </li>
     </ul>
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+
+    <div class="nav-actions">
+      <button class="theme-toggle-btn theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon dark-icon"></i>
+        <i class="fa-solid fa-sun light-icon"></i>
+      </button>
+      <button class="theme-toggle-btn dock-chat-trigger" data-chatbot-trigger aria-label="Open Chatbot" title="Chat with AI Assistant">
+        <i class="fa-solid fa-robot"></i>
+      </button>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
   </div>
-  <ul class="bottom-nav-dock" aria-label="Mobile quick navigation">
-    <li class="dock-item">
-      <a href="#hero" class="nav-link dock-link" aria-label="Home" title="Home">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#about" class="nav-link dock-link" aria-label="About Me" title="About Me">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-user"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#education" class="nav-link dock-link" aria-label="Education" title="Education">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#experience" class="nav-link dock-link" aria-label="Experience" title="Experience">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#skills" class="nav-link dock-link" aria-label="Technical Skills" title="Skills">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#projects" class="nav-link dock-link" aria-label="Projects" title="Projects">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-folder-open"></i></span>
-      </a>
-    </li>
-    <li class="dock-item">
-      <a href="#contact" class="nav-link dock-link" aria-label="Contact Me" title="Contact">
-        <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-paper-plane"></i></span>
-      </a>
-    </li>
-    <li class="dock-item dock-item--collapse">
-      <button
-        id="dock-collapse-toggle"
-        class="dock-link dock-collapse-toggle"
-        type="button"
-        aria-label="Collapse Navigation"
-        aria-expanded="true"
-        title="Collapse Navigation"
-      >
-        <svg class="dock-collapse-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
-        </svg>
-      </button>
-    </li>
-  </ul>
 </nav>
+
 
   <main>
     <section id="hero" class="hero-section">
@@ -957,6 +922,52 @@
     </details>
   </div>
 </section>
+
+<section id="research" class="achievements-section research-section">
+  <div class="section-header">
+    <h2 class="quantum-text">Research Publications</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="research-grid">
+    <div class="research-card glass-card">
+      <div class="research-badge">
+        <span class="badge-dot"></span> Published Paper
+      </div>
+      <h3 class="paper-title">Potential Impact of Quantum Computing on Cloud Storage: Hybrid Cloud-Quantum Systems</h3>
+      <p class="journal-name">International Journal of Creative Research Thoughts (IJCRT)</p>
+      <div class="publication-meta">
+        <div class="meta-item">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>April 2026</span>
+        </div>
+        <div class="meta-item">
+          <i class="fa-solid fa-book-open"></i>
+          <span>Vol 14, Issue 4</span>
+        </div>
+        <div class="meta-item">
+          <i class="fa-solid fa-fingerprint"></i>
+          <span>ISSN: 2320-2882</span>
+        </div>
+      </div>
+      <div class="doi-container">
+        <span class="doi-label">DOI:</span>
+        <a href="https://doi.org/10.56975/ijcrt.v14i4.305033" target="_blank" class="doi-link">
+          10.56975/ijcrt.v14i4.305033
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+      <div class="research-actions">
+        <a href="Research/IJCRT2604384.pdf" target="_blank" class="btn-research">
+          <i class="fa-solid fa-file-pdf"></i> View Paper
+        </a>
+        <a href="Research/IJCRT_Confirmation_Letter_305033.pdf" target="_blank" class="btn-research outline">
+          <i class="fa-solid fa-certificate"></i> Confirmation
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="awards" class="achievements-section">
   <h2>Awards</h2>
   <div class="achievement-grid">
@@ -1485,9 +1496,17 @@
 .footer {
   background: var(--bg-dark);
   border-top: 1px solid rgba(0, 255, 255, 0.1);
-  padding: 2rem 0;
+  padding: 3rem 0; /* Base padding */
+  padding-bottom: 90px; /* Offset for floating dock on desktop */
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .footer {
+     padding-bottom: calc(6rem + env(safe-area-inset-bottom)); /* Offset for floating dock on mobile */
+  }
+}
+
 
 .footer-content {
   max-width: 1200px;
