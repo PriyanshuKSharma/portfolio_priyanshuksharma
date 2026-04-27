@@ -226,25 +226,91 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
+  // NEW NAVBAR LOGIC
+  const navbar = document.getElementById('main-navbar');
+  const navIndicator = document.querySelector('.nav-indicator');
+  const navItems = document.querySelectorAll('.nav-link');
+
+  // Move indicator to active link on load
+  const moveIndicator = (element) => {
+    if (navIndicator && element) {
+      const rect = element.getBoundingClientRect();
+      const parentRect = element.parentElement.parentElement.getBoundingClientRect();
+      navIndicator.style.width = `${rect.width}px`;
+      navIndicator.style.left = `${rect.left - parentRect.left}px`;
+    }
+  };
+
+  // Set initial position
+  const activeLink = document.querySelector('.nav-link.active');
+  if (activeLink) moveIndicator(activeLink);
+
+  // Update on click and hover
+  navItems.forEach(item => {
+    item.addEventListener('mouseenter', () => moveIndicator(item));
+    item.addEventListener('click', () => {
+      navItems.forEach(n => n.classList.remove('active'));
+      item.classList.add('active');
+    });
+  });
+
+  const navMenuContainer = document.querySelector('.nav-menu');
+  if (navMenuContainer) {
+    navMenuContainer.addEventListener('mouseleave', () => {
+      const currentActive = document.querySelector('.nav-link.active');
+      if (currentActive) moveIndicator(currentActive);
+    });
+  }
+
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar?.classList.add('scrolled');
+    } else {
+      navbar?.classList.remove('scrolled');
+    }
+  });
+
+  // Handle new theme toggle
+  const newThemeToggle = document.querySelector('.theme-toggle-btn');
+  if (newThemeToggle) {
+    newThemeToggle.addEventListener('click', toggleTheme);
+  }
+
   // Scroll Spy for refreshing active state of nav links
   const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const allNavLinks = document.querySelectorAll('.nav-link');
 
   function activeMenu() {
     let len = sections.length;
-    while (--len && window.scrollY + 97 < sections[len].offsetTop) {}
-    navLinks.forEach(ltx => ltx.classList.remove("active"));
-    // Check if sections[len] exists to avoid errors on pages without sections matching the logic
+    while (--len && window.scrollY + 100 < sections[len].offsetTop) {}
+    allNavLinks.forEach(ltx => ltx.classList.remove("active"));
     if (sections[len]) {
-        // Find the link that corresponds to this section
         const activeId = sections[len].id;
         const activeLinks = document.querySelectorAll(`.nav-link[href="#${activeId}"]`);
-        activeLinks.forEach(link => link.classList.add("active"));
+        activeLinks.forEach(link => {
+          link.classList.add("active");
+          // Update indicator when section changes via scroll
+          if (window.innerWidth > 900) moveIndicator(link);
+        });
     }
   }
   activeMenu();
   window.addEventListener("scroll", activeMenu);
+
+  // Navbar Scroll Effect
+  const mainNavbar = document.getElementById('main-navbar');
+  if (mainNavbar) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        mainNavbar.classList.add('scrolled');
+      } else {
+        mainNavbar.classList.remove('scrolled');
+      }
+    });
+  }
 });
+
 
 function toggleResumeDropdown() {
   const dropdown = document.querySelector('.resume-dropdown');
