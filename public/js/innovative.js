@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
   init3DTilt();
-  initGlitchEffect();
   initHackerTextEffect();
 });
 
