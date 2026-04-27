@@ -135,11 +135,20 @@ This research explores how **quantum computing** can strengthen the future of cl
 
 - Investigated hybrid cloud-quantum systems using **AWS**, **Docker**, and **IBM Quantum Experience**.
 - Focused on the impact of quantum computing on storage systems and cloud security models.
-- Documented findings in the paper **"Potential Impact of Quantum Computing on Cloud Storage: Hybrid Cloud-Quantum Systems."**
 
 **Repository:** [Quantum Cloud Integration](https://github.com/PriyanshuKSharma/quantum-cloud-integration)
 
-### 4. Identity and Access Management Research
+### 4. Published Research: Democratizing AWS Cloud Operations
+
+This research presents **Nebula**, an implementation-based AWS orchestration platform that integrates provisioning, inventory synchronization, health monitoring, and cost observability into a common control plane.
+
+- **Title:** "Democratizing AWS Cloud Operations: A Unified Orchestration Approach To Standardized Infrastructure Management"
+- **Published in:** International Journal of Creative Research Thoughts (IJCRT), Volume 14, Issue 4, April 2026.
+- **DOI:** [10.56975/ijcrt.v14i4.305033](https://doi.org/10.56975/ijcrt.v14i4.305033)
+- **Links:** [Paper PDF](public/Research/IJCRT2604384.pdf) | [Confirmation Letter](public/Research/IJCRT_Confirmation_Letter_305033.pdf)
+- **Status:** Contributed a framework for decoupling user-facing workflows from long-running cloud processes.
+
+### 5. Identity and Access Management Research
 
 Security is one of the foundations of my work, especially the challenge of giving systems the right access at the right time with minimal friction and maximum control.
 
@@ -483,7 +492,7 @@ timeline
 ## What I Am Aiming For
 
 - Build **Nebula** into a serious multi-cloud orchestration platform.
-- Publish research on **quantum-cloud systems**, **IAM**, and **multi-cloud architecture**.
+- Deepen research on **IAM** and **multi-cloud security architectures**.
 - Contribute to **open-source security and cloud tooling** that helps developers build faster and safer.
 - Keep growing into a role where I can design platforms that are secure, elegant, and genuinely useful.
 
