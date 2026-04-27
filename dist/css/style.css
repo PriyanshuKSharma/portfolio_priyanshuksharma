@@ -85,6 +85,23 @@ body::before {
   filter: var(--site-art-filter);
   pointer-events: none;
   z-index: 0;
+  transform-origin: center top;
+  will-change: transform, opacity;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.08), transparent 20%),
+    radial-gradient(circle at 78% 18%, rgba(0, 255, 242, 0.12), transparent 22%),
+    radial-gradient(circle at 60% 72%, rgba(213, 0, 249, 0.08), transparent 24%);
+  opacity: 0.32;
+  filter: blur(28px);
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform, opacity;
 }
 
 body > * {
@@ -143,6 +160,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .light-theme .hero-bg::before {
   opacity: 0.7;
+}
+
+@media (min-width: 1100px) and (prefers-reduced-motion: no-preference) {
+  body::before {
+    animation: siteArtDrift 22s ease-in-out infinite alternate;
+  }
+
+  body::after {
+    animation: siteGlowFloat 18s ease-in-out infinite alternate;
+  }
+
+  .hero-bg::after {
+    animation: heroGlowDrift 16s ease-in-out infinite alternate;
+  }
+}
+
+@media (max-width: 1099px), (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after,
+  .hero-bg::after {
+    animation: none !important;
+  }
+}
+
+@keyframes siteArtDrift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(1.5%, -1.25%, 0) scale(1.035);
+  }
+}
+
+@keyframes siteGlowFloat {
+  0% {
+    transform: translate3d(-1.5%, 0, 0) scale(1);
+    opacity: 0.24;
+  }
+  100% {
+    transform: translate3d(1.5%, 2%, 0) scale(1.06);
+    opacity: 0.4;
+  }
+}
+
+@keyframes heroGlowDrift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(-1.25%, 1.5%, 0) scale(1.04);
+  }
 }
 
 .hero-content {
