@@ -397,6 +397,15 @@ flowchart TD
 
 ---
 
+## Awards & Achievements
+
+- **Multi Cloud Excellence Award** — Seamedu Awards (2026)
+- **Creative Cloud Integration Award** — Seamedu Awards (2025)
+- **Bronze Medal** — IBM Innovation Centre for Education (ICE) Day Ideathon (2025)
+- **School Rank: 3rd** — SOF International Mathematics Olympiad (2019)
+
+---
+
 ## Open Source and Community
 
 - Contributed to **[Interns-MQI-25](https://github.com/Interns-MQI-25)** and its **[project-interns](https://github.com/Interns-MQI-25/project-interns)** repository.
