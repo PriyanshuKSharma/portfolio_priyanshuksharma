@@ -399,6 +399,15 @@ flowchart TD
 
 ## Awards & Achievements
 
+```mermaid
+timeline
+    title Awards & Achievements
+    2019 : School Rank 3rd - SOF IMO
+    2025 : Creative Cloud Integration Award - Seamedu Awards
+         : Bronze Medal - IBM ICE Day Ideathon
+    2026 : Multi Cloud Excellence Award - Seamedu Awards
+```
+
 - **Multi Cloud Excellence Award** — Seamedu Awards (2026)
 - **Creative Cloud Integration Award** — Seamedu Awards (2025)
 - **Bronze Medal** — IBM Innovation Centre for Education (ICE) Day Ideathon (2025)
