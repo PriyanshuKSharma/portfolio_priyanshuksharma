@@ -2655,20 +2655,25 @@ body:not(.light-theme) .light-icon { display: block; }
   margin-bottom: 0.5rem;
 }
 
-/* Chronicle Sections (Education and Experience) */
+
+/* Chronicle Sections (Education, Experience, Skills) */
 .chronicle-section {
   position: relative;
   text-align: left;
+  padding: 4.5rem 3rem !important;
 }
 
 .chronicle-section--education,
 .chronicle-section--experience,
-.chronicle-section--skills {
+.chronicle-section--skills,
+.research-section,
+.awards-timeline-section {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
   border: 1px solid var(--border-color);
   border-radius: 20px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  margin-bottom: 6rem !important;
 }
 
 .chronicle-section--education::after,
@@ -6744,6 +6749,18 @@ body.light-theme .dock-link.active {
 }
 
 @media (max-width: 768px) {
+  .chronicle-section {
+    padding: 3rem 1.5rem !important;
+  }
+  
+  .chronicle-section--education,
+  .chronicle-section--experience,
+  .chronicle-section--skills,
+  .research-section,
+  .awards-timeline-section {
+    margin-bottom: 4rem !important;
+  }
+
   /* Ensure all headings are sized correctly on mobile */
   h1 {
     font-size: clamp(2rem, 8vw, 3.2rem) !important;
