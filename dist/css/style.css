@@ -7030,8 +7030,29 @@ body.light-theme .dock-link.active {
     width: 24px !important;
     height: 24px !important;
   }
-  
   .social-sidebar {
-    display: none !important; /* Hide floating social bar on mobile screens */
+    display: none !important; /* Hide floating social bar on mobile screens by default */
+  }
+  
+  .social-sidebar.active {
+    display: flex !important;
+    position: fixed;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(10, 10, 15, 0.95) !important;
+    border: 1.5px solid var(--primary-dim) !important;
+    border-radius: 20px !important;
+    padding: 1.2rem 0.5rem !important;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2) !important;
+    z-index: 10001 !important;
+    backdrop-filter: blur(8px) !important;
+  }
+
+  .social-sidebar.active .social-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(0) !important;
+    pointer-events: all !important;
   }
 }
