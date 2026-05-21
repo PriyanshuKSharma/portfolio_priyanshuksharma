@@ -6602,6 +6602,107 @@ body.light-theme .dock-link.active {
   color: var(--primary);
 }
 
+/* Vertical Chronological Experience Timeline */
+.experience-timeline-container {
+  position: relative;
+  width: 100%;
+  margin-top: 4rem;
+  padding: 1.5rem 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience-timeline-container .timeline-progress-line {
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary-dim) 0%, var(--primary) 30%, var(--secondary) 70%, var(--primary-dim) 100%);
+  opacity: 0.6;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.3);
+}
+
+.experience-milestone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 55px;
+  position: relative;
+  margin-bottom: 3.5rem;
+  z-index: 2;
+  transition: all 0.4s ease;
+  animation: fadeInTimeline 0.6s ease both;
+  animation-delay: calc(var(--index) * 0.15s);
+}
+
+.experience-milestone:last-child {
+  margin-bottom: 0;
+}
+
+.experience-milestone .milestone-dot-wrapper {
+  position: absolute;
+  left: 1px;
+  top: 25px; /* align with first lines / headers */
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.experience-milestone .milestone-dot {
+  width: 14px;
+  height: 14px;
+  background: var(--bg-dark);
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px var(--primary);
+}
+
+.experience-milestone .milestone-pulse {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1.5px solid var(--primary-dim);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* Card item hover transitions on timeline dot */
+.experience-milestone:hover .milestone-dot {
+  background: var(--secondary);
+  border-color: var(--text-light);
+  transform: scale(1.2);
+  box-shadow: 0 0 15px var(--secondary);
+}
+
+.experience-milestone:hover .milestone-pulse {
+  opacity: 1;
+  transform: scale(1.35);
+  border-color: var(--secondary);
+  animation: pulse-ring 1.8s infinite;
+}
+
+.experience-milestone:hover .chronicle-card--experience {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: var(--glow);
+}
+
+.experience-milestone .chronicle-card--experience {
+  width: 100%;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* Comprehensive Mobile & Tablet Responsive Enhancements */
 @media (max-width: 992px) {
   .about-container {
