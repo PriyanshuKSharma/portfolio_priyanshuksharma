@@ -829,9 +829,7 @@
     <p class="chronicle-subtitle">Chronological record of high-stakes dev sprints and platform challenges.</p>
   </div>
   
-  <div class="zigzag-timeline-container">
-    <div class="zigzag-progress-line"></div>
-    
+  <div class="hack-timeline-container">
     <% 
     const hackathons = [
       { title: "ADYPU Problem-A-Thon", year: "2022" },
@@ -844,18 +842,18 @@
       { title: "Smart India Hackathon (External)", year: "2025" },
       { title: "IBM Innovation Centre for Education (ICE) Day Ideathon", year: "2025" }
     ];
-    hackathons.forEach((item, index) => { 
-      const isEven = index % 2 === 0;
-    %>
-    <div class="zigzag-milestone <%= isEven ? 'milestone-above' : 'milestone-below' %>" style="--index: <%= index %>;">
-      <div class="zigzag-dot-wrapper">
-        <div class="zigzag-dot"></div>
-        <div class="zigzag-pulse"></div>
+    hackathons.forEach((item, index) => { %>
+    <div class="hack-milestone" style="--index: <%= index %>;">
+      <div class="hack-milestone-left">
+        <span class="hack-year"><%= item.year %></span>
       </div>
-      
-      <div class="zigzag-card-wrapper">
-        <article class="achievement-card chronicle-card">
-          <div class="chronicle-card-header">
+      <div class="hack-milestone-center">
+        <div class="hack-dot"></div>
+        <div class="hack-dot-pulse"></div>
+      </div>
+      <div class="hack-milestone-right">
+        <article class="achievement-card chronicle-card hack-card">
+          <div class="chronicle-card-header" data-year="<%= item.year %>">
             <span class="chronicle-id">HACK-<%= String(index + 1).padStart(2, '0') %></span>
             <span class="chronicle-period"><%= item.year %></span>
           </div>
