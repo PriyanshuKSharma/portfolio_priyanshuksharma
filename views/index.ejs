@@ -850,36 +850,55 @@
   </div>
 </section>
 
-<section id="hackathons" class="achievements-section">
-  <h2>Hackathons</h2>
-  <div class="achievement-grid">
-    <div class="achievement-card">
-      <h3>ADYPU Problem-A-Thon(2022)</h3>
+<section id="hackathons" class="achievements-section chronicle-section">
+  <div class="chronicle-header">
+    <p class="chronicle-kicker">/hackathons.log</p>
+    <h2 class="chronicle-title glitch-text" data-text="Hackathons">Hackathons</h2>
+    <p class="chronicle-subtitle">Chronological record of high-stakes dev sprints and platform challenges.</p>
+  </div>
+  
+  <div class="zigzag-timeline-container">
+    <div class="zigzag-progress-line"></div>
+    
+    <% 
+    const hackathons = [
+      { title: "ADYPU Problem-A-Thon", year: "2022" },
+      { title: "Sharda University Tech-a-thon", year: "2022" },
+      { title: "Smart India Hackathon (Internal)", year: "2023" },
+      { title: "NASA Space App Challenge", year: "2023" },
+      { title: "UNESCO-MIL", year: "2023" },
+      { title: "Google Solution Challenge", year: "2024" },
+      { title: "Hackron - Newton School x ADYPU", year: "2025" },
+      { title: "Smart India Hackathon (External)", year: "2025" },
+      { title: "IBM Innovation Centre for Education (ICE) Day Ideathon", year: "2025" }
+    ];
+    hackathons.forEach((item, index) => { 
+      const isEven = index % 2 === 0;
+    %>
+    <div class="zigzag-milestone <%= isEven ? 'milestone-left' : 'milestone-right' %>" style="--index: <%= index %>;">
+      <div class="zigzag-dot-wrapper">
+        <div class="zigzag-dot"></div>
+        <div class="zigzag-pulse"></div>
+      </div>
+      
+      <div class="zigzag-card-wrapper">
+        <article class="achievement-card chronicle-card">
+          <div class="chronicle-card-header">
+            <span class="chronicle-id">HACK-<%= String(index + 1).padStart(2, '0') %></span>
+            <span class="chronicle-period"><%= item.year %></span>
+          </div>
+          <h3 class="chronicle-role"><%= item.title %></h3>
+          <div class="chronicle-command">
+            <span class="command-prompt">priyanshu@ops</span>
+            <span class="command-sep">:</span>
+            <span class="command-path">~/hackathons</span>
+            <span class="command-sep">$</span>
+            <span class="command-text">run --sprint <%= item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') %></span>
+          </div>
+        </article>
+      </div>
     </div>
-    <div class="achievement-card">
-      <h3>Sharda University Tech-a-thon(2022)</h3>
-    </div>
-    <div class="achievement-card">
-      <h3>Smart India Hackathon (Internal)(2023)</h3>
-    </div>
-    <div class="achievement-card">
-      <h3>NASA Space App Challenge (2023)</h3>
-    </div>
-    <div class="achievement-card">
-      <h3>UNESCO-MIL 2023</h3>
-    </div>
-    <div class="achievement-card">
-      <h3>Google Solution Challenge 2024</h3>
-    </div>
-    <div class="achievement-card">
-      <h3>Hackron - Newton School x ADYPU (2025)</h3>
-    </div>
-    <div class="achievement-card">
-      <h3>Smart India Hackathon (External) (2025)</h3>
-    </div>
-    <div class="achievement-card">
-      <h3>IBM Innovation Centre for Education(ICE) Day Ideathon 2025</h3>
-    </div>
+    <% }) %>
   </div>
 </section>
 
