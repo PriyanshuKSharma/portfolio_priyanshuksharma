@@ -6618,17 +6618,21 @@ body.light-theme .dock-link.active {
   margin-right: auto;
 }
 
-.experience-timeline-container .timeline-progress-line {
+.experience-milestone::after {
+  content: '';
   position: absolute;
   left: 16px;
-  top: 0;
-  bottom: 0;
+  top: 41px; /* start at center of dot wrapper (25px top + 16px radius) */
+  bottom: -3.5rem; /* extends past bottom margin to reach next dot center */
   width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, var(--primary-dim) 0%, var(--primary) 30%, var(--secondary) 70%, var(--primary-dim) 100%);
+  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
   opacity: 0.6;
   z-index: 1;
   box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.3);
+}
+
+.experience-milestone:last-child::after {
+  display: none !important;
 }
 
 .experience-milestone {
