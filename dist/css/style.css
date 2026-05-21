@@ -6799,64 +6799,72 @@ body.light-theme .dock-link.active {
     padding: 1rem !important;
   }
 
-  /* Awards Timeline: Convert into an elegant Vertical Chronological Layout on Mobile */
-  .awards-timeline-section {
-    padding: 4rem 1rem !important;
+  /* Awards Timeline: Horizontally Scrollable Layout on Mobile and Tablets */
+  .horizontal-timeline-container {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    padding: 1.5rem 0.5rem !important;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-dim) transparent;
   }
   
-  .horizontal-timeline-container {
-    overflow-x: hidden !important;
-    padding: 0 !important;
-    margin-top: 2rem !important;
+  .horizontal-timeline-container::-webkit-scrollbar {
+    display: block !important;
+    height: 6px !important;
+  }
+  
+  .horizontal-timeline-container::-webkit-scrollbar-thumb {
+    background: var(--primary-dim) !important;
+    border-radius: 10px !important;
   }
   
   .horizontal-timeline-track {
     display: flex !important;
-    flex-direction: column !important;
-    min-width: auto !important;
-    padding: 1.5rem 0.5rem !important;
-    gap: 2.5rem !important;
+    flex-direction: row !important;
+    min-width: 1000px !important;
+    padding: 2.5rem 1rem !important;
+    gap: 1.5rem !important;
   }
   
   .timeline-progress-line {
     position: absolute !important;
-    left: 16px !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    width: 2px !important;
-    height: 100% !important;
-    right: auto !important;
-    background: linear-gradient(180deg, var(--primary-dim) 0%, var(--primary) 30%, var(--secondary) 70%, var(--primary-dim) 100%) !important;
+    top: calc(2.5rem + 15px) !important;
+    left: 5% !important;
+    right: 5% !important;
+    height: 2px !important;
+    width: auto !important;
+    background: linear-gradient(90deg, var(--primary-dim) 0%, var(--primary) 30%, var(--secondary) 70%, var(--primary-dim) 100%) !important;
+    opacity: 0.6 !important;
+    z-index: 1 !important;
   }
   
   .timeline-milestone {
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-start !important;
-    width: 100% !important;
-    padding-left: 45px !important;
+    align-items: center !important;
+    width: 23% !important;
     position: relative !important;
-    gap: 0.5rem !important;
-    text-align: left !important;
+    padding-left: 0 !important;
+    text-align: center !important;
   }
-  
+
   .milestone-dot-wrapper {
-    position: absolute !important;
-    left: 0 !important;
-    top: 5px !important;
-    margin-bottom: 0 !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    margin-bottom: 2rem !important;
   }
-  
+
   .milestone-year {
-    margin-bottom: 0.2rem !important;
-    font-size: 1.25rem !important;
-    text-align: left !important;
+    margin-bottom: 1.2rem !important;
+    font-size: 1.4rem !important;
+    text-align: center !important;
   }
-  
+
   .milestone-card {
-    max-width: 100% !important;
-    text-align: left !important;
-    padding: 1.5rem !important;
+    max-width: 260px !important;
+    text-align: center !important;
+    padding: 1.8rem !important;
   }
 }
 
