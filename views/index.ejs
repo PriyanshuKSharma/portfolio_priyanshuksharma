@@ -275,24 +275,31 @@
     <h2 class="chronicle-title glitch-text" data-text="Experience Runbook">Experience Runbook</h2>
     <p class="chronicle-subtitle">Internships and research as ops logs and deployed missions.</p>
   </div>
-  <div class="chronicle-grid chronicle-grid--experience">
+  <div class="experience-timeline-container">
+    <div class="timeline-progress-line"></div>
     <% timeline.filter(item => item.type === 'work').forEach((item, index) => { %>
-    <article class="chronicle-card chronicle-card--experience">
-      <div class="chronicle-card-header">
-        <span class="chronicle-id">EXP-<%= String(index + 1).padStart(2, '0') %></span>
-        <span class="chronicle-period"><%= item.period %></span>
+    <div class="experience-milestone" style="--index: <%= index %>;">
+      <div class="milestone-dot-wrapper">
+        <div class="milestone-dot"></div>
+        <div class="milestone-pulse"></div>
       </div>
-      <h3 class="chronicle-role"><%= item.title %></h3>
-      <span class="chronicle-org"><%= item.organization %></span>
-      <p class="chronicle-desc"><%- item.description %></p>
-      <div class="chronicle-command">
-        <span class="command-prompt">priyanshu@ops</span>
-        <span class="command-sep">:</span>
-        <span class="command-path">~/experience</span>
-        <span class="command-sep">$</span>
-        <span class="command-text">deploy --role <%= item.title.toLowerCase().replace(/\s+/g, '-') %></span>
-      </div>
-    </article>
+      <article class="chronicle-card chronicle-card--experience">
+        <div class="chronicle-card-header">
+          <span class="chronicle-id">EXP-<%= String(index + 1).padStart(2, '0') %></span>
+          <span class="chronicle-period"><%= item.period %></span>
+        </div>
+        <h3 class="chronicle-role"><%= item.title %></h3>
+        <span class="chronicle-org"><%= item.organization %></span>
+        <p class="chronicle-desc"><%- item.description %></p>
+        <div class="chronicle-command">
+          <span class="command-prompt">priyanshu@ops</span>
+          <span class="command-sep">:</span>
+          <span class="command-path">~/experience</span>
+          <span class="command-sep">$</span>
+          <span class="command-text">deploy --role <%= item.title.toLowerCase().replace(/\s+/g, '-') %></span>
+        </div>
+      </article>
+    </div>
     <% }) %>
   </div>
 </section>
