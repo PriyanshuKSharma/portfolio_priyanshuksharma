@@ -875,7 +875,7 @@
     hackathons.forEach((item, index) => { 
       const isEven = index % 2 === 0;
     %>
-    <div class="zigzag-milestone <%= isEven ? 'milestone-left' : 'milestone-right' %>" style="--index: <%= index %>;">
+    <div class="zigzag-milestone <%= isEven ? 'milestone-above' : 'milestone-below' %>" style="--index: <%= index %>;">
       <div class="zigzag-dot-wrapper">
         <div class="zigzag-dot"></div>
         <div class="zigzag-pulse"></div>

@@ -6709,48 +6709,65 @@ body.light-theme .dock-link.active {
 }
 
 
-/* Innovative Zig-Zag Timeline */
+/* Innovative Horizontal Zig-Zag Timeline */
 .zigzag-timeline-container {
   position: relative;
   width: 100%;
-  max-width: 1100px;
-  margin: 4rem auto 0;
-  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 16rem 1rem; /* plenty of space above and below the line */
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-dim) transparent;
+  margin-top: 2rem;
+}
+
+.zigzag-timeline-container::-webkit-scrollbar {
+  display: block !important;
+  height: 6px !important;
+}
+
+.zigzag-timeline-container::-webkit-scrollbar-thumb {
+  background: var(--primary-dim) !important;
+  border-radius: 10px !important;
 }
 
 .zigzag-timeline-container .zigzag-progress-line {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(180deg, var(--primary-dim) 0%, var(--primary) 30%, var(--secondary) 70%, var(--primary-dim) 100%);
+  left: 1.5rem;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-dim) 0%, var(--primary) 30%, var(--secondary) 70%, var(--primary-dim) 100%);
   opacity: 0.6;
   z-index: 1;
   box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.3);
 }
 
 .zigzag-milestone {
-  display: flex;
   position: relative;
-  width: 100%;
-  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+  flex-shrink: 0;
   z-index: 2;
+  height: 0; /* collapse height to keep dots perfectly centered on the line */
+  margin-right: 3.5rem;
   transition: all 0.4s ease;
   animation: fadeInTimeline 0.6s ease both;
   animation-delay: calc(var(--index) * 0.1s);
 }
 
 .zigzag-milestone:last-child {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .zigzag-milestone .zigzag-dot-wrapper {
   position: absolute;
-  left: 50%;
-  top: 30px;
-  transform: translate(-50%, -50%);
+  top: 0;
+  transform: translateY(-50%);
   width: 32px;
   height: 32px;
   display: flex;
@@ -6780,25 +6797,28 @@ body.light-theme .dock-link.active {
   pointer-events: none;
 }
 
-/* Alternate Sides styling */
-.zigzag-milestone.milestone-left {
-  justify-content: flex-start;
-}
-
-.zigzag-milestone.milestone-right {
+/* Horizontal Alternate Sides (Above & Below the Center Axis Line) */
+.zigzag-milestone.milestone-above {
   justify-content: flex-end;
 }
 
+.zigzag-milestone.milestone-below {
+  justify-content: flex-start;
+}
+
 .zigzag-milestone .zigzag-card-wrapper {
-  width: 44%;
+  position: absolute;
+  width: 280px;
 }
 
-.zigzag-milestone.milestone-left .zigzag-card-wrapper {
-  text-align: right;
+.zigzag-milestone.milestone-above .zigzag-card-wrapper {
+  bottom: 35px; /* Push card above progress axis */
+  text-align: center;
 }
 
-.zigzag-milestone.milestone-right .zigzag-card-wrapper {
-  text-align: left;
+.zigzag-milestone.milestone-below .zigzag-card-wrapper {
+  top: 35px; /* Push card below progress axis */
+  text-align: center;
 }
 
 /* Card hover animation with dot pulses */
@@ -6824,34 +6844,8 @@ body.light-theme .dock-link.active {
 
 .zigzag-milestone .achievement-card {
   width: 100%;
+  text-align: left;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Responsive Overrides: Mobile/Tablets stack the zig-zag into a single left-aligned column */
-@media (max-width: 768px) {
-  .zigzag-timeline-container .zigzag-progress-line {
-    left: 16px !important;
-    transform: none !important;
-  }
-  
-  .zigzag-milestone {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    padding-left: 50px !important;
-    margin-bottom: 3rem !important;
-  }
-  
-  .zigzag-milestone .zigzag-dot-wrapper {
-    left: 1px !important;
-    transform: none !important;
-    top: 25px !important;
-  }
-  
-  .zigzag-milestone .zigzag-card-wrapper {
-    width: 100% !important;
-    text-align: left !important;
-  }
 }
 
 /* Comprehensive Mobile & Tablet Responsive Enhancements */
