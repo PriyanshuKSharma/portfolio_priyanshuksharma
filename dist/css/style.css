@@ -6720,10 +6720,12 @@ body.light-theme .dock-link.active {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
-  padding: 16rem 1rem; /* plenty of space above and below the line */
+  overflow-y: hidden;
+  height: 620px; /* Spacious fixed height to prevent vertical cutoff */
   scrollbar-width: thin;
   scrollbar-color: var(--primary-dim) transparent;
   margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .zigzag-timeline-container::-webkit-scrollbar {
@@ -6754,10 +6756,11 @@ body.light-theme .dock-link.active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 290px;
   flex-shrink: 0;
   z-index: 2;
-  height: 0; /* collapse height to keep dots perfectly centered on the line */
+  height: 100%; /* Stretch full height of container */
   margin-right: 3.5rem;
   transition: all 0.4s ease;
   animation: fadeInTimeline 0.6s ease both;
@@ -6770,8 +6773,9 @@ body.light-theme .dock-link.active {
 
 .zigzag-milestone .zigzag-dot-wrapper {
   position: absolute;
-  top: 0;
-  transform: translateY(-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centered precisely on the center point */
   width: 32px;
   height: 32px;
   display: flex;
@@ -6813,15 +6817,17 @@ body.light-theme .dock-link.active {
 .zigzag-milestone .zigzag-card-wrapper {
   position: absolute;
   width: 280px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .zigzag-milestone.milestone-above .zigzag-card-wrapper {
-  bottom: 35px; /* Push card above progress axis */
+  bottom: calc(50% + 30px); /* Position above the center axis line */
   text-align: center;
 }
 
 .zigzag-milestone.milestone-below .zigzag-card-wrapper {
-  top: 35px; /* Push card below progress axis */
+  top: calc(50% + 30px); /* Position below the center axis line */
   text-align: center;
 }
 
@@ -6851,6 +6857,165 @@ body.light-theme .dock-link.active {
   text-align: left;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* ============================================================
+   VERTICAL HACKATHON TIMELINE
+   ============================================================ */
+.hack-timeline-container {
+  position: relative;
+  padding: 1rem 0 2rem;
+  margin-top: 2rem;
+}
+
+/* Continuous vertical glowing line down the center column */
+.hack-timeline-container::before {
+  content: '';
+  position: absolute;
+  left: calc(110px + 16px); /* left-col width + half dot size */
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(180deg,
+    var(--primary-dim) 0%,
+    var(--primary) 25%,
+    var(--secondary) 60%,
+    var(--primary-dim) 100%);
+  opacity: 0.55;
+  z-index: 0;
+  box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.25);
+}
+
+.hack-milestone {
+  display: grid;
+  grid-template-columns: 110px 34px 1fr;
+  align-items: flex-start;
+  gap: 0 0;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+  animation: fadeInTimeline 0.5s ease both;
+  animation-delay: calc(var(--index) * 0.08s);
+}
+
+.hack-milestone:last-child {
+  margin-bottom: 0;
+}
+
+/* LEFT — year label */
+.hack-milestone-left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 0;
+  padding-top: 1.15rem; /* align with card top */
+}
+
+.hack-year {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* CENTER — dot column */
+.hack-milestone-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hack-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg-dark);
+  border: 3px solid var(--primary);
+  box-shadow: 0 0 10px var(--primary);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.hack-dot-pulse {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid var(--primary-dim);
+  top: calc(1.3rem - 6px);
+  opacity: 0;
+  transform: scale(0.85);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* RIGHT — card */
+.hack-milestone-right {
+  padding-left: 1.5rem;
+}
+
+.hack-card {
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects */
+.hack-milestone:hover .hack-dot {
+  background: var(--secondary);
+  border-color: var(--text-light);
+  transform: scale(1.25);
+  box-shadow: 0 0 18px var(--secondary);
+}
+
+.hack-milestone:hover .hack-dot-pulse {
+  opacity: 1;
+  transform: scale(1.1);
+  border-color: var(--secondary);
+  animation: pulse-ring 1.8s infinite;
+}
+
+.hack-milestone:hover .hack-card {
+  transform: translateX(6px);
+  border-color: var(--primary);
+  box-shadow: var(--glow);
+}
+
+/* Mobile: collapse left year into card header */
+@media (max-width: 640px) {
+  .hack-timeline-container::before {
+    left: 16px;
+  }
+
+  .hack-milestone {
+    grid-template-columns: 34px 1fr;
+    gap: 0;
+  }
+
+  .hack-milestone-left {
+    display: none; /* year is shown inside card header on mobile */
+  }
+
+  .hack-milestone-center {
+    padding-top: 1.1rem;
+  }
+
+  .hack-milestone-right {
+    padding-left: 1rem;
+  }
+
+  /* Re-show year inside the chronicle-id badge on mobile */
+  .hack-card .chronicle-card-header::after {
+    content: attr(data-year);
+  }
+}
+
 
 /* Comprehensive Mobile & Tablet Responsive Enhancements */
 @media (max-width: 992px) {
