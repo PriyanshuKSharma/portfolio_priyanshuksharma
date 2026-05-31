@@ -44,9 +44,9 @@ function createNeuralNetworkBackground() {
     function getThemeColors() {
         const isLight = document.body.classList.contains('light-theme');
         return {
-            nodeColor: isLight ? 'rgba(79, 70, 229, 0.4)' : 'rgba(0, 212, 255, 0.35)',
+            nodeColor: isLight ? 'rgba(79, 70, 229, 0.3)' : 'rgba(0, 212, 255, 0.35)',
             lineColor: isLight ? '79, 70, 229' : '0, 212, 255',
-            opacity: isLight ? 0.15 : 0.25
+            opacity: isLight ? 0.12 : 0.25
         };
     }
     
