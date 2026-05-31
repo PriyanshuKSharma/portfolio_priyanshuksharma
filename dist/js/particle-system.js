@@ -19,10 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Configuration ---
+    const darkColors = [0x818cf8, 0x14b8a6, 0x00ffff, 0xff00ff, 0xffaa00, 0xff0088, 0x0088ff]; // Cyber neon theme
+    const lightColors = [0x4f46e5, 0x0d9488, 0x4f46e5, 0x0d9488, 0xd97706, 0xff0055, 0x0066cc]; // Softer but high contrast light theme colors
+
     const config = {
         particleCount: 3500, 
         particleSize: 0.2,   // Fine detail size (reduced from 0.35)
-        colors: [0x00ffff, 0xff00ff, 0x00ff00, 0xffaa00, 0xffffff, 0xff0088, 0x0088ff], 
         cameraZ: 30
     };
 
@@ -70,6 +72,17 @@ document.addEventListener('DOMContentLoaded', () => {
             window.addEventListener('resize', onWindowResize);
             isThreeInitialized = true;
             updateDebugBox("Three.js System Initialized.");
+
+            // Theme observer to watch body class changes and update colors dynamically
+            const observer = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    if (mutation.attributeName === 'class') {
+                        updateParticleColors();
+                    }
+                });
+            });
+            observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
         } catch (e) {
             console.error(e);
             updateDebugBox("Three.js Init Error: " + e.message, true);
@@ -83,13 +96,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const sizes = new Float32Array(config.particleCount);
 
         const color = new THREE.Color();
+        const activeColors = document.body.classList.contains('light-theme') ? lightColors : darkColors;
 
         for (let i = 0; i < config.particleCount; i++) {
             positions[i * 3] = (Math.random() * 2 - 1) * 50;
             positions[i * 3 + 1] = (Math.random() * 2 - 1) * 30;
             positions[i * 3 + 2] = (Math.random() * 2 - 1) * 20;
 
-            color.setHex(config.colors[Math.floor(Math.random() * config.colors.length)]);
+            color.setHex(activeColors[Math.floor(Math.random() * activeColors.length)]);
             colors[i * 3] = color.r;
             colors[i * 3 + 1] = color.g;
             colors[i * 3 + 2] = color.b;
@@ -146,6 +160,23 @@ document.addEventListener('DOMContentLoaded', () => {
         particleSystem = new THREE.Points(geometry, material);
         scene.add(particleSystem);
         updateDebugBox("Particles Enhanced: Brighter & Bigger");
+    }
+
+    function updateParticleColors() {
+        if (!particleSystem) return;
+        const isLightTheme = document.body.classList.contains('light-theme');
+        const activeColors = isLightTheme ? lightColors : darkColors;
+        
+        const colorsAttr = particleSystem.geometry.attributes.color;
+        const color = new THREE.Color();
+        
+        for (let i = 0; i < config.particleCount; i++) {
+            color.setHex(activeColors[Math.floor(Math.random() * activeColors.length)]);
+            colorsAttr.array[i * 3] = color.r;
+            colorsAttr.array[i * 3 + 1] = color.g;
+            colorsAttr.array[i * 3 + 2] = color.b;
+        }
+        colorsAttr.needsUpdate = true;
     }
 
     function generateShape(type) {
