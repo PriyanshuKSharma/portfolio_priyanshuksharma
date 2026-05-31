@@ -129,6 +129,7 @@
   <main>
     <section id="hero" class="hero-section">
   <div class="hero-bg"></div>
+  <div class="hero-particles"></div>
   <div class="hero-content">
     <div class="hero-badge">
       <span class="badge-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
@@ -1777,6 +1778,8 @@
 }
 </style>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- Load Three.js CDN first for 3D Particle System -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="js/main.js?v=4.2"></script>
   <script src="js/projects.js"></script>
   <script src="js/chatbot.js?v=3.1"></script>
@@ -1784,6 +1787,9 @@
   <script src="js/github.js"></script>
   <script src="js/dock-toggle.js"></script>
   <script src="js/dock-navigation.js"></script>
+  <!-- Background Dynamic Animations and 3D Particles -->
+  <script src="js/particle-system.js"></script>
+  <script src="js/futuristic-effects.js"></script>
   <!-- Revolutionary Liquid Metal AI Dock -->
   <div class="dock-container">
     <ul class="bottom-nav-dock" aria-label="Revolutionary Navigation">
