@@ -19,10 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Configuration ---
+    const darkColors = [0x818cf8, 0x14b8a6, 0x00ffff, 0xff00ff, 0xffaa00, 0xff0088, 0x0088ff]; // Cyber neon theme
+    const lightColors = [0x4f46e5, 0x0d9488, 0x6366f1, 0x0d9488, 0x8b5cf6, 0x2563eb, 0x0891b2]; // Soft indigo/teal palette for white bg
+
     const config = {
         particleCount: 3500, 
         particleSize: 0.2,   // Fine detail size (reduced from 0.35)
-        colors: [0x00ffff, 0xff00ff, 0x00ff00, 0xffaa00, 0xffffff, 0xff0088, 0x0088ff], 
         cameraZ: 30
     };
 
@@ -45,7 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         try {
             scene = new THREE.Scene();
-            scene.fog = new THREE.FogExp2(0x000000, 0.005); // Reduced fog for clarity (was 0.02)
+            const isLightInit = document.body.classList.contains('light-theme');
+            scene.fog = new THREE.FogExp2(isLightInit ? 0xf4f4f8 : 0x000000, 0.005); // Theme-aware fog
 
             camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
             camera.position.z = config.cameraZ;
@@ -70,6 +73,17 @@ document.addEventListener('DOMContentLoaded', () => {
             window.addEventListener('resize', onWindowResize);
             isThreeInitialized = true;
             updateDebugBox("Three.js System Initialized.");
+
+            // Theme observer to watch body class changes and update colors dynamically
+            const observer = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    if (mutation.attributeName === 'class') {
+                        updateParticleColors();
+                    }
+                });
+            });
+            observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
         } catch (e) {
             console.error(e);
             updateDebugBox("Three.js Init Error: " + e.message, true);
@@ -83,13 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const sizes = new Float32Array(config.particleCount);
 
         const color = new THREE.Color();
+        const activeColors = document.body.classList.contains('light-theme') ? lightColors : darkColors;
 
         for (let i = 0; i < config.particleCount; i++) {
             positions[i * 3] = (Math.random() * 2 - 1) * 50;
             positions[i * 3 + 1] = (Math.random() * 2 - 1) * 30;
             positions[i * 3 + 2] = (Math.random() * 2 - 1) * 20;
 
-            color.setHex(config.colors[Math.floor(Math.random() * config.colors.length)]);
+            color.setHex(activeColors[Math.floor(Math.random() * activeColors.length)]);
             colors[i * 3] = color.r;
             colors[i * 3 + 1] = color.g;
             colors[i * 3 + 2] = color.b;
@@ -137,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     gl_FragColor = vec4(vColor, 1.0) * texture2D(pointTexture, gl_PointCoord);
                 }
             `,
-            blending: THREE.AdditiveBlending,
+            blending: document.body.classList.contains('light-theme') ? THREE.NormalBlending : THREE.AdditiveBlending,
             depthTest: false,
             transparent: true,
             vertexColors: true
@@ -146,6 +161,32 @@ document.addEventListener('DOMContentLoaded', () => {
         particleSystem = new THREE.Points(geometry, material);
         scene.add(particleSystem);
         updateDebugBox("Particles Enhanced: Brighter & Bigger");
+    }
+
+    function updateParticleColors() {
+        if (!particleSystem) return;
+        const isLightTheme = document.body.classList.contains('light-theme');
+        const activeColors = isLightTheme ? lightColors : darkColors;
+        
+        // Update fog to match theme
+        if (scene.fog) {
+            scene.fog.color.setHex(isLightTheme ? 0xf4f4f8 : 0x000000);
+        }
+
+        // Update blending mode
+        particleSystem.material.blending = isLightTheme ? THREE.NormalBlending : THREE.AdditiveBlending;
+        particleSystem.material.needsUpdate = true;
+
+        const colorsAttr = particleSystem.geometry.attributes.color;
+        const color = new THREE.Color();
+        
+        for (let i = 0; i < config.particleCount; i++) {
+            color.setHex(activeColors[Math.floor(Math.random() * activeColors.length)]);
+            colorsAttr.array[i * 3] = color.r;
+            colorsAttr.array[i * 3 + 1] = color.g;
+            colorsAttr.array[i * 3 + 2] = color.b;
+        }
+        colorsAttr.needsUpdate = true;
     }
 
     function generateShape(type) {
