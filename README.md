@@ -386,8 +386,7 @@ HACK-09  IBM ICE Day Ideathon              2025
 </p>
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=PriyanshuKSharma&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&icon_color=818cf8&count_private=true&include_all_commits=true&cache_seconds=1800" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshuKSharma&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&cache_seconds=1800" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=PriyanshuKSharma&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&icon_color=818cf8&count_private=true&include_all_commits=true&cache_seconds=3600&rank_icon=github" />
 </p>
 
 <p align="center">
