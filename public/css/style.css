@@ -6332,6 +6332,174 @@ body.light-theme .dock-link.active {
   box-shadow: 0 0 14px rgba(56, 189, 248, 0.35);
 }
 
+/* Professional bottom section dock */
+.dock-container {
+  position: fixed !important;
+  left: 50% !important;
+  bottom: max(1.1rem, env(safe-area-inset-bottom)) !important;
+  transform: translateX(-50%) !important;
+  z-index: 1200 !important;
+  width: min(92vw, 760px) !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+}
+
+.dock-container::before,
+.dock-container::after,
+.bottom-nav-dock::before,
+.dock-link::before,
+.dock-link::after {
+  display: none !important;
+}
+
+.bottom-nav-dock {
+  position: static !important;
+  left: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  height: auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+  gap: 0.35rem !important;
+  margin: 0 !important;
+  padding: 0.5rem !important;
+  list-style: none !important;
+  border: 1px solid rgba(var(--primary-rgb), 0.22) !important;
+  border-radius: 18px !important;
+  background: rgba(6, 10, 18, 0.88) !important;
+  backdrop-filter: blur(18px) saturate(140%) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.07) !important;
+  filter: none !important;
+}
+
+.dock-item,
+.dock-item:hover,
+.dock-item:hover + .dock-item,
+.dock-item:has(+ .dock-item:hover),
+.dock-item:hover + .dock-item + .dock-item,
+.dock-item:has(+ .dock-item + .dock-item:hover) {
+  display: block !important;
+  flex: none !important;
+  max-width: none !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.dock-link {
+  width: 100% !important;
+  height: 50px !important;
+  display: inline-flex !important;
+  flex-direction: column !important;
+  gap: 0.28rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid transparent !important;
+  border-radius: 12px !important;
+  background: transparent !important;
+  color: var(--text-muted) !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  animation: none !important;
+  transition: color 0.18s ease, background 0.18s ease, border-color 0.18s ease, transform 0.18s ease !important;
+}
+
+.dock-link:hover,
+.dock-link:focus-visible {
+  transform: translateY(-2px) !important;
+  color: var(--primary) !important;
+  background: rgba(var(--primary-rgb), 0.08) !important;
+  border-color: rgba(var(--primary-rgb), 0.18) !important;
+}
+
+.dock-link.active,
+.dock-link[aria-current="page"] {
+  color: #041118 !important;
+  background: linear-gradient(135deg, var(--primary), #6ff5ff) !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 18px rgba(var(--primary-rgb), 0.22) !important;
+}
+
+.dock-emoji,
+.dock-link:hover .dock-emoji,
+.dock-link.active .dock-emoji {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1rem !important;
+  line-height: 1 !important;
+  filter: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.dock-emoji i {
+  width: auto !important;
+  height: auto !important;
+  font-size: 1rem !important;
+}
+
+.dock-label {
+  display: block;
+  max-width: 100%;
+  color: currentColor;
+  font-size: 0.64rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+body.light-theme .bottom-nav-dock {
+  border-color: rgba(59, 130, 246, 0.18) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+}
+
+body.light-theme .dock-link {
+  color: #475569 !important;
+}
+
+body.light-theme .dock-link:hover,
+body.light-theme .dock-link:focus-visible {
+  color: #0f172a !important;
+  background: rgba(59, 130, 246, 0.1) !important;
+  border-color: rgba(59, 130, 246, 0.18) !important;
+}
+
+body.light-theme .dock-link.active,
+body.light-theme .dock-link[aria-current="page"] {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #2563eb, #38bdf8) !important;
+}
+
+@media (max-width: 680px) {
+  .dock-container {
+    width: min(94vw, 480px) !important;
+  }
+
+  .bottom-nav-dock {
+    gap: 0.2rem !important;
+    padding: 0.4rem !important;
+    border-radius: 16px !important;
+  }
+
+  .dock-link {
+    height: 44px !important;
+  }
+
+  .dock-label {
+    display: none !important;
+  }
+}
+
 /* ==========================================================================
    NEW REDESIGNED NAVBAR (PREMIUM GLASSMORPHISM)
    ========================================================================== */
