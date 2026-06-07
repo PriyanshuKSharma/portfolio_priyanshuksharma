@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Configuration ---
     const darkColors = [0x818cf8, 0x14b8a6, 0x00ffff, 0xff00ff, 0xffaa00, 0xff0088, 0x0088ff]; // Cyber neon theme
-    const lightColors = [0x4f46e5, 0x0d9488, 0x4f46e5, 0x0d9488, 0xd97706, 0xff0055, 0x0066cc]; // Softer but high contrast light theme colors
+    const lightColors = [0x4f46e5, 0x0d9488, 0x6366f1, 0x0d9488, 0x8b5cf6, 0x2563eb, 0x0891b2]; // Soft indigo/teal palette for white bg
 
     const config = {
         particleCount: 3500, 
@@ -47,7 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         try {
             scene = new THREE.Scene();
-            scene.fog = new THREE.FogExp2(0x000000, 0.005); // Reduced fog for clarity (was 0.02)
+            const isLightInit = document.body.classList.contains('light-theme');
+            scene.fog = new THREE.FogExp2(isLightInit ? 0xf4f4f8 : 0x000000, 0.005); // Theme-aware fog
 
             camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
             camera.position.z = config.cameraZ;
@@ -151,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     gl_FragColor = vec4(vColor, 1.0) * texture2D(pointTexture, gl_PointCoord);
                 }
             `,
-            blending: THREE.AdditiveBlending,
+            blending: document.body.classList.contains('light-theme') ? THREE.NormalBlending : THREE.AdditiveBlending,
             depthTest: false,
             transparent: true,
             vertexColors: true
@@ -167,6 +168,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const isLightTheme = document.body.classList.contains('light-theme');
         const activeColors = isLightTheme ? lightColors : darkColors;
         
+        // Update fog to match theme
+        if (scene.fog) {
+            scene.fog.color.setHex(isLightTheme ? 0xf4f4f8 : 0x000000);
+        }
+
+        // Update blending mode
+        particleSystem.material.blending = isLightTheme ? THREE.NormalBlending : THREE.AdditiveBlending;
+        particleSystem.material.needsUpdate = true;
+
         const colorsAttr = particleSystem.geometry.attributes.color;
         const color = new THREE.Color();
         
