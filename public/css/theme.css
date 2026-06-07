@@ -231,3 +231,381 @@ nav.scrolled {
 @media (max-width: 768px) {
   .btn-primary { animation: none; }
 }
+
+/* ── About Section (Updated Layout) ── */
+.about-section {
+  padding: 8rem 2rem;
+  background: radial-gradient(circle at bottom, rgba(0,240,255,0.02) 0%, transparent 60%);
+}
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+@media (max-width: 968px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  position: sticky;
+  top: 100px;
+}
+@media (max-width: 968px) {
+  .about-left {
+    position: relative;
+    top: 0;
+  }
+}
+
+/* Profile image wrapper */
+.profile-wrapper {
+  position: relative;
+  width: 260px;
+  height: 260px;
+}
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+  z-index: 2;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.profile-wrapper:hover .profile-pic {
+  transform: translateY(-8px);
+}
+.profile-glow {
+  position: absolute;
+  inset: -12px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 24px;
+  z-index: 1;
+  opacity: 0.15;
+  filter: blur(15px);
+  transition: opacity 0.4s;
+}
+.profile-wrapper:hover .profile-glow {
+  opacity: 0.3;
+}
+.profile-border {
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 22px;
+  z-index: 1;
+  opacity: 0.6;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
+}
+
+/* Skills list inside about-left */
+.about-skills-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-skill-category {
+  background: rgba(10, 14, 26, 0.65);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+.skill-category-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.5rem;
+}
+.about-skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+.tech-icon-mini {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.tech-icon-mini img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.tech-icon-mini:hover {
+  border-color: var(--primary);
+  background: var(--primary-dim);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 240, 255, 0.15);
+}
+.tech-icon-mini::after {
+  content: attr(data-tech);
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: var(--surface2);
+  border: 1px solid var(--border-color);
+  color: var(--text-light);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+  z-index: 10;
+}
+.tech-icon-mini:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  bottom: -40px;
+}
+
+/* About Right Column */
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about-headline-container {
+  margin-top: -0.5rem;
+}
+.about-tagline {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-light);
+}
+.about-bio {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Disciplines Grid */
+.about-disciplines-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+@media (max-width: 580px) {
+  .about-disciplines-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.discipline-card {
+  background: rgba(10, 14, 26, 0.45);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.discipline-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 8px 30px rgba(0, 240, 255, 0.06);
+  background: rgba(10, 14, 26, 0.7);
+}
+.discipline-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.discipline-icon {
+  font-size: 1.2rem;
+  color: var(--primary);
+  background: var(--primary-dim);
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--c3);
+}
+.discipline-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+.discipline-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ── Education / Academic Journey ── */
+.education-section {
+  padding: 8rem 2rem;
+  background: radial-gradient(circle at top, rgba(139,92,246,0.02) 0%, transparent 60%);
+}
+.education-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.education-timeline {
+  position: relative;
+  padding-left: 3.5rem;
+  margin-top: 4rem;
+}
+.education-timeline::before {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary), var(--secondary), transparent);
+  opacity: 0.3;
+}
+.education-item {
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Timeline giant glowing node */
+.edu-node-container {
+  position: absolute;
+  left: -3.5rem;
+  top: 6px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.edu-node-circle {
+  width: 2.2rem;
+  height: 2.2rem;
+  background: var(--surface2);
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  transition: all 0.3s;
+}
+.edu-node-number {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.edu-node-glow {
+  position: absolute;
+  inset: -6px;
+  background: var(--primary);
+  border-radius: 50%;
+  filter: blur(8px);
+  opacity: 0.2;
+  transition: opacity 0.3s;
+}
+.education-item:hover .edu-node-circle {
+  border-color: var(--secondary);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+}
+.education-item:hover .edu-node-number {
+  color: var(--secondary);
+}
+.education-item:hover .edu-node-glow {
+  opacity: 0.4;
+  background: var(--secondary);
+}
+
+/* Content Card */
+.edu-card {
+  background: rgba(10, 14, 26, 0.45);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+.education-item:hover .edu-card {
+  border-color: var(--primary);
+  background: rgba(10, 14, 26, 0.75);
+  transform: translateX(8px);
+  box-shadow: 0 15px 40px rgba(0, 240, 255, 0.05);
+}
+.edu-card-header {
+  margin-bottom: 0.75rem;
+}
+.edu-card-period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: var(--primary-dim);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid var(--c3);
+}
+.education-item:hover .edu-card-period {
+  color: var(--secondary);
+  background: var(--p2);
+  border-color: var(--p3);
+}
+.edu-card-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 0.35rem;
+  margin-top: 0.5rem;
+}
+.edu-card-org {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.edu-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.edu-card-desc .highlight {
+  color: var(--primary);
+  font-weight: 600;
+}
