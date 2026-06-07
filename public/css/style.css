@@ -9454,13 +9454,119 @@ body.light-theme .top-left-brand:hover .logo-icon {
   box-shadow: 0 0 12px rgba(37, 99, 235, 0.2);
 }
 
-/* Responsive top-left logo */
-@media (max-width: 480px) {
+/* Responsive adjustments for Top-Left Brand Logo on Mobile */
+@media (max-width: 768px) {
   .top-left-brand {
-    top: 16px;
-    left: 16px;
+    top: 14px !important;
+    left: 14px !important;
+    padding: 6px 14px !important;
+    background: rgba(6, 10, 18, 0.5) !important;
+    backdrop-filter: blur(12px) saturate(140%) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(140%) !important;
+    border: 1px solid rgba(var(--primary-rgb), 0.22) !important;
+    border-radius: 999px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+    gap: 0.45rem !important;
   }
+
+  body.light-theme .top-left-brand {
+    background: rgba(255, 255, 255, 0.75) !important;
+    border-color: rgba(59, 130, 246, 0.22) !important;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08) !important;
+  }
+
+  .top-left-brand .logo-icon {
+    width: 26px !important;
+    height: 26px !important;
+    font-size: 0.75rem !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+  
   .top-left-brand .logo-text {
-    font-size: 1rem;
+    font-size: 0.92rem !important;
   }
 }
+
+/* Mobile Bottom Nav Dock (Orb/Capsule Style) */
+@media (max-width: 768px) {
+  .dock-container {
+    width: min(94vw, 480px) !important;
+    bottom: max(0.8rem, env(safe-area-inset-bottom)) !important;
+  }
+
+  .bottom-nav-dock {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .dock-item {
+    flex: 1 1 0% !important;
+    max-width: 46px !important;
+    margin: 0 !important;
+  }
+
+  .dock-link {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(var(--primary-rgb), 0.22) !important;
+    background: rgba(6, 10, 18, 0.65) !important;
+    backdrop-filter: blur(12px) saturate(140%) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(140%) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35) !important;
+    transition: all 0.2s ease !important;
+  }
+
+  body.light-theme .dock-link {
+    background: rgba(255, 255, 255, 0.75) !important;
+    border-color: rgba(59, 130, 246, 0.22) !important;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
+    color: #475569 !important;
+  }
+
+  .dock-label {
+    display: none !important;
+  }
+
+  .dock-emoji i {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Adjustments for ultra-small screens */
+@media (max-width: 400px) {
+  .dock-container {
+    width: min(96vw, 360px) !important;
+  }
+  .bottom-nav-dock {
+    gap: 6px !important;
+  }
+  .dock-item {
+    max-width: 38px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .dock-container {
+    width: min(96vw, 300px) !important;
+  }
+  .bottom-nav-dock {
+    gap: 4px !important;
+  }
+  .dock-item {
+    max-width: 32px !important;
+  }
+}
+
