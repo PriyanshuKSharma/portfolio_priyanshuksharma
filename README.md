@@ -1,147 +1,129 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=220&section=header&text=Priyanshu%20Kumar%20Sharma&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Cloud%20Architect%20%E2%80%A2%20Security%20Engineer%20%E2%80%A2%20Researcher&descAlignY=58&descSize=18&descColor=94a3b8" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=240&section=header&text=Priyanshu%20Kumar%20Sharma&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Cloud%20Architect%20%E2%80%A2%20Security%20Engineer%20%E2%80%A2%20Researcher&descAlignY=62&descSize=18&descColor=818cf8" width="100%"/>
+
+<br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2500&pause=800&color=22D3EE&center=true&vCenter=true&width=860&lines=%F0%9F%8E%93+B.Tech+IT+%E2%80%94+Cloud+Technology+%26+Information+Security;%E2%98%81%EF%B8%8F+Building+Nebula+%E2%80%94+API-first+Multi-Cloud+Command+Center;%F0%9F%94%92+Zero+Trust+%7C+IAM+%7C+Serverless+%7C+Quantum-Cloud;%F0%9F%8F%9B%EF%B8%8F+IIT+Ropar+Research+Fellow+%E2%80%94+IAS+2024;%E2%9A%99%EF%B8%8F+CGPA+9.9+%7C+IJCRT+Published+%7C+Seamedu+Award+Winner">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2500&pause=800&color=22D3EE&center=true&vCenter=true&width=860&lines=%F0%9F%8E%93+B.Tech+IT+%E2%80%94+Cloud+Technology+%26+Information+Security;%E2%98%81%EF%B8%8F+Building+Nebula+%E2%80%94+API-first+Multi-Cloud+Command+Center;%F0%9F%94%92+Zero+Trust+%7C+IAM+%7C+Serverless+%7C+Quantum-Cloud;%F0%9F%8F%9B%EF%B8%8F+IIT+Ropar+Research+Fellow+%E2%80%94+IAS+2024;%E2%9A%99%EF%B8%8F+CGPA+9.9+%7C+IJCRT+Published+%7C+Seamedu+Award+Winner" alt="Typing animation" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=900&color=818CF8&center=true&vCenter=true&width=900&lines=%E2%9A%A1+Building+Nebula+%E2%80%94+API-first+Multi-Cloud+Command+Center;%F0%9F%94%90+Zero+Trust+%7C+IAM+%7C+Serverless+%7C+Quantum-Cloud;%F0%9F%8F%9B%EF%B8%8F+IIT+Ropar+Research+Fellow+%E2%80%94+IAS+2024;%F0%9F%93%84+IJCRT+%26+IJERT+Published+%7C+2+Active+Preprints;%F0%9F%8E%93+CGPA+9.9+%7C+B.Tech+IT+%E2%80%94+Cloud+%26+Information+Security">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=900&color=818CF8&center=true&vCenter=true&width=900&lines=%E2%9A%A1+Building+Nebula+%E2%80%94+API-first+Multi-Cloud+Command+Center;%F0%9F%94%90+Zero+Trust+%7C+IAM+%7C+Serverless+%7C+Quantum-Cloud;%F0%9F%8F%9B%EF%B8%8F+IIT+Ropar+Research+Fellow+%E2%80%94+IAS+2024;%F0%9F%93%84+IJCRT+%26+IJERT+Published+%7C+2+Active+Preprints;%F0%9F%8E%93+CGPA+9.9+%7C+B.Tech+IT+%E2%80%94+Cloud+%26+Information+Security" alt="Typing SVG" />
 </picture>
 
-<br/>
+<br/><br/>
 
-[![Portfolio](https://img.shields.io/badge/🌐%20Portfolio-Visit-0EA5E9?style=for-the-badge)](https://priyanshuksharma.github.io/portfolio_priyanshuksharma/)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Live-818cf8?style=for-the-badge&labelColor=0f0c29)](https://priyanshuksharma.github.io/portfolio_priyanshuksharma/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/)
-[![Gmail](https://img.shields.io/badge/Email-Say%20Hello-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:priyanshu17ks@gmail.com)
-[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-Images-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/priyanshuksharma)
+[![Gmail](https://img.shields.io/badge/Email-Say_Hello-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:priyanshu17ks@gmail.com)
+[![Docker Hub](https://img.shields.io/badge/Docker_Hub-Images-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/priyanshuksharma)
+[![GitHub](https://img.shields.io/badge/GitHub-PriyanshuKSharma-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PriyanshuKSharma)
 
 <br/>
 
-[![GitHub followers](https://img.shields.io/github/followers/PriyanshuKSharma?style=social)](https://github.com/PriyanshuKSharma)
-[![Profile Views](https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile%20Views&color=22d3ee&style=flat)](https://github.com/PriyanshuKSharma)
-![CGPA](https://img.shields.io/badge/CGPA-9.9-0F766E?style=flat-square)
-![Research](https://img.shields.io/badge/Research-IIT%20Ropar-1D4ED8?style=flat-square)
-![Published](https://img.shields.io/badge/Published-IJCRT%202026-7C3AED?style=flat-square)
-![Open To](https://img.shields.io/badge/Open%20To-Opportunities-22c55e?style=flat-square)
-
-<br/>
-
-> *Cloud architecture, security thinking, and research-backed building —*
-> *for systems that are meant to be used, not just described.*
+![CGPA](https://img.shields.io/badge/CGPA-9.9%2F10-0F766E?style=flat-square&logo=academia&logoColor=white)
+![Research](https://img.shields.io/badge/Research-IIT%20Ropar%20Fellow-1D4ED8?style=flat-square&logo=researchgate&logoColor=white)
+![Published](https://img.shields.io/badge/Published-IJCRT%20%26%20IJERT-7C3AED?style=flat-square&logo=googlescholar&logoColor=white)
+![Open To](https://img.shields.io/badge/Status-Open%20for%20Opportunities-22c55e?style=flat-square&logo=checkmarx&logoColor=white)
+[![Profile Views](https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile+Views&color=818cf8&style=flat-square)](https://github.com/PriyanshuKSharma)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
-
-<details open>
-<summary><strong>Navigate</strong></summary>
-
-- [⚡ Mission Control](#-mission-control)
-- [🚀 What I'm Building Now](#-what-im-building-now)
-- [📄 Research & Publications](#-research--publications)
-- [🛠️ Flagship Projects](#️-flagship-projects)
-- [🖼️ Repository Showcase](#️-repository-showcase)
-- [🧰 Technical Arsenal](#-technical-arsenal)
-- [🏅 Certifications](#-certifications)
-- [💼 Experience](#-experience)
-- [🎓 Education](#-education)
-- [🏆 Awards & Recognition](#-awards--recognition)
-- [📊 GitHub Stats](#-github-stats)
-- [🤝 Open Source & Community](#-open-source--community)
-- [🎯 Aiming For](#-aiming-for)
-- [📡 Connect](#-connect)
-
-</details>
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  priyanshu@cloudlab:~$ whoami                                           │
+│                                                                         │
+│  > Cloud Architect · Security Engineer · Researcher                     │
+│  > B.Tech IT — Cloud Technology & Information Security · CGPA 9.9       │
+│  > IIT Ropar Research Fellow · 2x Published · 2 Active Preprints        │
+│  > Building systems that are secure, scalable, and research-backed      │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## ⚡ Mission Control
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🔨 Builder Mode
-
-I like projects where **architecture, security, and experimentation** all matter at once.
-
-- Turning ideas into working systems, not just concept notes
-- Treating security as a design choice, not a late add-on
-- Shipping reproducible setups, docs, and developer-friendly workflows
-- Building products with a strong architecture story behind them
-
-</td>
-<td width="50%" valign="top">
-
-### 🔬 Research Mode
-
-The problems that keep me curious sit right at the edge of infrastructure.
-
-- Multi-cloud orchestration and unified control planes
-- Serverless benchmarking and cloud performance analysis
-- IAM, AAA, Zero Trust, and distributed access models
-- Hybrid quantum-cloud systems and future-facing infrastructure
-
-</td>
-</tr>
-</table>
-
----
-
-## 🚀 What I'm Building Now
+## ⚡ What's Running Right Now
 
 ```text
-🔵  Nebula         →  API-first multi-cloud command center (AWS + Azure + GCP)
-🟡  XFBench/XFaaS  →  Serverless benchmarking across FaaS providers
-🟣  Quantum-Cloud  →  Hybrid classical-quantum workflows for secure infra
-🟢  Research        →  IAM, Zero Trust, and distributed security models
+🔵  Nebula          →  API-first multi-cloud command center (AWS + Azure + GCP)
+                       FastAPI · Celery · Redis · Terraform · Docker · PostgreSQL
+
+⚛️  Quantum-Cloud   →  Hybrid classical-quantum workflows for secure infra
+                       AWS Braket · IBM Quantum · Docker · Python
+
+🟡  XFBench/XFaaS   →  Serverless benchmarking across FaaS providers
+                       AWS Lambda · OpenFaaS · Latency · Cold-starts
+
+🟢  Research        →  IAM, Zero Trust, Multi-Agent AI, Distributed Security
 ```
 
 ---
 
 ## 📄 Research & Publications
 
-### 🗞️ Published — IJCRT 2026
+<table>
+<tr>
+<td width="12%" align="center"><strong>ID</strong></td>
+<td width="46%"><strong>Paper</strong></td>
+<td width="20%"><strong>Venue</strong></td>
+<td width="12%" align="center"><strong>Status</strong></td>
+<td width="10%" align="center"><strong>Year</strong></td>
+</tr>
 
-> **"Democratizing AWS Cloud Operations: A Unified Orchestration Approach To Standardized Infrastructure Management"**
+<tr>
+<td align="center"><code>PAPER-26-04</code></td>
+<td><strong>Democratizing AWS Cloud Operations: A Unified Orchestration Approach To Standardized Infrastructure Management</strong><br/><sub>Introduces Nebula — async provisioning via Celery + Redis, unified AWS control plane</sub></td>
+<td>IJCRT · Vol.14 Issue 4</td>
+<td align="center">✅ Published</td>
+<td align="center">Apr 2026</td>
+</tr>
 
-| | |
-|--|--|
-| **Venue** | International Journal of Creative Research Thoughts (IJCRT), Vol. 14, Issue 4, April 2026 |
-| **DOI** | [10.56975/ijcrt.v14i4.305033](https://doi.org/10.56975/ijcrt.v14i4.305033) |
-| **Core Contribution** | A framework decoupling user-facing cloud workflows from long-running provisioning tasks via async execution (Celery + Redis) |
+<tr>
+<td align="center"><code>IJERTV15IS052093</code></td>
+<td><strong>A Cloud-Native Multi-Agent Generative AI Framework for Demand Forecasting and Capacity Optimization using Vertex AI</strong><br/><sub>Multi-agent GenAI orchestration on Google Cloud for predictive capacity management</sub></td>
+<td>IJERT · Vol.15 Issue 05</td>
+<td align="center">✅ Published</td>
+<td align="center">May 2026</td>
+</tr>
 
-### 🏛️ IIT Ropar — Cloud Research Internship (IAS Fellowship 2024)
+<tr>
+<td align="center"><code>QC-26-02</code></td>
+<td><strong>Quantum Cloud Integration: A Practical Implementation and Analysis of Hybrid Quantum-Classical Computing Systems</strong><br/><sub>AWS Braket + classical cloud infra · quantum-classical data flow · latency analysis</sub></td>
+<td>ADYPU Pune (Preprint)</td>
+<td align="center">🔄 Ongoing</td>
+<td align="center">Active</td>
+</tr>
 
-Through the **Indian Academy of Sciences Summer Research Fellowship Program**, focused on serverless flexibility and performance.
+<tr>
+<td align="center"><code>XAI-26-01</code></td>
+<td><strong>A Comprehensive Framework for Explainable AI in Medical Diagnosis: Comparative Analysis of SHAP, LIME, Anchors, IG & Counterfactuals</strong><br/><sub>Five-method XAI evaluation · breast cancer diagnosis · GDPR/EU AI Act compliance</sub></td>
+<td>ADYPU Pune (Preprint)</td>
+<td align="center">🔄 Ongoing</td>
+<td align="center">Active</td>
+</tr>
 
-| | |
-|--|--|
-| **Project** | XFBench & XFaaS Development |
-| **Focus** | Benchmarking serverless workloads across FaaS providers (AWS Lambda, OpenFaaS) — latency, scalability, cold starts |
-| **Repos** | [XFBench](https://github.com/PriyanshuKSharma/serverless-faas-workbench_IIT_Rpr) · [XFaaS](https://github.com/PriyanshuKSharma/XFaaS-IIT_Rpr) |
-
-### ⚛️ Hybrid Quantum-Cloud Systems
-
-Exploring the intersection of classical cloud storage and quantum computing for secure, scalable experimentation.
-
-- **Tools:** IBM Quantum Experience · AWS Braket · Docker
-- **Repo:** [quantum-cloud-integration](https://github.com/PriyanshuKSharma/quantum-cloud-integration)
+<tr>
+<td align="center"><code>IAS-2024</code></td>
+<td><strong>XFBench & XFaaS: Serverless Benchmarking Research</strong><br/><sub>AWS Lambda · OpenFaaS · cold starts · latency · scalability benchmarks</sub></td>
+<td>IIT Ropar · IAS Fellowship</td>
+<td align="center">🏛️ Fellowship</td>
+<td align="center">2024</td>
+</tr>
+</table>
 
 ---
 
 ## 🛠️ Flagship Projects
 
-| Project | What It Does | Stack | Link |
-|---------|-------------|-------|------|
-| **🌌 Nebula** | API-first multi-cloud orchestration platform unifying AWS, Azure & GCP behind a single control plane with async provisioning, cost observability, and health monitoring | FastAPI · Celery · Redis · Terraform · Docker | [GitHub](https://github.com/PriyanshuKSharma/multi-cloud) |
-| **⚛️ Quantum-Cloud Integration** | Hybrid classical-quantum architecture connecting cloud infrastructure with IBM Quantum for secure, experimental compute workflows | AWS · IBM Quantum · Docker · Python | [GitHub](https://github.com/PriyanshuKSharma/quantum-cloud-integration) |
-| **🗄️ SkyVault** | Personal cloud storage with Dockerized deployment, secure file management, and a clean upload/download interface | Docker · Node.js · Express | [GitHub](https://github.com/PriyanshuKSharma/SkyVault) · [Demo](https://priyanshuksharma.github.io/SkyVault/) |
-| **🧠 XAI Interpret** | Explainable AI platform using SHAP & LIME for interactive model interpretability and visual insights on high-stakes ML decisions | Python · SHAP · LIME · Cloud-ready | [GitHub](https://github.com/PriyanshuKSharma/xai_explainaibility) |
-| **📚 Rural Gyan** | Full-stack educational platform with role-based dashboards, bilingual support, AI-assisted features, and JWT auth | React · Node.js · Docker · JWT | [GitHub](https://github.com/PriyanshuKSharma/rural-gyan-paltform) |
-| **🎬 Storage SaaS** | AI-powered video & business workflow SaaS with Clerk auth, Prisma ORM, Cloudinary media, and Vercel deployment | Next.js 14 · Tailwind · Prisma · Neon DB | [GitHub](https://github.com/PriyanshuKSharma/media-storage-saas) |
-| **🛒 Ecobizz** | Cross-platform Flutter app for sustainable e-commerce (GDSC Solution Challenge 2024) | Flutter · Dart | [GitHub](https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024) |
+| # | Project | Stack | Link |
+|---|---------|-------|------|
+| 01 | **🌌 Nebula** — API-first multi-cloud orchestration. AWS + Azure + GCP unified behind one async control plane with cost observability and health monitoring | `FastAPI` `Celery` `Redis` `Terraform` `Docker` `PostgreSQL` `React` | [→ GitHub](https://github.com/PriyanshuKSharma/multi-cloud) |
+| 02 | **⚛️ Quantum-Cloud Integration** — Hybrid architecture connecting classical cloud infra with IBM Quantum for secure experimental compute | `AWS` `IBM Quantum` `Docker` `Python` | [→ GitHub](https://github.com/PriyanshuKSharma/quantum-cloud-integration) |
+| 03 | **🎬 Storage SaaS** — AI-powered video & business workflow SaaS with Clerk auth, Prisma ORM, Cloudinary media, Vercel deployment | `Next.js 14` `TypeScript` `Prisma` `Neon DB` `Cloudinary` | [→ GitHub](https://github.com/PriyanshuKSharma/media-storage-saas) |
+| 04 | **📚 Rural Gyan** — Full-stack ed-tech platform with role-based dashboards, JWT auth, AI tutoring, bilingual (EN/HI), live classes | `React` `Node.js` `MongoDB` `Socket.io` `Docker` `OpenAI` | [→ GitHub](https://github.com/PriyanshuKSharma/rural-gyan-paltform) |
+| 05 | **🧠 XAI Interpret** — Explainable AI platform with SHAP & LIME for interactive model interpretability on high-stakes ML decisions | `Python` `SHAP` `LIME` `Vertex AI` | [→ GitHub](https://github.com/PriyanshuKSharma/xai_explainaibility) |
+| 06 | **🗄️ SkyVault** — Personal cloud storage with Dockerized deployment, secure file management, clean upload/download interface | `Docker` `Flask` `Python` `Bcrypt` | [→ GitHub](https://github.com/PriyanshuKSharma/SkyVault) · [Demo](https://priyanshuksharma.github.io/SkyVault/) |
+| 07 | **🛒 Ecobizz** — Cross-platform Flutter app for sustainable e-commerce (GDSC Solution Challenge 2024) | `Flutter` `Dart` | [→ GitHub](https://github.com/PriyanshuKSharma/EcoBizz-Sustainably-Yours---GDSC-Solution-Challenge-2024) |
 
 ---
 
@@ -149,18 +131,18 @@ Exploring the intersection of classical cloud storage and quantum computing for 
 
 <p align="center">
   <a href="https://github.com/PriyanshuKSharma/multi-cloud">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=multi-cloud&theme=github_dark&hide_border=false&border_color=1e3a5f&bg_color=0D1117&title_color=22D3EE&text_color=C9D1D9&icon_color=22D3EE" alt="Nebula" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=multi-cloud&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&text_color=C9D1D9&icon_color=818cf8" />
   </a>
   <a href="https://github.com/PriyanshuKSharma/quantum-cloud-integration">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=quantum-cloud-integration&theme=github_dark&hide_border=false&border_color=1e3a5f&bg_color=0D1117&title_color=22D3EE&text_color=C9D1D9&icon_color=22D3EE" alt="Quantum Cloud" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=quantum-cloud-integration&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&text_color=C9D1D9&icon_color=818cf8" />
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/PriyanshuKSharma/rural-gyan-paltform">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=rural-gyan-paltform&theme=github_dark&hide_border=false&border_color=1e3a5f&bg_color=0D1117&title_color=22D3EE&text_color=C9D1D9&icon_color=22D3EE" alt="Rural Gyan" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=rural-gyan-paltform&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&text_color=C9D1D9&icon_color=818cf8" />
   </a>
   <a href="https://github.com/PriyanshuKSharma/xai_explainaibility">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=xai_explainaibility&theme=github_dark&hide_border=false&border_color=1e3a5f&bg_color=0D1117&title_color=22D3EE&text_color=C9D1D9&icon_color=22D3EE" alt="XAI Interpret" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=xai_explainaibility&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&text_color=C9D1D9&icon_color=818cf8" />
   </a>
 </p>
 
@@ -168,216 +150,259 @@ Exploring the intersection of classical cloud storage and quantum computing for 
 
 ## 🧰 Technical Arsenal
 
-### Languages
+```
+ SKL-01 · PROGRAMMING LANGUAGES          SKL-05 · CLOUD PLATFORMS
+ ─────────────────────────────────────   ──────────────────────────────────
+  Python          ████████░░  80%         AWS             ████████░░  80%
+  Java            ███████░░░  75%         Google Cloud    ███████░░░  75%
+  SQL             ████████░░  80%         Microsoft Azure ██████░░░░  65%
+  Shell Scripting ███████░░░  70%
+                                         SKL-06 · AI & ML TOOLS
+ SKL-02 · WEB & APP ENGINEERING          ──────────────────────────────────
+ ─────────────────────────────────────   Prompt Engineering  ████████░░  85%
+  JavaScript      ████████░░  85%         ML Fundamentals     ██████░░░░  65%
+  Node.js         ████████░░  80%         Generative AI       █████░░░░░  55%
+  HTML/CSS        ███████░░░  75%         AI Workflow Design  ████░░░░░░  45%
+  Express         ███████░░░  75%         MLFlow              ████░░░░░░  45%
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="52" height="52" title="Java" alt="Java" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="52" height="52" title="Python" alt="Python" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="52" height="52" title="JavaScript" alt="JavaScript" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="52" height="52" title="Dart" alt="Dart" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="52" height="52" title="Bash" alt="Bash" />
-</p>
-<p align="center"><sub><strong>Java &nbsp;•&nbsp; Python &nbsp;•&nbsp; JavaScript &nbsp;•&nbsp; Dart &nbsp;•&nbsp; Bash</strong></sub></p>
+ SKL-03 · DELIVERY & AUTOMATION          SKL-07 · CORE CS FUNDAMENTALS
+ ─────────────────────────────────────   ──────────────────────────────────
+  Git / GitHub    █████████░  90%         DBMS            ███████░░░  75%
+  Docker          ████████░░  85%         OS              ███████░░░  70%
+  Terraform       ███████░░░  75%         CN              ██████░░░░  65%
+  Jenkins         ██████░░░░  65%         DSA             ███░░░░░░░  35%
+  Kubernetes      ██████░░░░  65%
+  GitLab          ██████░░░░  60%        SKL-04 · DATA & STORAGE
+  Ansible         ████░░░░░░  45%        ──────────────────────────────────
+                                          AWS S3          ████████░░  85%
+                                          MySQL           ████████░░  80%
+                                          Google Cloud SQL ███████░░░  75%
+                                          Neon DB         ███████░░░  70%
+```
 
-### ☁️ Cloud, Serverless & IaC
+<details>
+<summary><b>☁️ Cloud · IaC · Serverless</b></summary>
+<br/>
 
-<p align="center">
-  <img src="https://img.icons8.com/color/96/amazon-web-services.png" width="52" height="52" title="AWS" alt="AWS" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="52" height="52" title="Azure" alt="Azure" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="52" height="52" title="GCP" alt="GCP" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="52" height="52" title="Terraform" alt="Terraform" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pulumi/pulumi-original.svg" width="52" height="52" title="Pulumi" alt="Pulumi" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" width="52" height="52" title="Cloudflare" alt="Cloudflare" />
-</p>
-<p align="center"><sub><strong>AWS &nbsp;•&nbsp; Azure &nbsp;•&nbsp; GCP &nbsp;•&nbsp; Terraform &nbsp;•&nbsp; Pulumi &nbsp;•&nbsp; Cloudflare</strong></sub></p>
+![AWS](https://img.shields.io/badge/AWS_80%25-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![GCP](https://img.shields.io/badge/GCP_75%25-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure_65%25-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform_75%25-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker_85%25-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes_65%25-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible_45%25-EE0000?style=flat-square&logo=ansible&logoColor=white)
+![AWS S3](https://img.shields.io/badge/AWS_S3_85%25-569A31?style=flat-square&logo=amazons3&logoColor=white)
+![AWS Braket](https://img.shields.io/badge/AWS_Braket-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 
-### 🔒 Security & Systems
+</details>
 
-<p align="center">
-  <img src="https://img.icons8.com/color/96/security-checked.png" width="52" height="52" title="IAM" alt="IAM" />&nbsp;&nbsp;
-  <img src="https://img.icons8.com/color/96/privacy.png" width="52" height="52" title="Zero Trust" alt="Zero Trust" />&nbsp;&nbsp;
-  <img src="https://img.icons8.com/color/96/firewall.png" width="52" height="52" title="Network Security" alt="Network Security" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="52" height="52" title="Linux" alt="Linux" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="52" height="52" title="Docker" alt="Docker" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="52" height="52" title="Kubernetes" alt="Kubernetes" />
-</p>
-<p align="center"><sub><strong>IAM &nbsp;•&nbsp; Zero Trust &nbsp;•&nbsp; Network Security &nbsp;•&nbsp; Linux &nbsp;•&nbsp; Docker &nbsp;•&nbsp; Kubernetes</strong></sub></p>
+<details>
+<summary><b>🔒 Security · Zero Trust</b></summary>
+<br/>
 
-### 🌐 Web & App
+![Zero Trust](https://img.shields.io/badge/Zero_Trust-00B4D8?style=flat-square)
+![IAM](https://img.shields.io/badge/IAM-FF6B35?style=flat-square)
+![Fortinet](https://img.shields.io/badge/Fortinet_FCF-EE3124?style=flat-square&logo=fortinet&logoColor=white)
+![Fortinet](https://img.shields.io/badge/Fortinet_FCA-EE3124?style=flat-square&logo=fortinet&logoColor=white)
+![Zscaler](https://img.shields.io/badge/Zscaler_ZTCA-1A6EC4?style=flat-square)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="52" height="52" title="React" alt="React" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="52" height="52" title="Django" alt="Django" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="52" height="52" title="Flutter" alt="Flutter" />&nbsp;&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="52" height="52" title="Tailwind CSS" alt="Tailwind CSS" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="52" height="52" title="HTML5" alt="HTML5" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="52" height="52" title="CSS3" alt="CSS3" />
-</p>
-<p align="center"><sub><strong>React &nbsp;•&nbsp; Django &nbsp;•&nbsp; Flutter &nbsp;•&nbsp; Tailwind CSS &nbsp;•&nbsp; HTML5 &nbsp;•&nbsp; CSS3</strong></sub></p>
+</details>
 
-### 🗄️ Data, DevOps & Storage
+<details>
+<summary><b>💻 Languages · Frameworks</b></summary>
+<br/>
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="52" height="52" title="Redis" alt="Redis" />&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="52" height="52" title="MySQL" alt="MySQL" />&nbsp;&nbsp;
-  <img src="https://img.icons8.com/color/96/amazon-s3.png" width="52" height="52" title="Amazon S3" alt="Amazon S3" />&nbsp;&nbsp;
-  <img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/github.png" width="52" height="52" title="GitHub" alt="GitHub" />&nbsp;&nbsp;
-  <img src="https://img.icons8.com/color/96/gitlab.png" width="52" height="52" title="GitLab" alt="GitLab" />
-</p>
-<p align="center"><sub><strong>Redis &nbsp;•&nbsp; MySQL &nbsp;•&nbsp; Amazon S3 &nbsp;•&nbsp; GitHub &nbsp;•&nbsp; GitLab &nbsp;•&nbsp; Neon DB</strong></sub></p>
+![Python](https://img.shields.io/badge/Python_80%25-3776AB?style=flat-square&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java_75%25-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL_80%25-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript_85%25-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Shell](https://img.shields.io/badge/Shell_70%25-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js_80%25-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express_75%25-000000?style=flat-square&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 
-### ⚛️ Exploring Next
+</details>
 
-<p align="center">
-  <img src="https://img.icons8.com/color/96/ibm.png" width="80" height="70" title="IBM Quantum" alt="IBM Quantum" />&nbsp;&nbsp;&nbsp;
-  <img src="https://img.icons8.com/color/96/amazon-web-services.png" width="70" height="70" title="AWS Braket" alt="AWS Braket" />
-</p>
-<p align="center"><sub><strong>IBM Quantum &nbsp;•&nbsp; AWS Braket</strong></sub></p>
+<details>
+<summary><b>🗄️ DevOps · Data · Pipelines</b></summary>
+<br/>
 
----
+![Git](https://img.shields.io/badge/Git_90%25-F05032?style=flat-square&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker_85%25-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins_65%25-D24939?style=flat-square&logo=jenkins&logoColor=white)
+![GitLab](https://img.shields.io/badge/GitLab_60%25-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL_80%25-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Neon DB](https://img.shields.io/badge/Neon_DB_70%25-00E5BF?style=flat-square)
 
-## 🏅 Certifications
+</details>
 
-<details open>
-<summary><strong>View credentials</strong></summary>
+<details>
+<summary><b>⚛️ Quantum · AI · Research</b></summary>
+<br/>
 
-| Credential | Provider | Type |
-|-----------|----------|------|
-| **Fortinet Certified Fundamentals in Cybersecurity** | Fortinet | Vendor Certification |
-| **Fortinet Certified Associate in Cybersecurity** | Fortinet | Vendor Certification |
-| **Fundamentals of Cybersecurity (EDU-102)** | Zscaler | Security Credential |
-| **Zero Trust Certified Associate (ZTCA)** | Zscaler | Vendor Certification |
-| **Oracle Cloud Infrastructure 2025 AI Foundations Associate** | Oracle University | Cloud & AI Certification |
-| **AWS Services for Solutions Architect Associate** | Udemy | Course Certificate |
-| **SQL (Basic)** | HackerRank | Skill Credential |
-| **Python Mastery for Beginners** | Udemy | Course Certificate |
-| **Zscaler Zero Trust Cloud Security Virtual Internship** | EduSkills | Virtual Internship |
-| **Fortinet Network Security Virtual Internship** | AICTE EduSkills | Virtual Internship |
+![IBM Quantum](https://img.shields.io/badge/IBM_Quantum-1261FE?style=flat-square&logo=ibm&logoColor=white)
+![AWS Braket](https://img.shields.io/badge/AWS_Braket-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![Qiskit](https://img.shields.io/badge/Qiskit-6929C4?style=flat-square&logo=qiskit&logoColor=white)
+![Vertex AI](https://img.shields.io/badge/Vertex_AI-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-8B5CF6?style=flat-square)
+![LIME](https://img.shields.io/badge/LIME-7C3AED?style=flat-square)
+![Prompt Engineering](https://img.shields.io/badge/Prompt_Eng_85%25-818cf8?style=flat-square)
+![MLFlow](https://img.shields.io/badge/MLFlow_45%25-0194E2?style=flat-square&logo=mlflow&logoColor=white)
 
 </details>
 
 ---
 
+## 🏅 Certifications
+
+| Credential | Issuer | Type |
+|-----------|--------|------|
+| **Fortinet Certified Fundamentals in Cybersecurity** | Fortinet | Vendor Cert |
+| **Fortinet Certified Associate in Cybersecurity** | Fortinet | Vendor Cert |
+| **Fundamentals of Cybersecurity (EDU-102)** | Zscaler | Security Cert |
+| **Zero Trust Certified Associate (ZTCA)** | Zscaler | Vendor Cert |
+| **Oracle Cloud Infrastructure 2025 AI Foundations Associate** | Oracle University | Cloud & AI Cert |
+| **AWS Services for Solutions Architect Associate** | Udemy | Course Cert |
+| **SQL (Basic)** | HackerRank | Skill Cert |
+| **Zscaler Zero Trust Cloud Security Virtual Internship** | EduSkills | Internship Cert |
+| **Fortinet Network Security Virtual Internship** | AICTE EduSkills | Internship Cert |
+
+---
+
 ## 💼 Experience
 
-```mermaid
-timeline
-    title Professional Journey
-    2022 : Student Intern — Mindler
-    2023 : Project Intern — InternPe
-    2024 : Zscaler Zero Trust Cloud Security Virtual Intern
-         : ⭐ Cloud Research Intern — IIT Ropar (IAS Fellowship)
-         : Project Intern — OctaNet Services Pvt. Ltd.
-         : Fortinet Network Security Virtual Intern
-    2025 : IT Intern — Seamedu
-         : Web Development Intern — Marquardt India
 ```
+ ──────────────────────────────────────────────────────────────────
+  Jun–Sep 2025   Web Dev Intern          Marquardt India Pvt. Ltd.
+                 Full-stack • HTML5/CSS3 • JS • EJS • MySQL • Express
 
-| Period | Role | Organization | Focus |
-|--------|------|-------------|-------|
-| **Jun–Sep 2025** | Web Development Intern | Marquardt India | Full-stack development, UI/UX, feature delivery |
-| **Mar–Jun 2025** | IT Intern | Seamedu | Operations, coordination, documentation |
-| **Jul–Sep 2024** | Fortinet Network Security Virtual Intern | EduSkills | Cyber threat analysis, network defense |
-| **Jul–Aug 2024** | Project Intern | OctaNet Services Pvt. Ltd. | Frontend web development |
-| **May–Jul 2024** | ⭐ Cloud Research Intern | **IIT Ropar** | Serverless benchmarking, infrastructure research |
-| **Apr–Jun 2024** | Zscaler Zero Trust Virtual Intern | EduSkills | Zero Trust architecture, cloud security |
-| **Apr–May 2023** | Project Intern | InternPe | Web development, project delivery |
-| **Nov–Dec 2022** | Student Intern | Mindler | Communication, early professional exposure |
+  Mar–Jun 2025   IT Intern               Seamedu, Pune
+                 Placement Coordination • IT Operations • Documentation
+
+  May–Jul 2024 ⭐ Cloud Research Intern   IIT Ropar  [IAS Fellowship]
+                 XFBench • XFaaS • Serverless benchmarking • FaaS research
+
+  Apr–Jun 2024   Zero Trust Intern        Zscaler via EduSkills
+                 Zero Trust architecture • cloud security analysis
+
+  Jul–Sep 2024   Network Security Intern  Fortinet via EduSkills
+                 Threat analysis • network defense • cyber frameworks
+
+  Jul–Aug 2024   Project Intern           OctaNet Services Pvt. Ltd.
+                 Frontend web development • project delivery
+
+  Apr–May 2023   Project Intern           InternPe
+                 Web development • project delivery
+
+  Nov–Dec 2022   Student Intern           Mindler
+                 Communication • early professional exposure
+ ──────────────────────────────────────────────────────────────────
+```
 
 ---
 
 ## 🎓 Education
 
-```mermaid
-timeline
-    title Academic Journey
-    2019 : Higher Secondary — Sri Chaitanya High School · 87.6%
-    2020–2022 : Intermediate — Sri Chaitanya Jr. Kalasala · 93.9%
-    2022 : B.Tech IT begins — Ajeenkya D Y Patil University, Pune
-    2026 : Specialization · Cloud Technology & Information Security · CGPA 9.9
 ```
+ ──────────────────────────────────────────────────────────────────
+  2022–2026  B.Tech — Information Technology
+             Ajeenkya D Y Patil University, Pune
+             Specialization: Cloud Technology & Information Security
+             CGPA: 9.9 / 10  ★ Active in hackathons & security clubs
 
-| Degree | Institution | Period | Highlight |
-|--------|------------|--------|-----------|
-| **B.Tech — Information Technology** | Ajeenkya D Y Patil University, Pune | Aug 2022 – Jun 2026 | Cloud Technology & Information Security · **CGPA: 9.9** |
-| **Intermediate (11th & 12th)** | Sri Chaitanya Jr. Kalasala, Hyderabad | Apr 2020 – May 2022 | Science & Mathematics · **93.9%** |
-| **Higher Secondary (10th)** | Sri Chaitanya High School, Hyderabad | Apr 2019 – May 2020 | **87.6%** |
+  2020–2022  Intermediate — Science & Mathematics
+             Sri Chaitanya Jr. Kalasala, Hyderabad  ·  93.9%
+
+  2019–2020  Higher Secondary
+             Sri Chaitanya High School, Hyderabad   ·  87.6%
+ ──────────────────────────────────────────────────────────────────
+```
 
 ---
 
-## 🏆 Awards & Recognition
+## 🏆 Awards & Hackathons
 
-```mermaid
-timeline
-    title Awards & Achievements
-    2019 : 🥉 School Rank 3rd — SOF International Mathematics Olympiad
-    2025 : 🎨 Creative Cloud Integration Award — Seamedu
-         : 🥉 Bronze Medal — IBM ICE Day Ideathon
-    2026 : ☁️ Multi Cloud Excellence Award — Seamedu
+<table>
+<tr><td width="50%" valign="top">
+
+**Awards**
+
+| Year | Award |
+|------|-------|
+| 2026 | ☁️ Multi Cloud Excellence Award · Seamedu |
+| 2025 | 🎨 Creative Cloud Integration Award · Seamedu |
+| 2025 | 🥉 Bronze Medal · IBM ICE Day Ideathon |
+| 2019 | 🥉 School Rank 3rd · SOF IMO |
+
+</td><td width="50%" valign="top">
+
+**9 Hackathon Sprints**
+
+```
+HACK-01  ADYPU Problem-A-Thon              2022
+HACK-02  Sharda University Tech-a-thon     2022
+HACK-03  Smart India Hackathon (Internal)  2023
+HACK-04  NASA Space App Challenge          2023
+HACK-05  UNESCO-MIL                        2023
+HACK-06  Google Solution Challenge         2024
+HACK-07  Hackron — Newton School × ADYPU   2025
+HACK-08  Smart India Hackathon (External)  2025
+HACK-09  IBM ICE Day Ideathon              2025
 ```
 
-| Award | Event | Year |
-|-------|-------|------|
-| ☁️ **Multi Cloud Excellence Award** | Seamedu Awards | 2026 |
-| 🎨 **Creative Cloud Integration Award** | Seamedu Awards | 2025 |
-| 🥉 **Bronze Medal** | IBM Innovation Centre for Education (ICE) Day Ideathon | 2025 |
-| 🥉 **School Rank: 3rd** | SOF International Mathematics Olympiad | 2019 |
+</td></tr>
+</table>
 
 ---
 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PriyanshuKSharma&theme=github-dark&hide_border=false&stroke=0000&background=0D1117&ring=22D3EE&fire=22D3EE&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=8B949E&sideLabels=8B949E&dates=8B949E" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PriyanshuKSharma&theme=github-dark&hide_border=true&background=0D1117&ring=818cf8&fire=818cf8&currStreakLabel=818cf8&sideLabels=8B949E&dates=8B949E" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=PriyanshuKSharma&show_icons=true&theme=github_dark&hide_border=false&border_color=1e3a5f&bg_color=0D1117&title_color=22D3EE&text_color=C9D1D9&icon_color=22D3EE&count_private=true&include_all_commits=true" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshuKSharma&layout=compact&theme=github_dark&hide_border=false&border_color=1e3a5f&bg_color=0D1117&title_color=22D3EE&text_color=C9D1D9" alt="Top Languages" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=PriyanshuKSharma&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&icon_color=818cf8&count_private=true&include_all_commits=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshuKSharma&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PriyanshuKSharma&bg_color=0D1117&color=22D3EE&line=22D3EE&point=FFFFFF&hide_border=false&area=true&area_color=161B22" alt="Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PriyanshuKSharma&bg_color=0D1117&color=818cf8&line=818cf8&point=ffffff&hide_border=true&area=true&area_color=1e1b4b" />
 </p>
 
 ---
 
 ## 🤝 Open Source & Community
 
-- Contributed to **[Interns-MQI-25](https://github.com/Interns-MQI-25)** and its collaborative [project-interns](https://github.com/Interns-MQI-25/project-interns) repository
-- Work in Docker, Cloud, and DevOps collaborative environments
-- Enjoy sharing through well-documented, learner-friendly repositories
+- Contributed to **[Interns-MQI-25](https://github.com/Interns-MQI-25)** collaborative internship project
+- Work across Docker, Cloud, and DevOps collaborative environments
+- Repositories are designed to be learner-friendly with clean docs and reproducible setups
 
 <p align="center">
   <a href="https://github.com/Interns-MQI-25/project-interns">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Interns-MQI-25&repo=project-interns&theme=github_dark&bg_color=0D1117&title_color=22D3EE&text_color=C9D1D9&icon_color=22D3EE" alt="Interns-MQI-25" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Interns-MQI-25&repo=project-interns&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&text_color=C9D1D9&icon_color=818cf8" />
   </a>
 </p>
 
 ---
 
-## 🎯 Aiming For
+## 🎯 What's Next
 
-```text
-→  Build Nebula into a serious, production-grade multi-cloud orchestration platform
-→  Deepen research on IAM, Zero Trust, and multi-cloud security architectures
-→  Contribute to open-source security and cloud tooling
-→  Design platforms that are secure, elegant, and genuinely useful
-→  Publish more research-backed engineering work
 ```
-
----
-
-## ⚡ Fun Facts
-
-| Signal | What It Means |
-|--------|--------------|
-| `terminal open + architecture sketch nearby` | Turning a research idea into a working system |
-| `IAM policy on screen` | Puzzle-solving mode — won't stop until the access model makes sense |
-| `benchmark notes everywhere` | Curiosity → experimentation → engineering |
-| `IBM Quantum + cloud docs both open` | Exploring how classical and quantum infrastructure can connect |
-| `a repetitive task annoys me twice` | It's one script away from being automated |
-| `new repo appears suddenly` | A side idea just got promoted to prototype |
+→  Mature Nebula into a production-grade multi-cloud orchestration platform
+→  Deepen IAM, Zero Trust, and multi-cloud security architecture research
+→  Publish ongoing preprints — Quantum Cloud & XAI Medical Diagnosis
+→  Contribute to open-source cloud and security tooling
+→  Build platforms that are elegant, secure, and genuinely useful
+```
 
 ---
 
@@ -386,8 +411,7 @@ timeline
 ```bash
 git clone https://github.com/PriyanshuKSharma/portfolio_priyanshuksharma.git
 cd portfolio_priyanshuksharma
-npm install
-npm start
+npm install && npm start
 # → http://localhost:3000
 ```
 
@@ -396,20 +420,22 @@ npm start
 ## 📡 Connect
 
 <p align="center">
-  <a href="mailto:priyanshu17ks@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>&nbsp;
-  <a href="https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
-  <a href="https://github.com/PriyanshuKSharma"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>&nbsp;
-  <a href="https://hub.docker.com/u/priyanshuksharma"><img src="https://img.shields.io/badge/Docker%20Hub-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Hub" /></a>&nbsp;
-  <a href="https://priyanshuksharma.github.io/portfolio_priyanshuksharma/"><img src="https://img.shields.io/badge/Portfolio-0EA5E9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+  <a href="mailto:priyanshu17ks@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>&nbsp;
+  <a href="https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>&nbsp;
+  <a href="https://github.com/PriyanshuKSharma"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp;
+  <a href="https://hub.docker.com/u/priyanshuksharma"><img src="https://img.shields.io/badge/Docker_Hub-2496ED?style=for-the-badge&logo=docker&logoColor=white"/></a>&nbsp;
+  <a href="https://priyanshuksharma.github.io/portfolio_priyanshuksharma/"><img src="https://img.shields.io/badge/Portfolio-818cf8?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
 </p>
 
 <div align="center">
 
 <br/>
 
-*Thanks for stopping by.*
-*If you're building in cloud, security, research, or modern infrastructure — I'd be glad to connect and collaborate.*
+> *Cloud architecture, security thinking, and research-backed building —*
+> *for systems meant to be used, not just described.*
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer" width="100%"/>
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=120&section=footer" width="100%"/>
 
 </div>
