@@ -1,24 +1,8 @@
-/* Additional Theme Enhancements */
+/* ── Theme Enhancements — Cyan / Deep-Navy Palette ── */
 
-/* Subtle hero texture */
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-repeat: repeat;
-  background-size: 120px 120px;
-  opacity: 0.18;
-  z-index: 0;
-  pointer-events: none;
-}
+/* Hero subtle grid already handled in body::before via style.css */
 
-/* Enhanced button effects */
+/* Button shine sweep */
 .btn::before {
   content: '';
   position: absolute;
@@ -26,7 +10,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
   transition: left 0.5s;
 }
 
@@ -34,24 +18,13 @@
   left: 100%;
 }
 
-
-
-/* Enhanced card hover effects */
+/* Enhanced card hover */
 .project-card {
   transform-style: preserve-3d;
   perspective: 1000px;
 }
 
-.project-card:hover {
-  animation: cardFloat 0.6s ease-in-out;
-}
-
-@keyframes cardFloat {
-  0%, 100% { transform: translateY(0) rotateX(0); }
-  50% { transform: translateY(-10px) rotateX(5deg); }
-}
-
-/* Loading animation */
+/* Loading overlay */
 .loading-overlay {
   position: fixed;
   top: 0;
@@ -66,38 +39,25 @@
   transition: opacity 0.5s ease;
 }
 
-.loading-spinner {
-  width: 50px;
-  height: 50px;
-  border: 3px solid var(--primary-dim);
-  border-top: 3px solid var(--primary);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 body.loaded .loading-overlay {
   opacity: 0;
   pointer-events: none;
 }
 
-/* Scroll indicator */
+/* Top scroll progress bar */
 .scroll-indicator {
   position: fixed;
   top: 0;
   left: 0;
   width: 0%;
   height: 3px;
-  background: var(--gradient);
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
   z-index: 1001;
   transition: width 0.1s ease;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
 }
 
-/* Enhanced social icons */
+/* Social icon ripple */
 .social-icon {
   position: relative;
   overflow: hidden;
@@ -121,13 +81,47 @@ body.loaded .loading-overlay {
   height: 100px;
 }
 
-/* Responsive enhancements */
+/* Nav active state */
+.nav-links a.active {
+  color: var(--primary);
+}
+
+/* Chronicle cards (education / experience) */
+.chronicle-card {
+  border-color: var(--border-color) !important;
+  background: var(--bg-card) !important;
+}
+
+.chronicle-card:hover {
+  border-color: rgba(0, 229, 255, 0.3) !important;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.08);
+}
+
+.chronicle-id {
+  color: var(--primary) !important;
+  font-family: var(--font-mono);
+}
+
+.chronicle-period {
+  color: var(--primary) !important;
+  font-family: var(--font-mono);
+}
+
+/* Skill progress bars */
+.progress-bar {
+  background: linear-gradient(90deg, var(--primary), var(--secondary)) !important;
+}
+
+/* Expertise tags */
+.expertise-tags span,
+.chronicle-tag {
+  background: var(--primary-dim) !important;
+  border-color: rgba(0, 229, 255, 0.25) !important;
+  color: var(--primary) !important;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .hero-title::before,
-  .hero-title::after {
-    display: none;
-  }
-  
   .btn-primary {
     animation: none;
   }
