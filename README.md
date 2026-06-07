@@ -137,7 +137,7 @@ I am Priyanshu Kumar Sharma, a B.Tech IT graduate (Class of 2026) specializing i
 
 **Education**
 
-- Aug 2022 - Present: B.Tech in Information Technology, Ajeenkya D Y Patil University, Pune. Current CGPA: 9.9.
+- Aug 2022 - 2026: B.Tech in Information Technology, Ajeenkya D Y Patil University, Pune. CGPA: 9.9.
 - Apr 2020 - May 2022: Intermediate Education, Sri Chaitanya Jr. Kalasala, Hyderabad. Grade: 93.9%.
 - Apr 2019 - May 2020: Higher Secondary Education, Sri Chaitanya High School, Hyderabad. Grade: 87.6%.
 
