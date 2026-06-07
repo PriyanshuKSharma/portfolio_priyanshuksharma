@@ -609,3 +609,10 @@ nav.scrolled {
   color: var(--primary);
   font-weight: 600;
 }
+
+@media (max-width: 820px) {
+  .logo-dock-item {
+    display: none !important;
+  }
+}
+
