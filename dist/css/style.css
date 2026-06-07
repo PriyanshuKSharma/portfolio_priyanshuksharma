@@ -8112,6 +8112,9 @@ body.light-theme .dock-link[aria-current="page"] {
 .publication-archive {
   max-width: 1040px;
   margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .publication-card {
