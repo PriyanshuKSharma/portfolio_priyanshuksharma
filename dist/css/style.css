@@ -7029,6 +7029,38 @@ body.light-theme .dock-link[aria-current="page"] {
   animation: pulse-dot 2s infinite;
 }
 
+.status-indicator.ongoing {
+  background: var(--o, #f97316) !important;
+  box-shadow: 0 0 10px var(--o, #f97316) !important;
+  animation: pulse-glow-orange 2s infinite !important;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.9);
+    box-shadow: 0 0 4px rgba(0, 240, 255, 0.3);
+  }
+}
+
+@keyframes pulse-glow-orange {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.9);
+    box-shadow: 0 0 4px rgba(249, 115, 22, 0.3);
+  }
+}
+
 .research-category {
   writing-mode: vertical-rl;
   font-size: 0.75rem;
