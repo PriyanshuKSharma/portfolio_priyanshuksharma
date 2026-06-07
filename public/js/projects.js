@@ -24,7 +24,7 @@ function initProjectTerminal() {
     
     // Update title
     const title = currentProject.getAttribute('data-title');
-    terminalTitle.textContent = `~/projects/${title}`;
+    terminalTitle.textContent = `~/portfolio/${title}`;
     
     // Update pagination
     pagination.textContent = `${index + 1} / ${projects.length}`;
