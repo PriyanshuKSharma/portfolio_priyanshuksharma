@@ -130,136 +130,152 @@
 ## 🖼️ Repository Showcase
 
 <p align="center">
-  <a href="https://github.com/PriyanshuKSharma/multi-cloud">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=multi-cloud&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&text_color=C9D1D9&icon_color=818cf8" />
-  </a>
-  <a href="https://github.com/PriyanshuKSharma/quantum-cloud-integration">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=quantum-cloud-integration&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&text_color=C9D1D9&icon_color=818cf8" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/PriyanshuKSharma/rural-gyan-paltform">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=rural-gyan-paltform&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&text_color=C9D1D9&icon_color=818cf8" />
-  </a>
-  <a href="https://github.com/PriyanshuKSharma/xai_explainaibility">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PriyanshuKSharma&repo=xai_explainaibility&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&text_color=C9D1D9&icon_color=818cf8" />
-  </a>
+
+| 🌌 Nebula — Multi-Cloud Orchestration | ⚛️ Quantum-Cloud Integration |
+|---|---|
+| [![multi-cloud](https://img.shields.io/badge/multi--cloud-FastAPI%20·%20Celery%20·%20Terraform%20·%20Docker-818cf8?style=for-the-badge&logo=amazonaws&logoColor=white)](https://github.com/PriyanshuKSharma/multi-cloud) | [![quantum-cloud](https://img.shields.io/badge/quantum--cloud-AWS%20Braket%20·%20IBM%20Q%20·%20Docker-818cf8?style=for-the-badge&logo=ibm&logoColor=white)](https://github.com/PriyanshuKSharma/quantum-cloud-integration) |
+| API-first multi-cloud command center | Hybrid classical-quantum compute |
+
+| 📚 Rural Gyan Platform | 🧠 XAI Interpret |
+|---|---|
+| [![rural-gyan](https://img.shields.io/badge/rural--gyan-React%20·%20Node%20·%20MongoDB%20·%20OpenAI-818cf8?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://github.com/PriyanshuKSharma/rural-gyan-paltform) | [![xai](https://img.shields.io/badge/xai--interpret-SHAP%20·%20LIME%20·%20Vertex%20AI-818cf8?style=for-the-badge&logo=python&logoColor=white)](https://github.com/PriyanshuKSharma/xai_explainaibility) |
+| Full-stack ed-tech, AI tutoring, bilingual | Explainable AI for medical diagnosis |
+
 </p>
 
 ---
 
-## 🧰 Technical Arsenal
 
+
+**Languages**
+
+<table align="center">
+  <tr>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="64" height="64" title="Java" alt="Java" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="64" height="64" title="Python" alt="Python" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="64" height="64" title="JavaScript" alt="JavaScript" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="64" height="64" title="Dart" alt="Dart" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="64" height="64" title="Bash" alt="Bash" /></td>
+  </tr>
+  <tr>
+    <td colspan="5" align="center"><sub>Java • Python • JavaScript • Dart • Bash</sub></td>
+  </tr>
+</table>
+
+**Web and App Development**
+
+<table align="center">
+  <tr>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="64" height="64" title="HTML5" alt="HTML5" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="64" height="64" title="CSS3" alt="CSS3" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="64" height="64" title="React" alt="React" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="64" height="64" title="Django" alt="Django" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="64" height="64" title="Flutter" alt="Flutter" /></td>
+    <td><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="64" height="64" title="Tailwind CSS" alt="Tailwind CSS" /></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><sub>HTML5 • CSS3 • React • Django • Flutter • Tailwind CSS</sub></td>
+  </tr>
+</table>
+
+**Cloud, Serverless, and Infrastructure**
+
+<table align="center">
+  <tr>
+    <td><img src="https://img.icons8.com/color/96/amazon-web-services.png" width="64" height="64" title="AWS" alt="AWS" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="64" height="64" title="Microsoft Azure" alt="Microsoft Azure" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="64" height="64" title="Google Cloud Platform" alt="Google Cloud Platform" /></td>
+    <td><img src="https://www.awsicon.com/static/images/Service-Icons/Compute/64/svg/Lambda.svg" width="64" height="64" title="AWS Lambda" alt="AWS Lambda" /></td>
+    <td><img src="https://avatars.githubusercontent.com/u/33404658?s=200&v=4" width="64" height="64" title="OpenFaaS" alt="OpenFaaS" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" width="64" height="64" title="Cloudflare" alt="Cloudflare" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="64" height="64" title="Terraform" alt="Terraform" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pulumi/pulumi-original.svg" width="64" height="64" title="Pulumi" alt="Pulumi" /></td>
+  </tr>
+  <tr>
+    <td colspan="8" align="center"><sub>AWS • Azure • GCP • AWS Lambda • OpenFaaS • Cloudflare • Terraform • Pulumi</sub></td>
+  </tr>
+</table>
+
+**Security and Systems**
+
+<table align="center">
+  <tr>
+    <td><img src="https://img.icons8.com/color/96/security-checked.png" width="64" height="64" title="IAM" alt="IAM" /></td>
+    <td><img src="https://img.icons8.com/color/96/privacy.png" width="64" height="64" title="Zero Trust" alt="Zero Trust" /></td>
+    <td><img src="https://img.icons8.com/color/96/firewall.png" width="64" height="64" title="Network Security" alt="Network Security" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="64" height="64" title="Linux" alt="Linux" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="64" height="64" title="Docker" alt="Docker" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="64" height="64" title="Kubernetes" alt="Kubernetes" /></td>
+    <td><img src="https://img.icons8.com/color/96/nmap.png" width="64" height="64" title="Nmap" alt="Nmap" /></td>
+  </tr>
+  <tr>
+    <td colspan="7" align="center"><sub>IAM • Zero Trust • Network Security • Linux • Docker • Kubernetes • Nmap</sub></td>
+  </tr>
+</table>
+
+**Data, DevOps, and Storage**
+
+<table align="center">
+  <tr>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="64" height="64" title="Redis" alt="Redis" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="64" height="64" title="MySQL" alt="MySQL" /></td>
+    <td><img src="https://img.icons8.com/color/96/amazon-s3.png" width="64" height="64" title="Amazon S3" alt="Amazon S3" /></td>
+    <td><img src="https://img.icons8.com/ios-glyphs/90/FFFFFF/github.png" width="64" height="64" title="GitHub" alt="GitHub" /></td>
+    <td><img src="https://img.icons8.com/color/96/gitlab.png" width="64" height="64" title="GitLab" alt="GitLab" /></td>
+    <td><img src="https://neon.com/brand/neon-logomark-light-color.svg?dpl=dpl_GfEvs43Fxt4MNm2V4NnNfkh4yvph" width="64" height="64" title="Neon DB" alt="Neon DB" /></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><sub>Redis • MySQL • Amazon S3 • GitHub • GitLab • Neon</sub></td>
+  </tr>
+</table>
+
+**Exploring Next**
+
+<table align="center">
+  <tr>
+    <td><img src="https://img.icons8.com/color/96/ibm.png" width="110" height="96" title="IBM Quantum" alt="IBM Quantum" /></td>
+    <td><img src="https://img.icons8.com/color/96/amazon-web-services.png" width="110" height="96" title="AWS Braket" alt="AWS Braket" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><sub>IBM Quantum • AWS Braket</sub></td>
+  </tr>
+</table>
+
+```mermaid
+flowchart TD
+    A[Technical Arsenal] --> B[Languages]
+    A --> C[Web and App]
+    A --> D[Cloud and Infrastructure]
+    A --> E[Security and Systems]
+    A --> F[Research]
+    B --> B1[Java]
+    B --> B2[Python]
+    B --> B3[JavaScript]
+    B --> B4[Dart]
+    B --> B5[Bash]
+    C --> C1[HTML5]
+    C --> C2[CSS3]
+    C --> C3[React]
+    C --> C4[Django]
+    C --> C5[Flutter]
+    C --> C6[Tailwind CSS]
+    D --> D1[AWS]
+    D --> D2[Azure]
+    D --> D3[GCP]
+    D --> D4[Docker]
+    D --> D5[Kubernetes]
+    D --> D6[Terraform]
+    D --> D7[Pulumi]
+    E --> E1[IAM]
+    E --> E2[Zero Trust]
+    E --> E3[Network Security]
+    E --> E4[Nmap]
+    F --> F1[IBM Quantum]
+    F --> F2[AWS Braket]
 ```
- SKL-01 · PROGRAMMING LANGUAGES          SKL-05 · CLOUD PLATFORMS
- ─────────────────────────────────────   ──────────────────────────────────
-  Python          ████████░░  80%         AWS             ████████░░  80%
-  Java            ███████░░░  75%         Google Cloud    ███████░░░  75%
-  SQL             ████████░░  80%         Microsoft Azure ██████░░░░  65%
-  Shell Scripting ███████░░░  70%
-                                         SKL-06 · AI & ML TOOLS
- SKL-02 · WEB & APP ENGINEERING          ──────────────────────────────────
- ─────────────────────────────────────   Prompt Engineering  ████████░░  85%
-  JavaScript      ████████░░  85%         ML Fundamentals     ██████░░░░  65%
-  Node.js         ████████░░  80%         Generative AI       █████░░░░░  55%
-  HTML/CSS        ███████░░░  75%         AI Workflow Design  ████░░░░░░  45%
-  Express         ███████░░░  75%         MLFlow              ████░░░░░░  45%
-
- SKL-03 · DELIVERY & AUTOMATION          SKL-07 · CORE CS FUNDAMENTALS
- ─────────────────────────────────────   ──────────────────────────────────
-  Git / GitHub    █████████░  90%         DBMS            ███████░░░  75%
-  Docker          ████████░░  85%         OS              ███████░░░  70%
-  Terraform       ███████░░░  75%         CN              ██████░░░░  65%
-  Jenkins         ██████░░░░  65%         DSA             ███░░░░░░░  35%
-  Kubernetes      ██████░░░░  65%
-  GitLab          ██████░░░░  60%        SKL-04 · DATA & STORAGE
-  Ansible         ████░░░░░░  45%        ──────────────────────────────────
-                                          AWS S3          ████████░░  85%
-                                          MySQL           ████████░░  80%
-                                          Google Cloud SQL ███████░░░  75%
-                                          Neon DB         ███████░░░  70%
-```
-
-<details>
-<summary><b>☁️ Cloud · IaC · Serverless</b></summary>
-<br/>
-
-![AWS](https://img.shields.io/badge/AWS_80%25-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![GCP](https://img.shields.io/badge/GCP_75%25-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure_65%25-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform_75%25-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker_85%25-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes_65%25-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible_45%25-EE0000?style=flat-square&logo=ansible&logoColor=white)
-![AWS S3](https://img.shields.io/badge/AWS_S3_85%25-569A31?style=flat-square&logo=amazons3&logoColor=white)
-![AWS Braket](https://img.shields.io/badge/AWS_Braket-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-
-</details>
-
-<details>
-<summary><b>🔒 Security · Zero Trust</b></summary>
-<br/>
-
-![Zero Trust](https://img.shields.io/badge/Zero_Trust-00B4D8?style=flat-square)
-![IAM](https://img.shields.io/badge/IAM-FF6B35?style=flat-square)
-![Fortinet](https://img.shields.io/badge/Fortinet_FCF-EE3124?style=flat-square&logo=fortinet&logoColor=white)
-![Fortinet](https://img.shields.io/badge/Fortinet_FCA-EE3124?style=flat-square&logo=fortinet&logoColor=white)
-![Zscaler](https://img.shields.io/badge/Zscaler_ZTCA-1A6EC4?style=flat-square)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-
-</details>
-
-<details>
-<summary><b>💻 Languages · Frameworks</b></summary>
-<br/>
-
-![Python](https://img.shields.io/badge/Python_80%25-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java_75%25-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL_80%25-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript_85%25-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Shell](https://img.shields.io/badge/Shell_70%25-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js_80%25-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express_75%25-000000?style=flat-square&logo=express&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-
-</details>
-
-<details>
-<summary><b>🗄️ DevOps · Data · Pipelines</b></summary>
-<br/>
-
-![Git](https://img.shields.io/badge/Git_90%25-F05032?style=flat-square&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker_85%25-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins_65%25-D24939?style=flat-square&logo=jenkins&logoColor=white)
-![GitLab](https://img.shields.io/badge/GitLab_60%25-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL_80%25-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Neon DB](https://img.shields.io/badge/Neon_DB_70%25-00E5BF?style=flat-square)
-
-</details>
-
-<details>
-<summary><b>⚛️ Quantum · AI · Research</b></summary>
-<br/>
-
-![IBM Quantum](https://img.shields.io/badge/IBM_Quantum-1261FE?style=flat-square&logo=ibm&logoColor=white)
-![AWS Braket](https://img.shields.io/badge/AWS_Braket-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![Qiskit](https://img.shields.io/badge/Qiskit-6929C4?style=flat-square&logo=qiskit&logoColor=white)
-![Vertex AI](https://img.shields.io/badge/Vertex_AI-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![SHAP](https://img.shields.io/badge/SHAP-8B5CF6?style=flat-square)
-![LIME](https://img.shields.io/badge/LIME-7C3AED?style=flat-square)
-![Prompt Engineering](https://img.shields.io/badge/Prompt_Eng_85%25-818cf8?style=flat-square)
-![MLFlow](https://img.shields.io/badge/MLFlow_45%25-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-
-</details>
 
 ---
+
 
 ## 🏅 Certifications
 
@@ -366,12 +382,12 @@ HACK-09  IBM ICE Day Ideathon              2025
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PriyanshuKSharma&theme=github-dark&hide_border=true&background=0D1117&ring=818cf8&fire=818cf8&currStreakLabel=818cf8&sideLabels=8B949E&dates=8B949E" />
+  <img src="https://streak-stats.demolab.com?user=PriyanshuKSharma&theme=github-dark&hide_border=true&background=0D1117&ring=818cf8&fire=818cf8&currStreakLabel=818cf8&sideLabels=8B949E&dates=8B949E" />
 </p>
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=PriyanshuKSharma&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&icon_color=818cf8&count_private=true&include_all_commits=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshuKSharma&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=PriyanshuKSharma&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&icon_color=818cf8&count_private=true&include_all_commits=true&cache_seconds=1800" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshuKSharma&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&cache_seconds=1800" />
 </p>
 
 <p align="center">
@@ -382,13 +398,13 @@ HACK-09  IBM ICE Day Ideathon              2025
 
 ## 🤝 Open Source & Community
 
-- Contributed to **[Interns-MQI-25](https://github.com/Interns-MQI-25)** collaborative internship project
+- Contributed to **[Interns-MQI-25](https://github.com/Interns-MQI-25)** collaborative internship project at Marquardt India
 - Work across Docker, Cloud, and DevOps collaborative environments
 - Repositories are designed to be learner-friendly with clean docs and reproducible setups
 
 <p align="center">
   <a href="https://github.com/Interns-MQI-25/project-interns">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Interns-MQI-25&repo=project-interns&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=818cf8&text_color=C9D1D9&icon_color=818cf8" />
+    <img src="https://img.shields.io/badge/Interns--MQI--25%2Fproject--interns-Open%20Source%20Collaboration-818cf8?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
