@@ -6363,8 +6363,11 @@ body.light-theme .dock-link.active {
   transform: none !important;
   width: 100% !important;
   height: auto !important;
-  display: grid !important;
-  grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
   gap: 0.35rem !important;
   margin: 0 !important;
   padding: 0.5rem !important;
@@ -6384,12 +6387,17 @@ body.light-theme .dock-link.active {
 .dock-item:hover + .dock-item + .dock-item,
 .dock-item:has(+ .dock-item + .dock-item:hover) {
   display: block !important;
-  flex: none !important;
+  flex: 1 1 0% !important;
   max-width: none !important;
   margin: 0 !important;
   overflow: visible !important;
   transform: none !important;
   transition: none !important;
+}
+
+.logo-dock-item {
+  flex: 0 0 auto !important;
+  margin-right: auto !important;
 }
 
 .dock-link {
