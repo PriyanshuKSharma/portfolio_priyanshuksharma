@@ -29,7 +29,7 @@ Replace in main.js:
 
 ## 6. Template Example
 ```
-To: priyanshu17ks@gmail.com
+To: [EMAIL_ADDRESS]
 Subject: New Portfolio Contact from {{from_name}}
 
 Name: {{from_name}}
