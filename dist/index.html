@@ -74,63 +74,6 @@
       <div class="social-line"></div>
     </div>
   </div>
-  <nav class="navbar" id="main-navbar">
-  <div class="nav-container">
-    <div class="nav-logo">
-      <a href="#hero">
-        <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
-        <span class="logo-text">Priyanshu<span class="accent">.</span></span>
-      </a>
-    </div>
-
-    <ul class="nav-menu">
-      <li class="nav-item">
-        <a href="#hero" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#about" class="nav-link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="#education" class="nav-link">Education</a>
-      </li>
-      <li class="nav-item">
-        <a href="#experience" class="nav-link">Experience</a>
-      </li>
-      <li class="nav-item">
-        <a href="#skills" class="nav-link">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a href="#research" class="nav-link">Research</a>
-      </li>
-      <li class="nav-item">
-        <a href="#projects" class="nav-link">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="#contact" class="nav-link">Contact</a>
-      </li>
-    </ul>
-
-    <div class="nav-actions">
-      <button class="theme-toggle-btn social-toggle" type="button" onclick="toggleSocialSidebar()" title="Toggle Social Links" aria-label="Toggle Social Links">
-        <i class="fa-solid fa-share-nodes"></i>
-      </button>
-      <button class="theme-toggle-btn theme-toggle social-theme-trigger" type="button" title="Toggle Theme" aria-label="Toggle Theme">
-        <i class="fa-solid fa-circle-half-stroke"></i>
-      </button>
-      <button class="theme-toggle-btn dock-chat-trigger social-chat-trigger" type="button" title="Open Chatbot" aria-label="Open Chatbot" data-chatbot-trigger="">
-        <i class="fa-solid fa-robot"></i>
-      </button>
-
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
-  </div>
-</nav>
-
-
   <main>
     <section id="hero" class="hero-section">
   <div class="hero-bg"></div>
@@ -1097,18 +1040,14 @@
 <section id="projects" class="projects-section">
   <h2>Projects</h2>
   <div class="terminal-container">
-    <div class="terminal-window">
-      <div class="terminal-header">
-        <div class="terminal-buttons">
-          <span class="btn-close"></span>
-          <span class="btn-minimize"></span>
-          <span class="btn-maximize"></span>
+    <div class="hero-console hero-project-terminal" style="max-width: 900px; margin: 0 auto; min-height: auto;">
+      <div class="console-topbar">
+        <div class="console-lights" aria-hidden="true">
+          <span></span><span></span><span></span>
         </div>
-        <div class="terminal-title" id="project-terminal-title">
-          ~/portfolio/storage-saas-platform
-        </div>
+        <span id="project-terminal-title">~/portfolio/featured-projects</span>
       </div>
-      <div class="terminal-body">
+      <div class="console-body" style="padding: 2rem;">
         
         <div
           class="project-content active"
