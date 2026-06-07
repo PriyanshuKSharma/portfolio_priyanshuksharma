@@ -1,7 +1,7 @@
 # Priyanshu Kumar Sharma | B.Tech IT | Cloud, Security, DevOps
 
 <div align="center">
-  <p>Fourth-year B.Tech student specializing in Information Technology with a focus on Cloud Computing, Cybersecurity, Machine Learning, and Quantum Computing.</p>
+  <p>B.Tech graduate (Class of 2026) specializing in Information Technology with a focus on Cloud Computing, Cybersecurity, Machine Learning, and Quantum Computing.</p>
   <p>
     <a href="https://priyanshuksharma.github.io/portfolio_priyanshuksharma/">Portfolio</a> |
     <a href="https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/">LinkedIn</a> |
@@ -29,7 +29,7 @@
 
 **About**
 
-I am Priyanshu Kumar Sharma, a fourth-year B.Tech IT student specializing in Cloud Technology and Information Security. I build cloud-native systems, explore Zero Trust security, and research hybrid quantum-cloud systems. I learn by shipping projects, publishing research, and contributing to open-source.
+I am Priyanshu Kumar Sharma, a B.Tech IT graduate (Class of 2026) specializing in Cloud Technology and Information Security. I build cloud-native systems, explore Zero Trust security, and research hybrid quantum-cloud systems. I learn by shipping projects, publishing research, and contributing to open-source.
 
 **What I Do**
 
