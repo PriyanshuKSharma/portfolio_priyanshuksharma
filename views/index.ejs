@@ -2,45 +2,136 @@
   <div class="hero-bg"></div>
   <div class="hero-particles"></div>
   <div class="hero-content">
-    <div class="hero-badge">
-      <span class="badge-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
-      <span>Available for Opportunities</span>
-    </div>
+    <div class="hero-copy">
+      <div class="hero-badge">
+        <span class="badge-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
+        <span>Available for Cloud, Security & DevOps Roles</span>
+      </div>
 
-    <h1 class="hero-title">
-      <span class="title-line title-line-primary">Priyanshu Kumar</span>
-      <span class="title-line title-line-accent gradient-text">Sharma</span>
-    </h1>
-    <div class="hero-roles">
-      <span class="role-text">Cloud Technology and Information Security</span>
-    </div>
-    <p class="hero-tagline">Specializing in <span id="typewriter"></span></p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-primary glow-effect">
-        <span>Explore My Work</span>
-        <div class="btn-glow"></div>
-      </a>
-      <a href="#contact" class="btn btn-secondary">
-        <span>Let's Connect</span>
-      </a>
-      <div class="resume-dropdown">
-        <button
-          class="btn btn-secondary resume-btn"
-          onclick="toggleResumeDropdown()"
-        >
-          Resume <span class="dropdown-arrow">▼</span>
-        </button>
-        <div class="resume-options">
-          <a href="resume/Priyanshu_Kumar_Sharma_Resume.pdf" target="_blank"
-            >View Resume</a
+      <h1 class="hero-title">
+        <span class="title-line title-line-primary">Priyanshu Kumar</span>
+        <span class="title-line title-line-accent gradient-text">Sharma</span>
+      </h1>
+      <div class="hero-roles">
+        <span class="role-text">Cloud Technology and Information Security</span>
+      </div>
+      <p class="hero-description">
+        I build secure cloud systems, automation pipelines, and research-backed
+        infrastructure experiments across AWS, Azure, Docker, Terraform, and serverless platforms.
+      </p>
+      <p class="hero-tagline">Specializing in <span id="typewriter"></span></p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary glow-effect">
+          <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Explore Work</span>
+          <div class="btn-glow"></div>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <span><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact</span>
+        </a>
+        <div class="resume-dropdown">
+          <button
+            class="btn btn-secondary resume-btn"
+            onclick="toggleResumeDropdown()"
           >
-          <a href="resume/Priyanshu_Kumar_Sharma_Resume.pdf" download
-            >Download Resume</a
-          >
+            <span><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Resume</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+          <div class="resume-options">
+            <a href="resume/Priyanshu_Kumar_Sharma_Resume.pdf" target="_blank"
+              >View Resume</a
+            >
+            <a href="resume/Priyanshu_Kumar_Sharma_Resume.pdf" download
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-proof-grid" aria-label="Portfolio highlights">
+        <div class="hero-proof-item">
+          <strong>9.9</strong>
+          <span>CGPA</span>
+        </div>
+        <div class="hero-proof-item">
+          <strong>50+</strong>
+          <span>Repos</span>
+        </div>
+        <div class="hero-proof-item">
+          <strong>2</strong>
+          <span>Research Papers</span>
         </div>
       </div>
     </div>
+
+    <aside class="hero-console hero-project-terminal" aria-label="Featured project terminal">
+      <div class="console-topbar">
+        <div class="console-lights" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <span>~/portfolio/featured-projects</span>
+      </div>
+      <div class="console-body">
+        <div class="hero-terminal-line">
+          <span class="prompt-user">priyanshu@cloudlab</span><span class="prompt-symbol">:</span><span class="prompt-path">~/projects</span><span class="prompt-symbol">$</span>
+          <span class="command-text">ls --featured</span>
+        </div>
+
+        <div class="hero-project-list">
+          <article class="hero-project-card">
+            <div class="hero-project-header">
+              <span class="hero-project-index">01</span>
+              <span class="hero-project-status">Production-style</span>
+            </div>
+            <h3>Multi-Cloud SaaS Orchestration</h3>
+            <p>AWS, Azure, GCP resource sync with Dockerized services, Terraform provisioning, Redis jobs, and FastAPI.</p>
+            <div class="hero-project-tags">
+              <span>AWS</span><span>Azure</span><span>Docker</span><span>Terraform</span>
+            </div>
+          </article>
+
+          <article class="hero-project-card">
+            <div class="hero-project-header">
+              <span class="hero-project-index">02</span>
+              <span class="hero-project-status">Research</span>
+            </div>
+            <h3>Quantum Cloud Integration</h3>
+            <p>Hybrid classical-cloud and IBM Quantum workflow for secure, scalable infrastructure experiments.</p>
+            <div class="hero-project-tags">
+              <span>IBM Q</span><span>AWS</span><span>Python</span><span>Docker</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-terminal-line">
+          <span class="prompt-user">priyanshu@cloudlab</span><span class="prompt-symbol">:</span><span class="prompt-path">~/projects</span><span class="prompt-symbol">$</span>
+          <span class="command-text">cat impact.log</span>
+        </div>
+
+        <div class="hero-terminal-stats">
+          <div>
+            <span>Projects</span>
+            <strong>7+</strong>
+          </div>
+          <div>
+            <span>Core Stack</span>
+            <strong>Cloud + DevOps</strong>
+          </div>
+          <div>
+            <span>Research</span>
+            <strong>Serverless + Quantum</strong>
+          </div>
+        </div>
+
+        <div class="hero-terminal-actions">
+          <a href="#projects"><i class="fa-solid fa-folder-open" aria-hidden="true"></i> View all projects</a>
+          <a href="https://github.com/PriyanshuKSharma" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+      </div>
+    </aside>
   </div>
+  <a href="#about" class="hero-scroll-cue" aria-label="Scroll to about section">
+    <span></span>
+  </a>
 </section>
 
 <section id="about" class="about-section">
