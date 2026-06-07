@@ -119,6 +119,7 @@ I am Priyanshu Kumar Sharma, a B.Tech IT graduate (Class of 2026) specializing i
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="42" alt="GitLab" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="42" alt="Redis" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="42" alt="Terraform" />
+    <img src="https://cdn.simpleicons.org/ansible/EE0000" height="42" alt="Ansible" />
     <img src="https://cdn.simpleicons.org/pulumi/8A3391" height="42" alt="Pulumi" />
   </p>
   <p><strong>Data and Storage</strong></p>
