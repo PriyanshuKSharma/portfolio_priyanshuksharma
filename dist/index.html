@@ -7,15 +7,20 @@
   <link rel="icon" type="image/png" href="images/image.png">
   <title> Priyanshu Kumar Sharma | Portfolio</title>
   <!-- Home  -->
-  <link rel="stylesheet" href="css/style.css?v=4.3">
-  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/style.css?v=6.0">
+  <link rel="stylesheet" href="css/theme.css?v=6.0">
   <link rel="stylesheet" href="css/chatbot.css?v=3.1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Custom cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress"></div>
   <div class="loading-overlay">
     <div class="cyber-grid"></div>
     <div class="loading-content">
@@ -1832,52 +1837,442 @@
 
 
   </main>
-  <footer class="footer">
-  <div class="footer-content">
-    <p>&copy; 2026 Priyanshu Kumar Sharma. Built with passion and code.</p>
-    <div class="footer-links">
-      <a href="#hero">Back to Top</a>
+  <footer class="site-footer">
+
+  <!-- Glowing top border beam -->
+  <div class="footer-beam"></div>
+
+  <div class="footer-inner">
+
+    <!-- LEFT: Brand + tagline + status -->
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <span class="footer-logo-icon"><i class="fa-solid fa-code"></i></span>
+        <span class="footer-logo-text">PKS<span class="footer-logo-accent">.</span>dev</span>
+      </div>
+      <p class="footer-tagline">Building secure systems at the intersection of<br>Cloud · DevOps · Quantum</p>
+      <div class="footer-status">
+        <span class="footer-status-dot"></span>
+        <span>Open to full-time opportunities</span>
+      </div>
+      <!-- Sys info row -->
+      <div class="footer-sys-row">
+        <span class="footer-sys-item"><i class="fa-solid fa-location-dot"></i> Pune, India</span>
+        <span class="footer-sys-item"><i class="fa-solid fa-user-graduate"></i> B.Tech IT '26</span>
+        <span class="footer-sys-item"><i class="fa-solid fa-star"></i> 9.9 CGPA</span>
+      </div>
+    </div>
+
+    <!-- CENTER: Quick nav links -->
+    <div class="footer-nav-block">
+      <h4 class="footer-block-title"><span class="footer-mono">// navigate</span></h4>
+      <ul class="footer-nav-list">
+        <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+        <li><a href="#about"><i class="fa-solid fa-chevron-right"></i>About</a></li>
+        <li><a href="#skills"><i class="fa-solid fa-chevron-right"></i>Skills</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-chevron-right"></i>Projects</a></li>
+        <li><a href="#research"><i class="fa-solid fa-chevron-right"></i>Research</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT: Connect + social icons -->
+    <div class="footer-connect-block">
+      <h4 class="footer-block-title"><span class="footer-mono">// connect</span></h4>
+      <div class="footer-social-grid">
+        <a href="https://github.com/PriyanshuKSharma" target="_blank" class="footer-social-btn" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251" target="_blank" class="footer-social-btn" title="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:priyanshu17ks@gmail.com" class="footer-social-btn" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="https://hub.docker.com/u/priyanshuksharma" target="_blank" class="footer-social-btn" title="DockerHub">
+          <i class="fa-brands fa-docker"></i>
+          <span>Docker</span>
+        </a>
+        <a href="https://www.hackerrank.com/profile/priyanshu17ks" target="_blank" class="footer-social-btn" title="HackerRank">
+          <i class="fa-brands fa-hackerrank"></i>
+          <span>HackerRank</span>
+        </a>
+        <a href="https://x.com/itspriyanshuks" target="_blank" class="footer-social-btn" title="X / Twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+          <span>X</span>
+        </a>
+      </div>
+      <a href="#contact" class="footer-hire-btn">
+        <i class="fa-solid fa-paper-plane"></i> Get in Touch
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Terminal-style bottom bar -->
+  <div class="footer-terminal-bar">
+    <div class="footer-terminal-inner">
+      <span class="footer-terminal-prompt">
+        <span class="ftp-user">priyanshu@pks.dev</span><span class="ftp-sep">:</span><span class="ftp-path">~/portfolio</span><span class="ftp-sym">$</span>
+        <span class="ftp-cmd">echo "© 2026 — Crafted with precision &amp; passion"</span>
+      </span>
+      <div class="footer-terminal-right">
+        <span class="footer-build-tag">v5.0.0</span>
+        <a href="#hero" class="footer-top-btn" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
     </div>
   </div>
+
 </footer>
 
 <style>
-.footer {
-  background: var(--bg-dark);
-  border-top: 1px solid rgba(0, 255, 255, 0.1);
-  padding: 3rem 0; /* Base padding */
-  padding-bottom: 90px; /* Offset for floating dock on desktop */
-  text-align: center;
+/* ── Site Footer ── */
+.site-footer {
+  position: relative;
+  background: var(--surface, #0d1117);
+  border-top: 1px solid var(--border-color, rgba(48,54,82,0.7));
+  padding-bottom: 90px; /* dock offset */
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
-  .footer {
-     padding-bottom: calc(6rem + env(safe-area-inset-bottom)); /* Offset for floating dock on mobile */
+  .site-footer {
+    padding-bottom: calc(6rem + env(safe-area-inset-bottom));
   }
 }
 
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+/* Animated glow beam along top edge */
+.footer-beam {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--primary, #00e5ff) 30%,
+    var(--secondary, #7c6df9) 70%,
+    transparent 100%
+  );
+  animation: footerBeamSweep 4s ease-in-out infinite alternate;
+  opacity: 0.8;
 }
 
-.footer-content p {
-  color: var(--text-muted);
+@keyframes footerBeamSweep {
+  0%   { transform: translateX(-40%); opacity: 0.5; }
+  100% { transform: translateX(40%);  opacity: 1;   }
+}
+
+/* Main grid */
+.footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.4fr;
+  gap: 3rem;
+}
+
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 560px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Brand column */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
   margin-bottom: 1rem;
 }
 
-.footer-links a {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
+.footer-logo-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--primary-dim, rgba(0,229,255,0.12));
+  border: 1px solid rgba(0,229,255,0.25);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary, #00e5ff);
+  font-size: 0.9rem;
 }
 
-.footer-links a:hover {
-  color: var(--accent);
-  text-shadow: 0 0 10px var(--primary);
+.footer-logo-text {
+  font-family: var(--font-display, 'Syne', sans-serif);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-light, #e6edf3);
+  letter-spacing: 0.02em;
+}
+
+.footer-logo-accent {
+  color: var(--primary, #00e5ff);
+}
+
+.footer-tagline {
+  font-size: 0.875rem;
+  color: var(--text-muted, #8b949e);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+/* Status pill */
+.footer-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(57, 211, 83, 0.08);
+  border: 1px solid rgba(57, 211, 83, 0.25);
+  border-radius: 20px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.78rem;
+  color: #39d353;
+  margin-bottom: 1rem;
+}
+
+.footer-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #39d353;
+  box-shadow: 0 0 6px #39d353;
+  animation: footerPulse 2s infinite;
+}
+
+@keyframes footerPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+
+/* Sys info row */
+.footer-sys-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.footer-sys-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.68rem;
+  color: var(--text-muted, #8b949e);
+  letter-spacing: 0.03em;
+}
+
+.footer-sys-item i {
+  color: var(--primary, #00e5ff);
+  font-size: 0.7rem;
+}
+
+/* Block titles */
+.footer-block-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted, #8b949e);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border-color, rgba(48,54,82,0.7));
+}
+
+.footer-mono {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  color: var(--primary, #00e5ff);
+}
+
+/* Nav list */
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-nav-list a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted, #8b949e);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.3rem 0;
+  transition: color 0.2s, gap 0.2s;
+}
+
+.footer-nav-list a i {
+  font-size: 0.6rem;
+  color: var(--primary, #00e5ff);
+  transition: transform 0.2s;
+}
+
+.footer-nav-list a:hover {
+  color: var(--primary, #00e5ff);
+  gap: 0.85rem;
+}
+
+.footer-nav-list a:hover i {
+  transform: translateX(3px);
+}
+
+/* Social grid */
+.footer-social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer-social-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.75rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border-color, rgba(48,54,82,0.7));
+  border-radius: 8px;
+  color: var(--text-muted, #8b949e);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.footer-social-btn i {
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.footer-social-btn:hover {
+  border-color: var(--primary, #00e5ff);
+  color: var(--primary, #00e5ff);
+  background: var(--primary-dim, rgba(0,229,255,0.08));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,229,255,0.1);
+}
+
+/* "Get in Touch" CTA */
+.footer-hire-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background: var(--primary, #00e5ff);
+  color: #060810;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: all 0.2s;
+  box-shadow: 0 0 16px rgba(0,229,255,0.25);
+}
+
+.footer-hire-btn:hover {
+  background: #33eaff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 28px rgba(0,229,255,0.4);
+}
+
+/* ── Terminal bottom bar ── */
+.footer-terminal-bar {
+  background: #060810;
+  border-top: 1px solid var(--border-color, rgba(48,54,82,0.7));
+  padding: 0.9rem 0;
+}
+
+.footer-terminal-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.footer-terminal-prompt {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.72rem;
+}
+
+.ftp-user  { color: #39d353; }
+.ftp-sep   { color: var(--text-dim, #484f58); }
+.ftp-path  { color: var(--primary, #00e5ff); }
+.ftp-sym   { color: var(--text-muted, #8b949e); margin: 0 0.35rem; }
+.ftp-cmd   { color: var(--text-muted, #8b949e); }
+
+.footer-terminal-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-build-tag {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.65rem;
+  color: var(--text-dim, #484f58);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-color, rgba(48,54,82,0.7));
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  letter-spacing: 0.06em;
+}
+
+.footer-top-btn {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-dim, rgba(0,229,255,0.12));
+  border: 1px solid rgba(0,229,255,0.3);
+  border-radius: 8px;
+  color: var(--primary, #00e5ff);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.footer-top-btn:hover {
+  background: var(--primary, #00e5ff);
+  color: #060810;
+  transform: translateY(-3px);
+  box-shadow: 0 0 14px rgba(0,229,255,0.4);
+}
+
+@media (max-width: 480px) {
+  .ftp-cmd { display: none; }
+  .footer-terminal-prompt { font-size: 0.65rem; }
 }
 </style>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -1893,6 +2288,7 @@
   <!-- Background Dynamic Animations and 3D Particles -->
   <script src="js/particle-system.js"></script>
   <script src="js/futuristic-effects.js"></script>
+  <script src="js/effects.js"></script>
   <!-- Revolutionary Liquid Metal AI Dock -->
   <div class="dock-container">
     <ul class="bottom-nav-dock" aria-label="Revolutionary Navigation">
