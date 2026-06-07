@@ -150,7 +150,7 @@ If you're interested in working together or hiring me:
 
 <p align="center">
   <a href="mailto:priyanshu17ks@gmail.com"><img src="https://img.shields.io/badge/Email-priyanshu17ks@gmail.com-c14438?style=for-the-badge&logo=gmail" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/"><img src="https://img.shields.io/badge/LinkedIn-Priyanshu%20KSharma-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
+  <a href="https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/"><img src="https://img.shields.io/badge/LinkedIn-Priyanshu%20Kumar%20Sharma-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
   <a href="https://github.com/PriyanshuKSharma"><img src="https://img.shields.io/badge/GitHub-PriyanshuKSharma-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
 </p>
 
