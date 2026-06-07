@@ -1134,72 +1134,76 @@ section {
 .expertise-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 2.2rem;
+  margin-bottom: 2.5rem;
 }
 
 .expertise-item {
   background: var(--bg-card);
-  padding: 2rem;
+  padding: 2rem 1.75rem 1.75rem;
   border-radius: 20px;
   border: var(--glass-border);
-  transition: all 0.3s ease;
+  border-left: 3px solid var(--primary);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
 }
 
-.expertise-item::before {
+.expertise-item::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), transparent);
+  inset: 0;
+  background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.05) 0%, transparent 60%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
 }
 
 .expertise-item:hover {
-  border-color: var(--primary);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-left-color: var(--primary);
+  border-color: rgba(var(--primary-rgb), 0.5);
+  border-left: 3px solid var(--primary);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(var(--primary-rgb), 0.12);
 }
 
-.expertise-item:hover::before {
+.expertise-item:hover::after {
   opacity: 1;
 }
 
 .expertise-icon {
   font-size: 2rem;
-  margin-bottom: 0.75rem;
-  width: 44px;
-  height: 44px;
+  margin-bottom: 1rem;
+  width: 48px;
+  height: 48px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 14px;
   color: var(--primary);
-  background: rgba(var(--primary-rgb), 0.08);
-  border: 1px solid rgba(var(--primary-rgb), 0.24);
+  background: rgba(var(--primary-rgb), 0.1);
+  border: 1px solid rgba(var(--primary-rgb), 0.28);
+  box-shadow: 0 0 12px rgba(var(--primary-rgb), 0.12);
 }
 
 .expertise-icon i {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   line-height: 1;
 }
 
 .expertise-item h4 {
   color: var(--primary);
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  margin-bottom: 0.45rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
 }
 
 .expertise-item p {
   color: var(--text-muted);
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0;
 }
 
 .stats-row {
@@ -3659,6 +3663,7 @@ body:not(.light-theme) .light-icon { display: block; }
 
   .expertise-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .stats-row {
