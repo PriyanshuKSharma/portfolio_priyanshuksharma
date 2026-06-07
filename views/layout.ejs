@@ -94,6 +94,13 @@
   <script src="js/effects.js"></script>
   <div class="dock-container" aria-label="Section navigation">
     <ul class="bottom-nav-dock">
+      <!-- Logo brand in bottom nav -->
+      <li class="dock-item logo-dock-item" style="pointer-events: none; margin-right: auto; padding-right: 1rem;">
+        <div class="nav-logo" style="display: flex; align-items: center; gap: 0.5rem; margin-left: 0.5rem;">
+          <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+          <span class="logo-text" style="font-family: var(--fd); font-weight: 800; font-size: 1.05rem; color: var(--text-light); letter-spacing: 0.02em;">Priyanshu<span class="accent" style="color: var(--primary, #00e5ff);">.</span></span>
+        </div>
+      </li>
       <li class="dock-item">
         <a href="#hero" class="nav-link dock-link" aria-label="Home" title="Home">
           <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
@@ -135,6 +142,13 @@
           <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-paper-plane"></i></span>
           <span class="dock-label">Contact</span>
         </a>
+      </li>
+      <!-- Social Links Toggle button in bottom nav -->
+      <li class="dock-item">
+        <button class="nav-link dock-link" type="button" onclick="toggleSocialSidebar()" title="Toggle Social Links" aria-label="Toggle Social Links" style="background: none; border: none; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.35rem; color: var(--text-muted); cursor: pointer; padding: 0;">
+          <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-share-nodes"></i></span>
+          <span class="dock-label">Links</span>
+        </button>
       </li>
     </ul>
   </div>
