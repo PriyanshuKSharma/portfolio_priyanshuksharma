@@ -1,11 +1,11 @@
 <h1 align="center">Priyanshu Kumar Sharma</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=1000&lines=%F0%9F%8E%93+B.Tech+Information+Technology+Student;%E2%98%81%EF%B8%8F+Cloud+Technology;%F0%9F%94%92+Information+Security;%E2%9A%99%EF%B8%8F+Research-Driven+Systems+Builder" alt="Typing animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=1000&lines=%F0%9F%8E%93+B.Tech+Information+Technology+Graduate;%E2%98%81%EF%B8%8F+Cloud+Technology;%F0%9F%94%92+Information+Security;%E2%9A%99%EF%B8%8F+Research-Driven+Systems+Builder" alt="Typing animation" />
 </p>
 
 <p align="center">
-  <strong>🎓 B.Tech Information Technology Student</strong> • <strong>☁️ Cloud Technology</strong> • <strong>🔒 Information Security</strong> • <strong>⚙️ Research-Driven Systems Builder</strong>
+  <strong>🎓 B.Tech Information Technology Graduate</strong> • <strong>☁️ Cloud Technology</strong> • <strong>🔒 Information Security</strong> • <strong>⚙️ Research-Driven Systems Builder</strong>
 </p>
 
 <p align="center">
@@ -60,7 +60,7 @@
 
 ## Snapshot
 
-- Final-year **B.Tech Information Technology** student specializing in **Cloud Technology and Information Security**.
+- B.Tech Information Technology graduate (Class of 2026) specializing in **Cloud Technology and Information Security**.
 - Research intern at **IIT Ropar** through the **Indian Academy of Sciences Summer Research Fellowship Program (2024)**.
 - Comfortable across **AWS, Azure, GCP, Docker, Kubernetes, Terraform, Linux, IAM, and Zero Trust** concepts.
 - Most interested in the overlap between **cloud systems, security architecture, serverless platforms, and quantum-inspired infrastructure research**.
@@ -216,12 +216,12 @@ timeline
     2019 : Higher Secondary Education at Sri Chaitanya High School
     2020 : Intermediate Education begins at Sri Chaitanya Jr. Kalasala
     2022 : B.Tech in Information Technology begins at ADYPU
-    Present : Specializing in Cloud Technology and Information Security with CGPA 9.9
+    2026 : Specializing in Cloud Technology and Information Security with CGPA 9.9
 ```
 
 | Degree / Stage                       | Institution                           | Timeline            | Highlight                                                                 |
 | ------------------------------------ | ------------------------------------- | ------------------- | ------------------------------------------------------------------------- |
-| **B.Tech in Information Technology** | Ajeenkya D Y Patil University, Pune   | Aug 2022 - Present  | Specialization in Cloud Technology and Information Security,**CGPA: 9.9** |
+| **B.Tech in Information Technology** | Ajeenkya D Y Patil University, Pune   | Aug 2022 - June 2026  | Specialization in Cloud Technology and Information Security,**CGPA: 9.9** |
 | **Intermediate Education (11th and 12th)**           | Sri Chaitanya Jr. Kalasala, Hyderabad | Apr 2020 - May 2022 | Science and Mathematics,**93.9%**                                         |
 | **Higher Secondary Education (10th)**       | Sri Chaitanya High School, Hyderabad  | Apr 2019 - May 2020 | Completed higher secondary education,**87.6%**                            |
 
@@ -419,7 +419,7 @@ timeline
 
 - Contributed to **[Interns-MQI-25](https://github.com/Interns-MQI-25)** and its **[project-interns](https://github.com/Interns-MQI-25/project-interns)** repository.
 - Worked in collaborative environments around **Docker, Cloud, and DevOps**.
-- Enjoy sharing what I learn through code, documentation, experiments, and student-friendly guides.
+- Enjoy sharing what I learn through code, documentation, experiments, and learner-friendly guides.
 
 <p align="center">
   <a href="https://github.com/Interns-MQI-25/project-interns">
@@ -496,7 +496,8 @@ timeline
 ## What I Am Aiming For
 
 - Build **Nebula** into a serious multi-cloud orchestration platform.
-- Deepen research on **IAM** and **multi-cloud security architectures**.
+- Deepen research on **IAM** and **multi-cloud security architec
+tures**.
 - Contribute to **open-source security and cloud tooling** that helps developers build faster and safer.
 - Keep growing into a role where I can design platforms that are secure, elegant, and genuinely useful.
 
