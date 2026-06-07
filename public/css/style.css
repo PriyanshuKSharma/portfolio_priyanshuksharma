@@ -9380,3 +9380,87 @@ body.light-theme .dock-link[aria-current="page"] {
     font-size: 0.76rem;
   }
 }
+
+/* Clickable Top-Left Brand Logo */
+.top-left-brand {
+  position: fixed;
+  top: 24px;
+  left: 28px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  z-index: 9999;
+  text-decoration: none;
+  pointer-events: auto;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-left-brand .logo-icon {
+  width: 34px;
+  height: 34px;
+  background: var(--c2, rgba(0, 240, 255, 0.08));
+  border: 1px solid var(--border, rgba(50, 70, 120, 0.35));
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c, #00f0ff);
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.top-left-brand .logo-text {
+  font-family: var(--fd);
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--t, #e2e8f0);
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+}
+
+.top-left-brand .logo-text .accent {
+  color: var(--c, #00f0ff);
+}
+
+.top-left-brand:hover {
+  transform: translateY(-2px) scale(1.03);
+}
+
+.top-left-brand:hover .logo-icon {
+  background: var(--c3, rgba(0, 240, 255, 0.2));
+  border-color: var(--c, #00f0ff);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+.top-left-brand:hover .logo-text {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+/* Light Theme overrides */
+body.light-theme .top-left-brand .logo-icon {
+  background: rgba(59, 130, 246, 0.08);
+  border-color: rgba(59, 130, 246, 0.25);
+  color: #2563eb;
+}
+
+body.light-theme .top-left-brand .logo-text {
+  color: #1e293b;
+}
+
+body.light-theme .top-left-brand:hover .logo-icon {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: #2563eb;
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Responsive top-left logo */
+@media (max-width: 480px) {
+  .top-left-brand {
+    top: 16px;
+    left: 16px;
+  }
+  .top-left-brand .logo-text {
+    font-size: 1rem;
+  }
+}
