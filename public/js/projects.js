@@ -23,8 +23,9 @@ function initProjectTerminal() {
     currentProject.style.display = 'block';
     
     // Update title
-    const title = currentProject.getAttribute('data-title');
-    terminalTitle.textContent = `~/portfolio/${title}`;
+    if (terminalTitle) {
+      terminalTitle.textContent = '~/portfolio/featured-projects';
+    }
     
     // Update pagination
     pagination.textContent = `${index + 1} / ${projects.length}`;
