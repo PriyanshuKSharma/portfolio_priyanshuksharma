@@ -1133,143 +1133,150 @@ section {
 
 .expertise-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
-  margin-bottom: 2.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 0.75rem 0 2.75rem;
+  align-items: stretch;
 }
 
 .expertise-item {
+  --expertise-accent: var(--primary);
+  background:
+    linear-gradient(145deg, rgba(var(--primary-rgb), 0.1), transparent 42%),
+    var(--bg-card);
+  padding: 2rem 1.8rem 1.7rem;
+  border-radius: 14px;
+  border: 1px solid rgba(var(--primary-rgb), 0.16);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+  backdrop-filter: blur(10px);
   position: relative;
-  background: var(--bg-card);
-  border-radius: 18px;
-  border: 1px solid rgba(var(--primary-rgb), 0.1);
-  padding: 1.6rem 1.5rem 1.4rem;
   overflow: hidden;
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
-              box-shadow 0.35s ease,
-              border-color 0.35s ease;
-  cursor: default;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+}
+
+.expertise-item::before {
+  content: "";
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--expertise-accent), transparent);
+  opacity: 0.62;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: -1;
+}
+
+.expertise-item::after {
+  content: "";
+  position: absolute;
+  right: -34px;
+  bottom: -34px;
+  width: 120px;
+  height: 100%;
+  max-height: 120px;
+  border: 1px solid rgba(var(--primary-rgb), 0.12);
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  z-index: -1;
+}
+
+.expertise-item:nth-child(2) {
+  --expertise-accent: var(--secondary);
+  transform: translateY(1.2rem);
+}
+
+.expertise-item:nth-child(3) {
+  --expertise-accent: var(--accent);
+}
+
+.expertise-item:nth-child(4) {
+  --expertise-accent: var(--secondary);
+  transform: translateY(1.2rem);
 }
 
 .expertise-item:hover {
-  transform: translateY(-8px) scale(1.02);
-  border-color: rgba(var(--primary-rgb), 0.45);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.28),
-              0 0 0 1px rgba(var(--primary-rgb), 0.15),
-              inset 0 1px 0 rgba(255,255,255,0.05);
+  border-color: rgba(var(--primary-rgb), 0.42);
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.26), 0 0 28px rgba(var(--primary-rgb), 0.08);
+  background:
+    linear-gradient(145deg, rgba(var(--primary-rgb), 0.16), transparent 48%),
+    var(--bg-card-hover);
 }
 
-/* animated top accent line */
-.expertise-accent-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary, #a78bfa));
-  border-radius: 0 0 2px 0;
-  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+.expertise-item:nth-child(2):hover,
+.expertise-item:nth-child(4):hover {
+  transform: translateY(0.35rem);
 }
 
-.expertise-item:hover .expertise-accent-line {
-  width: 100%;
+.expertise-item:hover::before {
+  opacity: 1;
+  transform: scaleY(1.08);
 }
 
-/* big ghost index number */
-.expertise-index {
-  position: absolute;
-  bottom: -0.6rem;
-  right: 0.8rem;
-  font-size: 4.5rem;
-  font-weight: 800;
-  font-family: 'Fira Code', monospace;
-  color: rgba(var(--primary-rgb), 0.06);
-  line-height: 1;
-  user-select: none;
-  transition: color 0.35s ease;
-  pointer-events: none;
-}
-
-.expertise-item:hover .expertise-index {
-  color: rgba(var(--primary-rgb), 0.13);
-}
-
-/* horizontal layout inside card */
-.expertise-body {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  position: relative;
-  z-index: 1;
+.expertise-item:hover::after {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 .expertise-icon {
-  flex-shrink: 0;
-  width: 46px;
-  height: 46px;
-  display: flex;
+  font-size: 2rem;
+  margin-bottom: 1.1rem;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 14px;
-  color: var(--primary);
-  background: rgba(var(--primary-rgb), 0.1);
-  border: 1px solid rgba(var(--primary-rgb), 0.22);
-  transition: background 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
-}
-
-.expertise-item:hover .expertise-icon {
-  background: rgba(var(--primary-rgb), 0.18);
-  box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.3);
-  transform: rotate(-6deg) scale(1.1);
+  color: var(--expertise-accent);
+  background: rgba(var(--primary-rgb), 0.08);
+  border: 1px solid rgba(var(--primary-rgb), 0.24);
+  box-shadow: inset 0 0 18px rgba(var(--primary-rgb), 0.05);
 }
 
 .expertise-icon i {
-  font-size: 1.2rem;
-}
-
-.expertise-text {
-  flex: 1;
-  min-width: 0;
+  font-size: 1.22rem;
+  line-height: 1;
 }
 
 .expertise-item h4 {
-  color: var(--text-primary, #e2e8f0);
-  margin: 0 0 0.3rem;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  color: var(--text-light);
+  margin-bottom: 0.65rem;
+  font-size: 1.18rem;
+  letter-spacing: 0;
 }
 
 .expertise-item p {
   color: var(--text-muted);
-  font-size: 0.82rem;
-  line-height: 1.5;
-  margin: 0 0 0.7rem;
+  font-size: 0.94rem;
+  line-height: 1.55;
+  margin-bottom: 1.35rem;
 }
 
-/* tag pills */
 .expertise-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 0.55rem;
+  margin-top: auto;
 }
 
 .expertise-tags span {
-  font-size: 0.7rem;
-  font-family: 'Fira Code', monospace;
-  font-weight: 500;
-  padding: 0.18rem 0.55rem;
-  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.38rem 0.65rem;
+  border-radius: 8px;
+  color: var(--text-light);
   background: rgba(var(--primary-rgb), 0.08);
-  border: 1px solid rgba(var(--primary-rgb), 0.2);
-  color: var(--primary);
-  letter-spacing: 0.03em;
-  transition: background 0.25s ease, border-color 0.25s ease;
-}
-
-.expertise-item:hover .expertise-tags span {
-  background: rgba(var(--primary-rgb), 0.15);
-  border-color: rgba(var(--primary-rgb), 0.4);
+  border: 1px solid rgba(var(--primary-rgb), 0.16);
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .stats-row {
@@ -3729,7 +3736,6 @@ body:not(.light-theme) .light-icon { display: block; }
 
   .expertise-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
 
   .stats-row {
@@ -7133,6 +7139,12 @@ body.light-theme .dock-link.active {
     max-width: 600px;
     margin: 0 auto;
   }
+
+  .expertise-grid {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   .profile-pic {
     width: 240px !important;
@@ -7175,6 +7187,29 @@ body.light-theme .dock-link.active {
   
   .project-tags {
     gap: 0.5rem !important;
+  }
+
+  .expertise-grid {
+    gap: 1.25rem !important;
+  }
+
+  .expertise-item,
+  .expertise-item:nth-child(2),
+  .expertise-item:nth-child(4) {
+    min-height: auto;
+    padding: 1.45rem;
+    text-align: left;
+    transform: none;
+  }
+
+  .expertise-item:hover,
+  .expertise-item:nth-child(2):hover,
+  .expertise-item:nth-child(4):hover {
+    transform: translateY(-4px);
+  }
+
+  .expertise-tags {
+    gap: 0.45rem;
   }
   
   /* Timeline item spacing */
@@ -7302,5 +7337,482 @@ body.light-theme .dock-link.active {
     visibility: visible !important;
     transform: translateX(0) !important;
     pointer-events: all !important;
+  }
+}
+
+/* ==========================================================================
+   COMPREHENSIVE LIGHT THEME POLISH — All Sections & Components
+   ========================================================================== */
+
+/* ── 1. Page & Body ── */
+.light-theme {
+  background: #f4f4f8 !important;
+}
+
+.light-theme body::after {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(79, 70, 229, 0.07), transparent 28%),
+    radial-gradient(circle at 78% 18%, rgba(13, 148, 136, 0.07), transparent 26%),
+    radial-gradient(circle at 55% 75%, rgba(217, 119, 6, 0.04), transparent 28%);
+  opacity: 0.55;
+}
+
+/* ── 2. Hero Section ── */
+.light-theme .hero-section {
+  background: linear-gradient(160deg, #eef0fb 0%, #e8f4f8 40%, #f8f8fc 100%);
+}
+
+.light-theme .hero-bg {
+  background: radial-gradient(ellipse at 50% 0%, rgba(79, 70, 229, 0.09) 0%, rgba(13, 148, 136, 0.04) 45%, transparent 70%);
+}
+
+.light-theme .hero-badge {
+  background: rgba(79, 70, 229, 0.06);
+  border-color: rgba(79, 70, 229, 0.22);
+  color: var(--primary);
+}
+
+.light-theme .hero-tagline {
+  color: #64748b;
+}
+
+.light-theme .btn-primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(79, 70, 229, 0.25);
+}
+
+.light-theme .btn-primary span {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+
+/* ── 3. Section Kickers / Subtitles ── */
+.light-theme .chronicle-kicker,
+.light-theme .kicker {
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+.light-theme .chronicle-subtitle {
+  color: #64748b;
+}
+
+.light-theme .section-line {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  opacity: 0.5;
+}
+
+/* ── 4. About Section ── */
+.light-theme .about-section {
+  background: transparent;
+}
+
+.light-theme .profile-border {
+  border-color: rgba(79, 70, 229, 0.18);
+}
+
+.light-theme .profile-glow {
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.1), transparent 70%);
+}
+
+.light-theme .tech-icon {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.light-theme .tech-icon:hover {
+  border-color: rgba(79, 70, 229, 0.22);
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.1);
+}
+
+.light-theme .intro-point {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(79, 70, 229, 0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.light-theme .point-icon {
+  background: rgba(79, 70, 229, 0.07);
+  color: var(--primary);
+}
+
+.light-theme .highlight {
+  color: var(--primary);
+}
+
+.light-theme .expertise-item {
+  background:
+    linear-gradient(145deg, rgba(var(--primary-rgb), 0.08), transparent 44%),
+    rgba(255, 255, 255, 0.88);
+  border-color: rgba(79, 70, 229, 0.1);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+
+.light-theme .expertise-item:hover {
+  border-color: rgba(79, 70, 229, 0.2);
+  box-shadow: 0 18px 40px rgba(79, 70, 229, 0.1);
+}
+
+.light-theme .expertise-tags span {
+  background: rgba(79, 70, 229, 0.06);
+  border-color: rgba(79, 70, 229, 0.1);
+}
+
+/* ── 5. Chronicle Cards ── */
+.light-theme .chronicle-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+.light-theme .chronicle-card:hover {
+  border-color: rgba(79, 70, 229, 0.22) !important;
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.09) !important;
+}
+
+.light-theme .chronicle-card-header {
+  border-bottom-color: #f1f5f9 !important;
+}
+
+.light-theme .chronicle-id {
+  color: var(--secondary) !important;
+}
+
+.light-theme .chronicle-period {
+  color: #94a3b8 !important;
+}
+
+.light-theme .chronicle-role {
+  color: #1e1b4b !important;
+}
+
+.light-theme .chronicle-org {
+  color: var(--primary) !important;
+}
+
+.light-theme .chronicle-desc {
+  color: #475569 !important;
+}
+
+.light-theme .tag-live {
+  background: rgba(13, 148, 136, 0.08);
+  color: #0d9488;
+  border-color: rgba(13, 148, 136, 0.2);
+}
+
+.light-theme .tag-archived {
+  background: rgba(100, 116, 139, 0.07);
+  color: #64748b;
+  border-color: rgba(100, 116, 139, 0.12);
+}
+
+/* ── 6. Chronicle Command Terminal ── */
+.light-theme .chronicle-command {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.light-theme .command-prompt {
+  color: #059669 !important;
+}
+
+.light-theme .command-path {
+  color: #2563eb !important;
+}
+
+.light-theme .command-text {
+  color: #334155 !important;
+}
+
+/* ── 7. Skills Accordion ── */
+.light-theme .chronicle-accordion-item {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.light-theme .chronicle-accordion-header {
+  background: #f8fafc !important;
+  border-bottom-color: #e2e8f0 !important;
+  color: #1e1b4b !important;
+}
+
+.light-theme .chronicle-accordion-header:hover {
+  background: #f1f5f9 !important;
+}
+
+.light-theme .chronicle-accordion-body {
+  background: #ffffff !important;
+}
+
+.light-theme .cyber-progress {
+  background: #f1f5f9 !important;
+}
+
+.light-theme .progress-bar {
+  background: linear-gradient(90deg, var(--primary), var(--secondary)) !important;
+  box-shadow: none !important;
+}
+
+.light-theme .skill-percentage {
+  color: var(--primary) !important;
+}
+
+/* ── 8. Timeline Dots & Lines ── */
+.light-theme .milestone-dot,
+.light-theme .experience-milestone .milestone-dot,
+.light-theme .hack-dot,
+.light-theme .zigzag-dot {
+  background: #ffffff !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12) !important;
+}
+
+.light-theme .timeline-milestone:hover .milestone-dot,
+.light-theme .experience-milestone:hover .milestone-dot,
+.light-theme .hack-milestone:hover .hack-dot,
+.light-theme .zigzag-milestone:hover .zigzag-dot {
+  background: var(--primary) !important;
+  box-shadow: 0 0 14px rgba(79, 70, 229, 0.35) !important;
+}
+
+.light-theme .timeline-progress-line,
+.light-theme .zigzag-progress-line {
+  background: linear-gradient(90deg,
+    rgba(79, 70, 229, 0.12),
+    var(--primary) 30%,
+    var(--secondary) 70%,
+    rgba(79, 70, 229, 0.12)) !important;
+  opacity: 0.55 !important;
+  box-shadow: none !important;
+}
+
+.light-theme .experience-milestone::after {
+  background: linear-gradient(180deg, var(--primary), var(--secondary)) !important;
+  opacity: 0.45 !important;
+  box-shadow: none !important;
+}
+
+.light-theme .hack-timeline-container::before {
+  background: linear-gradient(180deg,
+    rgba(79, 70, 229, 0.1),
+    var(--primary) 25%,
+    var(--secondary) 60%,
+    rgba(79, 70, 229, 0.1)) !important;
+  opacity: 0.5 !important;
+  box-shadow: none !important;
+}
+
+.light-theme .milestone-year {
+  color: var(--primary) !important;
+  text-shadow: none !important;
+}
+
+/* ── 9. Achievement & Hack Cards ── */
+.light-theme .achievement-card,
+.light-theme .hack-card,
+.light-theme .milestone-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+.light-theme .achievement-card:hover,
+.light-theme .hack-milestone:hover .hack-card,
+.light-theme .timeline-milestone:hover .milestone-card,
+.light-theme .zigzag-milestone:hover .achievement-card {
+  border-color: rgba(79, 70, 229, 0.22) !important;
+  box-shadow: 0 8px 28px rgba(79, 70, 229, 0.09) !important;
+  transform: translateY(-4px) !important;
+}
+
+.light-theme .achievement-card h3,
+.light-theme .milestone-card h3 {
+  color: #1e1b4b !important;
+}
+
+.light-theme .achievement-org,
+.light-theme .milestone-org {
+  color: #64748b !important;
+}
+
+.light-theme .milestone-id {
+  color: var(--secondary) !important;
+}
+
+/* ── 10. Research Card ── */
+.light-theme .research-archive-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+.light-theme .research-archive-card:hover {
+  border-color: rgba(79, 70, 229, 0.22) !important;
+  box-shadow: 0 12px 40px rgba(79, 70, 229, 0.09) !important;
+}
+
+.light-theme .research-card-sidebar {
+  background: rgba(248, 250, 252, 0.8) !important;
+  border-right: 1px solid #e2e8f0 !important;
+}
+
+.light-theme .research-abstract-preview {
+  background: #f8fafc !important;
+  border-left-color: var(--primary) !important;
+}
+
+.light-theme .abstract-text,
+.light-theme .abstract-label {
+  color: #475569 !important;
+}
+
+.light-theme .text-highlight {
+  color: var(--primary) !important;
+}
+
+.light-theme .research-footer {
+  border-top-color: #e2e8f0 !important;
+}
+
+.light-theme .pub-info {
+  color: #475569 !important;
+}
+
+/* ── 11. Projects Terminal ── */
+.light-theme .terminal-statusbar {
+  background: #f1f5f9 !important;
+  border-top: 1px solid #e2e8f0 !important;
+  color: #64748b !important;
+}
+
+.light-theme .terminal-btn {
+  background: #f8fafc !important;
+  color: #475569 !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.light-theme .terminal-btn:hover {
+  background: rgba(79, 70, 229, 0.07) !important;
+  border-color: rgba(79, 70, 229, 0.2) !important;
+  color: var(--primary) !important;
+}
+
+.light-theme .tag {
+  background: rgba(79, 70, 229, 0.07);
+  color: var(--primary);
+  border: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.light-theme .project-links a {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.light-theme .project-links a:hover {
+  background: rgba(79, 70, 229, 0.07);
+  border-color: rgba(79, 70, 229, 0.2);
+  color: var(--primary);
+}
+
+/* ── 12. Contact Form ── */
+.light-theme #contact-form input,
+.light-theme #contact-form textarea {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #1e293b;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.light-theme #contact-form input:focus,
+.light-theme #contact-form textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.light-theme #contact-form input::placeholder,
+.light-theme #contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* ── 13. Section Background Alternation ── */
+.light-theme .chronicle-section--education,
+.light-theme .chronicle-section--skills,
+.light-theme .certifications-section,
+.light-theme .hackathons-section {
+  background: rgba(248, 250, 252, 0.65);
+}
+
+.light-theme .chronicle-section--experience,
+.light-theme .research-section,
+.light-theme .awards-timeline-section {
+  background: rgba(241, 245, 249, 0.45);
+}
+
+/* ── 14. Footer ── */
+.light-theme footer {
+  background: #f1f5f9 !important;
+  border-top: 1px solid #e2e8f0 !important;
+  color: #475569 !important;
+}
+
+.light-theme footer a {
+  color: var(--primary);
+}
+
+.light-theme footer a:hover {
+  color: var(--secondary);
+}
+
+/* ── 15. Social Sidebar ── */
+.light-theme .social-sidebar {
+  background: rgba(255, 255, 255, 0.92) !important;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+.light-theme .social-line {
+  background: linear-gradient(180deg, transparent, rgba(79, 70, 229, 0.25), transparent) !important;
+}
+
+.light-theme .social-icon-circle {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
+}
+
+.light-theme .social-icon-circle:hover {
+  background: rgba(79, 70, 229, 0.06) !important;
+  border-color: rgba(79, 70, 229, 0.18) !important;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1) !important;
+}
+
+/* ── 16. Custom Scrollbar ── */
+.light-theme ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.light-theme ::-webkit-scrollbar-thumb {
+  background: rgba(79, 70, 229, 0.22);
+}
+
+.light-theme ::-webkit-scrollbar-thumb:hover {
+  background: rgba(79, 70, 229, 0.4);
+}
+
+/* ── 17. Glitch text ── */
+.light-theme .glitch-text::before,
+.light-theme .glitch-text::after {
+  color: var(--primary);
+  opacity: 0.2;
+}
+
+/* ── 18. Mobile social sidebar ── */
+@media (max-width: 480px) {
+  .light-theme .social-sidebar.active {
+    background: rgba(255, 255, 255, 0.97) !important;
+    border: 1.5px solid rgba(79, 70, 229, 0.14) !important;
+    box-shadow: 0 8px 32px rgba(79, 70, 229, 0.1) !important;
   }
 }
