@@ -2023,65 +2023,25 @@
   <script src="js/particle-system.js"></script>
   <script src="js/futuristic-effects.js"></script>
   <script src="js/effects.js"></script>
+
+  <!-- Bottom Navigation Dock -->
   <div class="dock-container" aria-label="Section navigation">
-    <ul class="bottom-nav-dock">
-      <li class="dock-item">
-        <a href="#hero" class="nav-link dock-link" aria-label="Home" title="Home">
-          <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
-          <span class="dock-label">Home</span>
-        </a>
-      </li>
-      <li class="dock-item">
-        <a href="#about" class="nav-link dock-link" aria-label="About Me" title="About Me">
-          <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-user"></i></span>
-          <span class="dock-label">About</span>
-        </a>
-      </li>
-      <li class="dock-item">
-        <a href="#education" class="nav-link dock-link" aria-label="Education" title="Education">
-          <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
-          <span class="dock-label">Education</span>
-        </a>
-      </li>
-      <li class="dock-item">
-        <a href="#experience" class="nav-link dock-link" aria-label="Experience" title="Experience">
-          <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
-          <span class="dock-label">Experience</span>
-        </a>
-      </li>
-      <li class="dock-item">
-        <a href="#skills" class="nav-link dock-link" aria-label="Technical Skills" title="Skills">
-          <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
-          <span class="dock-label">Skills</span>
-        </a>
-      </li>
-      <li class="dock-item">
-        <a href="#projects" class="nav-link dock-link" aria-label="Projects" title="Projects">
-          <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-folder-open"></i></span>
-          <span class="dock-label">Projects</span>
-        </a>
-      </li>
-      <li class="dock-item">
-        <a href="#contact" class="nav-link dock-link" aria-label="Contact Me" title="Contact">
-          <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-paper-plane"></i></span>
-          <span class="dock-label">Contact</span>
-        </a>
-      </li>
-      <!-- Social Links Toggle button in bottom nav -->
-      <li class="dock-item">
-        <button class="nav-link dock-link" type="button" onclick="toggleSocialSidebar()" title="Toggle Social Links" aria-label="Toggle Social Links" style="background: none; border: none; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.35rem; color: var(--text-muted); cursor: pointer; padding: 0;">
-          <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-share-nodes"></i></span>
-          <span class="dock-label">Links</span>
-        </button>
-      </li>
-      <!-- Collapse toggle button -->
-      <li class="dock-item dock-item--collapse">
-        <button class="nav-link dock-link dock-collapse-toggle" id="dock-collapse-toggle" type="button" aria-expanded="true" title="Collapse Navigation" aria-label="Collapse Navigation" style="background: none; border: none; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.35rem; color: var(--text-muted); cursor: pointer; padding: 0;">
-          <span class="dock-emoji" aria-hidden="true"><i class="fa-solid fa-chevron-up dock-collapse-icon" style="transition: transform 0.28s ease; display: inline-block;"></i></span>
-          <span class="dock-label">Minimize</span>
-        </button>
-      </li>
-    </ul>
+    <nav class="bottom-nav-dock" role="navigation">
+      <a href="#hero"       class="dock-link nav-link" aria-label="Home"       data-tip="Home"><i class="fa-solid fa-house"></i></a>
+      <a href="#about"      class="dock-link nav-link" aria-label="About"      data-tip="About"><i class="fa-solid fa-user"></i></a>
+      <a href="#education"  class="dock-link nav-link" aria-label="Education"  data-tip="Education"><i class="fa-solid fa-graduation-cap"></i></a>
+      <a href="#experience" class="dock-link nav-link" aria-label="Experience" data-tip="Experience"><i class="fa-solid fa-briefcase"></i></a>
+      <a href="#skills"     class="dock-link nav-link" aria-label="Skills"     data-tip="Skills"><i class="fa-solid fa-code"></i></a>
+      <a href="#projects"   class="dock-link nav-link" aria-label="Projects"   data-tip="Projects"><i class="fa-solid fa-folder-open"></i></a>
+      <a href="#contact"    class="dock-link nav-link" aria-label="Contact"    data-tip="Contact"><i class="fa-solid fa-paper-plane"></i></a>
+      <div class="dock-divider"></div>
+      <button class="dock-link dock-btn nav-link" type="button" onclick="toggleSocialSidebar()" aria-label="Social Links" data-tip="Links">
+        <i class="fa-solid fa-share-nodes"></i>
+      </button>
+      <button class="dock-link dock-btn dock-collapse-toggle" id="dock-collapse-toggle" type="button" aria-expanded="true" aria-label="Minimize" data-tip="Minimize">
+        <i class="fa-solid fa-chevron-down dock-collapse-icon"></i>
+      </button>
+    </nav>
   </div>
 
 </body>
