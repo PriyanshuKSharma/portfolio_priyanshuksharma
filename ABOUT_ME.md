@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Architecture-Multi--Cloud%20%26%20Serverless-F59E0B?style=for-the-badge" alt="Multi-Cloud and Serverless Architecture" />
   <img src="https://img.shields.io/badge/CGPA-9.9-0F766E?style=for-the-badge" alt="CGPA 9.9" />
   <img src="https://img.shields.io/badge/Internship%20Experience-1%20yr%2011%20mo-2563EB?style=for-the-badge" alt="Internship Experience 1 year 11 months" />
-  <img src="https://img.shields.io/badge/Job%20Experience-Fresher-475569?style=for-the-badge" alt="Job Experience Fresher" />
+  <img src="https://img.shields.io/badge/Job%20Experience-GET%20%40%20Marquardt-0EA5E9?style=for-the-badge" alt="Job Experience GET at Marquardt" />
   <img src="https://img.shields.io/badge/Open%20To-Collaboration-111827?style=for-the-badge" alt="Open to Collaboration" />
 </p>
 
@@ -193,10 +193,12 @@ timeline
          : Fortinet Network Security Virtual Internship
     2025 : IT Internship at Seamedu
          : Web Development Internship at Marquardt India
+    2026 : Graduate Engineer Trainee at Marquardt India
 ```
 
 | Timeline                | Role                                             | Organization               | Focus                                                                       |
 | ----------------------- | ------------------------------------------------ | -------------------------- | --------------------------------------------------------------------------- |
+| **Jun 2026 - Present**  | Graduate Engineer Trainee (GET)                  | Marquardt India Pvt. Ltd.  | Engineering and technology initiatives, software development, cloud tools   |
 | **Jun 2025 - Sep 2025** | Web Development Intern                           | Marquardt India            | Full-stack development, UI/UX improvement, and feature implementation       |
 | **Mar 2025 - Jun 2025** | IT Intern                                        | Seamedu                    | Coordination, operations, documentation, and process support                |
 | **Jul 2024 - Sep 2024** | Fortinet Network Security Virtual Intern         | EduSkills                  | Cyber threat analysis, security protocols, and network defense fundamentals |
@@ -443,6 +445,8 @@ timeline
          : Fortinet Network Security Virtual Internship
     2025 : IT Internship at Seamedu
          : Web Development Internship at Marquardt India
+    2026 : Graduated B.Tech IT from ADYPU
+         : Joined Marquardt India as Graduate Engineer Trainee (GET)
     Present : Building Nebula and deepening research in cloud, security, and quantum systems
 ```
 
