@@ -9624,7 +9624,7 @@ body.light-theme .top-left-brand:hover .logo-icon {
   min-width: 46px !important;
   height: 46px !important;
   padding: 0 !important;
-  border-radius: 50% !important;
+  border-radius: 12px !important;
   justify-content: center !important;
   border-color: rgba(var(--primary-rgb), 0.35) !important;
   background: rgba(6, 10, 18, 0.75) !important;
@@ -9641,7 +9641,7 @@ body.light-theme .bottom-nav-dock.is-collapsed {
 .bottom-nav-dock.is-collapsed .dock-link {
   width: 100% !important;
   height: 100% !important;
-  border-radius: 50% !important;
+  border-radius: 12px !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
