@@ -25,6 +25,8 @@ const copyDir = (src, dest) => {
 };
 
 copyDir('./public', './dist');
+copyDir('./data', './dist/data');
+
 
 // Load data
 const projects = JSON.parse(fs.readFileSync('./data/projects.json'));
