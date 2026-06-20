@@ -9631,16 +9631,16 @@ body.light-theme .top-left-brand:hover .logo-icon {
   padding: 0 !important;
   border-radius: 12px !important;
   justify-content: center !important;
-  border-color: rgba(var(--primary-rgb), 0.35) !important;
-  background: rgba(6, 10, 18, 0.75) !important;
-  backdrop-filter: blur(12px) saturate(140%) !important;
-  box-shadow: 0 8px 32px rgba(0, 240, 255, 0.15) !important;
+  border-color: rgba(var(--primary-rgb), 0.28) !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
 }
 
 body.light-theme .bottom-nav-dock.is-collapsed {
-  background: rgba(255, 255, 255, 0.88) !important;
-  border-color: rgba(59, 130, 246, 0.35) !important;
-  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.1) !important;
+  background: transparent !important;
+  border-color: rgba(59, 130, 246, 0.28) !important;
+  box-shadow: none !important;
 }
 
 .bottom-nav-dock.is-collapsed .dock-link {
