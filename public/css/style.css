@@ -9605,6 +9605,11 @@ body.light-theme .top-left-brand:hover .logo-icon {
 
 
 /* Bottom Nav Dock Collapse/Expand Styles */
+.dock-container.is-collapsed {
+  width: 46px !important;
+  max-width: 46px !important;
+}
+
 .bottom-nav-dock.is-collapsed > :not(.dock-collapse-toggle) {
   display: none !important;
 }
