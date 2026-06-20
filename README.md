@@ -22,7 +22,7 @@
 ![CGPA](https://img.shields.io/badge/CGPA-9.9%2F10-0F766E?style=flat-square&logo=academia&logoColor=white)
 ![Research](https://img.shields.io/badge/Research-IIT%20Ropar%20Fellow-1D4ED8?style=flat-square&logo=researchgate&logoColor=white)
 ![Published](https://img.shields.io/badge/Published-IJCRT%20%26%20IJERT-7C3AED?style=flat-square&logo=googlescholar&logoColor=white)
-![Open To](https://img.shields.io/badge/Status-Open%20for%20Opportunities-22c55e?style=flat-square&logo=checkmarx&logoColor=white)
+![Open To](https://img.shields.io/badge/Status-GET%20%40%20Marquardt%20India-818cf8?style=flat-square&logo=checkmarx&logoColor=white)
 [![Profile Views](https://komarev.com/ghpvc/?username=PriyanshuKSharma&label=Profile+Views&color=818cf8&style=flat-square)](https://github.com/PriyanshuKSharma)
 
 </div>
@@ -297,6 +297,9 @@ flowchart TD
 
 ```
  ──────────────────────────────────────────────────────────────────
+  Jun 2026 →    Graduate Engineer Trainee  Marquardt India Pvt. Ltd.  🆕
+                 GET • Engineering & Technology • Full-time
+
   Jun–Sep 2025   Web Dev Intern          Marquardt India Pvt. Ltd.
                  Full-stack • HTML5/CSS3 • JS • EJS • MySQL • Express
 
