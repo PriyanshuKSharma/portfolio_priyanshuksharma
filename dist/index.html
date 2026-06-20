@@ -1670,14 +1670,14 @@
   position: relative;
   background: var(--surface, #0d1117);
   border-top: 1px solid var(--border-color, rgba(48,54,82,0.7));
-  padding-bottom: 90px; /* dock offset */
+  padding-bottom: 18px; /* small dock clearance */
   font-family: var(--font-body, 'DM Sans', sans-serif);
   overflow: hidden;
 }
 
 @media (max-width: 768px) {
   .site-footer {
-    padding-bottom: calc(6rem + env(safe-area-inset-bottom));
+    padding-bottom: calc(1.25rem + env(safe-area-inset-bottom));
   }
 }
 
@@ -2009,6 +2009,7 @@
   .footer-terminal-prompt { font-size: 0.65rem; }
 }
 </style>
+
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <!-- Load Three.js CDN first for 3D Particle System -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
