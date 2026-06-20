@@ -6351,9 +6351,7 @@ body.light-theme .dock-link.active {
 
 .dock-container::before,
 .dock-container::after,
-.bottom-nav-dock::before,
-.dock-link::before,
-.dock-link::after {
+.bottom-nav-dock::before {
   display: none !important;
 }
 
@@ -6437,6 +6435,44 @@ body.light-theme .dock-link.active {
   border-color: transparent !important;
   box-shadow: 0 8px 18px rgba(var(--primary-rgb), 0.22) !important;
 }
+
+/* Tooltip via data-tip */
+.dock-link[data-tip]::before {
+  content: attr(data-tip) !important;
+  position: absolute !important;
+  bottom: calc(100% + 12px) !important;
+  left: 50% !important;
+  transform: translateX(-50%) scale(0.85) !important;
+  background: rgba(10, 14, 22, 0.95) !important;
+  color: var(--text-light, #e6edf3) !important;
+  font-family: var(--font-body, 'DM Sans', sans-serif) !important;
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  white-space: nowrap !important;
+  padding: 6px 10px !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(var(--primary-rgb, 0,229,255), 0.3) !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
+  z-index: 9999 !important;
+  display: block !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+
+.dock-link[data-tip]:hover::before,
+.dock-link[data-tip]:focus-visible::before {
+  opacity: 1 !important;
+  transform: translateX(-50%) scale(1) !important;
+}
+
+/* Ensure dock-container allows tooltips to overflow */
+.dock-container,
+.bottom-nav-dock {
+  overflow: visible !important;
+}
+
 
 .dock-emoji,
 .dock-link:hover .dock-emoji,
