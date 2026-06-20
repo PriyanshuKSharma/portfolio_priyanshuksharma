@@ -9605,6 +9605,10 @@ body.light-theme .top-left-brand:hover .logo-icon {
 
 
 /* Bottom Nav Dock Collapse/Expand Styles */
+.bottom-nav-dock.is-collapsed > :not(.dock-collapse-toggle) {
+  display: none !important;
+}
+
 .bottom-nav-dock.is-collapsed .dock-item:not(.dock-item--collapse) {
   display: none !important;
 }
@@ -9616,9 +9620,10 @@ body.light-theme .top-left-brand:hover .logo-icon {
 }
 
 .bottom-nav-dock.is-collapsed {
-  width: auto !important;
-  min-width: 60px !important;
-  padding: 0.5rem !important;
+  width: 46px !important;
+  min-width: 46px !important;
+  height: 46px !important;
+  padding: 0 !important;
   border-radius: 50% !important;
   justify-content: center !important;
   border-color: rgba(var(--primary-rgb), 0.35) !important;
@@ -9634,17 +9639,23 @@ body.light-theme .bottom-nav-dock.is-collapsed {
 }
 
 .bottom-nav-dock.is-collapsed .dock-link {
+  width: 100% !important;
+  height: 100% !important;
   border-radius: 50% !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-.dock-collapse-toggle[aria-expanded="false"] .dock-collapse-icon {
-  transform: rotate(0deg) !important;
+.bottom-nav-dock.is-collapsed .dock-link i {
+  font-size: 0.92rem !important;
+  width: 16px !important;
+  height: 16px !important;
 }
-.dock-collapse-toggle[aria-expanded="true"] .dock-collapse-icon {
+
+.dock-collapse-toggle[aria-expanded="false"] .dock-collapse-icon {
   transform: rotate(180deg) !important;
 }
-
-
+.dock-collapse-toggle[aria-expanded="true"] .dock-collapse-icon {
+  transform: rotate(0deg) !important;
+}
