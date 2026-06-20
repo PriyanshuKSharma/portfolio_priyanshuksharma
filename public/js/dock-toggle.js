@@ -1,6 +1,7 @@
 // Toggle expand/collapse for the bottom dock.
 document.addEventListener('DOMContentLoaded', () => {
   const navDock = document.querySelector('.bottom-nav-dock');
+  const dockContainer = document.querySelector('.dock-container');
   const toggle = document.getElementById('dock-collapse-toggle');
   if (!navDock || !toggle) return;
 
@@ -8,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const setDockState = (collapsed) => {
     navDock.classList.toggle('is-collapsed', collapsed);
+    dockContainer?.classList.toggle('is-collapsed', collapsed);
     toggle.setAttribute('aria-expanded', String(!collapsed));
     toggle.setAttribute('aria-label', collapsed ? 'Expand Navigation' : 'Collapse Navigation');
     toggle.setAttribute('title', collapsed ? 'Expand Navigation' : 'Collapse Navigation');
