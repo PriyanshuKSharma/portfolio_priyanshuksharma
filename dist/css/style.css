@@ -7979,27 +7979,6 @@ body.light-theme .dock-link[aria-current="page"] {
   gap: 1.25rem;
 }
 
-.about-brief .tech-categories {
-  margin-top: 0;
-  gap: 1.25rem;
-}
-
-.about-brief .tech-category {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-}
-
-.about-brief .tech-icon {
-  width: 56px;
-  height: 56px;
-}
-
-.about-brief .tech-icon img {
-  width: 32px;
-  height: 32px;
-}
-
 .about-brief-card,
 .about-domain-card {
   background: var(--bg-card);
