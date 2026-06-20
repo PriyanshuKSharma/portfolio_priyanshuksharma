@@ -1059,7 +1059,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .bottom-nav-dock .dock-link:hover,
 .bottom-nav-dock .dock-link:focus {
-  transform: translateY(-4px);
   color: var(--text-light);
 }
 
@@ -6417,12 +6416,11 @@ body.light-theme .dock-link.active {
   text-shadow: none !important;
   filter: none !important;
   animation: none !important;
-  transition: color 0.18s ease, background 0.18s ease, border-color 0.18s ease, transform 0.18s ease !important;
+  transition: color 0.18s ease, background 0.18s ease, border-color 0.18s ease !important;
 }
 
 .dock-link:hover,
 .dock-link:focus-visible {
-  transform: translateY(-2px) !important;
   color: var(--primary) !important;
   background: rgba(var(--primary-rgb), 0.08) !important;
   border-color: rgba(var(--primary-rgb), 0.18) !important;
