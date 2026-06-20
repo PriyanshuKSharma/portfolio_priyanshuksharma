@@ -9664,3 +9664,47 @@ body.light-theme .bottom-nav-dock.is-collapsed {
 .dock-collapse-toggle[aria-expanded="true"] .dock-collapse-icon {
   transform: rotate(0deg) !important;
 }
+
+.bottom-nav-dock .dock-link[data-tip] {
+  overflow: visible !important;
+}
+
+.bottom-nav-dock .dock-link[data-tip]::after {
+  content: attr(data-tip) !important;
+  position: absolute !important;
+  left: 50% !important;
+  bottom: calc(100% + 10px) !important;
+  display: block !important;
+  width: max-content !important;
+  max-width: 140px !important;
+  padding: 0.35rem 0.55rem !important;
+  border: 1px solid rgba(var(--primary-rgb), 0.24) !important;
+  border-radius: 8px !important;
+  background: rgba(6, 10, 18, 0.92) !important;
+  color: var(--text-light) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28) !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translate(-50%, 6px) !important;
+  transition: opacity 0.16s ease, transform 0.16s ease !important;
+  z-index: 10 !important;
+}
+
+.bottom-nav-dock .dock-link[data-tip]:hover::after,
+.bottom-nav-dock .dock-link[data-tip]:focus-visible::after {
+  opacity: 1 !important;
+  transform: translate(-50%, 0) !important;
+}
+
+body.light-theme .bottom-nav-dock .dock-link[data-tip]::after {
+  background: rgba(255, 255, 255, 0.96) !important;
+  color: #0f172a !important;
+  border-color: rgba(59, 130, 246, 0.22) !important;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12) !important;
+}
