@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Graduate Engineer Trainee (GET)",
+    "organization": "Marquardt India Pvt. Ltd., Pune",
+    "period": "June 2026 - Present",
+    "description": "Joined as a Graduate Engineer Trainee on June 18, 2026. Contributing to engineering and technology initiatives at Marquardt India, applying skills in software development, cloud tools, and engineering systems.",
+    "type": "work"
+  },
+  {
+    "title": "Web Dev Intern",
+    "organization": "Marquardt India Pvt. Ltd., Pune",
+    "period": "June 2025 - September 2025",
+    "description": "Contributing to frontend development, UI/UX enhancements, and full-stack feature implementation using HTML5, CSS3, JavaScript, EJS templates, MySQL, and Express.js.",
+    "type": "work"
+  },
+  {
+    "title": "IT Intern - Placement Coordinator",
+    "organization": "Seamless Education and Services (Seamedu) Pvt. Ltd., Pune",
+    "period": "March 2025 - June 2025",
+    "description": "Coordinated end-to-end placement activities, managed candidate databases, and supported IT solutions integration into placement processes.",
+    "type": "work"
+  },
+  {
+    "title": "Cloud Research Intern",
+    "organization": "Indian Institute of Technology Ropar, Punjab",
+    "period": "May 2024 - July 2024",
+    "description": "Engaged in advanced research on distributed computing and serverless architectures. Implemented XFBench and XFaaS frameworks for Function-as-a-Service environments.",
+    "type": "work"
+  },
+  {
+    "title": "Master of Technology in Cloud Computing",
+    "organization": "Indian Institute of Technology Patna",
+    "period": "August 2026 - Present",
+    "description": "Pursuing an M.Tech in Cloud Computing. Focusing on advanced cloud infrastructure and systems.",
+    "type": "education"
+  },
+  {
+    "title": "Bachelor of Technology in Information Technology",
+    "organization": "Ajeenkya D Y Patil University, Pune",
+    "period": "August 2022 - 2026",
+    "description": "Specializing in Cloud Technology and Information Security. Active in hackathons and cybersecurity clubs. CGPA: <span class=\"highlight\">9.9</span>.",
+    "type": "education"
+  },
+  {
+    "title": "Intermediate Education",
+    "organization": "Sri Chaitanya Jr. Kalasala, Hyderabad",
+    "period": "April 2020 - May 2022",
+    "description": "Completed intermediate education focusing on science and mathematics. Grade: <span class=\"highlight\">93.9%</span>.",
+    "type": "education"
+  },
+  {
+    "title": "Higher Secondary Education",
+    "organization": "Sri Chaitanya High School, Hyderabad",
+    "period": "April 2019 - May 2020",
+    "description": "Completed higher secondary education. Grade: <span class=\"highlight\">87.6%</span>.",
+    "type": "education"
+  }
+]
