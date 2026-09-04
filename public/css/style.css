@@ -3499,6 +3499,7 @@ body:not(.light-theme) .light-icon { display: block; }
   flex-wrap: wrap;
   gap: 0.3rem;
   color: var(--text-muted);
+  word-break: break-all;
 }
 
 .command-prompt {
@@ -9626,4 +9627,14 @@ body.light-theme .bottom-nav-dock .dock-link[data-tip]::after {
   color: #0f172a !important;
   border-color: rgba(59, 130, 246, 0.22) !important;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12) !important;
+}
+
+@media (max-width: 768px) {
+  .experience-milestone {
+    padding-left: 0 !important;
+  }
+  .experience-milestone .milestone-dot-wrapper,
+  .experience-milestone::after {
+    display: none !important;
+  }
 }
