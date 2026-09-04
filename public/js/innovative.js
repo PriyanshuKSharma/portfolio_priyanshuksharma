@@ -74,7 +74,7 @@ function initCustomCursor() {
 }
 
 function init3DTilt() {
-  const cards = document.querySelectorAll('.metric-card, .expertise-item, .achievement-card, .project-content, .intro-point');
+  const cards = document.querySelectorAll('.metric-card, .expertise-item, .achievement-card, .project-content, .intro-point, .research-holo-card');
 
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
@@ -91,19 +91,30 @@ function init3DTilt() {
       card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
       card.style.transition = 'transform 0.1s ease';
       
-      // Add shine effect
-      const shine = card.querySelector('.card-shine') || document.createElement('div');
-      if (!card.querySelector('.card-shine')) {
-        shine.className = 'card-shine';
-        card.appendChild(shine);
+      const holoGlare = card.querySelector('.holo-glare');
+      if (holoGlare) {
+        // Position the glare based on cursor
+        holoGlare.style.transform = `translateZ(1px) translate(${x - centerX}px, ${y - centerY}px)`;
+      } else {
+        // Add shine effect for standard cards
+        const shine = card.querySelector('.card-shine') || document.createElement('div');
+        if (!card.querySelector('.card-shine')) {
+          shine.className = 'card-shine';
+          card.appendChild(shine);
+        }
+        shine.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.1) 0%, transparent 80%)`;
       }
-      
-      shine.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.1) 0%, transparent 80%)`;
     });
 
     card.addEventListener('mouseleave', () => {
       card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
       card.style.transition = 'transform 0.5s ease';
+      
+      const holoGlare = card.querySelector('.holo-glare');
+      if (holoGlare) {
+         holoGlare.style.transform = `translateZ(1px)`;
+      }
+      
       const shine = card.querySelector('.card-shine');
       if (shine) shine.remove();
     });
