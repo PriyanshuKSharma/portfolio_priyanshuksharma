@@ -3499,6 +3499,7 @@ body:not(.light-theme) .light-icon { display: block; }
   flex-wrap: wrap;
   gap: 0.3rem;
   color: var(--text-muted);
+  word-break: break-all;
 }
 
 .command-prompt {
@@ -5125,152 +5126,7 @@ body.loaded .loading-overlay {
     0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Liquid Core Animation */
-.dock-link::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background: radial-gradient(circle, 
-    rgba(0, 255, 255, 0.8) 0%, 
-    rgba(255, 0, 128, 0.6) 50%, 
-    transparent 100%);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  animation: liquidPulse 3s ease-in-out infinite;
-}
-
-/* Plasma Ring Effect */
-.dock-link::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: conic-gradient(from 0deg, 
-    transparent 0deg, 
-    rgba(0, 255, 255, 0.6) 90deg, 
-    transparent 180deg, 
-    rgba(255, 0, 128, 0.6) 270deg, 
-    transparent 360deg);
-  border-radius: 50%;
-  opacity: 0;
-  animation: plasmaRing 2s linear infinite;
-  transition: opacity 0.3s ease;
-}
-
-.dock-link:hover::before {
-  transform: translate(-50%, -50%) scale(2);
-  background: radial-gradient(circle, 
-    rgba(0, 255, 255, 1) 0%, 
-    rgba(255, 0, 128, 0.8) 50%, 
-    rgba(0, 255, 255, 0.4) 100%);
-}
-
-.dock-link:hover::after {
-  opacity: 1;
-}
-
-.dock-link:hover {
-  background: radial-gradient(circle at 30% 30%, 
-    rgba(255, 255, 255, 0.6) 0%, 
-    rgba(0, 255, 255, 0.4) 30%, 
-    rgba(0, 0, 0, 0.9) 100%);
-  border-color: rgba(0, 255, 255, 0.8);
-  box-shadow: 
-    inset 0 1px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.4),
-    0 8px 16px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(0, 255, 255, 0.6);
-  transform: scale(1.1);
-}
-
-@keyframes liquidPulse {
-  0%, 100% { 
-    transform: translate(-50%, -50%) scale(0.8);
-    opacity: 0.6;
-  }
-  50% { 
-    transform: translate(-50%, -50%) scale(1.2);
-    opacity: 1;
-  }
-}
-
-@keyframes plasmaRing {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Active State - Liquid Metal Consciousness */
-.dock-link.active {
-  background: radial-gradient(circle at 30% 30%, 
-    rgba(255, 255, 255, 0.8) 0%, 
-    rgba(0, 255, 255, 0.6) 30%, 
-    rgba(0, 0, 0, 1) 100%) !important;
-  border: 2px solid rgba(0, 255, 255, 1) !important;
-  color: #ffffff !important;
-  box-shadow: 
-    inset 0 2px 0 rgba(255, 255, 255, 0.6),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.6),
-    0 0 40px rgba(0, 255, 255, 1),
-    0 0 80px rgba(0, 255, 255, 0.6),
-    0 8px 16px rgba(0, 0, 0, 0.4) !important;
-  animation: consciousPulse 2s ease-in-out infinite;
-}
-
-.dock-link.active::before {
-  transform: translate(-50%, -50%) scale(1.5) !important;
-  background: radial-gradient(circle, 
-    rgba(255, 255, 255, 1) 0%, 
-    rgba(0, 255, 255, 1) 50%, 
-    rgba(255, 0, 128, 0.8) 100%) !important;
-  animation: activeCore 1.5s ease-in-out infinite !important;
-}
-
-.dock-link.active::after {
-  opacity: 1 !important;
-  animation: activePlasma 1s linear infinite !important;
-}
-
-@keyframes consciousPulse {
-  0%, 100% { 
-    transform: scale(1.1);
-    filter: brightness(1.2);
-  }
-  50% { 
-    transform: scale(1.15);
-    filter: brightness(1.5);
-  }
-}
-
-@keyframes activeCore {
-  0%, 100% { 
-    transform: translate(-50%, -50%) scale(1.3) rotate(0deg);
-  }
-  50% { 
-    transform: translate(-50%, -50%) scale(1.7) rotate(180deg);
-  }
-}
-
-@keyframes activePlasma {
-  0% { 
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
-  }
-  50% { 
-    transform: rotate(180deg) scale(1.1);
-    opacity: 0.8;
-  }
-  100% { 
-    transform: rotate(360deg) scale(1);
-    opacity: 1;
-  }
-}
-
+/* Removed Liquid Metal and Plasma Glowing Effects per user request */
 /* Icon Styling */
 .dock-emoji {
   font-size: 20px;
@@ -6400,7 +6256,7 @@ body.light-theme .dock-link.active {
 }
 
 .dock-link {
-  width: 100% !important;
+  width: 50px !important;
   height: 50px !important;
   display: inline-flex !important;
   flex-direction: column !important;
@@ -6434,36 +6290,7 @@ body.light-theme .dock-link.active {
   box-shadow: 0 8px 18px rgba(var(--primary-rgb), 0.22) !important;
 }
 
-/* Tooltip via data-tip */
-.dock-link[data-tip]::before {
-  content: attr(data-tip) !important;
-  position: absolute !important;
-  bottom: calc(100% + 12px) !important;
-  left: 50% !important;
-  transform: translateX(-50%) scale(0.85) !important;
-  background: rgba(10, 14, 22, 0.95) !important;
-  color: var(--text-light, #e6edf3) !important;
-  font-family: var(--font-body, 'DM Sans', sans-serif) !important;
-  font-size: 0.7rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.04em !important;
-  white-space: nowrap !important;
-  padding: 6px 10px !important;
-  border-radius: 6px !important;
-  border: 1px solid rgba(var(--primary-rgb, 0,229,255), 0.3) !important;
-  pointer-events: none !important;
-  opacity: 0 !important;
-  transition: opacity 0.2s ease, transform 0.2s ease !important;
-  z-index: 9999 !important;
-  display: block !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
-}
-
-.dock-link[data-tip]:hover::before,
-.dock-link[data-tip]:focus-visible::before {
-  opacity: 1 !important;
-  transform: translateX(-50%) scale(1) !important;
-}
+/* Tooltip via data-tip is handled by the block at the bottom of the file (using ::after) to prevent duplication */
 
 /* Ensure dock-container allows tooltips to overflow */
 .dock-container,
@@ -8185,115 +8012,187 @@ body.light-theme .dock-link[aria-current="page"] {
   }
 }
 
-.publication-archive {
-  max-width: 1040px;
-  margin: 3rem auto 0;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.publication-card {
+.research-holo-grid {
   display: grid;
-  grid-template-columns: 190px 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  perspective: 1200px;
+}
+
+.research-holo-card {
+  position: relative;
+  background: rgba(13, 17, 23, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
   overflow: hidden;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 18px;
-  box-shadow: var(--shadow-card);
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  will-change: transform;
 }
 
-.publication-card:hover,
-.fellowship-card:hover,
-.recognition-card:hover,
-.hackathon-row:hover {
-  border-color: rgba(var(--primary-rgb), 0.35);
-  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.28), 0 0 28px rgba(var(--primary-rgb), 0.08);
+.research-holo-card.fellowship-card {
+  border-color: rgba(var(--secondary-rgb), 0.3);
 }
 
-.publication-sidebar {
+.research-holo-card:hover {
+  border-color: rgba(var(--primary-rgb), 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(var(--primary-rgb), 0.15);
+}
+
+.holo-glare {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(var(--primary-rgb), 0.05) 30%,
+    transparent 70%
+  );
+  transform: translateZ(1px);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.research-holo-card:hover .holo-glare {
+  opacity: 1;
+}
+
+.holo-card-inner {
+  transform: translateZ(40px);
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
-  padding: 2rem 1.4rem;
-  background: var(--surface2);
-  border-right: 1px solid var(--border-color);
+  height: 100%;
+  pointer-events: none;
 }
 
-.publication-meta-block span {
-  display: block;
-  margin-bottom: 0.3rem;
-  color: var(--text-dim);
+.holo-card-inner > * {
+  pointer-events: auto;
+}
+
+.holo-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
   font-family: var(--font-mono);
-  font-size: 0.58rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-size: 0.75rem;
 }
 
-.publication-meta-block strong {
+.holo-id {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.holo-status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.holo-status.ongoing { color: var(--primary); }
+.holo-status.live { color: var(--green); }
+.holo-status.past { color: var(--secondary); }
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 rgba(currentColor, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(currentColor, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(currentColor, 0); }
+}
+
+.holo-title {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin: 0.5rem 0 1rem;
+  line-height: 1.4;
+}
+
+.holo-desc {
   color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.holo-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.holo-pill {
+  font-size: 0.7rem;
+  padding: 0.3rem 0.6rem;
+  background: rgba(var(--primary-rgb), 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(var(--primary-rgb), 0.2);
+  border-radius: 4px;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+}
+
+.holo-footer {
+  display: flex;
+  gap: 0.8rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 1.2rem;
+}
+
+.holo-btn {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  font-family: var(--font-mono);
+}
+
+.holo-btn.primary {
+  background: var(--primary);
+  color: #000;
   font-weight: 600;
 }
-
-.publication-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: var(--green) !important;
+.holo-btn.primary:hover {
+  background: var(--text-light);
+  box-shadow: 0 0 15px rgba(var(--primary-rgb), 0.4);
 }
 
-.publication-main {
-  padding: 2.5rem;
-}
-
-.publication-main .research-paper-title {
-  margin-bottom: 1.2rem;
-  font-size: clamp(1.35rem, 2vw, 1.8rem);
-}
-
-.publication-main .abstract-text {
-  margin-bottom: 1.4rem;
-  line-height: 1.8;
-}
-
-.fellowship-card {
-  display: flex;
-  gap: 1.25rem;
-  align-items: flex-start;
-  margin-top: 1.5rem;
-  padding: 2rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
-}
-
-.fellowship-icon {
-  display: inline-flex;
-  flex: 0 0 44px;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondary);
-  background: var(--p2);
-  border: 1px solid var(--p3);
-  border-radius: 10px;
-}
-
-.fellowship-card h3 {
-  margin-bottom: 0.75rem;
+.holo-btn.secondary {
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text-light);
-  font-size: 1.08rem;
 }
-
-.fellowship-card p {
-  margin-bottom: 1.1rem;
-  color: var(--text-muted);
-  line-height: 1.8;
+.holo-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .journal-tag--purple {
@@ -8395,30 +8294,17 @@ body.light-theme .dock-link[aria-current="page"] {
 }
 
 @media (max-width: 900px) {
-  .publication-card,
   .recognition-grid {
     grid-template-columns: 1fr;
-  }
-
-  .publication-sidebar {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    border-right: 0;
-    border-bottom: 1px solid var(--border-color);
-  }
-
-  .recognition-grid {
     gap: 3rem;
   }
 }
 
 @media (max-width: 560px) {
-  .publication-sidebar,
   .hackathon-row {
     grid-template-columns: 1fr;
   }
 
-  .publication-main,
   .fellowship-card {
     padding: 1.4rem;
   }
@@ -9741,4 +9627,14 @@ body.light-theme .bottom-nav-dock .dock-link[data-tip]::after {
   color: #0f172a !important;
   border-color: rgba(59, 130, 246, 0.22) !important;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12) !important;
+}
+
+@media (max-width: 768px) {
+  .experience-milestone {
+    padding-left: 0 !important;
+  }
+  .experience-milestone .milestone-dot-wrapper,
+  .experience-milestone::after {
+    display: none !important;
+  }
 }
