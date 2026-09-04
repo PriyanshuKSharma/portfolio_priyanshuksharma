@@ -5125,152 +5125,7 @@ body.loaded .loading-overlay {
     0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Liquid Core Animation */
-.dock-link::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background: radial-gradient(circle, 
-    rgba(0, 255, 255, 0.8) 0%, 
-    rgba(255, 0, 128, 0.6) 50%, 
-    transparent 100%);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  animation: liquidPulse 3s ease-in-out infinite;
-}
-
-/* Plasma Ring Effect */
-.dock-link::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: conic-gradient(from 0deg, 
-    transparent 0deg, 
-    rgba(0, 255, 255, 0.6) 90deg, 
-    transparent 180deg, 
-    rgba(255, 0, 128, 0.6) 270deg, 
-    transparent 360deg);
-  border-radius: 50%;
-  opacity: 0;
-  animation: plasmaRing 2s linear infinite;
-  transition: opacity 0.3s ease;
-}
-
-.dock-link:hover::before {
-  transform: translate(-50%, -50%) scale(2);
-  background: radial-gradient(circle, 
-    rgba(0, 255, 255, 1) 0%, 
-    rgba(255, 0, 128, 0.8) 50%, 
-    rgba(0, 255, 255, 0.4) 100%);
-}
-
-.dock-link:hover::after {
-  opacity: 1;
-}
-
-.dock-link:hover {
-  background: radial-gradient(circle at 30% 30%, 
-    rgba(255, 255, 255, 0.6) 0%, 
-    rgba(0, 255, 255, 0.4) 30%, 
-    rgba(0, 0, 0, 0.9) 100%);
-  border-color: rgba(0, 255, 255, 0.8);
-  box-shadow: 
-    inset 0 1px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.4),
-    0 8px 16px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(0, 255, 255, 0.6);
-  transform: scale(1.1);
-}
-
-@keyframes liquidPulse {
-  0%, 100% { 
-    transform: translate(-50%, -50%) scale(0.8);
-    opacity: 0.6;
-  }
-  50% { 
-    transform: translate(-50%, -50%) scale(1.2);
-    opacity: 1;
-  }
-}
-
-@keyframes plasmaRing {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Active State - Liquid Metal Consciousness */
-.dock-link.active {
-  background: radial-gradient(circle at 30% 30%, 
-    rgba(255, 255, 255, 0.8) 0%, 
-    rgba(0, 255, 255, 0.6) 30%, 
-    rgba(0, 0, 0, 1) 100%) !important;
-  border: 2px solid rgba(0, 255, 255, 1) !important;
-  color: #ffffff !important;
-  box-shadow: 
-    inset 0 2px 0 rgba(255, 255, 255, 0.6),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.6),
-    0 0 40px rgba(0, 255, 255, 1),
-    0 0 80px rgba(0, 255, 255, 0.6),
-    0 8px 16px rgba(0, 0, 0, 0.4) !important;
-  animation: consciousPulse 2s ease-in-out infinite;
-}
-
-.dock-link.active::before {
-  transform: translate(-50%, -50%) scale(1.5) !important;
-  background: radial-gradient(circle, 
-    rgba(255, 255, 255, 1) 0%, 
-    rgba(0, 255, 255, 1) 50%, 
-    rgba(255, 0, 128, 0.8) 100%) !important;
-  animation: activeCore 1.5s ease-in-out infinite !important;
-}
-
-.dock-link.active::after {
-  opacity: 1 !important;
-  animation: activePlasma 1s linear infinite !important;
-}
-
-@keyframes consciousPulse {
-  0%, 100% { 
-    transform: scale(1.1);
-    filter: brightness(1.2);
-  }
-  50% { 
-    transform: scale(1.15);
-    filter: brightness(1.5);
-  }
-}
-
-@keyframes activeCore {
-  0%, 100% { 
-    transform: translate(-50%, -50%) scale(1.3) rotate(0deg);
-  }
-  50% { 
-    transform: translate(-50%, -50%) scale(1.7) rotate(180deg);
-  }
-}
-
-@keyframes activePlasma {
-  0% { 
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
-  }
-  50% { 
-    transform: rotate(180deg) scale(1.1);
-    opacity: 0.8;
-  }
-  100% { 
-    transform: rotate(360deg) scale(1);
-    opacity: 1;
-  }
-}
-
+/* Removed Liquid Metal and Plasma Glowing Effects per user request */
 /* Icon Styling */
 .dock-emoji {
   font-size: 20px;
@@ -6400,7 +6255,7 @@ body.light-theme .dock-link.active {
 }
 
 .dock-link {
-  width: 100% !important;
+  width: 50px !important;
   height: 50px !important;
   display: inline-flex !important;
   flex-direction: column !important;
@@ -6434,36 +6289,7 @@ body.light-theme .dock-link.active {
   box-shadow: 0 8px 18px rgba(var(--primary-rgb), 0.22) !important;
 }
 
-/* Tooltip via data-tip */
-.dock-link[data-tip]::before {
-  content: attr(data-tip) !important;
-  position: absolute !important;
-  bottom: calc(100% + 12px) !important;
-  left: 50% !important;
-  transform: translateX(-50%) scale(0.85) !important;
-  background: rgba(10, 14, 22, 0.95) !important;
-  color: var(--text-light, #e6edf3) !important;
-  font-family: var(--font-body, 'DM Sans', sans-serif) !important;
-  font-size: 0.7rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.04em !important;
-  white-space: nowrap !important;
-  padding: 6px 10px !important;
-  border-radius: 6px !important;
-  border: 1px solid rgba(var(--primary-rgb, 0,229,255), 0.3) !important;
-  pointer-events: none !important;
-  opacity: 0 !important;
-  transition: opacity 0.2s ease, transform 0.2s ease !important;
-  z-index: 9999 !important;
-  display: block !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
-}
-
-.dock-link[data-tip]:hover::before,
-.dock-link[data-tip]:focus-visible::before {
-  opacity: 1 !important;
-  transform: translateX(-50%) scale(1) !important;
-}
+/* Tooltip via data-tip is handled by the block at the bottom of the file (using ::after) to prevent duplication */
 
 /* Ensure dock-container allows tooltips to overflow */
 .dock-container,
